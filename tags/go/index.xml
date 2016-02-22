@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on Записки Турыча</title>
+    <link>http://ewok.github.io/tags/go/</link>
+    <description>Recent content in Go on Записки Турыча</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru_RU</language>
+    <lastBuildDate>Mon, 01 Feb 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://ewok.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Интересное в сети 2</title>
+      <link>http://ewok.github.io/intieriesnoie-v-sieti-2</link>
+      <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/intieriesnoie-v-sieti-2</guid>
+      <description>
+
+&lt;h3 id=&#34;haskell:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Haskell&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://habrahabr.ru/post/257491/&#34;&gt;REST-сервер для простого блога на Haskell&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://emojilisp.com/&#34;&gt;:) лисп диалект&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.schoolofhaskell.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/attoparsec&#34;&gt;Парсим логи&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;vim:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Vim&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/vim/vim/commit/520e1e41f35b063ede63b41738c82d6636e78c34&#34;&gt;В vim добавили jsonencode() и jsondecode()&lt;/a&gt; До этого я пользовался внешними утилитами&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://howivim.com/&#34;&gt;Кто как vim-т&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://mswift42.github.io/themecreator/&#34;&gt;Редактор тем&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;python:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Python&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;В копилку &lt;a href=&#34;https://pypi.python.org/pypi/tgbot&#34;&gt;tgbot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CLI для DO - &lt;a href=&#34;https://pypi.python.org/pypi/pontoon/&#34;&gt;pantoon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;go:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Go&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/satyrius/gonx&#34;&gt;Nginx access log parser for Golang&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;разное:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Разное&lt;/h3&gt;
+
+&lt;p&gt;Играем и учимся программировать - &lt;a href=&#34;https://github.com/colobot/colobot&#34;&gt;colobot&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

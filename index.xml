@@ -6,8 +6,18 @@
     <description>Recent content on Записки Турыча</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru_RU</language>
-    <lastBuildDate>Mon, 01 Feb 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Feb 2016 06:34:14 +0300</lastBuildDate>
     <atom:link href="http://ewok.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>hugo</title>
+      <link>http://ewok.github.io/hugo/</link>
+      <pubDate>Mon, 22 Feb 2016 06:34:14 +0300</pubDate>
+      
+      <guid>http://ewok.github.io/hugo/</guid>
+      <description>&lt;p&gt;Первый тестовый пост с помощью движка gohugo.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Держим приложение запущенным(macos x)</title>
@@ -211,7 +221,6 @@ launchctl load ~/Library/LaunchAgents/telegram.plist
 
 &lt;pre&gt;&lt;code&gt;# !/usr/bin/env hesh
 -- Backup a PostgreSQL database to an encrypted file.
-
 
 main = do
   args &amp;lt;- System.Environment.getArgs
@@ -517,39 +526,6 @@ main = do
 &lt;h1 id=&#34;virt-manager:a65360a3a7be284faac3410c19f3ed49&#34;&gt;virt-manager&lt;/h1&gt;
 
 &lt;p&gt;Графическая утилита для работы с libvirt&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Wish-list</title>
-      <link>http://ewok.github.io/wish-list</link>
-      <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://ewok.github.io/wish-list</guid>
-      <description>&lt;p&gt;Здесь публикуется список вещей которые мне интересны&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Вещи&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;Умный&amp;rdquo; фитнес браслет&lt;/li&gt;
-&lt;li&gt;RaspberryPi&lt;/li&gt;
-&lt;li&gt;Мобилу с 2G RAM :)&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Аккумулятор для ноута&lt;/del&gt; куплен&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;SSD гигов на 60, для ноутбука + переходник в CD разъем&lt;/del&gt; - подарено, очень доволен&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Маленькая беспроводная мышка для ноутбука на радиоканале&lt;/del&gt; - взял пока обычную&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Видео-регистратор на машину&lt;/del&gt; - спасибо жене&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Небольшой металлический фонарик на аккумуляторах&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Набор разнокалиберных отверток с магнитным наконечником&lt;/del&gt; - куплено&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Зимняя резина :)&lt;/del&gt; - куплена&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Zalman VE300&lt;/del&gt; - взял недорого VE200&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Теплый халат(к зиме актуально)&lt;/del&gt; - подарили, спасибо маме.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Программы&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Pycharm обновление подписки :)&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

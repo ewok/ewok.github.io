@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Haskell on Записки Турыча</title>
+    <link>http://ewok.github.io/tags/haskell/</link>
+    <description>Recent content in Haskell on Записки Турыча</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru_RU</language>
+    <lastBuildDate>Mon, 01 Feb 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://ewok.github.io/tags/haskell/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Интересное в сети 2</title>
+      <link>http://ewok.github.io/intieriesnoie-v-sieti-2</link>
+      <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/intieriesnoie-v-sieti-2</guid>
+      <description>
+
+&lt;h3 id=&#34;haskell:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Haskell&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://habrahabr.ru/post/257491/&#34;&gt;REST-сервер для простого блога на Haskell&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://emojilisp.com/&#34;&gt;:) лисп диалект&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.schoolofhaskell.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/attoparsec&#34;&gt;Парсим логи&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;vim:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Vim&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/vim/vim/commit/520e1e41f35b063ede63b41738c82d6636e78c34&#34;&gt;В vim добавили jsonencode() и jsondecode()&lt;/a&gt; До этого я пользовался внешними утилитами&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://howivim.com/&#34;&gt;Кто как vim-т&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://mswift42.github.io/themecreator/&#34;&gt;Редактор тем&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;python:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Python&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;В копилку &lt;a href=&#34;https://pypi.python.org/pypi/tgbot&#34;&gt;tgbot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CLI для DO - &lt;a href=&#34;https://pypi.python.org/pypi/pontoon/&#34;&gt;pantoon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;go:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Go&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/satyrius/gonx&#34;&gt;Nginx access log parser for Golang&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;разное:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Разное&lt;/h3&gt;
+
+&lt;p&gt;Играем и учимся программировать - &lt;a href=&#34;https://github.com/colobot/colobot&#34;&gt;colobot&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Интересное в сети</title>
+      <link>http://ewok.github.io/intieriesnoie-v-sieti</link>
+      <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/intieriesnoie-v-sieti</guid>
+      <description>
+
+&lt;h3 id=&#34;haskell:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Haskell&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/272871/&#34;&gt;Пример работы с VK&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/272115&#34;&gt;«Страшные» абстракции Haskell без математики и без кода (почти). Часть I&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/207126/&#34;&gt;Зоопарк Алгебрaических Типов Данных&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ohaskell.dshevchenko.biz/ru/index.html&#34;&gt;О прекрасном языке - языком человеческим&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://wiki.haskell.org/Tutorials/Programming_Haskell/Argument_handling&#34;&gt;Argument handling&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/245797/&#34;&gt;Теория категорий для программистов: предисловие&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/246009/&#34;&gt;Категория: суть композиции&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/247765/&#34;&gt;Типы и функции&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/248257/&#34;&gt;Категории, большие и малые&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/249113/&#34;&gt;Категории Клейсли&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/271927/&#34;&gt;Произведения и копроизведения&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/274103/&#34;&gt;Простые алгебраические типы данных&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;python:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Python&lt;/h3&gt;
+
+&lt;p&gt;Фреймворк умеет алертить об аномалиях в elastic search &lt;a href=&#34;http://github.com/Yelp/elastalert&#34;&gt;http://github.com/Yelp/elastalert&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Docker контейнер kibana &lt;a href=&#34;https://hub.docker.com/_/kibana/&#34;&gt;https://hub.docker.com/_/kibana/&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/270717/&#34;&gt;Пример рабоы с VK&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pedrohml/smartbot&#34;&gt;Бот для slack/telegram на&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/crista/exercises-in-programming-style&#34;&gt;exercises-in-programming-style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://fadymak.com/pages/useful_python_snippets.html&#34;&gt;some python snippets&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;немного-про-vim:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Немного про VIM&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mhinz/vim-galore&#34;&gt;Еще один гайд&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;немного-про-hadoop:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Немного про Hadoop&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hub.docker.com/r/cloudera/quickstart/&#34;&gt;Cloudera quickstart docker&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;немного-про-java:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Немного про Java&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mojohaus.org/versions-maven-plugin/examples/display-dependency-updates.html&#34;&gt;Ищем dependency update&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;немного-про-devops:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Немного про Devops&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://coderwall.com/p/9b_lfq/deploying-maven-artifacts-from-travis&#34;&gt;Deploying maven artifacts from Travis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Generate a shell based build script - &lt;a href=&#34;https://github.com/travis-ci/travis-build&#34;&gt;Travis Build&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;разное:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Разное&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/OrkoHunter/ping-me&#34;&gt;Пингани себя&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Еще одна попытка создать тайловый менеджер окон на Mac Os X, самая удачная(IMHO) - &lt;a href=&#34;https://github.com/koekeishiya/kwm&#34;&gt;https://github.com/koekeishiya/kwm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Haskell на неделе</title>
+      <link>http://ewok.github.io/haskell-issue1</link>
+      <pubDate>Sun, 03 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/haskell-issue1</guid>
+      <description>&lt;p&gt;Что интересного я встретил на неделе:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Изучение иностранных языков по технологии Learn languages through fiction - &lt;a href=&#34;https://github.com/jekor/vocabulink&#34;&gt;https://github.com/jekor/vocabulink&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Шелл на haskell - &lt;a href=&#34;https://github.com/chrisdone/hell&#34;&gt;https://github.com/chrisdone/hell&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jekor/hesh&#34;&gt;hesh&lt;/a&gt; - инструмент для удобного написания скриптов на haskell
+Пример:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# !/usr/bin/env hesh
+-- Backup a PostgreSQL database to an encrypted file.
+
+main = do
+  args &amp;lt;- System.Environment.getArgs
+  case args of
+    [database] -&amp;gt; do
+      today &amp;lt;- $(date +%Y-%m-%d)
+      let file = database ++ &amp;quot;-&amp;quot; ++ today ++ &amp;quot;.sql.gpg&amp;quot;
+      $(pg_dump $database) |&amp;gt; $(gpg -e -r $EMAIL) /&amp;gt; file
+    _ -&amp;gt; do
+      progName &amp;lt;- System.Environment.getProgName
+      $(echo &amp;quot;Usage: $progName &amp;lt;database&amp;gt;&amp;quot;) /&amp;gt; &amp;quot;/dev/stderr&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Практическое применение haskell - &lt;a href=&#34;http://habrahabr.ru/post/272871/&#34;&gt;http://habrahabr.ru/post/272871/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Приобрел пару книжек(кстати скидки на packtpub) -&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Haskell Data Analysis Cookbook - Nishant Shukla&lt;/li&gt;
+&lt;li&gt;Haskell Design Patterns - Ryan Lemmer&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Haskell init</title>
+      <link>http://ewok.github.io/haskell-init</link>
+      <pubDate>Sat, 26 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/haskell-init</guid>
+      <description>&lt;p&gt;Первый пост в моем блоге про haskell.&lt;/p&gt;
+
+&lt;p&gt;Я давно собирался познакомиться с этим языком программирования, но меня отпугивал его синтаксис. Все эти стрелочки, точки и остальные знаки препинания.
+Прошлый раз поиск основного инструмента для работы, привел меня к &lt;a href=&#34;http://ewok.github.io/tag/python&#34;&gt;python&lt;/a&gt;, о чем я не жалею.&lt;/p&gt;
+
+&lt;p&gt;Но сейчас речь не об этом. Итак, haskell это чистый функциональный, ленивый, компилируемый язык программирования с сильной статической типизацией. С автоматическим выведением типов. На данный момент меня привлекает то что программу можно скомпилировать и (конечно же) функциональная составляющая.&lt;/p&gt;
+
+&lt;p&gt;Haskell в своем роде некая &amp;ldquo;песочница&amp;rdquo; для отработки новых технологий в ЯП. Многие языки заимствовали наработки из haskell. Например list comprehension в том же python.&lt;/p&gt;
+
+&lt;p&gt;Но всю эту информацию можно найти в интернете, не вижу смысла ее дублировать.&lt;/p&gt;
+
+&lt;p&gt;Прикладываю список ресурсов, который пригодится для знакомства с haskell(список будет обновляться):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.haskell.org/&#34;&gt;Официальный сайт&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ruhaskell.org&#34;&gt;Русское сообщество хаскелистов&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitter.im/ruHaskell/forall&#34;&gt;gitter вышеупомянутого сообщества&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bananasandlenses.net&#34;&gt;Бананы и линзы&lt;/a&gt; - подкаст о haskell&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://learnyouahaskell.com&#34;&gt;Learn You a Haskell&lt;/a&gt; - книга пойдет для начинающих, можно почитать бесплатно online&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

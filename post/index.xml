@@ -212,7 +212,6 @@ launchctl load ~/Library/LaunchAgents/telegram.plist
 &lt;pre&gt;&lt;code&gt;# !/usr/bin/env hesh
 -- Backup a PostgreSQL database to an encrypted file.
 
-
 main = do
   args &amp;lt;- System.Environment.getArgs
   case args of

@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Admins on Записки Турыча</title>
+    <link>http://ewok.github.io/tags/admins/</link>
+    <description>Recent content in Admins on Записки Турыча</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru_RU</language>
+    <lastBuildDate>Wed, 20 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://ewok.github.io/tags/admins/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Интересное в сети</title>
+      <link>http://ewok.github.io/intieriesnoie-v-sieti</link>
+      <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/intieriesnoie-v-sieti</guid>
+      <description>
+
+&lt;h3 id=&#34;haskell:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Haskell&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/272871/&#34;&gt;Пример работы с VK&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/272115&#34;&gt;«Страшные» абстракции Haskell без математики и без кода (почти). Часть I&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/207126/&#34;&gt;Зоопарк Алгебрaических Типов Данных&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ohaskell.dshevchenko.biz/ru/index.html&#34;&gt;О прекрасном языке - языком человеческим&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://wiki.haskell.org/Tutorials/Programming_Haskell/Argument_handling&#34;&gt;Argument handling&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/245797/&#34;&gt;Теория категорий для программистов: предисловие&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/246009/&#34;&gt;Категория: суть композиции&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/247765/&#34;&gt;Типы и функции&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/248257/&#34;&gt;Категории, большие и малые&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/249113/&#34;&gt;Категории Клейсли&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/271927/&#34;&gt;Произведения и копроизведения&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/274103/&#34;&gt;Простые алгебраические типы данных&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;python:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Python&lt;/h3&gt;
+
+&lt;p&gt;Фреймворк умеет алертить об аномалиях в elastic search &lt;a href=&#34;http://github.com/Yelp/elastalert&#34;&gt;http://github.com/Yelp/elastalert&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Docker контейнер kibana &lt;a href=&#34;https://hub.docker.com/_/kibana/&#34;&gt;https://hub.docker.com/_/kibana/&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/270717/&#34;&gt;Пример рабоы с VK&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pedrohml/smartbot&#34;&gt;Бот для slack/telegram на&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/crista/exercises-in-programming-style&#34;&gt;exercises-in-programming-style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://fadymak.com/pages/useful_python_snippets.html&#34;&gt;some python snippets&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;немного-про-vim:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Немного про VIM&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mhinz/vim-galore&#34;&gt;Еще один гайд&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;немного-про-hadoop:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Немного про Hadoop&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hub.docker.com/r/cloudera/quickstart/&#34;&gt;Cloudera quickstart docker&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;немного-про-java:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Немного про Java&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mojohaus.org/versions-maven-plugin/examples/display-dependency-updates.html&#34;&gt;Ищем dependency update&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;немного-про-devops:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Немного про Devops&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://coderwall.com/p/9b_lfq/deploying-maven-artifacts-from-travis&#34;&gt;Deploying maven artifacts from Travis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Generate a shell based build script - &lt;a href=&#34;https://github.com/travis-ci/travis-build&#34;&gt;Travis Build&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;разное:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Разное&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/OrkoHunter/ping-me&#34;&gt;Пингани себя&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Еще одна попытка создать тайловый менеджер окон на Mac Os X, самая удачная(IMHO) - &lt;a href=&#34;https://github.com/koekeishiya/kwm&#34;&gt;https://github.com/koekeishiya/kwm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ansible-dar</title>
+      <link>http://ewok.github.io/ansible-dar</link>
+      <pubDate>Mon, 13 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/ansible-dar</guid>
+      <description>&lt;p&gt;DiskARchive плагин для ansible.
+&lt;a href=&#34;https://github.com/ewok/ansible-modules/blob/master/dar.py&#34;&gt;https://github.com/ewok/ansible-modules/blob/master/dar.py&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Пробел в точке монтирования fstab</title>
+      <link>http://ewok.github.io/probiel-v-tochkie-montirovaniia-fstab</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/probiel-v-tochkie-montirovaniia-fstab</guid>
+      <description>&lt;p&gt;Если требуется пробел в точке монтирования:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    /dev/choto /mnt/kuda\040to ext4 ... и т.д
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>libvirt - полезные комманды</title>
+      <link>http://ewok.github.io/virsh-polieznyie-kommandy</link>
+      <pubDate>Thu, 02 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/virsh-polieznyie-kommandy</guid>
+      <description>
+
+&lt;h1 id=&#34;установка:a65360a3a7be284faac3410c19f3ed49&#34;&gt;Установка&lt;/h1&gt;
+
+&lt;p&gt;Debian/ubuntu и производные:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    apt-get instll libvirt-bin -y
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;На rhel подобных что-то типа:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    yum install libvirt-client -y
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;virsh:a65360a3a7be284faac3410c19f3ed49&#34;&gt;virsh&lt;/h1&gt;
+
+&lt;p&gt;Консоль для управления виртуальным окружением&lt;br&gt;
+Подключение: &lt;code&gt;virsh --connect=&amp;lt;строка подключения&amp;gt;&lt;/code&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;Примеры строки подключения:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;qemu:///system&lt;/code&gt; - локальный сервер&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;qemu+ssh://root@ip/system&lt;/code&gt; - удаленный сервер по адресу &lt;strong&gt;ip&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;virsh list [--inactive | --all]&lt;/code&gt; - список виртуальных машин [отключенных | всех]&lt;br&gt;
+&lt;code&gt;virsh start &amp;lt;domain&amp;gt;&lt;/code&gt; - запуск вирт. машины &lt;strong&gt;domain&lt;/strong&gt;&lt;br&gt;
+&lt;code&gt;virsh shutdown &amp;lt;domain&amp;gt;&lt;/code&gt; - остановка вирт. машины &lt;strong&gt;domain&lt;/strong&gt;&lt;br&gt;
+&lt;code&gt;virsh destroy &amp;lt;domain&amp;gt;&lt;/code&gt; - разрушить (остановить) вирт. машину&lt;br&gt;
+&lt;code&gt;virsh reboot &amp;lt;domain&amp;gt;&lt;/code&gt; - перезагрузить вирт. машину&lt;br&gt;
+&lt;code&gt;virsh reset &amp;lt;domain&amp;gt;&lt;/code&gt; - перезагрузить вирт. машину(эмуляция нажатия кнопки &lt;em&gt;reset&lt;/em&gt;)&lt;br&gt;
+&lt;code&gt;virsh define &amp;lt;domain&amp;gt;&lt;/code&gt; - определить (но не запускать) домен из файла XML&lt;br&gt;
+&lt;code&gt;virsh undefine &amp;lt;domain&amp;gt;&lt;/code&gt; - удаление вирт. машины из определенных доменов(убрать из списка)&lt;br&gt;
+&lt;code&gt;virsh suspend &amp;lt;domain&amp;gt;&lt;/code&gt; - приостановить вирт. машину&lt;br&gt;
+&lt;code&gt;virsh resume &amp;lt;domain&amp;gt;&lt;/code&gt; - продолжить работу вирт. машины&lt;br&gt;
+&lt;code&gt;virsh save &amp;lt;domain&amp;gt; &amp;lt;file&amp;gt;&lt;/code&gt; - сохранить состояние вирт. машины в файл&lt;br&gt;
+&lt;code&gt;virsh restore &amp;lt;file&amp;gt;&lt;/code&gt; - восстановить состояние вирт. машины из файла&lt;br&gt;
+&lt;code&gt;virsh edit &amp;lt;domain&amp;gt;&lt;/code&gt; - редактирование XML-конфигурации вирт. машины&lt;br&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;virt-viewer:a65360a3a7be284faac3410c19f3ed49&#34;&gt;virt-viewer&lt;/h1&gt;
+
+&lt;p&gt;Подключение к vnc&lt;br&gt;
+&lt;code&gt;virt-viewer -c &amp;lt;строка подключение&amp;gt; &amp;lt;domain&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;virt-install:a65360a3a7be284faac3410c19f3ed49&#34;&gt;virt-install&lt;/h1&gt;
+
+&lt;p&gt;Установка вирт. машин&lt;br&gt;
+Имеет много опций, которые можно посмотреть по комманде &lt;code&gt;man virt-install&lt;/code&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;virt-manager:a65360a3a7be284faac3410c19f3ed49&#34;&gt;virt-manager&lt;/h1&gt;
+
+&lt;p&gt;Графическая утилита для работы с libvirt&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Если перестал обновляться файл resolv.conf на mint</title>
+      <link>http://ewok.github.io/iesli-pieriestal-obnovliatsia-fail-resolv-conf-na-mint</link>
+      <pubDate>Thu, 19 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/iesli-pieriestal-obnovliatsia-fail-resolv-conf-na-mint</guid>
+      <description>&lt;p&gt;Можно попробовать так:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sudo dpkg-reconfigure resolvconf&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Или так:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo mv /etc/resolv.conf /run/resolvconf/resolv.conf
+sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Мне помог второй способ.&lt;/p&gt;
+
+&lt;p&gt;Еще вариант:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;В /etc/NetworkManager/NetworkManager.conf закомментируйте dns=dnsmasq
+sudo dpkg-reconfigure resolvconf 
+sudo resolvconf --enable-updates 
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TypeError: $(...).tipuesearch is not a function</title>
+      <link>http://ewok.github.io/typeerror-tipuesearch-is-not-a-function</link>
+      <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/typeerror-tipuesearch-is-not-a-function</guid>
+      <description>&lt;p&gt;Решение:&lt;/p&gt;
+
+&lt;p&gt;Устанавливаем поиск по инструкции с сайта &lt;a href=&#34;http://www.tipue.com/search/docs/&#34;&gt;http://www.tipue.com/search/docs/&lt;/a&gt;. Но! Функция показа результатов должна быть такой:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;script&amp;gt;
+var $j = jQuery.noConflict();
+$j(document).ready(function() {
+     $j(&#39;# tipue_search_input&#39;).tipuesearch({
+         &#39;show&#39;: 10,
+         &#39;mode&#39;: &#39;json&#39;,
+         &#39;contentLocation&#39;: &#39;{{ SITEURL }}/tipuesearch_content.json&#39;
+     });
+});
+&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>File too large. Qcow2 file.</title>
+      <link>http://ewok.github.io/file-too-large-qcow2-file</link>
+      <pubDate>Mon, 08 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/file-too-large-qcow2-file</guid>
+      <description>&lt;p&gt;Если испортился при работе с qcow через qemu-img у вас вылезла ошибка &amp;ldquo;File too large&amp;rdquo;. То вытащить данные можно таким способом. Качаем исходники qemu версии 1.7.2. Разархивируем и делаем &amp;ldquo;./configure &amp;amp;&amp;amp; make&amp;rdquo;. То есть БЕЗ установки. Далее забираем файл qemu-img и используем его для конвертации в raw.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;./qemu-img convert -f qcow2 -O raw откуда куда&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;В принципе с этого момента данные уже можно восстановить, примонтировав образ диска.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Выполнение по крону в последний день месяца</title>
+      <link>http://ewok.github.io/vypolnieniie-po-kronu-v-posliednii-dien-miesiatsa</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/vypolnieniie-po-kronu-v-posliednii-dien-miesiatsa</guid>
+      <description>&lt;p&gt;Так&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;0 0 28,29 2 * /path/to/chego/to/tam
+0 0 31 1,3,5,7,8,10,12 * /path/to/chego/to/tam
+0 0 30 4,6,9,11 * /path/to/chego/to/tam
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&amp;hellip;или так&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; 30 23 * * * root if ( $(date -v +1d &amp;quot;+%d&amp;quot;) == 01 )
+твоя_команда
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Удаление хрипов в skype под linux</title>
+      <link>http://ewok.github.io/skype-pulse</link>
+      <pubDate>Sun, 23 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/skype-pulse</guid>
+      <description>&lt;p&gt;Удаление хрипов pulseaudio в skype под linux:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# Редактируем &#39;/etc/pulse/default.pa&#39;
+# меняем
+load-module module-udev-detect
+# на
+load-module module-udev-detect tsched=0
+
+# перезапускаем pulseaudio
+$ killall pulseaudio
+$ pulseaudio &amp;gt;&amp;amp; /dev/null &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Шпаргалка по pacman(archlinux)</title>
+      <link>http://ewok.github.io/pacman_2</link>
+      <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/pacman_2</guid>
+      <description>
+
+&lt;h4 id=&#34;установка:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;# Установка&lt;/h4&gt;
+
+&lt;h3 id=&#34;установка-пакетов:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Установка пакетов&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pacman -S имя_пакета
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;установка-пакета-с-обновлением-системы:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Установка пакета с обновлением системы&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pacman -Syu
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;установка-пакета-из-файла:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Установка пакета из файла&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pacman -U /путь_к_файлу/файл.tar.xz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;или-из-сети:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### или из сети&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pacman -U http://www.example.com/repo/example.pkg.tar.xz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;сохранение-восстановление:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;# Сохранение/восстановление&lt;/h4&gt;
+
+&lt;h3 id=&#34;просмотреть-список-установленных-пакетов:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Просмотреть список установленных пакетов&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pacman -Qqe | grep -v &amp;quot;$(pacman -Qmq)&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;сохранить-список-установленных-пакетов:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Сохранить список установленных пакетов&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pacman -Qqe | grep -v &amp;quot;$(pacman -Qmq)&amp;quot; &amp;gt; pkglist
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;установить-из-списка-пакеты:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Установить из списка пакеты&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pacman -S $(cat pkglist)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;чистка:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;# Чистка&lt;/h4&gt;
+
+&lt;h3 id=&#34;просмотреть-список-пакетов-сирот:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Просмотреть список пакетов сирот&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pacman -Qdt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;удаление:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;# Удаление&lt;/h4&gt;
+
+&lt;h3 id=&#34;удалить-пакет:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Удалить пакет&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pacman -R имя_пакета
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;удалить-пакет-с-зависимостями-не-используемыми-другими-пакетами:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Удалить пакет с зависимостями(не используемыми другими пакетами)&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pacman -Rs имя_пакета
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;удалить-пакет-с-зависимыми-и-зависящами-пакетами:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Удалить пакет с зависимыми и зависящами пакетами&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pacman -Rsc имя_пакета
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;удалить-пакеты-сироты:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Удалить пакеты &amp;ldquo;сироты&amp;rdquo;&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pacman -Rsn $(pacman -Qdtq)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;работа-с-кэшем:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;# Работа с кэшем&lt;/h4&gt;
+
+&lt;h3 id=&#34;очистка-кэша-неустановленных-пакетов:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Очистка кэша неустановленных пакетов&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pacman -Sc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;очистка-кэша-пакетов:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Очистка кэша пакетов&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pacman -Scc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;обновление:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;# Обновление&lt;/h4&gt;
+
+&lt;h3 id=&#34;обновление-системы:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Обновление системы&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pacman -Syu
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Если неправильно отображается кодировка на сайте(для админов)</title>
+      <link>http://ewok.github.io/iesli-niepravilno-otobrazhaietsia-kodirovka-na-saitiedlia-adminov</link>
+      <pubDate>Wed, 11 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/iesli-niepravilno-otobrazhaietsia-kodirovka-na-saitiedlia-adminov</guid>
+      <description>&lt;p&gt;Столкнулся с проблемой вывода текста из базы данных mysql.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Исходные данные:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;База mysql в utf-8&lt;/li&gt;
+&lt;li&gt;Сайт в windows-1251&lt;/li&gt;
+&lt;li&gt;Сайт выводится нормально, а данные из базы данных в виде: РљСЂР°С‚РєР°С.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Решение:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;В .htaccess добавляем строчку &amp;ldquo;AddDefaultCharset windows-1251&amp;rdquo;. Апачу дается команда выводить сайт в кодировке windows-1251.&lt;/li&gt;
+&lt;li&gt;Если у вас сайт на php. То после подключения к базе данных нужно сделать mysql_set_charset( &amp;lsquo;cp1251&amp;rsquo; );. Или дать каким либо способом запрос базе данных SET NAMES cp1251. Это дает команду базе данных выдавать данные в windows-1251.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Шпаргалка по администрированию mysql</title>
+      <link>http://ewok.github.io/shparghalka-po-administrirovaniiu-mysql</link>
+      <pubDate>Mon, 11 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/shparghalka-po-administrirovaniiu-mysql</guid>
+      <description>
+
+&lt;h1 id=&#34;сброс-пароля:020ba855174f59625acdb392b52e2c25&#34;&gt;Сброс пароля&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;# Запуск сервера без проверки пароля
+$ mysqld --skip-grant-tables
+
+# Вариант 1
+mysql&amp;gt; SET PASSWORD FOR &#39;root&#39;@&#39;localhost&#39; = PASSWORD(&#39;новый    пароль&#39;)\g
+
+# Вариант 2
+mysql&amp;gt; use mysql;
+mysql&amp;gt; update user set password=PASSWORD(&amp;quot;новый пароль&amp;quot;) where user=&#39;root&#39; and host=&#39;localhost&#39;;
+mysql&amp;gt; flush privileges;
+
+# Выдрать одну базу данных
+$ cat dump.sql | sed -n -e &#39;/^CREATE DATABASE.*`&amp;lt;base_name&amp;gt;`/,/^CREATE DATABASE/ p&#39; | sed -e &#39;$d&#39; &amp;gt; &amp;lt;base_name&amp;gt;.sql
+
+# Посмотреть движок таблиц
+mysql&amp;gt; SELECT table_schema, table_name
+    FROM INFORMATION_SCHEMA.TABLES
+    WHERE engine = &#39;innodb&#39;; # myisam
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;!--preview--&gt;
+
+&lt;p&gt;SHOW [ GLOBAL ] VARIABLES
+    Вывести список системных переменных Mysql сервера. Переменные могут быть глобальные ( GLOBAL ) и сессионные ( SESSION ). Если не указано, какого именно типа, переменные нужно вывести, будут выведены сессионные переменные.&lt;/p&gt;
+
+&lt;p&gt;SHOW [ GLOBAL ] VARIABLES LIKE &amp;lsquo;%часть_имени_переменной%&amp;rsquo;
+    Более удобный вариант команды. Знак процента, является шаблоном и соответствует любым символам.&lt;/p&gt;
+
+&lt;p&gt;SET [ GLOBAL ] имя_переменной=значение | имя_переменной=DEFAULT
+    Оператор SET, устанавливает значение переменной. Имейте в виду, не все переменные можно изменить через консольный клиент, многие инициализируются при запуске Mysql сервера, с помощью соответствующих опций командной строки или через установку в файле конфигурации my.cnf. При попытке изменить значение такой переменной, будет выведено сообщение об ошибке. Что-бы переменная приняла значение по умолчанию, можно в качестве значения использовать ключевое слово DEFAULT. Как и в случае с командой SHOW, если не указан тип переменной, значение будет установлено для сессионной ( локальной ) переменной.&lt;/p&gt;
+
+&lt;p&gt;SHOW [ GLOBAL ] STATUS [ LIKE &amp;lsquo;%имя_переменной%&amp;rsquo; ]
+    Выведет статусные переменные ( счетчики ) с их значениями. Поведение с ключевым словом GLOBAL и без него, аналогично команде SHOW VARIABLES.&lt;/p&gt;
+
+&lt;p&gt;SHOW DATABASES
+    Вывести список существующих баз данных&lt;/p&gt;
+
+&lt;p&gt;USE имя_базы_данных
+    Перейти в базу данных имя_базы_данных, сделав ее текущей&lt;/p&gt;
+
+&lt;p&gt;SHOW TABLES [ FROM имя_базы_данных ]
+    Если не указана конструкция FROM, выведет список таблиц в текущей базе данных.&lt;/p&gt;
+
+&lt;p&gt;CHECK TABLE имя_таблицы [ FOR UPGRADE | QUICK | FAST | MEDIUM | EXTENDED | CHANGED ]
+    Проверка таблицы на предмет ошибок в различных режимах.&lt;/p&gt;
+
+&lt;p&gt;OPTIMIZE TABLE имя_таблицы
+    Оптимизация таблиц.&lt;/p&gt;
+
+&lt;p&gt;REPAIR TABLE имя_таблицы
+    Попробовать отремонтировать таблицу. Этот оператор тоже имеет несколько опций, но в обычном случае достаточно простого REPAIR TABLE. Если для ремонта таблиц, вдруг надумаете использовать дополнительные опции, советую сначала ознакомиться с документацией по их применению и возможным последствиям.)&lt;/p&gt;
+
+&lt;p&gt;SELECT user, host FROM mysql.user
+    Это обычный SQL запрос к таблице user системной базы данных mysql, в результате которого будет выведен список всех существующих пользователей и хостов.&lt;/p&gt;
+
+&lt;p&gt;CREATE USER &amp;lsquo;user&amp;rsquo;@&amp;lsquo;localhost&amp;rsquo; IDENTIFIED BY &amp;lsquo;password&amp;rsquo;
+    Создать пользователя mysql с именем user для хоста localhost, то есть только для локального подключения, с паролем password. В Mysql можно ограничить пользователя, разрешив ему подключаться только с определенного хоста, это может быть как IP адрес, так и доменное имя. Если при создании, указывается только имя пользователя, то есть такой вариант команды - CREATE USER boom , в качестве хоста назначается шаблон %, означающий, что данный пользователь может соединяться с Mysql сервером откуда угодно. Кроме того, для данного пользователя будет задан пустой пароль. Если есть такая возможность, в целях безопасности, лучше ограничивать пользователей по IP адресам.&lt;/p&gt;
+
+&lt;p&gt;RENAME USER &amp;lsquo;user&amp;rsquo;@&amp;lsquo;host&amp;rsquo; TO &amp;lsquo;user2&amp;rsquo;@&amp;lsquo;host&amp;rsquo;
+    Переименовать пользователя. Не работает в старых версиях Mysql ( не помню точно с какой версии появилась ). Если в имени назначения опустить имя host, будет присвоен шаблон %, то есть любой.&lt;/p&gt;
+
+&lt;p&gt;DROP USER имя_пользователя
+    Удалить пользователя.&lt;/p&gt;
+
+&lt;p&gt;SET PASSWORD FOR &amp;lsquo;user&amp;rsquo;@&amp;lsquo;host&amp;rsquo; = PASSWORD(&amp;lsquo;password&amp;rsquo;)
+    Назначить или изменить пароль пользователя. То-же самое можно сделать с помощью SQL оператора UPDATE , изменив поле Password в системной таблице User, для определенного пользователя.&lt;/p&gt;
+
+&lt;p&gt;GRANT ALL ON data_base.* TO &amp;lsquo;user&amp;rsquo;@&amp;lsquo;host&amp;rsquo; [ IDENTIFIED BY &amp;lsquo;secret&amp;rsquo; ]
+    Назначает права пользователю. В Mysql достаточно гибкая система привилегий, имеющая несколько уровней, глобальный, уровень базы данных,уровень таблицы и уровень столбца. Для меня, приведенный выше вариант, является самым распространенным. Мы назначаем все права ( кроме GRANT OPTION - право управлять правами других пользователей ), на все таблицы базы данных data_base ( обратите внимание, если в имени базы данных присутствует знак подчеркивания, его нужно экранировать обратным слешем ), для пользователя user с хостом host. При указании конструкции IDENTIFIED BY &amp;lsquo;secret&amp;rsquo;, пользователю будет назначен пароль &amp;lsquo;secret&amp;rsquo;, если у пользователя уже был установлен пароль, он будет заменен на &amp;lsquo;secret&amp;rsquo;.&lt;/p&gt;
+
+&lt;p&gt;REVOKE ALL ON &lt;em&gt;.&lt;/em&gt; FROM &amp;lsquo;user&amp;rsquo;@&amp;lsquo;host&amp;rsquo;
+    Противоположность предыдущей команды, отнимает права пользователя.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Интересные команды linux консоли</title>
+      <link>http://ewok.github.io/intieriesnyie-komandy-linux-konsoli</link>
+      <pubDate>Sun, 20 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/intieriesnyie-komandy-linux-konsoli</guid>
+      <description>
+
+&lt;h1 id=&#34;предыдущая-команда-из-под-рута:90b13f10d9f85b5263a8239f7eda6d34&#34;&gt;Предыдущая команда из под рута&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo !!
+
+# Что бы сохранить рутовый файл в vim не из под рута
+$ :w !sudo tee %
+
+# Предыдущая директория
+$ cd -
+
+# Если опечатались в предыдущей команде, можно это исправить(исправляет только первое вхождение)
+$ ^что_заменить^на_что_заменить
+
+# Заменить все вхождения
+$ !!:gs/что_заменить/на_что_заменить
+
+# Очистить файл
+$ &amp;gt; file.txt
+
+# Порты и приложения которые их слушают
+$ netstat -tlnp
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Смена CRLF на LF и наоборот</title>
+      <link>http://ewok.github.io/smiena-crlf-na-lf-i-naoborot</link>
+      <pubDate>Sat, 19 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/smiena-crlf-na-lf-i-naoborot</guid>
+      <description>&lt;p&gt;CRLF -&amp;gt; LF&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# вариант с sed. Что-бы получить символ &#39;^M&#39; нужно использовать &#39;Ctrl+V Ctrl+M&#39;
+$ sed &#39;s/^M$//&#39; input.txt &amp;gt; output.txt
+
+# или
+$ tr -d &#39;\r&#39; &amp;lt; input.file &amp;gt; output.file
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;LF -&amp;gt; CRLF&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sed &#39;s/$&#39;&amp;quot;/`echo \\\r`/&amp;quot; input.txt &amp;gt; output.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;в nix можно установить утилиту dos2unix&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Переименование файлов по порядку</title>
+      <link>http://ewok.github.io/pierieimienovaniie-failov-po-poriadku</link>
+      <pubDate>Tue, 15 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/pierieimienovaniie-failov-po-poriadku</guid>
+      <description>&lt;p&gt;Переименовывается в такой вид: 1.* 2.* 3.*&amp;hellip;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;i= ; ls | while read; do mv &amp;quot;$REPLY&amp;quot; $((++i))&amp;quot;.${REPLY//*.}&amp;quot;; done
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
