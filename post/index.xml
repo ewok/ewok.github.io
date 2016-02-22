@@ -6,8 +6,62 @@
     <description>Recent content in Posts on Записки Турыча</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru_RU</language>
-    <lastBuildDate>Mon, 01 Feb 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Feb 2016 17:50:45 +0300</lastBuildDate>
     <atom:link href="http://ewok.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>HuGo and Go</title>
+      <link>http://ewok.github.io/hugo-and-go</link>
+      <pubDate>Mon, 22 Feb 2016 17:50:45 +0300</pubDate>
+      
+      <guid>http://ewok.github.io/hugo-and-go</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://ewok.github.io/images/2016/02/gopher_head.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Во первых, я очередной раз сменил блоговый движок. На этот раз я остановил свой выбор на &lt;a href=&#34;http://gohugo.io&#34;&gt;hugo&lt;/a&gt;. Hugo - генератор статичных страниц, написанный на &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt;. Довольно таки зрелый продукт. Подробнее познакомиться с ним можно на &lt;a href=&#34;http://gohugo.io&#34;&gt;официальной странице&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Во вторых, я познакомился с языком &lt;a href=&#34;https://golang.org&#34;&gt;Go&lt;/a&gt;. Я нашел что язык мне симпатичен, просто в освоении и довольно таки применим в повседневных задачах devops инженера, и не только.&lt;/p&gt;
+
+&lt;p&gt;Основными плюсами для меня стали:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Хорошая поддержка кроссплатформенности&lt;/li&gt;
+&lt;li&gt;Скорость выполнения&lt;/li&gt;
+&lt;li&gt;Параллелизм&lt;/li&gt;
+&lt;li&gt;Компиляция в один бинарник, без зависимостей&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Очень удобно написать какую нибудь небольшую программу, закинуть ее на сервер и не думать о сторонних библиотеках(как например в python).&lt;/p&gt;
+
+&lt;p&gt;Есть конечно и минусы, но язык относительно молодой и будем надеятся с каждым релизом будет еще лучше.&lt;/p&gt;
+
+&lt;h2 id=&#34;материалы-по-go-для-начала:00ade596faadc7c1396d88c202bce272&#34;&gt;Материалы по Go для начала:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Первое на что наткнулся, это &lt;a href=&#34;http://eao197.narod.ru/desc/short_effective_go.html&#34;&gt;Краткий пересказ Effective Go на русском языке&lt;/a&gt; - вещь довольно старая но еще актуальная.&lt;/li&gt;
+&lt;li&gt;Непосредственно сам &lt;a href=&#34;https://golang.org/doc/effective_go.html&#34;&gt;Effective Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gobyexample.com/&#34;&gt;Go в примерах&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.gitbook.com/book/astaxie/build-web-application-with-golang/details&#34;&gt;Build web application with Golang&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;тулзовины:00ade596faadc7c1396d88c202bce272&#34;&gt;Тулзовины:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Продвинутый парсинг аргументов - &lt;a href=&#34;https://github.com/jessevdk/go-flags&#34;&gt;go-flags&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Для работы с github - &lt;a href=&#34;https://github.com/google/go-github&#34;&gt;go-github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Конвертер curl запросов в код Go - &lt;a href=&#34;http://mholt.github.io/curl-to-go/&#34;&gt;curl-to-go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Работаем с elasticsearch - &lt;a href=&#34;https://github.com/mattbaird/elastigo&#34;&gt;elastigo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Для любителей VIM - &lt;a href=&#34;https://github.com/fatih/vim-go&#34;&gt;vim-go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Работа с yaml - &lt;a href=&#34;https://github.com/go-yaml/yaml&#34;&gt;go-yaml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Демонизируем программу - &lt;a href=&#34;https://github.com/tyranron/daemonigo&#34;&gt;daemonigo&lt;/a&gt; -&lt;/li&gt;
+&lt;li&gt;Посылаем метрику в ганглию - &lt;a href=&#34;https://github.com/jbuchbinder/go-gmetric&#34;&gt;go-gmetric&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Рефлексируем структуры - &lt;a href=&#34;https://github.com/fatih/structs&#34;&gt;structs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Делаем дашборд в терминале - &lt;a href=&#34;https://github.com/gizak/termui&#34;&gt;termui&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;VPN с помощью DHT - &lt;a href=&#34;https://github.com/meshbird/meshbird&#34;&gt;meshbird&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Держим приложение запущенным(macos x)</title>
@@ -516,39 +570,6 @@ main = do
 &lt;h1 id=&#34;virt-manager:a65360a3a7be284faac3410c19f3ed49&#34;&gt;virt-manager&lt;/h1&gt;
 
 &lt;p&gt;Графическая утилита для работы с libvirt&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Wish-list</title>
-      <link>http://ewok.github.io/wish-list</link>
-      <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://ewok.github.io/wish-list</guid>
-      <description>&lt;p&gt;Здесь публикуется список вещей которые мне интересны&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Вещи&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;Умный&amp;rdquo; фитнес браслет&lt;/li&gt;
-&lt;li&gt;RaspberryPi&lt;/li&gt;
-&lt;li&gt;Мобилу с 2G RAM :)&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Аккумулятор для ноута&lt;/del&gt; куплен&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;SSD гигов на 60, для ноутбука + переходник в CD разъем&lt;/del&gt; - подарено, очень доволен&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Маленькая беспроводная мышка для ноутбука на радиоканале&lt;/del&gt; - взял пока обычную&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Видео-регистратор на машину&lt;/del&gt; - спасибо жене&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Небольшой металлический фонарик на аккумуляторах&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Набор разнокалиберных отверток с магнитным наконечником&lt;/del&gt; - куплено&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Зимняя резина :)&lt;/del&gt; - куплена&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Zalman VE300&lt;/del&gt; - взял недорого VE200&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Теплый халат(к зиме актуально)&lt;/del&gt; - подарили, спасибо маме.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Программы&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Pycharm обновление подписки :)&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
