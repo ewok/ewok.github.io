@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/solarized_dark.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://ewok.github.io/index.xml">
+    <link rel="icon" type="image/png" href="http://ewok.github.io/favicon.png" />
+    
+    <title>Установка Openfire на Linux машину в домашнюю директорию - Записки Турыча</title>
+    <meta property='og:title' content="Установка Openfire на Linux машину в домашнюю директорию - Записки Турыча">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://ewok.github.io/openfire">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://ewok.github.io">Записки Турыча</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="https://github.com/ewok">github</a></li>
+              
+              
+              
+              <li><a href="https://twitter.com/ewokru">twitter</a></li>
+              
+              
+            </ul>
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://ewok.github.io"/>
+        <meta itemprop="dateModified" content="2010-12-07T00:00:00&#43;00:00">
+        <meta itemprop="headline" content="Установка Openfire на Linux машину в домашнюю директорию">
+        <meta itemprop="description" content="Openfire - джаббер сервер написанный на java, удобный в настройке, но более требователен к ресурсам чем например ejabberd. Здесь я опишу установку Openfire в домашнюю директорию. Если у вас есть шелл доступ, и хостинг провайдер разрешил вам запускать исполняемые файлы. Шаг 1. Проверка на наличие java. Во первых, проверим есть ли у вас java. Просто введем в терминале на вашем хостинге: $ java Если java запустилась, то пропускаем следующий шаг. Шаг 2.">
+        <meta itemprop="url" content="http://ewok.github.io/openfire">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://ewok.github.ioimages/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://ewok.github.ioimages/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="Записки Турыча">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Artur Taranchiev">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2010-12-07T00:00:00&#43;00:00">Tue, Dec 7, 2010</time>
+          <h1 class="article-title">Установка Openfire на Linux машину в домашнюю директорию</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>Openfire - джаббер сервер написанный на java, удобный в настройке, но более требователен к ресурсам чем например ejabberd.</p>
+
+<p>Здесь я опишу установку Openfire в домашнюю директорию. Если у вас есть шелл доступ, и хостинг провайдер разрешил вам запускать исполняемые файлы.</p>
+
+<p><strong>Шаг 1. Проверка на наличие java.</strong></p>
+
+<p>Во первых, проверим есть ли у вас java. Просто введем в терминале на вашем хостинге:</p>
+
+<p><code>$ java</code></p>
+
+<p>Если java запустилась, то пропускаем следующий шаг.</p>
+
+<p><strong>Шаг 2. Установка java.</strong></p>
+
+<p>Если в предыдущем шаге вас постигла неудача, то приступим к установке jre(Java Runtime Environment).</p>
+
+<p>Переходим по ссылке и скачиваем необходимый дистрибутив. В моем случае &ldquo;Linux x64&rdquo;.</p>
+
+<p>Получив необходимый установочный файл:jre-6u22-linux, делаем его исполняемым и запускаем:</p>
+
+<p><code>$ chmod u+x jre-6u22-linux
+$ ./jre-6u22-linux</code></p>
+
+<p>К полученной, после запуска файла, jre пропишем путь в переменную окружения PATH.
+Например отредактируем или добавив в файле ~/.bash_profile строку:</p>
+
+<p><code>PATH=$PATH:$HOME/bin:$HOME/bin/jre/bin # Всё java установлена.</code></p>
+
+<p><strong>Шаг 3. Установка Openfire.</strong></p>
+
+<p>Качаем дистрибутив Openfire. По ссылке выбираем необходимый. На время написания статьи последняя версия была 3.6.4.</p>
+
+<p>Качаем:</p>
+
+<p><code>$ wget http://www.igniterealtime.org/downloadServlet?filename=openfire/openfire_3_6_4.tar.gz</code></p>
+
+<p>Полученный архив распаковываем:</p>
+
+<p><code>$ tar xvfz openfire_3_6_4.tar.gz</code></p>
+
+<p>Всё Openfire у нас есть.</p>
+
+<p><strong>Шаг 4. Запуск и настройка.</strong></p>
+
+<p>Запуск: Выходим и снова запускаем терминальную сессию(чтобы пути переменных окружения обновились, или можете обновить их командой).</p>
+
+<p>Далее запускаем Openfire:</p>
+
+<p><code>$ /path_with_openfire/bin/openfire start</code></p>
+
+<p>Вот в общем то и всё с запуском.</p>
+
+<p>Настройка:</p>
+
+<p>Переходим любым браузером по адресу: <a href="http://yourdomain.org:9090">http://yourdomain.org:9090</a> для входа в админку.</p>
+
+<p>Вам будет необходимо установить язык окружения, базу данных (заранее созданную в настройках вашего хостинга), имя домена вашего сервера, новый пароль администратора. После прохождения всех несложных пунктов первоначальной настройки и ввода нового пароля вы становитесь обладателем рабочего jabber сервера.</p>
+
+<p>За всё время установки я столкнулся только с одной проблемой. После первоначальной установки, админка меня не пускала ни по нововведенному паролю ни по старому. Решил эту проблему редактированием таблицы SQL &ldquo;ofUser&rdquo;.</p>
+
+<p>Удалил данные из поля &ldquo;encryptedPassword&rdquo; и установил временный пароль в поле &ldquo;plainPassword&rdquo;. После удачного входа в админку пароль сразу поменял и всё заработало.</p>
+
+<p>Установка стандартных плагинов происходит очень просто. Отметкой необходимых пунктов в меню Plugins.</p>
+
+<p>Установка сторонних плагинов происходит там же в пункте Upload Plugin.</p>
+
+<p>Для ICQ транспорта я выбрал Kracken Настройка которого тоже не занимает много времени и сил.</p>
+
+<p>Всё.</p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://ewok.github.iotags/admins" class="tag">admins</a> </div>
+
+          
+          
+          
+          
+          
+          
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://ewok.github.io/keep-running-app" class="list-group-item">Держим приложение запущенным(macos x)</a>
+      
+      <a href="http://ewok.github.io/intieriesnoie-v-sieti-2" class="list-group-item">Интересное в сети 2</a>
+      
+      <a href="http://ewok.github.io/rapoo-3300p" class="list-group-item">Купил забавного зверя</a>
+      
+      <a href="http://ewok.github.io/intieriesnoie-v-sieti" class="list-group-item">Интересное в сети</a>
+      
+      <a href="http://ewok.github.io/haskell-issue1" class="list-group-item">Haskell на неделе</a>
+      
+      <a href="http://ewok.github.io/vim-hardtime" class="list-group-item">Еще больше vim</a>
+      
+      <a href="http://ewok.github.io/haskell-init" class="list-group-item">Haskell init</a>
+      
+      <a href="http://ewok.github.io/python" class="list-group-item">Python</a>
+      
+      <a href="http://ewok.github.io/follow-my-lead" class="list-group-item">Vim plugins</a>
+      
+      <a href="http://ewok.github.io/tak-prosto" class="list-group-item">Так просто</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://ewok.github.iotags/pictures" class="list-group-item">pictures</a>
+      
+      <a href="http://ewok.github.iotags/admins" class="list-group-item">admins</a>
+      
+      <a href="http://ewok.github.iotags/offline" class="list-group-item">offline</a>
+      
+      <a href="http://ewok.github.iotags/dev" class="list-group-item">dev</a>
+      
+      <a href="http://ewok.github.iotags/music" class="list-group-item">music</a>
+      
+      <a href="http://ewok.github.iotags/online" class="list-group-item">online</a>
+      
+      <a href="http://ewok.github.iotags/other" class="list-group-item">other</a>
+      
+      <a href="http://ewok.github.iotags/news" class="list-group-item">news</a>
+      
+      <a href="http://ewok.github.iotags/video" class="list-group-item">video</a>
+      
+      <a href="http://ewok.github.iotags/haskell" class="list-group-item">haskell</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 Artur Taranchiev</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="/js/jquery-2.1.3.min.js"></script>
+    <script src="/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="/js/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/solarized_dark.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://ewok.github.io/index.xml">
+    <link rel="icon" type="image/png" href="http://ewok.github.io/favicon.png" />
+    
+    <title>Posts - Записки Турыча</title>
+    <meta property='og:title' content="Posts - Записки Турыча">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://ewok.github.io/post/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://ewok.github.io">Записки Турыча</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="https://github.com/ewok">github</a></li>
+              
+              
+              
+              <li><a href="https://twitter.com/ewokru">twitter</a></li>
+              
+              
+            </ul>
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+<div class="list">
+
+  <div class="row">
+    <div class="col-md-8">
+      <header class="page-title">Posts</header>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Fri, Feb 10, 2012</div>
+    <div class="title"><a href="http://ewok.github.io/tsientralnyi-pacman-kesh-dlia-domashniei-sieti">Центральный pacman кэш для домашней сети</a></div>
+  </header>
+  <div class="body">Дома несколько компов с archlinux-ом. Решил я сделать, для экономии трафика, общий кэш для pacman. Система будет использовать sshfs и autofs. Есть у меня слабенькая машина, которая постоянно висит онлайн. Для торрента и просто как файловое хранилище. На этой машине мы и будем держать кэш. Это сервер. И есть два ноутбука. Это клиенты. На всех машинах стоит arch. (Нравиться он мне :) ) На сервере нам нужен только доступ по ssh и сам каталог куда будем складывать кэш каталог назовем к примеру &ldquo;pacman_cache&rdquo; и будет он находиться по пути: /mnt/pacman_cache На клиентах ставим sshfs, autofs: $ pacman -S sshfs autofs Настраиваем доступ по ssh без пароля по ключам: rsa или dsa по выбору $ ssh-keygen -t dsa На все вопросы отвечаем Затем закидываем ключи на сервер: $ ssh-copy-id -i ~/.ssh/id_dsa.pub user@server user - это пользователь имеющийся на сервере и который имеет доступ к каталогу с кэшем server - ip нашего сервера После нажатия введите пароль того самого пользователя user.</div>
+
+  
+  <footer>
+    <a href="http://ewok.github.io/tsientralnyi-pacman-kesh-dlia-domashniei-sieti" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Feb 4, 2012</div>
+    <div class="title"><a href="http://ewok.github.io/prosto-tak-i-pro-odnoklassnikov-tozhie">Просто так... и про одноклассников тоже.</a></div>
+  </header>
+  <div class="body">Сижу сейчас на arch-e. Так я и не нашел приличного клиента для аськи, под линуксом. Хотя сторонники pidgin, qutim могут возразить. Pidgin всем хорош, функционалом, количеством поддерживаемых протоколов. Но! Он ужасно выглядит. Вот хоть убейся, не нравиться он мне. Qutim уже лучше, но все равно не фонтан, подглючивает. В итоге остановился на psi+. Всем нравиться, только одно &ldquo;но&rdquo;. Из поддерживаемых протоколов только Jabber :)). Поднял на хостинге сервак openfire. Поставил на него транспорт для аськи.</div>
+
+  
+  <footer>
+    <a href="http://ewok.github.io/prosto-tak-i-pro-odnoklassnikov-tozhie" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Mon, Jan 30, 2012</div>
+    <div class="title"><a href="http://ewok.github.io/sudo-insults">sudo insults</a></div>
+  </header>
+  <div class="body"><p>Хотите чтобы sudo ругала вас за неправильно введенный пароль.</p>
+
+<p>Добавьте в /etc/sudoers:</p>
+
+<p>Defaults insults</p>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Mon, Jan 30, 2012</div>
+    <div class="title"><a href="http://ewok.github.io/pozitiv-2">Позитив #2</a></div>
+  </header>
+  <div class="body">Башорг Yoshik: Я вдруг понял, что уже три года не пользовался CD-ROM'ом компьютера Новая поговорка от линуксоидов: Собрал Генту, да не ту. ForhaxeD: Я что-то поздно среагировал на SOPA и PIPA, эти законы означают, что я не смогу смотреть свое любимое порно в интернете и слушать музыку? SDSWanderer: Нет, несмотря на такие названия, эти законопроекты не имеют отношение к порно ) Sterhel: А чего тогда все всполошились-то? xxx: похоже, запуск айтюнс приводит к проверке на вирусы, дефрагментации и вычислению факториала из миллиарда..</div>
+
+  
+  <footer>
+    <a href="http://ewok.github.io/pozitiv-2" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Wed, Jan 25, 2012</div>
+    <div class="title"><a href="http://ewok.github.io/pozitiv">Позитив</a></div>
+  </header>
+  <div class="body">Башорг Рассказ утром в офисе. - Вчера переводила бабушку одну старенькую через дорогу. Она ручкой дрожащей меня схватила под руку и говорит : &quot;С той поры как меня здесь пару лет назад машина сбила насмерть, я боюсь дорогу одна переходить&quot;. Я похолодела вся. Хорошо, что ещё светло было. Диалог в Skype: ХХХ: привет, ты тут? YYY: тут, готов пообщаться XXX: голос? YYY: ГАВ!!! xxx: Пашка коробку вина принес. Ща пить пойдем в серверную.</div>
+
+  
+  <footer>
+    <a href="http://ewok.github.io/pozitiv" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Fri, Jan 20, 2012</div>
+    <div class="title"><a href="http://ewok.github.io/russkiie-v-massovom-poriadkie-pokidaiut-kirghiziiu">Русские в массовом порядке покидают Киргизию</a></div>
+  </header>
+  <div class="body">По неофициальным данным, за год число русских в Киргизии уменьшилось с 420 тысяч до 370 тысяч. Если русские будут покидать страну такими же темпами, лет через 7-8 в «Кыргызстане» не останется ни одного русского. Данные о массовом отъезде русских из этой среднеазиатской республики, опубликованные интернет-изданием «Белый Парус», выглядят вполне правдоподобными, отмечает «Росбалт». Особенно если учитывать массовый наплыв посетителей в посольство России в Бишкеке сразу после «второй киргизской революции» и массовые самозахваты земель и этнические погромы в селе Маевка.Таким образом, можно констатировать, что количество русских в республике за год сократилось на 10-11%.</div>
+
+  
+  <footer>
+    <a href="http://ewok.github.io/russkiie-v-massovom-poriadkie-pokidaiut-kirghiziiu" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Thu, Jan 19, 2012</div>
+    <div class="title"><a href="http://ewok.github.io/django-aggregation">Django Aggregation</a></div>
+  </header>
+  <div class="body">ORM это всегда баланс между производительностью и переносимостью. Наткнулся на очень интересную тему. Расширение функционала ORM джанги. Изучив материал, переделал и оптимизировал модели блога. Коротко в примерах. Есть модель: class Author(models.Model): name = models.CharField(max_length=100) age = models.IntegerField() friends = models.ManyToManyField('self', blank=True) class Publisher(models.Model): name = models.CharField(max_length=300) num_awards = models.IntegerField() class Book(models.Model): isbn = models.CharField(max_length=9) name = models.CharField(max_length=300) pages = models.IntegerField() price = models.DecimalField(max_digits=10, decimal_places=2) rating = models.FloatField() authors = models.ManyToManyField(Author) publisher = models.ForeignKey(Publisher) pubdate = models.DateField() class Store(models.Model): name = models.CharField(max_length=300) books = models.ManyToManyField(Book) С ней можно делать: # Общее количество книг &gt;&gt;&gt; Book.objects.count() 2452 # Общее количество книг с издателем BaloneyPress &gt;&gt;&gt; Book.objects.filter(publisher__name='BaloneyPress').count() 73 # Средняя цена за книгу &gt;&gt;&gt; from django.db.models import Avg &gt;&gt;&gt; Book.objects.all().aggregate(Avg('price')) {'price__avg': 34.35} # Максимальная цена по всем книгам &gt;&gt;&gt; from django.db.models import Max &gt;&gt;&gt; Book.objects.all().aggregate(Max('price')) {'price__max': Decimal('81.20')} # По каждому издателю, количество книг как &quot;num_books&quot;.</div>
+
+  
+  <footer>
+    <a href="http://ewok.github.io/django-aggregation" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Tue, Jan 17, 2012</div>
+    <div class="title"><a href="http://ewok.github.io/takaia-rabota">Такая работа.</a></div>
+  </header>
+  <div class="body"></div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Mon, Jan 16, 2012</div>
+    <div class="title"><a href="http://ewok.github.io/death-vader">Death Vader</a></div>
+  </header>
+  <div class="body"><p><img src="/images/2015/03/tumblr_lwxm3zZdE01qz7zvno1_500.jpg" alt="" /></p>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Mon, Jan 16, 2012</div>
+    <div class="title"><a href="http://ewok.github.io/pep8-korotko-i-po-russki">PEP8 коротко и по-русски</a></div>
+  </header>
+  <div class="body">Взято отсюда Полезно знать как писать в python стиле: используйте 4 пробела для отступа и не используйте табы, не смешивайте их максимальная длина строки 79 символов; для разрыва строки используйте отступы или бэкслеш функции верхнего уровня и определения классов отделяйте двумя пустыми строками определения методов внутри класса отделяйте одной пустой строкой дополнительные пустые строки используйте для логической группировки методов кодировка файлов должна быть Latin-1, а в Питоне 3 и выше</div>
+
+  
+  <footer>
+    <a href="http://ewok.github.io/pep8-korotko-i-po-russki" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      
+<nav>
+  <ul class="pager">
+
+    
+    <li><a href="/post/page/10">Previous</a></li>
+    
+
+    
+    <li><a href="/post/page/12">Next</a></li>
+    
+
+  </ul>
+</nav>
+
+
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://ewok.github.io/keep-running-app" class="list-group-item">Держим приложение запущенным(macos x)</a>
+      
+      <a href="http://ewok.github.io/intieriesnoie-v-sieti-2" class="list-group-item">Интересное в сети 2</a>
+      
+      <a href="http://ewok.github.io/rapoo-3300p" class="list-group-item">Купил забавного зверя</a>
+      
+      <a href="http://ewok.github.io/intieriesnoie-v-sieti" class="list-group-item">Интересное в сети</a>
+      
+      <a href="http://ewok.github.io/haskell-issue1" class="list-group-item">Haskell на неделе</a>
+      
+      <a href="http://ewok.github.io/vim-hardtime" class="list-group-item">Еще больше vim</a>
+      
+      <a href="http://ewok.github.io/haskell-init" class="list-group-item">Haskell init</a>
+      
+      <a href="http://ewok.github.io/python" class="list-group-item">Python</a>
+      
+      <a href="http://ewok.github.io/follow-my-lead" class="list-group-item">Vim plugins</a>
+      
+      <a href="http://ewok.github.io/tak-prosto" class="list-group-item">Так просто</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://ewok.github.iotags/pictures" class="list-group-item">pictures</a>
+      
+      <a href="http://ewok.github.iotags/admins" class="list-group-item">admins</a>
+      
+      <a href="http://ewok.github.iotags/offline" class="list-group-item">offline</a>
+      
+      <a href="http://ewok.github.iotags/dev" class="list-group-item">dev</a>
+      
+      <a href="http://ewok.github.iotags/other" class="list-group-item">other</a>
+      
+      <a href="http://ewok.github.iotags/music" class="list-group-item">music</a>
+      
+      <a href="http://ewok.github.iotags/online" class="list-group-item">online</a>
+      
+      <a href="http://ewok.github.iotags/news" class="list-group-item">news</a>
+      
+      <a href="http://ewok.github.iotags/vim" class="list-group-item">vim</a>
+      
+      <a href="http://ewok.github.iotags/haskell" class="list-group-item">haskell</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 Artur Taranchiev</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="/js/jquery-2.1.3.min.js"></script>
+    <script src="/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="/js/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

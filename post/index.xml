@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Записки Турыча</title>
+    <link>http://ewok.github.io/post/</link>
+    <description>Recent content in Posts on Записки Турыча</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru_RU</language>
+    <lastBuildDate>Mon, 01 Feb 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://ewok.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Держим приложение запущенным(macos x)</title>
+      <link>http://ewok.github.io/keep-running-app</link>
+      <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/keep-running-app</guid>
+      <description>&lt;p&gt;Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Прописываем агент в ~/Library/LaunchAgents&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Например telegram.plist&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&amp;lt;!DOCTYPE plist PUBLIC &amp;quot;-//Apple//DTD PLIST 1.0//EN&amp;quot; &amp;quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;quot;&amp;gt;
+&amp;lt;plist version=&amp;quot;1.0&amp;quot;&amp;gt;
+&amp;lt;dict&amp;gt;
+  &amp;lt;key&amp;gt;Label&amp;lt;/key&amp;gt;
+  &amp;lt;string&amp;gt;user.telegram&amp;lt;/string&amp;gt;
+  &amp;lt;key&amp;gt;KeepAlive&amp;lt;/key&amp;gt;
+  &amp;lt;true/&amp;gt;
+  &amp;lt;key&amp;gt;Program&amp;lt;/key&amp;gt;  &amp;lt;string&amp;gt;/Applications/Telegram.app/Contents/MacOS/Telegram&amp;lt;/string&amp;gt;
+&amp;lt;/dict&amp;gt;
+&amp;lt;/plist&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Запускаем наш агент
+&lt;code&gt;
+launchctl load ~/Library/LaunchAgents/telegram.plist
+&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;После этого наше приложение будет постоянно запускаться после закрытия.&lt;/p&gt;
+
+&lt;p&gt;Вернуть как было, можно командой:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;launchctl remove user.telegram
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Интересное в сети 2</title>
+      <link>http://ewok.github.io/intieriesnoie-v-sieti-2</link>
+      <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/intieriesnoie-v-sieti-2</guid>
+      <description>
+
+&lt;h3 id=&#34;haskell:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Haskell&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://habrahabr.ru/post/257491/&#34;&gt;REST-сервер для простого блога на Haskell&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://emojilisp.com/&#34;&gt;:) лисп диалект&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.schoolofhaskell.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/attoparsec&#34;&gt;Парсим логи&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;vim:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Vim&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/vim/vim/commit/520e1e41f35b063ede63b41738c82d6636e78c34&#34;&gt;В vim добавили jsonencode() и jsondecode()&lt;/a&gt; До этого я пользовался внешними утилитами&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://howivim.com/&#34;&gt;Кто как vim-т&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://mswift42.github.io/themecreator/&#34;&gt;Редактор тем&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;python:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Python&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;В копилку &lt;a href=&#34;https://pypi.python.org/pypi/tgbot&#34;&gt;tgbot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CLI для DO - &lt;a href=&#34;https://pypi.python.org/pypi/pontoon/&#34;&gt;pantoon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;go:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Go&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/satyrius/gonx&#34;&gt;Nginx access log parser for Golang&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;разное:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Разное&lt;/h3&gt;
+
+&lt;p&gt;Играем и учимся программировать - &lt;a href=&#34;https://github.com/colobot/colobot&#34;&gt;colobot&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Купил забавного зверя</title>
+      <link>http://ewok.github.io/rapoo-3300p</link>
+      <pubDate>Thu, 21 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/rapoo-3300p</guid>
+      <description>&lt;p&gt;Мелкий, недорогой. Питается &amp;ldquo;мизинчиковой&amp;rdquo; батарейкой.
+&lt;img src=&#34;http://ewok.github.io/images/2016/01/3300P_3300Pbai.png&#34; alt=&#34;rapoo 330P&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Интересное в сети</title>
+      <link>http://ewok.github.io/intieriesnoie-v-sieti</link>
+      <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/intieriesnoie-v-sieti</guid>
+      <description>
+
+&lt;h3 id=&#34;haskell:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Haskell&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/272871/&#34;&gt;Пример работы с VK&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/272115&#34;&gt;«Страшные» абстракции Haskell без математики и без кода (почти). Часть I&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/207126/&#34;&gt;Зоопарк Алгебрaических Типов Данных&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ohaskell.dshevchenko.biz/ru/index.html&#34;&gt;О прекрасном языке - языком человеческим&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://wiki.haskell.org/Tutorials/Programming_Haskell/Argument_handling&#34;&gt;Argument handling&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/245797/&#34;&gt;Теория категорий для программистов: предисловие&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/246009/&#34;&gt;Категория: суть композиции&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/247765/&#34;&gt;Типы и функции&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/248257/&#34;&gt;Категории, большие и малые&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/249113/&#34;&gt;Категории Клейсли&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/271927/&#34;&gt;Произведения и копроизведения&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/274103/&#34;&gt;Простые алгебраические типы данных&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;python:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Python&lt;/h3&gt;
+
+&lt;p&gt;Фреймворк умеет алертить об аномалиях в elastic search &lt;a href=&#34;http://github.com/Yelp/elastalert&#34;&gt;http://github.com/Yelp/elastalert&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Docker контейнер kibana &lt;a href=&#34;https://hub.docker.com/_/kibana/&#34;&gt;https://hub.docker.com/_/kibana/&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/270717/&#34;&gt;Пример рабоы с VK&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pedrohml/smartbot&#34;&gt;Бот для slack/telegram на&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/crista/exercises-in-programming-style&#34;&gt;exercises-in-programming-style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://fadymak.com/pages/useful_python_snippets.html&#34;&gt;some python snippets&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;немного-про-vim:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Немного про VIM&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mhinz/vim-galore&#34;&gt;Еще один гайд&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;немного-про-hadoop:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Немного про Hadoop&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hub.docker.com/r/cloudera/quickstart/&#34;&gt;Cloudera quickstart docker&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;немного-про-java:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Немного про Java&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mojohaus.org/versions-maven-plugin/examples/display-dependency-updates.html&#34;&gt;Ищем dependency update&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;немного-про-devops:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Немного про Devops&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://coderwall.com/p/9b_lfq/deploying-maven-artifacts-from-travis&#34;&gt;Deploying maven artifacts from Travis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Generate a shell based build script - &lt;a href=&#34;https://github.com/travis-ci/travis-build&#34;&gt;Travis Build&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;разное:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Разное&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/OrkoHunter/ping-me&#34;&gt;Пингани себя&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Еще одна попытка создать тайловый менеджер окон на Mac Os X, самая удачная(IMHO) - &lt;a href=&#34;https://github.com/koekeishiya/kwm&#34;&gt;https://github.com/koekeishiya/kwm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Haskell на неделе</title>
+      <link>http://ewok.github.io/haskell-issue1</link>
+      <pubDate>Sun, 03 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/haskell-issue1</guid>
+      <description>&lt;p&gt;Что интересного я встретил на неделе:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Изучение иностранных языков по технологии Learn languages through fiction - &lt;a href=&#34;https://github.com/jekor/vocabulink&#34;&gt;https://github.com/jekor/vocabulink&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Шелл на haskell - &lt;a href=&#34;https://github.com/chrisdone/hell&#34;&gt;https://github.com/chrisdone/hell&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jekor/hesh&#34;&gt;hesh&lt;/a&gt; - инструмент для удобного написания скриптов на haskell
+Пример:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# !/usr/bin/env hesh
+-- Backup a PostgreSQL database to an encrypted file.
+
+
+main = do
+  args &amp;lt;- System.Environment.getArgs
+  case args of
+    [database] -&amp;gt; do
+      today &amp;lt;- $(date +%Y-%m-%d)
+      let file = database ++ &amp;quot;-&amp;quot; ++ today ++ &amp;quot;.sql.gpg&amp;quot;
+      $(pg_dump $database) |&amp;gt; $(gpg -e -r $EMAIL) /&amp;gt; file
+    _ -&amp;gt; do
+      progName &amp;lt;- System.Environment.getProgName
+      $(echo &amp;quot;Usage: $progName &amp;lt;database&amp;gt;&amp;quot;) /&amp;gt; &amp;quot;/dev/stderr&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Практическое применение haskell - &lt;a href=&#34;http://habrahabr.ru/post/272871/&#34;&gt;http://habrahabr.ru/post/272871/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Приобрел пару книжек(кстати скидки на packtpub) -&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Haskell Data Analysis Cookbook - Nishant Shukla&lt;/li&gt;
+&lt;li&gt;Haskell Design Patterns - Ryan Lemmer&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Еще больше vim</title>
+      <link>http://ewok.github.io/vim-hardtime</link>
+      <pubDate>Sun, 03 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/vim-hardtime</guid>
+      <description>&lt;p&gt;Для тех кто хочет использовать vim в стиле vim way:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/wikitopian/hardmode&#34;&gt;hardmode&lt;/a&gt; и &lt;a href=&#34;https://github.com/takac/vim-hardtime&#34;&gt;hardtime&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Haskell init</title>
+      <link>http://ewok.github.io/haskell-init</link>
+      <pubDate>Sat, 26 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/haskell-init</guid>
+      <description>&lt;p&gt;Первый пост в моем блоге про haskell.&lt;/p&gt;
+
+&lt;p&gt;Я давно собирался познакомиться с этим языком программирования, но меня отпугивал его синтаксис. Все эти стрелочки, точки и остальные знаки препинания.
+Прошлый раз поиск основного инструмента для работы, привел меня к &lt;a href=&#34;http://ewok.github.io/tag/python&#34;&gt;python&lt;/a&gt;, о чем я не жалею.&lt;/p&gt;
+
+&lt;p&gt;Но сейчас речь не об этом. Итак, haskell это чистый функциональный, ленивый, компилируемый язык программирования с сильной статической типизацией. С автоматическим выведением типов. На данный момент меня привлекает то что программу можно скомпилировать и (конечно же) функциональная составляющая.&lt;/p&gt;
+
+&lt;p&gt;Haskell в своем роде некая &amp;ldquo;песочница&amp;rdquo; для отработки новых технологий в ЯП. Многие языки заимствовали наработки из haskell. Например list comprehension в том же python.&lt;/p&gt;
+
+&lt;p&gt;Но всю эту информацию можно найти в интернете, не вижу смысла ее дублировать.&lt;/p&gt;
+
+&lt;p&gt;Прикладываю список ресурсов, который пригодится для знакомства с haskell(список будет обновляться):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.haskell.org/&#34;&gt;Официальный сайт&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ruhaskell.org&#34;&gt;Русское сообщество хаскелистов&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitter.im/ruHaskell/forall&#34;&gt;gitter вышеупомянутого сообщества&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bananasandlenses.net&#34;&gt;Бананы и линзы&lt;/a&gt; - подкаст о haskell&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://learnyouahaskell.com&#34;&gt;Learn You a Haskell&lt;/a&gt; - книга пойдет для начинающих, можно почитать бесплатно online&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>http://ewok.github.io/python</link>
+      <pubDate>Sat, 26 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/python</guid>
+      <description>&lt;p&gt;Здесь пойдет таймлайн для замечательного скриптового ЯП python. С которым я познакомился несколько лет назад и применяю до сих пор в своей работе и дома.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Vim plugins</title>
+      <link>http://ewok.github.io/follow-my-lead</link>
+      <pubDate>Sat, 10 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/follow-my-lead</guid>
+      <description>&lt;p&gt;Интересные и полезные плагины&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ktonga/vim-follow-my-lead&#34;&gt;Follow-my-lead&lt;/a&gt; - плагин показывает все сочетания из вашего конфига с клавишей leader&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://sjl.bitbucket.org/gundo.vim&#34;&gt;Gundo&lt;/a&gt; - древовидное UNDO&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Shougo/unite.vim&#34;&gt;Unite&lt;/a&gt; - замена CtrlP и т.д. Быстрый доступ ко всякого рода спискам.&lt;/li&gt;
+&lt;li&gt;Fugitive - это git :)&lt;/li&gt;
+&lt;li&gt;Syntastic - проверка синтаксиса с очень большим списком поддерживаемых форматов&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xolox/vim-session&#34;&gt;Vim-session&lt;/a&gt; - управление сессиями. Использую для сохранения состояния проектов.&lt;/li&gt;
+&lt;li&gt;Surround - это без комментариев :)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/vimwiki/vimwiki&#34;&gt;Vimwiki&lt;/a&gt; - wiki.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Так просто</title>
+      <link>http://ewok.github.io/tak-prosto</link>
+      <pubDate>Tue, 29 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/tak-prosto</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://ewok.github.io/images/2015/09/mir_podozhdet.gif&#34; alt=&#34;mir_podozhdet&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ansible-dar</title>
+      <link>http://ewok.github.io/ansible-dar</link>
+      <pubDate>Mon, 13 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/ansible-dar</guid>
+      <description>&lt;p&gt;DiskARchive плагин для ansible.
+&lt;a href=&#34;https://github.com/ewok/ansible-modules/blob/master/dar.py&#34;&gt;https://github.com/ewok/ansible-modules/blob/master/dar.py&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Фильмы про зомби(посмотреть)</title>
+      <link>http://ewok.github.io/100-filmov-pro-zombiplan</link>
+      <pubDate>Sat, 09 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/100-filmov-pro-zombiplan</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://ewok.github.io/images/2015/09/olup-olup-dirileceksiniz-kLwJPswhgUavhs8IL6tVNQ.jpg&#34; alt=&#34;zombie&#34; /&gt;
+&lt;!--preview--&gt;
+Просмотреть&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;28 дней спустя&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Обитель зла&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;Операция «Мертвый снег»&lt;/li&gt;
+&lt;li&gt;Безумцы&lt;/li&gt;
+&lt;li&gt;Репортаж&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Земля мертвых&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Рассвет мертвецов&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Зловещие мертвецы&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;День мертвых&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Добро пожаловать в Zомбилэнд&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;28 Недель спустя&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;48 Недель спустя&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Ад живых мертвецов&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;Адский Бункер&lt;/li&gt;
+&lt;li&gt;Атака куриных Зомби&lt;/li&gt;
+&lt;li&gt;Бойня&lt;/li&gt;
+&lt;li&gt;В тихом омуте&lt;/li&gt;
+&lt;li&gt;Вампиры против зомби&lt;/li&gt;
+&lt;li&gt;Виноградник&lt;/li&gt;
+&lt;li&gt;Возвращение живых мертвецов&lt;/li&gt;
+&lt;li&gt;Возвращение живых мертвецов 2&lt;/li&gt;
+&lt;li&gt;Возвращение живых мертвецов 3&lt;/li&gt;
+&lt;li&gt;Возвращение живых мертвецов 4: Некрополис&lt;/li&gt;
+&lt;li&gt;Возвращение живых мертвецов 5: Рейв из могилы&lt;/li&gt;
+&lt;li&gt;Возвращение Реаниматора&lt;/li&gt;
+&lt;li&gt;Восставшие из мертвых&lt;/li&gt;
+&lt;li&gt;Выживание мертвецов&lt;/li&gt;
+&lt;li&gt;Город живых мертвецов&lt;/li&gt;
+&lt;li&gt;Два злобных взгляда&lt;/li&gt;
+&lt;li&gt;Демоны&lt;/li&gt;
+&lt;li&gt;Демоны 2&lt;/li&gt;
+&lt;li&gt;День мертвецов (1985)&lt;/li&gt;
+&lt;li&gt;День мертвецов (2008)&lt;/li&gt;
+&lt;li&gt;День мертвецов 2: Эпидемия&lt;/li&gt;
+&lt;li&gt;Дети живых мертвецов&lt;/li&gt;
+&lt;li&gt;Дневники зомби&lt;/li&gt;
+&lt;li&gt;Дневники мертвецов&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Добро пожаловать в Зомбилэнд&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;Дом 1000 трупов&lt;/li&gt;
+&lt;li&gt;Дом зомби&lt;/li&gt;
+&lt;li&gt;Дом мёртвых&lt;/li&gt;
+&lt;li&gt;Дом на краю кладбища&lt;/li&gt;
+&lt;li&gt;Загадка старого кладбища&lt;/li&gt;
+&lt;li&gt;Земля мёртвых&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Зловещие мертвецы&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;Зловещие мертвецы 2&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Зловещие мертвецы 3: Армия тьмы&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;Зловещие мертвецы 4&lt;/li&gt;
+&lt;li&gt;Змей и радуга&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Зомби по имени Фидо&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Карантин&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;Карантин 2: Терминал&lt;/li&gt;
+&lt;li&gt;Кладбище домашних животных&lt;/li&gt;
+&lt;li&gt;Кладбище домашних животных 2&lt;/li&gt;
+&lt;li&gt;Князь тьмы&lt;/li&gt;
+&lt;li&gt;Конура(будка)&lt;/li&gt;
+&lt;li&gt;Кошмар зомби&lt;/li&gt;
+&lt;li&gt;Кровавая баня Зомби&lt;/li&gt;
+&lt;li&gt;Кровавый пир&lt;/li&gt;
+&lt;li&gt;Легион&lt;/li&gt;
+&lt;li&gt;Легион живых мертвецов&lt;/li&gt;
+&lt;li&gt;Мальчики едят девочек&lt;/li&gt;
+&lt;li&gt;Мастера ужасов: История Хэкеля&lt;/li&gt;
+&lt;li&gt;Медовый месяц зомби&lt;/li&gt;
+&lt;li&gt;Мертвечина&lt;/li&gt;
+&lt;li&gt;Мутанты&lt;/li&gt;
+&lt;li&gt;Мясорубка&lt;/li&gt;
+&lt;li&gt;Невеста Реаниматора&lt;/li&gt;
+&lt;li&gt;Нечто: Тотальное заражение&lt;/li&gt;
+&lt;li&gt;Новая эра&lt;/li&gt;
+&lt;li&gt;Носители&lt;/li&gt;
+&lt;li&gt;Ночь демонов&lt;/li&gt;
+&lt;li&gt;Ночь демонов 2&lt;/li&gt;
+&lt;li&gt;Ночь демонов 3&lt;/li&gt;
+&lt;li&gt;Ночь живых мертвецов (1968)&lt;/li&gt;
+&lt;li&gt;Ночь живых мертвецов (1990)&lt;/li&gt;
+&lt;li&gt;Ночь живых мертвецов 3D&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Обитель зла&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Обитель зла 2: Апокалипсис&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Обитель зла 3: Вымирание&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Обитель зла 4: Жизнь после смерти&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;Озеро живых мертвецов&lt;/li&gt;
+&lt;li&gt;Озеро призраков&lt;/li&gt;
+&lt;li&gt;Операция Мёртвый снег&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Операция Мертвый снег 2&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;Паршивая овца&lt;/li&gt;
+&lt;li&gt;Планета страха&lt;/li&gt;
+&lt;li&gt;Реаниматор&lt;/li&gt;
+&lt;li&gt;Репортаж из преисподней&lt;/li&gt;
+&lt;li&gt;Седьмые врата ада&lt;/li&gt;
+&lt;li&gt;Слизняк&lt;/li&gt;
+&lt;li&gt;Стая&lt;/li&gt;
+&lt;li&gt;Телемертвецы&lt;/li&gt;
+&lt;li&gt;Убивая мертвецов&lt;/li&gt;
+&lt;li&gt;Фантазм&lt;/li&gt;
+&lt;li&gt;Хроники Мутантов&lt;/li&gt;
+&lt;li&gt;Хронос&lt;/li&gt;
+&lt;li&gt;Чума Зомби&lt;/li&gt;
+&lt;li&gt;Шоссе 666&lt;/li&gt;
+&lt;li&gt;Полицейский зомби&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Пробел в точке монтирования fstab</title>
+      <link>http://ewok.github.io/probiel-v-tochkie-montirovaniia-fstab</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/probiel-v-tochkie-montirovaniia-fstab</guid>
+      <description>&lt;p&gt;Если требуется пробел в точке монтирования:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    /dev/choto /mnt/kuda\040to ext4 ... и т.д
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>libvirt - полезные комманды</title>
+      <link>http://ewok.github.io/virsh-polieznyie-kommandy</link>
+      <pubDate>Thu, 02 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/virsh-polieznyie-kommandy</guid>
+      <description>
+
+&lt;h1 id=&#34;установка:a65360a3a7be284faac3410c19f3ed49&#34;&gt;Установка&lt;/h1&gt;
+
+&lt;p&gt;Debian/ubuntu и производные:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    apt-get instll libvirt-bin -y
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;На rhel подобных что-то типа:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    yum install libvirt-client -y
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;virsh:a65360a3a7be284faac3410c19f3ed49&#34;&gt;virsh&lt;/h1&gt;
+
+&lt;p&gt;Консоль для управления виртуальным окружением&lt;br&gt;
+Подключение: &lt;code&gt;virsh --connect=&amp;lt;строка подключения&amp;gt;&lt;/code&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;Примеры строки подключения:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;qemu:///system&lt;/code&gt; - локальный сервер&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;qemu+ssh://root@ip/system&lt;/code&gt; - удаленный сервер по адресу &lt;strong&gt;ip&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;virsh list [--inactive | --all]&lt;/code&gt; - список виртуальных машин [отключенных | всех]&lt;br&gt;
+&lt;code&gt;virsh start &amp;lt;domain&amp;gt;&lt;/code&gt; - запуск вирт. машины &lt;strong&gt;domain&lt;/strong&gt;&lt;br&gt;
+&lt;code&gt;virsh shutdown &amp;lt;domain&amp;gt;&lt;/code&gt; - остановка вирт. машины &lt;strong&gt;domain&lt;/strong&gt;&lt;br&gt;
+&lt;code&gt;virsh destroy &amp;lt;domain&amp;gt;&lt;/code&gt; - разрушить (остановить) вирт. машину&lt;br&gt;
+&lt;code&gt;virsh reboot &amp;lt;domain&amp;gt;&lt;/code&gt; - перезагрузить вирт. машину&lt;br&gt;
+&lt;code&gt;virsh reset &amp;lt;domain&amp;gt;&lt;/code&gt; - перезагрузить вирт. машину(эмуляция нажатия кнопки &lt;em&gt;reset&lt;/em&gt;)&lt;br&gt;
+&lt;code&gt;virsh define &amp;lt;domain&amp;gt;&lt;/code&gt; - определить (но не запускать) домен из файла XML&lt;br&gt;
+&lt;code&gt;virsh undefine &amp;lt;domain&amp;gt;&lt;/code&gt; - удаление вирт. машины из определенных доменов(убрать из списка)&lt;br&gt;
+&lt;code&gt;virsh suspend &amp;lt;domain&amp;gt;&lt;/code&gt; - приостановить вирт. машину&lt;br&gt;
+&lt;code&gt;virsh resume &amp;lt;domain&amp;gt;&lt;/code&gt; - продолжить работу вирт. машины&lt;br&gt;
+&lt;code&gt;virsh save &amp;lt;domain&amp;gt; &amp;lt;file&amp;gt;&lt;/code&gt; - сохранить состояние вирт. машины в файл&lt;br&gt;
+&lt;code&gt;virsh restore &amp;lt;file&amp;gt;&lt;/code&gt; - восстановить состояние вирт. машины из файла&lt;br&gt;
+&lt;code&gt;virsh edit &amp;lt;domain&amp;gt;&lt;/code&gt; - редактирование XML-конфигурации вирт. машины&lt;br&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;virt-viewer:a65360a3a7be284faac3410c19f3ed49&#34;&gt;virt-viewer&lt;/h1&gt;
+
+&lt;p&gt;Подключение к vnc&lt;br&gt;
+&lt;code&gt;virt-viewer -c &amp;lt;строка подключение&amp;gt; &amp;lt;domain&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;virt-install:a65360a3a7be284faac3410c19f3ed49&#34;&gt;virt-install&lt;/h1&gt;
+
+&lt;p&gt;Установка вирт. машин&lt;br&gt;
+Имеет много опций, которые можно посмотреть по комманде &lt;code&gt;man virt-install&lt;/code&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;virt-manager:a65360a3a7be284faac3410c19f3ed49&#34;&gt;virt-manager&lt;/h1&gt;
+
+&lt;p&gt;Графическая утилита для работы с libvirt&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wish-list</title>
+      <link>http://ewok.github.io/wish-list</link>
+      <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://ewok.github.io/wish-list</guid>
+      <description>&lt;p&gt;Здесь публикуется список вещей которые мне интересны&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Вещи&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Умный&amp;rdquo; фитнес браслет&lt;/li&gt;
+&lt;li&gt;RaspberryPi&lt;/li&gt;
+&lt;li&gt;Мобилу с 2G RAM :)&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Аккумулятор для ноута&lt;/del&gt; куплен&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;SSD гигов на 60, для ноутбука + переходник в CD разъем&lt;/del&gt; - подарено, очень доволен&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Маленькая беспроводная мышка для ноутбука на радиоканале&lt;/del&gt; - взял пока обычную&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Видео-регистратор на машину&lt;/del&gt; - спасибо жене&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Небольшой металлический фонарик на аккумуляторах&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Набор разнокалиберных отверток с магнитным наконечником&lt;/del&gt; - куплено&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Зимняя резина :)&lt;/del&gt; - куплена&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Zalman VE300&lt;/del&gt; - взял недорого VE200&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Теплый халат(к зиме актуально)&lt;/del&gt; - подарили, спасибо маме.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Программы&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Pycharm обновление подписки :)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

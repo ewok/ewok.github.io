@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/solarized_dark.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://ewok.github.io/index.xml">
+    <link rel="icon" type="image/png" href="http://ewok.github.io/favicon.png" />
+    
+    <title>Шпаргалка по администрированию mysql - Записки Турыча</title>
+    <meta property='og:title' content="Шпаргалка по администрированию mysql - Записки Турыча">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://ewok.github.io/shparghalka-po-administrirovaniiu-mysql">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://ewok.github.io">Записки Турыча</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="https://github.com/ewok">github</a></li>
+              
+              
+              
+              <li><a href="https://twitter.com/ewokru">twitter</a></li>
+              
+              
+            </ul>
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://ewok.github.io"/>
+        <meta itemprop="dateModified" content="2013-11-11T00:00:00&#43;00:00">
+        <meta itemprop="headline" content="Шпаргалка по администрированию mysql">
+        <meta itemprop="description" content="Сброс пароля # Запуск сервера без проверки пароля $ mysqld --skip-grant-tables # Вариант 1 mysql&gt; SET PASSWORD FOR &#39;root&#39;@&#39;localhost&#39; = PASSWORD(&#39;новый пароль&#39;)\g # Вариант 2 mysql&gt; use mysql; mysql&gt; update user set password=PASSWORD(&quot;новый пароль&quot;) where user=&#39;root&#39; and host=&#39;localhost&#39;; mysql&gt; flush privileges; # Выдрать одну базу данных $ cat dump.sql | sed -n -e &#39;/^CREATE DATABASE.*`&lt;base_name&gt;`/,/^CREATE DATABASE/ p&#39; | sed -e &#39;$d&#39; &gt; &lt;base_name&gt;.sql # Посмотреть движок таблиц mysql&gt; SELECT table_schema, table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = &#39;innodb&#39;; # myisam SHOW [ GLOBAL ] VARIABLES Вывести список системных переменных Mysql сервера.">
+        <meta itemprop="url" content="http://ewok.github.io/shparghalka-po-administrirovaniiu-mysql">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://ewok.github.ioimages/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://ewok.github.ioimages/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="Записки Турыча">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Artur Taranchiev">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2013-11-11T00:00:00&#43;00:00">Mon, Nov 11, 2013</time>
+          <h1 class="article-title">Шпаргалка по администрированию mysql</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          
+
+<h1 id="сброс-пароля:020ba855174f59625acdb392b52e2c25">Сброс пароля</h1>
+
+<pre><code># Запуск сервера без проверки пароля
+$ mysqld --skip-grant-tables
+
+# Вариант 1
+mysql&gt; SET PASSWORD FOR 'root'@'localhost' = PASSWORD('новый    пароль')\g
+
+# Вариант 2
+mysql&gt; use mysql;
+mysql&gt; update user set password=PASSWORD(&quot;новый пароль&quot;) where user='root' and host='localhost';
+mysql&gt; flush privileges;
+
+# Выдрать одну базу данных
+$ cat dump.sql | sed -n -e '/^CREATE DATABASE.*`&lt;base_name&gt;`/,/^CREATE DATABASE/ p' | sed -e '$d' &gt; &lt;base_name&gt;.sql
+
+# Посмотреть движок таблиц
+mysql&gt; SELECT table_schema, table_name
+    FROM INFORMATION_SCHEMA.TABLES
+    WHERE engine = 'innodb'; # myisam
+</code></pre>
+
+<!--preview-->
+
+<p>SHOW [ GLOBAL ] VARIABLES
+    Вывести список системных переменных Mysql сервера. Переменные могут быть глобальные ( GLOBAL ) и сессионные ( SESSION ). Если не указано, какого именно типа, переменные нужно вывести, будут выведены сессионные переменные.</p>
+
+<p>SHOW [ GLOBAL ] VARIABLES LIKE &lsquo;%часть_имени_переменной%&rsquo;
+    Более удобный вариант команды. Знак процента, является шаблоном и соответствует любым символам.</p>
+
+<p>SET [ GLOBAL ] имя_переменной=значение | имя_переменной=DEFAULT
+    Оператор SET, устанавливает значение переменной. Имейте в виду, не все переменные можно изменить через консольный клиент, многие инициализируются при запуске Mysql сервера, с помощью соответствующих опций командной строки или через установку в файле конфигурации my.cnf. При попытке изменить значение такой переменной, будет выведено сообщение об ошибке. Что-бы переменная приняла значение по умолчанию, можно в качестве значения использовать ключевое слово DEFAULT. Как и в случае с командой SHOW, если не указан тип переменной, значение будет установлено для сессионной ( локальной ) переменной.</p>
+
+<p>SHOW [ GLOBAL ] STATUS [ LIKE &lsquo;%имя_переменной%&rsquo; ]
+    Выведет статусные переменные ( счетчики ) с их значениями. Поведение с ключевым словом GLOBAL и без него, аналогично команде SHOW VARIABLES.</p>
+
+<p>SHOW DATABASES
+    Вывести список существующих баз данных</p>
+
+<p>USE имя_базы_данных
+    Перейти в базу данных имя_базы_данных, сделав ее текущей</p>
+
+<p>SHOW TABLES [ FROM имя_базы_данных ]
+    Если не указана конструкция FROM, выведет список таблиц в текущей базе данных.</p>
+
+<p>CHECK TABLE имя_таблицы [ FOR UPGRADE | QUICK | FAST | MEDIUM | EXTENDED | CHANGED ]
+    Проверка таблицы на предмет ошибок в различных режимах.</p>
+
+<p>OPTIMIZE TABLE имя_таблицы
+    Оптимизация таблиц.</p>
+
+<p>REPAIR TABLE имя_таблицы
+    Попробовать отремонтировать таблицу. Этот оператор тоже имеет несколько опций, но в обычном случае достаточно простого REPAIR TABLE. Если для ремонта таблиц, вдруг надумаете использовать дополнительные опции, советую сначала ознакомиться с документацией по их применению и возможным последствиям.)</p>
+
+<p>SELECT user, host FROM mysql.user
+    Это обычный SQL запрос к таблице user системной базы данных mysql, в результате которого будет выведен список всех существующих пользователей и хостов.</p>
+
+<p>CREATE USER &lsquo;user&rsquo;@&lsquo;localhost&rsquo; IDENTIFIED BY &lsquo;password&rsquo;
+    Создать пользователя mysql с именем user для хоста localhost, то есть только для локального подключения, с паролем password. В Mysql можно ограничить пользователя, разрешив ему подключаться только с определенного хоста, это может быть как IP адрес, так и доменное имя. Если при создании, указывается только имя пользователя, то есть такой вариант команды - CREATE USER boom , в качестве хоста назначается шаблон %, означающий, что данный пользователь может соединяться с Mysql сервером откуда угодно. Кроме того, для данного пользователя будет задан пустой пароль. Если есть такая возможность, в целях безопасности, лучше ограничивать пользователей по IP адресам.</p>
+
+<p>RENAME USER &lsquo;user&rsquo;@&lsquo;host&rsquo; TO &lsquo;user2&rsquo;@&lsquo;host&rsquo;
+    Переименовать пользователя. Не работает в старых версиях Mysql ( не помню точно с какой версии появилась ). Если в имени назначения опустить имя host, будет присвоен шаблон %, то есть любой.</p>
+
+<p>DROP USER имя_пользователя
+    Удалить пользователя.</p>
+
+<p>SET PASSWORD FOR &lsquo;user&rsquo;@&lsquo;host&rsquo; = PASSWORD(&lsquo;password&rsquo;)
+    Назначить или изменить пароль пользователя. То-же самое можно сделать с помощью SQL оператора UPDATE , изменив поле Password в системной таблице User, для определенного пользователя.</p>
+
+<p>GRANT ALL ON data_base.* TO &lsquo;user&rsquo;@&lsquo;host&rsquo; [ IDENTIFIED BY &lsquo;secret&rsquo; ]
+    Назначает права пользователю. В Mysql достаточно гибкая система привилегий, имеющая несколько уровней, глобальный, уровень базы данных,уровень таблицы и уровень столбца. Для меня, приведенный выше вариант, является самым распространенным. Мы назначаем все права ( кроме GRANT OPTION - право управлять правами других пользователей ), на все таблицы базы данных data_base ( обратите внимание, если в имени базы данных присутствует знак подчеркивания, его нужно экранировать обратным слешем ), для пользователя user с хостом host. При указании конструкции IDENTIFIED BY &lsquo;secret&rsquo;, пользователю будет назначен пароль &lsquo;secret&rsquo;, если у пользователя уже был установлен пароль, он будет заменен на &lsquo;secret&rsquo;.</p>
+
+<p>REVOKE ALL ON <em>.</em> FROM &lsquo;user&rsquo;@&lsquo;host&rsquo;
+    Противоположность предыдущей команды, отнимает права пользователя.</p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://ewok.github.iotags/admins" class="tag">admins</a> </div>
+
+          
+          
+          
+          
+          
+          
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://ewok.github.io/keep-running-app" class="list-group-item">Держим приложение запущенным(macos x)</a>
+      
+      <a href="http://ewok.github.io/intieriesnoie-v-sieti-2" class="list-group-item">Интересное в сети 2</a>
+      
+      <a href="http://ewok.github.io/rapoo-3300p" class="list-group-item">Купил забавного зверя</a>
+      
+      <a href="http://ewok.github.io/intieriesnoie-v-sieti" class="list-group-item">Интересное в сети</a>
+      
+      <a href="http://ewok.github.io/haskell-issue1" class="list-group-item">Haskell на неделе</a>
+      
+      <a href="http://ewok.github.io/vim-hardtime" class="list-group-item">Еще больше vim</a>
+      
+      <a href="http://ewok.github.io/haskell-init" class="list-group-item">Haskell init</a>
+      
+      <a href="http://ewok.github.io/python" class="list-group-item">Python</a>
+      
+      <a href="http://ewok.github.io/follow-my-lead" class="list-group-item">Vim plugins</a>
+      
+      <a href="http://ewok.github.io/tak-prosto" class="list-group-item">Так просто</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://ewok.github.iotags/pictures" class="list-group-item">pictures</a>
+      
+      <a href="http://ewok.github.iotags/admins" class="list-group-item">admins</a>
+      
+      <a href="http://ewok.github.iotags/offline" class="list-group-item">offline</a>
+      
+      <a href="http://ewok.github.iotags/dev" class="list-group-item">dev</a>
+      
+      <a href="http://ewok.github.iotags/online" class="list-group-item">online</a>
+      
+      <a href="http://ewok.github.iotags/other" class="list-group-item">other</a>
+      
+      <a href="http://ewok.github.iotags/music" class="list-group-item">music</a>
+      
+      <a href="http://ewok.github.iotags/news" class="list-group-item">news</a>
+      
+      <a href="http://ewok.github.iotags/vim" class="list-group-item">vim</a>
+      
+      <a href="http://ewok.github.iotags/haskell" class="list-group-item">haskell</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 Artur Taranchiev</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="/js/jquery-2.1.3.min.js"></script>
+    <script src="/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="/js/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+
