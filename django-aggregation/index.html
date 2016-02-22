@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="/css/solarized_dark.min.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/custom.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://ewok.github.io/index.xml">
-    <link rel="icon" type="image/png" href="http://ewok.github.io/favicon.png" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://ewok.github.io//index.xml">
+    <link rel="icon" type="image/png" href="http://ewok.github.io//favicon.png" />
     
     <title>Django Aggregation - Записки Турыча</title>
     <meta property='og:title' content="Django Aggregation - Записки Турыча">
@@ -33,7 +33,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://ewok.github.io">Записки Турыча</a>
+            <a class="navbar-brand" href="http://ewok.github.io/">Записки Турыча</a>
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             
@@ -64,19 +64,19 @@
 
       <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
 
-        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://ewok.github.io"/>
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://ewok.github.io/"/>
         <meta itemprop="dateModified" content="2012-01-19T00:00:00&#43;00:00">
         <meta itemprop="headline" content="Django Aggregation">
         <meta itemprop="description" content="ORM это всегда баланс между производительностью и переносимостью. Наткнулся на очень интересную тему. Расширение функционала ORM джанги. Изучив материал, переделал и оптимизировал модели блога. Коротко в примерах. Есть модель: class Author(models.Model): name = models.CharField(max_length=100) age = models.IntegerField() friends = models.ManyToManyField(&#39;self&#39;, blank=True) class Publisher(models.Model): name = models.CharField(max_length=300) num_awards = models.IntegerField() class Book(models.Model): isbn = models.CharField(max_length=9) name = models.CharField(max_length=300) pages = models.IntegerField() price = models.DecimalField(max_digits=10, decimal_places=2) rating = models.FloatField() authors = models.ManyToManyField(Author) publisher = models.ForeignKey(Publisher) pubdate = models.DateField() class Store(models.Model): name = models.CharField(max_length=300) books = models.ManyToManyField(Book) С ней можно делать: # Общее количество книг &gt;&gt;&gt; Book.objects.count() 2452 # Общее количество книг с издателем BaloneyPress &gt;&gt;&gt; Book.objects.filter(publisher__name=&#39;BaloneyPress&#39;).count() 73 # Средняя цена за книгу &gt;&gt;&gt; from django.db.models import Avg &gt;&gt;&gt; Book.objects.all().aggregate(Avg(&#39;price&#39;)) {&#39;price__avg&#39;: 34.35} # Максимальная цена по всем книгам &gt;&gt;&gt; from django.db.models import Max &gt;&gt;&gt; Book.objects.all().aggregate(Max(&#39;price&#39;)) {&#39;price__max&#39;: Decimal(&#39;81.20&#39;)} # По каждому издателю, количество книг как &quot;num_books&quot;.">
         <meta itemprop="url" content="http://ewok.github.io/django-aggregation">
         <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-          <meta itemprop="url" content="http://ewok.github.ioimages/default.jpg" />
+          <meta itemprop="url" content="http://ewok.github.io/images/default.jpg" />
           <meta itemprop="width" content="800">
           <meta itemprop="height" content="800">
         </div>
         <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
           <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-            <meta itemprop="url" content="http://ewok.github.ioimages/logo.jpg">
+            <meta itemprop="url" content="http://ewok.github.io/images/logo.jpg">
             <meta itemprop="width" content="100">
             <meta itemprop="height" content="100">
           </div>
@@ -165,7 +165,7 @@ class Store(models.Model):
 
 
         <aside>
-          <div class="section"><a href="http://ewok.github.iotags/dev" class="tag">dev</a> </div>
+          <div class="section"><a href="http://ewok.github.io/tags/dev" class="tag">dev</a> </div>
 
           
           
@@ -247,25 +247,25 @@ class Store(models.Model):
     </div>
     <div class="list-group">
       
-      <a href="http://ewok.github.iotags/pictures" class="list-group-item">pictures</a>
+      <a href="http://ewok.github.io/tags/pictures" class="list-group-item">pictures</a>
       
-      <a href="http://ewok.github.iotags/admins" class="list-group-item">admins</a>
+      <a href="http://ewok.github.io/tags/admins" class="list-group-item">admins</a>
       
-      <a href="http://ewok.github.iotags/offline" class="list-group-item">offline</a>
+      <a href="http://ewok.github.io/tags/offline" class="list-group-item">offline</a>
       
-      <a href="http://ewok.github.iotags/dev" class="list-group-item">dev</a>
+      <a href="http://ewok.github.io/tags/dev" class="list-group-item">dev</a>
       
-      <a href="http://ewok.github.iotags/other" class="list-group-item">other</a>
+      <a href="http://ewok.github.io/tags/online" class="list-group-item">online</a>
       
-      <a href="http://ewok.github.iotags/music" class="list-group-item">music</a>
+      <a href="http://ewok.github.io/tags/music" class="list-group-item">music</a>
       
-      <a href="http://ewok.github.iotags/online" class="list-group-item">online</a>
+      <a href="http://ewok.github.io/tags/other" class="list-group-item">other</a>
       
-      <a href="http://ewok.github.iotags/news" class="list-group-item">news</a>
+      <a href="http://ewok.github.io/tags/news" class="list-group-item">news</a>
       
-      <a href="http://ewok.github.iotags/vim" class="list-group-item">vim</a>
+      <a href="http://ewok.github.io/tags/video" class="list-group-item">video</a>
       
-      <a href="http://ewok.github.iotags/haskell" class="list-group-item">haskell</a>
+      <a href="http://ewok.github.io/tags/vim" class="list-group-item">vim</a>
       
     </div>
   </div>

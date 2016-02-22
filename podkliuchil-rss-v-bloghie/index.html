@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="/css/solarized_dark.min.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/custom.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://ewok.github.io/index.xml">
-    <link rel="icon" type="image/png" href="http://ewok.github.io/favicon.png" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://ewok.github.io//index.xml">
+    <link rel="icon" type="image/png" href="http://ewok.github.io//favicon.png" />
     
     <title>Подключил rss в блоге - Записки Турыча</title>
     <meta property='og:title' content="Подключил rss в блоге - Записки Турыча">
@@ -33,7 +33,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://ewok.github.io">Записки Турыча</a>
+            <a class="navbar-brand" href="http://ewok.github.io/">Записки Турыча</a>
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             
@@ -64,19 +64,19 @@
 
       <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
 
-        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://ewok.github.io"/>
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://ewok.github.io/"/>
         <meta itemprop="dateModified" content="2012-02-29T00:00:00&#43;00:00">
         <meta itemprop="headline" content="Подключил rss в блоге">
         <meta itemprop="description" content="Подключил rss трансляцию. По джангокниге. Самый простой вариант: from django.contrib.syndication.views import Feed from mysite.blog.models import Blog, Post class LatestEntriesFeed(Feed): title = Blog.title link = blog.url description = blog.description def items(self): return Post.objects.filter(draft=False)[:10] def item_title(self, item): return item.title def item_description(self, item): # Здесь попытка подключить lj-cut, для кросспостинга в ЖЖ. Посмотрим, сработает или нет. return item.entry.replace(u&#39;&lt;!-- pagebreak --&gt;&#39;, u&#39;&lt;lj-cut text=&quot;Читать полностью&quot;&gt;&#39;) def item_pubdate(self, item): return item.date def item_categories(self, item): return item.tag.all() Прописать в urls.py: from mysite.blog.feeds import LatestEntriesFeed urlpatterns = patterns(&#39;&#39;, url(r&#39;^rss$&#39;, LatestEntriesFeed()), ) Единственный косяк.">
         <meta itemprop="url" content="http://ewok.github.io/podkliuchil-rss-v-bloghie">
         <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-          <meta itemprop="url" content="http://ewok.github.ioimages/default.jpg" />
+          <meta itemprop="url" content="http://ewok.github.io/images/default.jpg" />
           <meta itemprop="width" content="800">
           <meta itemprop="height" content="800">
         </div>
         <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
           <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-            <meta itemprop="url" content="http://ewok.github.ioimages/logo.jpg">
+            <meta itemprop="url" content="http://ewok.github.io/images/logo.jpg">
             <meta itemprop="width" content="100">
             <meta itemprop="height" content="100">
           </div>
@@ -146,7 +146,7 @@ url(r'^rss$', LatestEntriesFeed()),
 
 
         <aside>
-          <div class="section"><a href="http://ewok.github.iotags/news" class="tag">news</a> </div>
+          <div class="section"><a href="http://ewok.github.io/tags/news" class="tag">news</a> </div>
 
           
           
@@ -228,25 +228,25 @@ url(r'^rss$', LatestEntriesFeed()),
     </div>
     <div class="list-group">
       
-      <a href="http://ewok.github.iotags/pictures" class="list-group-item">pictures</a>
+      <a href="http://ewok.github.io/tags/pictures" class="list-group-item">pictures</a>
       
-      <a href="http://ewok.github.iotags/admins" class="list-group-item">admins</a>
+      <a href="http://ewok.github.io/tags/admins" class="list-group-item">admins</a>
       
-      <a href="http://ewok.github.iotags/offline" class="list-group-item">offline</a>
+      <a href="http://ewok.github.io/tags/offline" class="list-group-item">offline</a>
       
-      <a href="http://ewok.github.iotags/dev" class="list-group-item">dev</a>
+      <a href="http://ewok.github.io/tags/dev" class="list-group-item">dev</a>
       
-      <a href="http://ewok.github.iotags/other" class="list-group-item">other</a>
+      <a href="http://ewok.github.io/tags/other" class="list-group-item">other</a>
       
-      <a href="http://ewok.github.iotags/music" class="list-group-item">music</a>
+      <a href="http://ewok.github.io/tags/music" class="list-group-item">music</a>
       
-      <a href="http://ewok.github.iotags/online" class="list-group-item">online</a>
+      <a href="http://ewok.github.io/tags/online" class="list-group-item">online</a>
       
-      <a href="http://ewok.github.iotags/news" class="list-group-item">news</a>
+      <a href="http://ewok.github.io/tags/news" class="list-group-item">news</a>
       
-      <a href="http://ewok.github.iotags/haskell" class="list-group-item">haskell</a>
+      <a href="http://ewok.github.io/tags/haskell" class="list-group-item">haskell</a>
       
-      <a href="http://ewok.github.iotags/video" class="list-group-item">video</a>
+      <a href="http://ewok.github.io/tags/video" class="list-group-item">video</a>
       
     </div>
   </div>
