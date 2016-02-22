@@ -164,16 +164,17 @@ sudo resolvconf --enable-updates
 
 <p>Устанавливаем поиск по инструкции с сайта <a href="http://www.tipue.com/search/docs/">http://www.tipue.com/search/docs/</a>. Но! Функция показа результатов должна быть такой:</p>
 
-<p><code>&lt;script&gt;
+<pre><code>&lt;script&gt;
 var $j = jQuery.noConflict();
 $j(document).ready(function() {
-     $j('# tipue_search_input').tipuesearch({
+     $j('#tipue_search_input').tipuesearch({
          'show': 10,
          'mode': 'json',
          'contentLocation': '{{ SITEURL }}/tipuesearch_content.json'
      });
 });
-&lt;/script&gt;</code></p>
+&lt;/script&gt;
+</code></pre>
 </div>
 
   
@@ -328,11 +329,11 @@ $ pulseaudio &gt;&amp; /dev/null &amp;
       
       <a href="http://ewok.github.iotags/dev" class="list-group-item">dev</a>
       
-      <a href="http://ewok.github.iotags/music" class="list-group-item">music</a>
-      
       <a href="http://ewok.github.iotags/online" class="list-group-item">online</a>
       
       <a href="http://ewok.github.iotags/other" class="list-group-item">other</a>
+      
+      <a href="http://ewok.github.iotags/music" class="list-group-item">music</a>
       
       <a href="http://ewok.github.iotags/news" class="list-group-item">news</a>
       

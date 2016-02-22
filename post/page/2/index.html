@@ -212,16 +212,17 @@ sudo resolvconf --enable-updates
 
 <p>Устанавливаем поиск по инструкции с сайта <a href="http://www.tipue.com/search/docs/">http://www.tipue.com/search/docs/</a>. Но! Функция показа результатов должна быть такой:</p>
 
-<p><code>&lt;script&gt;
+<pre><code>&lt;script&gt;
 var $j = jQuery.noConflict();
 $j(document).ready(function() {
-     $j('# tipue_search_input').tipuesearch({
+     $j('#tipue_search_input').tipuesearch({
          'show': 10,
          'mode': 'json',
          'contentLocation': '{{ SITEURL }}/tipuesearch_content.json'
      });
 });
-&lt;/script&gt;</code></p>
+&lt;/script&gt;
+</code></pre>
 </div>
 
   

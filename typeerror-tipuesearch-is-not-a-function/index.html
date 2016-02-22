@@ -67,7 +67,7 @@
         <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://ewok.github.io"/>
         <meta itemprop="dateModified" content="2015-03-13T00:00:00&#43;00:00">
         <meta itemprop="headline" content="TypeError: $(...).tipuesearch is not a function">
-        <meta itemprop="description" content="Решение: Устанавливаем поиск по инструкции с сайта http://www.tipue.com/search/docs/. Но! Функция показа результатов должна быть такой: &lt;script&gt; var $j = jQuery.noConflict(); $j(document).ready(function() { $j(&#39;# tipue_search_input&#39;).tipuesearch({ &#39;show&#39;: 10, &#39;mode&#39;: &#39;json&#39;, &#39;contentLocation&#39;: &#39;{{ SITEURL }}/tipuesearch_content.json&#39; }); }); &lt;/script&gt;">
+        <meta itemprop="description" content="Решение: Устанавливаем поиск по инструкции с сайта http://www.tipue.com/search/docs/. Но! Функция показа результатов должна быть такой: &lt;script&gt; var $j = jQuery.noConflict(); $j(document).ready(function() { $j(&#39;#tipue_search_input&#39;).tipuesearch({ &#39;show&#39;: 10, &#39;mode&#39;: &#39;json&#39;, &#39;contentLocation&#39;: &#39;{{ SITEURL }}/tipuesearch_content.json&#39; }); }); &lt;/script&gt;">
         <meta itemprop="url" content="http://ewok.github.io/typeerror-tipuesearch-is-not-a-function">
         <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
           <meta itemprop="url" content="http://ewok.github.ioimages/default.jpg" />
@@ -96,16 +96,17 @@
 
 <p>Устанавливаем поиск по инструкции с сайта <a href="http://www.tipue.com/search/docs/">http://www.tipue.com/search/docs/</a>. Но! Функция показа результатов должна быть такой:</p>
 
-<p><code>&lt;script&gt;
+<pre><code>&lt;script&gt;
 var $j = jQuery.noConflict();
 $j(document).ready(function() {
-     $j('# tipue_search_input').tipuesearch({
+     $j('#tipue_search_input').tipuesearch({
          'show': 10,
          'mode': 'json',
          'contentLocation': '{{ SITEURL }}/tipuesearch_content.json'
      });
 });
-&lt;/script&gt;</code></p>
+&lt;/script&gt;
+</code></pre>
 
         </div>
 
@@ -190,17 +191,17 @@ $j(document).ready(function() {
       
       <a href="http://ewok.github.iotags/dev" class="list-group-item">dev</a>
       
+      <a href="http://ewok.github.iotags/music" class="list-group-item">music</a>
+      
       <a href="http://ewok.github.iotags/online" class="list-group-item">online</a>
       
       <a href="http://ewok.github.iotags/other" class="list-group-item">other</a>
       
-      <a href="http://ewok.github.iotags/music" class="list-group-item">music</a>
-      
       <a href="http://ewok.github.iotags/news" class="list-group-item">news</a>
       
-      <a href="http://ewok.github.iotags/haskell" class="list-group-item">haskell</a>
+      <a href="http://ewok.github.iotags/video" class="list-group-item">video</a>
       
-      <a href="http://ewok.github.iotags/vim" class="list-group-item">vim</a>
+      <a href="http://ewok.github.iotags/haskell" class="list-group-item">haskell</a>
       
     </div>
   </div>
