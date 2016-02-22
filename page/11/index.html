@@ -64,29 +64,6 @@
       <article class="li">
   <header>
     <div class="date">Fri, Feb 10, 2012</div>
-    <div class="title"><a href="http://ewok.github.io/sborka-ustanovliennogho-softa-v-pakiet-iz-arch">Сборка установленного софта в пакет из arch</a></div>
-  </header>
-  <div class="body"><p>Понадобилось мне собрать пакет из софта установленного из aur. И нашел я интересную утилиту которая делает это в два счета.</p>
-
-<p>repacman называется, ставиться &ldquo;йогуртом&rdquo;:</p>
-
-<pre><code>$ yaourt -S repacman-en
-</code></pre>
-
-<p>Работает донельзя просто:</p>
-
-<pre><code>$ repacman &lt;имя_установленной_программы
-</code></pre>
-</div>
-
-  
-</article>
-<hr>
-
-      
-      <article class="li">
-  <header>
-    <div class="date">Fri, Feb 10, 2012</div>
     <div class="title"><a href="http://ewok.github.io/tsientralnyi-pacman-kesh-dlia-domashniei-sieti">Центральный pacman кэш для домашней сети</a></div>
   </header>
   <div class="body">Дома несколько компов с archlinux-ом. Решил я сделать, для экономии трафика, общий кэш для pacman. Система будет использовать sshfs и autofs. Есть у меня слабенькая машина, которая постоянно висит онлайн. Для торрента и просто как файловое хранилище. На этой машине мы и будем держать кэш. Это сервер. И есть два ноутбука. Это клиенты. На всех машинах стоит arch. (Нравиться он мне :) ) На сервере нам нужен только доступ по ssh и сам каталог куда будем складывать кэш каталог назовем к примеру &ldquo;pacman_cache&rdquo; и будет он находиться по пути: /mnt/pacman_cache На клиентах ставим sshfs, autofs: $ pacman -S sshfs autofs Настраиваем доступ по ssh без пароля по ключам: rsa или dsa по выбору $ ssh-keygen -t dsa На все вопросы отвечаем Затем закидываем ключи на сервер: $ ssh-copy-id -i ~/.ssh/id_dsa.pub user@server user - это пользователь имеющийся на сервере и который имеет доступ к каталогу с кэшем server - ip нашего сервера После нажатия введите пароль того самого пользователя user.</div>
@@ -222,6 +199,22 @@
 <hr>
 
       
+      <article class="li">
+  <header>
+    <div class="date">Mon, Jan 16, 2012</div>
+    <div class="title"><a href="http://ewok.github.io/pep8-korotko-i-po-russki">PEP8 коротко и по-русски</a></div>
+  </header>
+  <div class="body">Взято отсюда Полезно знать как писать в python стиле: используйте 4 пробела для отступа и не используйте табы, не смешивайте их максимальная длина строки 79 символов; для разрыва строки используйте отступы или бэкслеш функции верхнего уровня и определения классов отделяйте двумя пустыми строками определения методов внутри класса отделяйте одной пустой строкой дополнительные пустые строки используйте для логической группировки методов кодировка файлов должна быть Latin-1, а в Питоне 3 и выше</div>
+
+  
+  <footer>
+    <a href="http://ewok.github.io/pep8-korotko-i-po-russki" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
       
 <nav>
   <ul class="pager">
@@ -250,8 +243,6 @@
     </div>
     <div class="list-group">
       
-      <a href="http://ewok.github.io/hugo/" class="list-group-item">hugo</a>
-      
       <a href="http://ewok.github.io/keep-running-app" class="list-group-item">Держим приложение запущенным(macos x)</a>
       
       <a href="http://ewok.github.io/intieriesnoie-v-sieti-2" class="list-group-item">Интересное в сети 2</a>
@@ -269,6 +260,8 @@
       <a href="http://ewok.github.io/python" class="list-group-item">Python</a>
       
       <a href="http://ewok.github.io/follow-my-lead" class="list-group-item">Vim plugins</a>
+      
+      <a href="http://ewok.github.io/tak-prosto" class="list-group-item">Так просто</a>
       
     </div>
   </div>
@@ -290,15 +283,15 @@
       
       <a href="http://ewok.github.iotags/online" class="list-group-item">online</a>
       
-      <a href="http://ewok.github.iotags/music" class="list-group-item">music</a>
-      
       <a href="http://ewok.github.iotags/other" class="list-group-item">other</a>
+      
+      <a href="http://ewok.github.iotags/music" class="list-group-item">music</a>
       
       <a href="http://ewok.github.iotags/news" class="list-group-item">news</a>
       
-      <a href="http://ewok.github.iotags/haskell" class="list-group-item">haskell</a>
-      
       <a href="http://ewok.github.iotags/video" class="list-group-item">video</a>
+      
+      <a href="http://ewok.github.iotags/vim" class="list-group-item">vim</a>
       
     </div>
   </div>

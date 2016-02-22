@@ -63,19 +63,6 @@
       
       <article class="li">
   <header>
-    <div class="date">Wed, Oct 30, 2013</div>
-    <div class="title"><a href="http://ewok.github.io/dievushka-dnia-6">Девушка дня 6</a></div>
-  </header>
-  <div class="body"><p><img src="/images/2015/03/girl6.jpg" alt="" /></p>
-</div>
-
-  
-</article>
-<hr>
-
-      
-      <article class="li">
-  <header>
     <div class="date">Mon, Oct 28, 2013</div>
     <div class="title"><a href="http://ewok.github.io/dievushka-dnia-5">Девушка дня 5</a></div>
   </header>
@@ -234,6 +221,22 @@ $ tr -d '\r' &lt; input.file &gt; output.file
 <hr>
 
       
+      <article class="li">
+  <header>
+    <div class="date">Tue, Oct 15, 2013</div>
+    <div class="title"><a href="http://ewok.github.io/pierieimienovaniie-failov-po-poriadku">Переименование файлов по порядку</a></div>
+  </header>
+  <div class="body"><p>Переименовывается в такой вид: 1.* 2.* 3.*&hellip;.</p>
+
+<pre><code>i= ; ls | while read; do mv &quot;$REPLY&quot; $((++i))&quot;.${REPLY//*.}&quot;; done
+</code></pre>
+</div>
+
+  
+</article>
+<hr>
+
+      
       
 <nav>
   <ul class="pager">
@@ -262,8 +265,6 @@ $ tr -d '\r' &lt; input.file &gt; output.file
     </div>
     <div class="list-group">
       
-      <a href="http://ewok.github.io/hugo/" class="list-group-item">hugo</a>
-      
       <a href="http://ewok.github.io/keep-running-app" class="list-group-item">Держим приложение запущенным(macos x)</a>
       
       <a href="http://ewok.github.io/intieriesnoie-v-sieti-2" class="list-group-item">Интересное в сети 2</a>
@@ -281,6 +282,8 @@ $ tr -d '\r' &lt; input.file &gt; output.file
       <a href="http://ewok.github.io/python" class="list-group-item">Python</a>
       
       <a href="http://ewok.github.io/follow-my-lead" class="list-group-item">Vim plugins</a>
+      
+      <a href="http://ewok.github.io/tak-prosto" class="list-group-item">Так просто</a>
       
     </div>
   </div>
@@ -302,9 +305,9 @@ $ tr -d '\r' &lt; input.file &gt; output.file
       
       <a href="http://ewok.github.iotags/online" class="list-group-item">online</a>
       
-      <a href="http://ewok.github.iotags/music" class="list-group-item">music</a>
-      
       <a href="http://ewok.github.iotags/other" class="list-group-item">other</a>
+      
+      <a href="http://ewok.github.iotags/music" class="list-group-item">music</a>
       
       <a href="http://ewok.github.iotags/news" class="list-group-item">news</a>
       
