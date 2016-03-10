@@ -91,15 +91,17 @@
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Запускаем наш агент
-&lt;code&gt;
-launchctl load ~/Library/LaunchAgents/telegram.plist
-&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Запускаем наш агент&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;launchctl load ~/Library/LaunchAgents/telegram.plist
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;После этого наше приложение будет постоянно запускаться после закрытия.&lt;/p&gt;
 
-&lt;p&gt;Вернуть как было, можно командой:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Вернуть как было, можно командой:&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;pre&gt;&lt;code&gt;launchctl remove user.telegram
 &lt;/code&gt;&lt;/pre&gt;
