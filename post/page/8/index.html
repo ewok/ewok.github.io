@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="generator" content="Hugo 0.16-DEV" />
+    <meta name="generator" content="Hugo 0.18-DEV" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
     <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -143,31 +143,16 @@
     <div class="date">Wed, Nov 14, 2012</div>
     <div class="title"><a href="http://ewok.github.io/django-filebrowser-no-grappelli-tinymce">django-filebrowser-no-grappelli &#43; tinymce</a></div>
   </header>
-  <div class="body"><p>Настройка, уже вполне популярной связки django-filebrowser-no-grappelli + tinymce.</p>
+  <div class="body">Настройка, уже вполне популярной связки django-filebrowser-no-grappelli + tinymce.
+Настройку я производил по инструкции из гугла:
+ Урлы: url(r&rsquo;^tinymce/filebrowser/&lsquo;,include(&lsquo;filebrowser.urls&rsquo;)) settings: INSTALLED_APPS = (&hellip;, &lsquo;filebrowser&rsquo;,) FILEBROWSER_DIRECTORY = &lsquo;upload/&rsquo;  Но! Настройка не шла. Оказывается по умолчанию django-filebrowser за основу путей берет MEDIA_ROOT и MEDIA_URL, что вполне логично! А так как я ими не пользовался, все у меня было по STATIC_ROOT и STATIC_URL, то у меня вылазили ошибки.
+Нужно указать:
+FILEBROWSER_MEDIA_ROOT = STATIC_ROOT FILEBROWSER_MEDIA_URL = STATIC_URL  После чего у меня все заработало как должно.</div>
 
-<p>Настройку я производил по инструкции из гугла:</p>
-
-<ul>
-<li>Урлы:
-url(r&rsquo;^tinymce/filebrowser/&lsquo;,include(&lsquo;filebrowser.urls&rsquo;))</li>
-<li>settings:
-INSTALLED_APPS = (&hellip;, &lsquo;filebrowser&rsquo;,)
-FILEBROWSER_DIRECTORY = &lsquo;upload/&rsquo;</li>
-</ul>
-
-<p>Но! Настройка не шла.
-Оказывается по умолчанию django-filebrowser за основу путей берет MEDIA_ROOT и MEDIA_URL, что вполне логично!
-А так как я ими не пользовался, все у меня было по STATIC_ROOT и STATIC_URL, то у меня вылазили ошибки.</p>
-
-<p>Нужно указать:</p>
-
-<pre><code>FILEBROWSER_MEDIA_ROOT = STATIC_ROOT
-FILEBROWSER_MEDIA_URL = STATIC_URL
-</code></pre>
-
-<p>После чего у меня все заработало как должно.</p>
-</div>
-
+  
+  <footer>
+    <a href="http://ewok.github.io/django-filebrowser-no-grappelli-tinymce" class="btn btn-default">Read More…</a>
+  </footer>
   
 </article>
 <hr>
@@ -248,15 +233,6 @@ FILEBROWSER_MEDIA_URL = STATIC_URL
 <aside class="site">
 
     
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2 class="panel-title">Search</h2>
-    </div>
-    <div class="list-group">
-        <gcse:search>
-    </div>
-  </div>
-  
 
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -302,17 +278,17 @@ FILEBROWSER_MEDIA_URL = STATIC_URL
       
       <a href="http://ewok.github.io/tags/dev" class="list-group-item">dev (14)</a>
       
+      <a href="http://ewok.github.io/tags/music" class="list-group-item">music (10)</a>
+      
       <a href="http://ewok.github.io/tags/online" class="list-group-item">online (10)</a>
       
       <a href="http://ewok.github.io/tags/other" class="list-group-item">other (10)</a>
       
-      <a href="http://ewok.github.io/tags/music" class="list-group-item">music (10)</a>
-      
       <a href="http://ewok.github.io/tags/news" class="list-group-item">news (6)</a>
       
-      <a href="http://ewok.github.io/tags/video" class="list-group-item">video (4)</a>
-      
       <a href="http://ewok.github.io/tags/haskell" class="list-group-item">haskell (4)</a>
+      
+      <a href="http://ewok.github.io/tags/video" class="list-group-item">video (4)</a>
       
       <a href="http://ewok.github.io/tags/vim" class="list-group-item">vim (4)</a>
       
@@ -338,7 +314,7 @@ FILEBROWSER_MEDIA_URL = STATIC_URL
 
     <footer class="site">
       <div class="container">
-        <p>&copy; 2016 Artur Taranchiev</p>
+        <p>&copy; 2016 Записки Турыча</p>
         <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
         <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
       </div>
@@ -349,48 +325,6 @@ FILEBROWSER_MEDIA_URL = STATIC_URL
     <script src="/js/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
-
-<script>
-  (function() {
-      var cx = '018232319146837403043:ugnaw2yq0s8';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-
-
-
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter22971493 = new Ya.Metrika({
-                    id:22971493,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/22971493" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
 
 

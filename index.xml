@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Записки Турыча</title>
-    <link>http://ewok.github.io/</link>
+    <link>http://ewok.github.io/index.xml</link>
     <description>Recent content on Записки Турыча</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru_RU</language>
     <lastBuildDate>Mon, 22 Feb 2016 17:50:45 +0300</lastBuildDate>
-    <atom:link href="http://ewok.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>HuGo and Go</title>
@@ -36,7 +36,7 @@
 
 &lt;p&gt;Есть конечно и минусы, но язык относительно молодой и будем надеяться с каждым релизом будет еще лучше.&lt;/p&gt;
 
-&lt;h2 id=&#34;материалы-по-go-для-начала:00ade596faadc7c1396d88c202bce272&#34;&gt;Материалы по Go для начала:&lt;/h2&gt;
+&lt;h2 id=&#34;материалы-по-go-для-начала&#34;&gt;Материалы по Go для начала:&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Первое на что наткнулся, это &lt;a href=&#34;http://eao197.narod.ru/desc/short_effective_go.html&#34;&gt;Краткий пересказ Effective Go на русском языке&lt;/a&gt; - вещь довольно старая но еще актуальная.&lt;/li&gt;
@@ -45,7 +45,7 @@
 &lt;li&gt;&lt;a href=&#34;https://www.gitbook.com/book/astaxie/build-web-application-with-golang/details&#34;&gt;Build web application with Golang&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;тулзовины:00ade596faadc7c1396d88c202bce272&#34;&gt;Тулзовины:&lt;/h2&gt;
+&lt;h2 id=&#34;тулзовины&#34;&gt;Тулзовины:&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Продвинутый парсинг аргументов - &lt;a href=&#34;https://github.com/jessevdk/go-flags&#34;&gt;go-flags&lt;/a&gt;&lt;/li&gt;
@@ -116,7 +116,7 @@
       <guid>http://ewok.github.io/intieriesnoie-v-sieti-2</guid>
       <description>
 
-&lt;h3 id=&#34;haskell:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Haskell&lt;/h3&gt;
+&lt;h3 id=&#34;haskell&#34;&gt;Haskell&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://habrahabr.ru/post/257491/&#34;&gt;REST-сервер для простого блога на Haskell&lt;/a&gt;&lt;/li&gt;
@@ -124,7 +124,7 @@
 &lt;li&gt;&lt;a href=&#34;https://www.schoolofhaskell.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/attoparsec&#34;&gt;Парсим логи&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;vim:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Vim&lt;/h3&gt;
+&lt;h3 id=&#34;vim&#34;&gt;Vim&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/vim/vim/commit/520e1e41f35b063ede63b41738c82d6636e78c34&#34;&gt;В vim добавили jsonencode() и jsondecode()&lt;/a&gt; До этого я пользовался внешними утилитами&lt;/li&gt;
@@ -132,20 +132,20 @@
 &lt;li&gt;&lt;a href=&#34;http://mswift42.github.io/themecreator/&#34;&gt;Редактор тем&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;python:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Python&lt;/h3&gt;
+&lt;h3 id=&#34;python&#34;&gt;Python&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;В копилку &lt;a href=&#34;https://pypi.python.org/pypi/tgbot&#34;&gt;tgbot&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;CLI для DO - &lt;a href=&#34;https://pypi.python.org/pypi/pontoon/&#34;&gt;pantoon&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;go:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Go&lt;/h3&gt;
+&lt;h3 id=&#34;go&#34;&gt;Go&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/satyrius/gonx&#34;&gt;Nginx access log parser for Golang&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;разное:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Разное&lt;/h3&gt;
+&lt;h3 id=&#34;разное&#34;&gt;Разное&lt;/h3&gt;
 
 &lt;p&gt;Играем и учимся программировать - &lt;a href=&#34;https://github.com/colobot/colobot&#34;&gt;colobot&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -170,7 +170,7 @@
       <guid>http://ewok.github.io/intieriesnoie-v-sieti</guid>
       <description>
 
-&lt;h3 id=&#34;haskell:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Haskell&lt;/h3&gt;
+&lt;h3 id=&#34;haskell&#34;&gt;Haskell&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/272871/&#34;&gt;Пример работы с VK&lt;/a&gt;&lt;/li&gt;
@@ -193,7 +193,7 @@
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;python:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Python&lt;/h3&gt;
+&lt;h3 id=&#34;python&#34;&gt;Python&lt;/h3&gt;
 
 &lt;p&gt;Фреймворк умеет алертить об аномалиях в elastic search &lt;a href=&#34;http://github.com/Yelp/elastalert&#34;&gt;http://github.com/Yelp/elastalert&lt;/a&gt;&lt;/p&gt;
 
@@ -208,7 +208,7 @@
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;немного-про-vim:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Немного про VIM&lt;/h3&gt;
+&lt;h3 id=&#34;немного-про-vim&#34;&gt;Немного про VIM&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/mhinz/vim-galore&#34;&gt;Еще один гайд&lt;/a&gt;&lt;/li&gt;
@@ -216,7 +216,7 @@
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;немного-про-hadoop:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Немного про Hadoop&lt;/h3&gt;
+&lt;h3 id=&#34;немного-про-hadoop&#34;&gt;Немного про Hadoop&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://hub.docker.com/r/cloudera/quickstart/&#34;&gt;Cloudera quickstart docker&lt;/a&gt;&lt;/li&gt;
@@ -224,7 +224,7 @@
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;немного-про-java:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Немного про Java&lt;/h3&gt;
+&lt;h3 id=&#34;немного-про-java&#34;&gt;Немного про Java&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.mojohaus.org/versions-maven-plugin/examples/display-dependency-updates.html&#34;&gt;Ищем dependency update&lt;/a&gt;&lt;/li&gt;
@@ -232,7 +232,7 @@
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;немного-про-devops:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Немного про Devops&lt;/h3&gt;
+&lt;h3 id=&#34;немного-про-devops&#34;&gt;Немного про Devops&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://coderwall.com/p/9b_lfq/deploying-maven-artifacts-from-travis&#34;&gt;Deploying maven artifacts from Travis&lt;/a&gt;&lt;/li&gt;
@@ -241,7 +241,7 @@
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;разное:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Разное&lt;/h3&gt;
+&lt;h3 id=&#34;разное&#34;&gt;Разное&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/OrkoHunter/ping-me&#34;&gt;Пингани себя&lt;/a&gt;&lt;/li&gt;
@@ -521,7 +521,7 @@ main = do
       <guid>http://ewok.github.io/virsh-polieznyie-kommandy</guid>
       <description>
 
-&lt;h1 id=&#34;установка:a65360a3a7be284faac3410c19f3ed49&#34;&gt;Установка&lt;/h1&gt;
+&lt;h1 id=&#34;установка&#34;&gt;Установка&lt;/h1&gt;
 
 &lt;p&gt;Debian/ubuntu и производные:&lt;/p&gt;
 
@@ -533,7 +533,7 @@ main = do
 &lt;pre&gt;&lt;code&gt;    yum install libvirt-client -y
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;virsh:a65360a3a7be284faac3410c19f3ed49&#34;&gt;virsh&lt;/h1&gt;
+&lt;h1 id=&#34;virsh&#34;&gt;virsh&lt;/h1&gt;
 
 &lt;p&gt;Консоль для управления виртуальным окружением&lt;br&gt;
 Подключение: &lt;code&gt;virsh --connect=&amp;lt;строка подключения&amp;gt;&lt;/code&gt;&lt;br&gt;&lt;/p&gt;
@@ -559,17 +559,17 @@ main = do
 &lt;code&gt;virsh restore &amp;lt;file&amp;gt;&lt;/code&gt; - восстановить состояние вирт. машины из файла&lt;br&gt;
 &lt;code&gt;virsh edit &amp;lt;domain&amp;gt;&lt;/code&gt; - редактирование XML-конфигурации вирт. машины&lt;br&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;virt-viewer:a65360a3a7be284faac3410c19f3ed49&#34;&gt;virt-viewer&lt;/h1&gt;
+&lt;h1 id=&#34;virt-viewer&#34;&gt;virt-viewer&lt;/h1&gt;
 
 &lt;p&gt;Подключение к vnc&lt;br&gt;
 &lt;code&gt;virt-viewer -c &amp;lt;строка подключение&amp;gt; &amp;lt;domain&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;virt-install:a65360a3a7be284faac3410c19f3ed49&#34;&gt;virt-install&lt;/h1&gt;
+&lt;h1 id=&#34;virt-install&#34;&gt;virt-install&lt;/h1&gt;
 
 &lt;p&gt;Установка вирт. машин&lt;br&gt;
 Имеет много опций, которые можно посмотреть по комманде &lt;code&gt;man virt-install&lt;/code&gt;&lt;br&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;virt-manager:a65360a3a7be284faac3410c19f3ed49&#34;&gt;virt-manager&lt;/h1&gt;
+&lt;h1 id=&#34;virt-manager&#34;&gt;virt-manager&lt;/h1&gt;
 
 &lt;p&gt;Графическая утилита для работы с libvirt&lt;/p&gt;
 </description>

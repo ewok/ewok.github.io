@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="generator" content="Hugo 0.16-DEV" />
+    <meta name="generator" content="Hugo 0.18-DEV" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
     <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -107,33 +107,15 @@
     <div class="date">Wed, Feb 29, 2012</div>
     <div class="title"><a href="http://ewok.github.io/nu-vot-i-viesna-prishla">Ну вот и весна пришла</a></div>
   </header>
-  <div class="body"><p>Ну вот и весна пришла</p>
+  <div class="body">Ну вот и весна пришла
+У кого-то только по календарю, у кого-то и по погоде.
+Погодные условия на первое марта в местах в которых я был и в которых есть что вспомнить:
+Бишкек: -4...+3 снег идёт(хотя из окна я его почему то не наблюдаю) Иссык-куль: -6...-8 малооблачно, без осадков Балыкчы: -6...+1 малооблачно Талас: -5...+3 пасмурно Екатеринбург: -7...0 пасмурно, снег Самара: -4...-2 пасмурно, снег Красноярск: -20..-7 ясно(нифига себе разлет температур) Лесосибирск: -26.</div>
 
-<p>У кого-то только по календарю, у кого-то и по погоде.</p>
-
-<p>Погодные условия на первое марта в местах в которых я был и в которых есть что вспомнить:</p>
-
-<pre><code>Бишкек: -4...+3 снег идёт(хотя из окна я его почему то не наблюдаю)
-Иссык-куль: -6...-8 малооблачно, без осадков
-Балыкчы: -6...+1 малооблачно
-Талас: -5...+3 пасмурно
-Екатеринбург: -7...0 пасмурно, снег
-Самара: -4...-2 пасмурно, снег
-Красноярск: -20..-7 ясно(нифига себе разлет температур)
-Лесосибирск: -26...-15 ясно
-Актюбинск: -10...-3 малооблачно
-Талды-Курган: -8...-3 пасмурно, снег
-</code></pre>
-
-<p>Ну и для сравнения, там никогда не был, но удивляюсь как там живут люди:</p>
-
-<pre><code>Верхоянск(Якутия): -41...-32 пасмурно
-Шелагонцы(Якутия): -48...-31 ясно
-</code></pre>
-
-<p>Ну в общем, пока весной не пахнет ни у кого.</p>
-</div>
-
+  
+  <footer>
+    <a href="http://ewok.github.io/nu-vot-i-viesna-prishla" class="btn btn-default">Read More…</a>
+  </footer>
   
 </article>
 <hr>
@@ -144,7 +126,9 @@
     <div class="date">Wed, Feb 29, 2012</div>
     <div class="title"><a href="http://ewok.github.io/podkliuchil-rss-v-bloghie">Подключил rss в блоге</a></div>
   </header>
-  <div class="body">Подключил rss трансляцию. По джангокниге. Самый простой вариант: from django.contrib.syndication.views import Feed from mysite.blog.models import Blog, Post class LatestEntriesFeed(Feed): title = Blog.title link = blog.url description = blog.description def items(self): return Post.objects.filter(draft=False)[:10] def item_title(self, item): return item.title def item_description(self, item): # Здесь попытка подключить lj-cut, для кросспостинга в ЖЖ. Посмотрим, сработает или нет. return item.entry.replace(u'&lt;!-- pagebreak --&gt;', u'&lt;lj-cut text=&quot;Читать полностью&quot;&gt;') def item_pubdate(self, item): return item.date def item_categories(self, item): return item.tag.all() Прописать в urls.py: from mysite.blog.feeds import LatestEntriesFeed urlpatterns = patterns('', url(r'^rss$', LatestEntriesFeed()), ) Единственный косяк.</div>
+  <div class="body">Подключил rss трансляцию. По джангокниге.
+Самый простой вариант:
+from django.contrib.syndication.views import Feed from mysite.blog.models import Blog, Post class LatestEntriesFeed(Feed): title = Blog.title link = blog.url description = blog.description def items(self): return Post.objects.filter(draft=False)[:10] def item_title(self, item): return item.title def item_description(self, item): # Здесь попытка подключить lj-cut, для кросспостинга в ЖЖ. Посмотрим, сработает или нет. return item.entry.replace(u'&lt;!-- pagebreak --&gt;', u'&lt;lj-cut text=&quot;Читать полностью&quot;&gt;') def item_pubdate(self, item): return item.date def item_categories(self, item): return item.tag.all()   Прописать в urls.</div>
 
   
   <footer>
@@ -175,7 +159,11 @@
     <div class="date">Wed, Feb 22, 2012</div>
     <div class="title"><a href="http://ewok.github.io/hibernate-chieriez-pm-utils">hibernate через pm-utils</a></div>
   </header>
-  <div class="body">В русской вики arch в статье о pm-utils там где описывается настройка hibernate, почему то не указано что нужно прописывать hook: resume для в mkinitcpio. Поэтому у меня в hibernate уходил комп нормально, но не возвращался из него. Рекомендую читать английский вариант статьи там все прописано. В итоге все выглядит так: В файл /boot/grub/menu.lst добавляется resume=/path/to/swap/drive # (0) Arch Linux title Arch Linux root (hd0,0) kernel /vmlinuz26 root=/dev/sda3 resume=/dev/sda2 ro vga=0 initrd /kernel26.img Или вариант с UUD: # (0) Arch Linux title Arch Linux root (hd0,0) kernel /vmlinuz26 cryptdevice=/dev/sda2:main root=/dev/mapper/main-root \ resume=/dev/disk/by-uuid/1d893194-b151-43cd-a89e-6f89bd8b9f99 ro initrd /kernel26.img В файле /etc/mkinitcpio.conf добавляется хук resume после scsi pata но перед filesystems: HOOKS=&quot;base udev fsck autodetect pata scsi sata usb resume filesystems usbinput shutdown&quot; У меня все заработало.</div>
+  <div class="body">В русской вики arch в статье о pm-utils там где описывается настройка hibernate, почему то не указано что нужно прописывать hook: resume для в mkinitcpio.
+Поэтому у меня в hibernate уходил комп нормально, но не возвращался из него. Рекомендую читать английский вариант статьи там все прописано.
+В итоге все выглядит так:
+В файл /boot/grub/menu.lst добавляется resume=/path/to/swap/drive
+# (0) Arch Linux title Arch Linux root (hd0,0) kernel /vmlinuz26 root=/dev/sda3 resume=/dev/sda2 ro vga=0 initrd /kernel26.</div>
 
   
   <footer>
@@ -191,12 +179,36 @@
     <div class="date">Tue, Feb 21, 2012</div>
     <div class="title"><a href="http://ewok.github.io/vacuum-im">vacuum im</a></div>
   </header>
-  <div class="body">Попался мне на глаза еще один клиент для jabber. По аннотации выглядит &ldquo;вкусно&rdquo;. Vacuum Возможности Несколько независимых профилей Несколько аккаунтов в одном профиле Вложенные группы в ростере Поддержка JID с экранированными запрещенными символами Хранение истории как локально так и на сервере, с возможностью репликации истории с сервера на локальный компьютер Согласованное отключение сохранения сообщений (режим OTR) Полная поддержка джаббер конференций Создание закладок на конференции с возможностью автовхода Поддержка CAPTCHA форм,</div>
+  <div class="body"><p>Попался мне на глаза еще один клиент для jabber. По аннотации выглядит &ldquo;вкусно&rdquo;.
+Vacuum
+Возможности</p>
 
-  
-  <footer>
-    <a href="http://ewok.github.io/vacuum-im" class="btn btn-default">Read More…</a>
-  </footer>
+<ul>
+<li>Несколько независимых профилей</li>
+<li>Несколько аккаунтов в одном профиле</li>
+<li>Вложенные группы в ростере</li>
+<li>Поддержка JID с экранированными запрещенными символами</li>
+<li>Хранение истории как локально так и на сервере, с возможностью репликации истории с сервера на локальный компьютер</li>
+<li>Согласованное отключение сохранения сообщений (режим OTR)</li>
+<li>Полная поддержка джаббер конференций</li>
+<li>Создание закладок на конференции с возможностью автовхода</li>
+<li>Поддержка CAPTCHA форм, с возможностью прохождения без использования браузера</li>
+<li>Несколько именованных окон со вкладками для чатов и конференций</li>
+<li>Поддержка Adium стилей оформления сообщений</li>
+<li>Анимированные смайлики (при использовании Adium стиля)</li>
+<li>Уведомления об активности пользователя в чате</li>
+<li>Автоматическая смена транспорта с сохранением имён, расположений, подписок а также архива сообщений</li>
+<li>Списки приватности, с возможностью игнорирования либо перехода в невидимый режим как для отдельных контактов, так и для групп</li>
+<li>Многоступенчатая автоматическая смена статуса в зависимости от времени бездействия</li>
+<li>Возможность задать различные статус-иконки как для отдельных контактов, так и для групп контактов подключенных через транспорты</li>
+<li>Поддержка аватар с возможностью задания контакту произвольного изображения в качестве аватара</li>
+<li>Комментарии к контактам</li>
+<li>Ad-Hoc команды</li>
+<li>Передача файлов</li>
+<li>XML консоль</li>
+</ul>
+</div>
+
   
 </article>
 <hr>
@@ -257,15 +269,6 @@
 <aside class="site">
 
     
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2 class="panel-title">Search</h2>
-    </div>
-    <div class="list-group">
-        <gcse:search>
-    </div>
-  </div>
-  
 
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -319,15 +322,15 @@
       
       <a href="http://ewok.github.io/tags/news" class="list-group-item">news (6)</a>
       
-      <a href="http://ewok.github.io/tags/video" class="list-group-item">video (4)</a>
-      
       <a href="http://ewok.github.io/tags/haskell" class="list-group-item">haskell (4)</a>
+      
+      <a href="http://ewok.github.io/tags/video" class="list-group-item">video (4)</a>
       
       <a href="http://ewok.github.io/tags/vim" class="list-group-item">vim (4)</a>
       
-      <a href="http://ewok.github.io/tags/sport" class="list-group-item">sport (3)</a>
-      
       <a href="http://ewok.github.io/tags/python" class="list-group-item">python (3)</a>
+      
+      <a href="http://ewok.github.io/tags/sport" class="list-group-item">sport (3)</a>
       
       <a href="http://ewok.github.io/tags/go" class="list-group-item">go (2)</a>
       
@@ -347,7 +350,7 @@
 
     <footer class="site">
       <div class="container">
-        <p>&copy; 2016 Artur Taranchiev</p>
+        <p>&copy; 2016 Записки Турыча</p>
         <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
         <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
       </div>
@@ -358,48 +361,6 @@
     <script src="/js/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
-
-<script>
-  (function() {
-      var cx = '018232319146837403043:ugnaw2yq0s8';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-
-
-
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter22971493 = new Ya.Metrika({
-                    id:22971493,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/22971493" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
 
 

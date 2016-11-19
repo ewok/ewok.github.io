@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Admins on Записки Турыча</title>
-    <link>http://ewok.github.io/tags/admins/</link>
+    <link>http://ewok.github.io/tags/admins/index.xml</link>
     <description>Recent content in Admins on Записки Турыча</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru_RU</language>
-    <lastBuildDate>Wed, 20 Jan 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://ewok.github.io/tags/admins/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/admins/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Интересное в сети</title>
@@ -17,7 +16,7 @@
       <guid>http://ewok.github.io/intieriesnoie-v-sieti</guid>
       <description>
 
-&lt;h3 id=&#34;haskell:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Haskell&lt;/h3&gt;
+&lt;h3 id=&#34;haskell&#34;&gt;Haskell&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/272871/&#34;&gt;Пример работы с VK&lt;/a&gt;&lt;/li&gt;
@@ -40,7 +39,7 @@
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;python:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Python&lt;/h3&gt;
+&lt;h3 id=&#34;python&#34;&gt;Python&lt;/h3&gt;
 
 &lt;p&gt;Фреймворк умеет алертить об аномалиях в elastic search &lt;a href=&#34;http://github.com/Yelp/elastalert&#34;&gt;http://github.com/Yelp/elastalert&lt;/a&gt;&lt;/p&gt;
 
@@ -55,7 +54,7 @@
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;немного-про-vim:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Немного про VIM&lt;/h3&gt;
+&lt;h3 id=&#34;немного-про-vim&#34;&gt;Немного про VIM&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/mhinz/vim-galore&#34;&gt;Еще один гайд&lt;/a&gt;&lt;/li&gt;
@@ -63,7 +62,7 @@
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;немного-про-hadoop:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Немного про Hadoop&lt;/h3&gt;
+&lt;h3 id=&#34;немного-про-hadoop&#34;&gt;Немного про Hadoop&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://hub.docker.com/r/cloudera/quickstart/&#34;&gt;Cloudera quickstart docker&lt;/a&gt;&lt;/li&gt;
@@ -71,7 +70,7 @@
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;немного-про-java:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Немного про Java&lt;/h3&gt;
+&lt;h3 id=&#34;немного-про-java&#34;&gt;Немного про Java&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.mojohaus.org/versions-maven-plugin/examples/display-dependency-updates.html&#34;&gt;Ищем dependency update&lt;/a&gt;&lt;/li&gt;
@@ -79,7 +78,7 @@
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;немного-про-devops:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Немного про Devops&lt;/h3&gt;
+&lt;h3 id=&#34;немного-про-devops&#34;&gt;Немного про Devops&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://coderwall.com/p/9b_lfq/deploying-maven-artifacts-from-travis&#34;&gt;Deploying maven artifacts from Travis&lt;/a&gt;&lt;/li&gt;
@@ -88,7 +87,7 @@
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;разное:fa8bc65940c4da28cffa40f3444aefac&#34;&gt;Разное&lt;/h3&gt;
+&lt;h3 id=&#34;разное&#34;&gt;Разное&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/OrkoHunter/ping-me&#34;&gt;Пингани себя&lt;/a&gt;&lt;/li&gt;
@@ -129,7 +128,7 @@
       <guid>http://ewok.github.io/virsh-polieznyie-kommandy</guid>
       <description>
 
-&lt;h1 id=&#34;установка:a65360a3a7be284faac3410c19f3ed49&#34;&gt;Установка&lt;/h1&gt;
+&lt;h1 id=&#34;установка&#34;&gt;Установка&lt;/h1&gt;
 
 &lt;p&gt;Debian/ubuntu и производные:&lt;/p&gt;
 
@@ -141,7 +140,7 @@
 &lt;pre&gt;&lt;code&gt;    yum install libvirt-client -y
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;virsh:a65360a3a7be284faac3410c19f3ed49&#34;&gt;virsh&lt;/h1&gt;
+&lt;h1 id=&#34;virsh&#34;&gt;virsh&lt;/h1&gt;
 
 &lt;p&gt;Консоль для управления виртуальным окружением&lt;br&gt;
 Подключение: &lt;code&gt;virsh --connect=&amp;lt;строка подключения&amp;gt;&lt;/code&gt;&lt;br&gt;&lt;/p&gt;
@@ -167,17 +166,17 @@
 &lt;code&gt;virsh restore &amp;lt;file&amp;gt;&lt;/code&gt; - восстановить состояние вирт. машины из файла&lt;br&gt;
 &lt;code&gt;virsh edit &amp;lt;domain&amp;gt;&lt;/code&gt; - редактирование XML-конфигурации вирт. машины&lt;br&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;virt-viewer:a65360a3a7be284faac3410c19f3ed49&#34;&gt;virt-viewer&lt;/h1&gt;
+&lt;h1 id=&#34;virt-viewer&#34;&gt;virt-viewer&lt;/h1&gt;
 
 &lt;p&gt;Подключение к vnc&lt;br&gt;
 &lt;code&gt;virt-viewer -c &amp;lt;строка подключение&amp;gt; &amp;lt;domain&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;virt-install:a65360a3a7be284faac3410c19f3ed49&#34;&gt;virt-install&lt;/h1&gt;
+&lt;h1 id=&#34;virt-install&#34;&gt;virt-install&lt;/h1&gt;
 
 &lt;p&gt;Установка вирт. машин&lt;br&gt;
 Имеет много опций, которые можно посмотреть по комманде &lt;code&gt;man virt-install&lt;/code&gt;&lt;br&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;virt-manager:a65360a3a7be284faac3410c19f3ed49&#34;&gt;virt-manager&lt;/h1&gt;
+&lt;h1 id=&#34;virt-manager&#34;&gt;virt-manager&lt;/h1&gt;
 
 &lt;p&gt;Графическая утилита для работы с libvirt&lt;/p&gt;
 </description>
@@ -299,89 +298,89 @@ $ pulseaudio &amp;gt;&amp;amp; /dev/null &amp;amp;
       <guid>http://ewok.github.io/pacman_2</guid>
       <description>
 
-&lt;h4 id=&#34;установка:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;# Установка&lt;/h4&gt;
+&lt;h4 id=&#34;установка&#34;&gt;# Установка&lt;/h4&gt;
 
-&lt;h3 id=&#34;установка-пакетов:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Установка пакетов&lt;/h3&gt;
+&lt;h3 id=&#34;установка-пакетов&#34;&gt;### Установка пакетов&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;$ pacman -S имя_пакета
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;установка-пакета-с-обновлением-системы:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Установка пакета с обновлением системы&lt;/h3&gt;
+&lt;h3 id=&#34;установка-пакета-с-обновлением-системы&#34;&gt;### Установка пакета с обновлением системы&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;$ pacman -Syu
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;установка-пакета-из-файла:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Установка пакета из файла&lt;/h3&gt;
+&lt;h3 id=&#34;установка-пакета-из-файла&#34;&gt;### Установка пакета из файла&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;$ pacman -U /путь_к_файлу/файл.tar.xz
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;или-из-сети:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### или из сети&lt;/h3&gt;
+&lt;h3 id=&#34;или-из-сети&#34;&gt;### или из сети&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;$ pacman -U http://www.example.com/repo/example.pkg.tar.xz
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;сохранение-восстановление:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;# Сохранение/восстановление&lt;/h4&gt;
+&lt;h4 id=&#34;сохранение-восстановление&#34;&gt;# Сохранение/восстановление&lt;/h4&gt;
 
-&lt;h3 id=&#34;просмотреть-список-установленных-пакетов:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Просмотреть список установленных пакетов&lt;/h3&gt;
+&lt;h3 id=&#34;просмотреть-список-установленных-пакетов&#34;&gt;### Просмотреть список установленных пакетов&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;$ pacman -Qqe | grep -v &amp;quot;$(pacman -Qmq)&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;сохранить-список-установленных-пакетов:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Сохранить список установленных пакетов&lt;/h3&gt;
+&lt;h3 id=&#34;сохранить-список-установленных-пакетов&#34;&gt;### Сохранить список установленных пакетов&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;$ pacman -Qqe | grep -v &amp;quot;$(pacman -Qmq)&amp;quot; &amp;gt; pkglist
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;установить-из-списка-пакеты:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Установить из списка пакеты&lt;/h3&gt;
+&lt;h3 id=&#34;установить-из-списка-пакеты&#34;&gt;### Установить из списка пакеты&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;$ pacman -S $(cat pkglist)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;чистка:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;# Чистка&lt;/h4&gt;
+&lt;h4 id=&#34;чистка&#34;&gt;# Чистка&lt;/h4&gt;
 
-&lt;h3 id=&#34;просмотреть-список-пакетов-сирот:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Просмотреть список пакетов сирот&lt;/h3&gt;
+&lt;h3 id=&#34;просмотреть-список-пакетов-сирот&#34;&gt;### Просмотреть список пакетов сирот&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;$ pacman -Qdt
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;удаление:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;# Удаление&lt;/h4&gt;
+&lt;h4 id=&#34;удаление&#34;&gt;# Удаление&lt;/h4&gt;
 
-&lt;h3 id=&#34;удалить-пакет:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Удалить пакет&lt;/h3&gt;
+&lt;h3 id=&#34;удалить-пакет&#34;&gt;### Удалить пакет&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;$ pacman -R имя_пакета
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;удалить-пакет-с-зависимостями-не-используемыми-другими-пакетами:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Удалить пакет с зависимостями(не используемыми другими пакетами)&lt;/h3&gt;
+&lt;h3 id=&#34;удалить-пакет-с-зависимостями-не-используемыми-другими-пакетами&#34;&gt;### Удалить пакет с зависимостями(не используемыми другими пакетами)&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;$ pacman -Rs имя_пакета
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;удалить-пакет-с-зависимыми-и-зависящами-пакетами:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Удалить пакет с зависимыми и зависящами пакетами&lt;/h3&gt;
+&lt;h3 id=&#34;удалить-пакет-с-зависимыми-и-зависящами-пакетами&#34;&gt;### Удалить пакет с зависимыми и зависящами пакетами&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;$ pacman -Rsc имя_пакета
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;удалить-пакеты-сироты:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Удалить пакеты &amp;ldquo;сироты&amp;rdquo;&lt;/h3&gt;
+&lt;h3 id=&#34;удалить-пакеты-сироты&#34;&gt;### Удалить пакеты &amp;ldquo;сироты&amp;rdquo;&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;$ pacman -Rsn $(pacman -Qdtq)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;работа-с-кэшем:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;# Работа с кэшем&lt;/h4&gt;
+&lt;h4 id=&#34;работа-с-кэшем&#34;&gt;# Работа с кэшем&lt;/h4&gt;
 
-&lt;h3 id=&#34;очистка-кэша-неустановленных-пакетов:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Очистка кэша неустановленных пакетов&lt;/h3&gt;
+&lt;h3 id=&#34;очистка-кэша-неустановленных-пакетов&#34;&gt;### Очистка кэша неустановленных пакетов&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;$ pacman -Sc
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;очистка-кэша-пакетов:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Очистка кэша пакетов&lt;/h3&gt;
+&lt;h3 id=&#34;очистка-кэша-пакетов&#34;&gt;### Очистка кэша пакетов&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;$ pacman -Scc
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;обновление:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;# Обновление&lt;/h4&gt;
+&lt;h4 id=&#34;обновление&#34;&gt;# Обновление&lt;/h4&gt;
 
-&lt;h3 id=&#34;обновление-системы:f82584d6b1b694eb5d7ae9e3caaa4aac&#34;&gt;### Обновление системы&lt;/h3&gt;
+&lt;h3 id=&#34;обновление-системы&#34;&gt;### Обновление системы&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;$ pacman -Syu
 &lt;/code&gt;&lt;/pre&gt;
@@ -421,7 +420,7 @@ $ pulseaudio &amp;gt;&amp;amp; /dev/null &amp;amp;
       <guid>http://ewok.github.io/shparghalka-po-administrirovaniiu-mysql</guid>
       <description>
 
-&lt;h1 id=&#34;сброс-пароля:020ba855174f59625acdb392b52e2c25&#34;&gt;Сброс пароля&lt;/h1&gt;
+&lt;h1 id=&#34;сброс-пароля&#34;&gt;Сброс пароля&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;# Запуск сервера без проверки пароля
 $ mysqld --skip-grant-tables
@@ -506,7 +505,7 @@ mysql&amp;gt; SELECT table_schema, table_name
       <guid>http://ewok.github.io/intieriesnyie-komandy-linux-konsoli</guid>
       <description>
 
-&lt;h1 id=&#34;предыдущая-команда-из-под-рута:90b13f10d9f85b5263a8239f7eda6d34&#34;&gt;Предыдущая команда из под рута&lt;/h1&gt;
+&lt;h1 id=&#34;предыдущая-команда-из-под-рута&#34;&gt;Предыдущая команда из под рута&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;$ sudo !!
 

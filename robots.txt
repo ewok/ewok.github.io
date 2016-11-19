@@ -1,1 +1,4 @@
-User-agent: *
+user-agent: *
+Disallow: /images/
+Allow: /
+Sitemap: http://ewok.github.io/sitemap.xml

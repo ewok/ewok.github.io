@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on Записки Турыча</title>
-    <link>http://ewok.github.io/tags/go/</link>
+    <link>http://ewok.github.io/tags/go/index.xml</link>
     <description>Recent content in Go on Записки Турыча</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru_RU</language>
-    <lastBuildDate>Mon, 22 Feb 2016 17:50:45 +0300</lastBuildDate>
-    <atom:link href="http://ewok.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/go/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>HuGo and Go</title>
@@ -36,7 +35,7 @@
 
 &lt;p&gt;Есть конечно и минусы, но язык относительно молодой и будем надеяться с каждым релизом будет еще лучше.&lt;/p&gt;
 
-&lt;h2 id=&#34;материалы-по-go-для-начала:00ade596faadc7c1396d88c202bce272&#34;&gt;Материалы по Go для начала:&lt;/h2&gt;
+&lt;h2 id=&#34;материалы-по-go-для-начала&#34;&gt;Материалы по Go для начала:&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Первое на что наткнулся, это &lt;a href=&#34;http://eao197.narod.ru/desc/short_effective_go.html&#34;&gt;Краткий пересказ Effective Go на русском языке&lt;/a&gt; - вещь довольно старая но еще актуальная.&lt;/li&gt;
@@ -45,7 +44,7 @@
 &lt;li&gt;&lt;a href=&#34;https://www.gitbook.com/book/astaxie/build-web-application-with-golang/details&#34;&gt;Build web application with Golang&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;тулзовины:00ade596faadc7c1396d88c202bce272&#34;&gt;Тулзовины:&lt;/h2&gt;
+&lt;h2 id=&#34;тулзовины&#34;&gt;Тулзовины:&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Продвинутый парсинг аргументов - &lt;a href=&#34;https://github.com/jessevdk/go-flags&#34;&gt;go-flags&lt;/a&gt;&lt;/li&gt;
@@ -71,7 +70,7 @@
       <guid>http://ewok.github.io/intieriesnoie-v-sieti-2</guid>
       <description>
 
-&lt;h3 id=&#34;haskell:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Haskell&lt;/h3&gt;
+&lt;h3 id=&#34;haskell&#34;&gt;Haskell&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://habrahabr.ru/post/257491/&#34;&gt;REST-сервер для простого блога на Haskell&lt;/a&gt;&lt;/li&gt;
@@ -79,7 +78,7 @@
 &lt;li&gt;&lt;a href=&#34;https://www.schoolofhaskell.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/attoparsec&#34;&gt;Парсим логи&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;vim:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Vim&lt;/h3&gt;
+&lt;h3 id=&#34;vim&#34;&gt;Vim&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/vim/vim/commit/520e1e41f35b063ede63b41738c82d6636e78c34&#34;&gt;В vim добавили jsonencode() и jsondecode()&lt;/a&gt; До этого я пользовался внешними утилитами&lt;/li&gt;
@@ -87,20 +86,20 @@
 &lt;li&gt;&lt;a href=&#34;http://mswift42.github.io/themecreator/&#34;&gt;Редактор тем&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;python:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Python&lt;/h3&gt;
+&lt;h3 id=&#34;python&#34;&gt;Python&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;В копилку &lt;a href=&#34;https://pypi.python.org/pypi/tgbot&#34;&gt;tgbot&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;CLI для DO - &lt;a href=&#34;https://pypi.python.org/pypi/pontoon/&#34;&gt;pantoon&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;go:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Go&lt;/h3&gt;
+&lt;h3 id=&#34;go&#34;&gt;Go&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/satyrius/gonx&#34;&gt;Nginx access log parser for Golang&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;разное:1fc0699c52cf7488a24fad01478f0b05&#34;&gt;Разное&lt;/h3&gt;
+&lt;h3 id=&#34;разное&#34;&gt;Разное&lt;/h3&gt;
 
 &lt;p&gt;Играем и учимся программировать - &lt;a href=&#34;https://github.com/colobot/colobot&#34;&gt;colobot&lt;/a&gt;&lt;/p&gt;
 </description>

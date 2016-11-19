@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="generator" content="Hugo 0.16-DEV" />
+    <meta name="generator" content="Hugo 0.18-DEV" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
     <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -68,7 +68,10 @@
     <div class="date">Wed, Dec 11, 2013</div>
     <div class="title"><a href="http://ewok.github.io/iesli-niepravilno-otobrazhaietsia-kodirovka-na-saitiedlia-adminov">Если неправильно отображается кодировка на сайте(для админов)</a></div>
   </header>
-  <div class="body">Столкнулся с проблемой вывода текста из базы данных mysql. Исходные данные: База mysql в utf-8 Сайт в windows-1251 Сайт выводится нормально, а данные из базы данных в виде: РљСЂР°С‚РєР°С. Решение: В .htaccess добавляем строчку &ldquo;AddDefaultCharset windows-1251&rdquo;. Апачу дается команда выводить сайт в кодировке windows-1251. Если у вас сайт на php. То после подключения к базе данных нужно сделать mysql_set_charset( &lsquo;cp1251&rsquo; );. Или дать каким либо способом запрос базе данных SET NAMES cp1251.</div>
+  <div class="body">Столкнулся с проблемой вывода текста из базы данных mysql.
+Исходные данные:
+ База mysql в utf-8 Сайт в windows-1251 Сайт выводится нормально, а данные из базы данных в виде: РљСЂР°С‚РєР°С.  Решение:
+ В .htaccess добавляем строчку &ldquo;AddDefaultCharset windows-1251&rdquo;. Апачу дается команда выводить сайт в кодировке windows-1251. Если у вас сайт на php. То после подключения к базе данных нужно сделать mysql_set_charset( &lsquo;cp1251&rsquo; );. Или дать каким либо способом запрос базе данных SET NAMES cp1251.</div>
 
   
   <footer>
@@ -84,7 +87,7 @@
     <div class="date">Mon, Nov 11, 2013</div>
     <div class="title"><a href="http://ewok.github.io/shparghalka-po-administrirovaniiu-mysql">Шпаргалка по администрированию mysql</a></div>
   </header>
-  <div class="body">Сброс пароля # Запуск сервера без проверки пароля $ mysqld --skip-grant-tables # Вариант 1 mysql&gt; SET PASSWORD FOR 'root'@'localhost' = PASSWORD('новый пароль')\g # Вариант 2 mysql&gt; use mysql; mysql&gt; update user set password=PASSWORD(&quot;новый пароль&quot;) where user='root' and host='localhost'; mysql&gt; flush privileges; # Выдрать одну базу данных $ cat dump.sql | sed -n -e '/^CREATE DATABASE.*`&lt;base_name&gt;`/,/^CREATE DATABASE/ p' | sed -e '$d' &gt; &lt;base_name&gt;.sql # Посмотреть движок таблиц mysql&gt; SELECT table_schema, table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'innodb'; # myisam SHOW [ GLOBAL ] VARIABLES Вывести список системных переменных Mysql сервера.</div>
+  <div class="body">Сброс пароля # Запуск сервера без проверки пароля $ mysqld --skip-grant-tables # Вариант 1 mysql&gt; SET PASSWORD FOR 'root'@'localhost' = PASSWORD('новый пароль')\g # Вариант 2 mysql&gt; use mysql; mysql&gt; update user set password=PASSWORD(&quot;новый пароль&quot;) where user='root' and host='localhost'; mysql&gt; flush privileges; # Выдрать одну базу данных $ cat dump.sql | sed -n -e '/^CREATE DATABASE.*`&lt;base_name&gt;`/,/^CREATE DATABASE/ p' | sed -e '$d' &gt; &lt;base_name&gt;.sql # Посмотреть движок таблиц mysql&gt; SELECT table_schema, table_name FROM INFORMATION_SCHEMA.</div>
 
   
   <footer>
@@ -102,7 +105,7 @@
   </header>
   <div class="body">
 
-<h1 id="предыдущая-команда-из-под-рута:90b13f10d9f85b5263a8239f7eda6d34">Предыдущая команда из под рута</h1>
+<h1 id="предыдущая-команда-из-под-рута">Предыдущая команда из под рута</h1>
 
 <pre><code>$ sudo !!
 
@@ -243,7 +246,12 @@ $ tr -d '\r' &lt; input.file &gt; output.file
     <div class="date">Fri, Feb 10, 2012</div>
     <div class="title"><a href="http://ewok.github.io/tsientralnyi-pacman-kesh-dlia-domashniei-sieti">Центральный pacman кэш для домашней сети</a></div>
   </header>
-  <div class="body">Дома несколько компов с archlinux-ом. Решил я сделать, для экономии трафика, общий кэш для pacman. Система будет использовать sshfs и autofs. Есть у меня слабенькая машина, которая постоянно висит онлайн. Для торрента и просто как файловое хранилище. На этой машине мы и будем держать кэш. Это сервер. И есть два ноутбука. Это клиенты. На всех машинах стоит arch. (Нравиться он мне :) ) На сервере нам нужен только доступ по ssh и сам каталог куда будем складывать кэш каталог назовем к примеру &ldquo;pacman_cache&rdquo; и будет он находиться по пути: /mnt/pacman_cache На клиентах ставим sshfs, autofs: $ pacman -S sshfs autofs Настраиваем доступ по ssh без пароля по ключам: rsa или dsa по выбору $ ssh-keygen -t dsa На все вопросы отвечаем Затем закидываем ключи на сервер: $ ssh-copy-id -i ~/.ssh/id_dsa.pub user@server user - это пользователь имеющийся на сервере и который имеет доступ к каталогу с кэшем server - ip нашего сервера После нажатия введите пароль того самого пользователя user.</div>
+  <div class="body">Дома несколько компов с archlinux-ом. Решил я сделать, для экономии трафика, общий кэш для pacman.
+Система будет использовать sshfs и autofs.
+Есть у меня слабенькая машина, которая постоянно висит онлайн. Для торрента и просто как файловое хранилище. На этой машине мы и будем держать кэш. Это сервер.
+И есть два ноутбука. Это клиенты.
+На всех машинах стоит arch. (Нравиться он мне :) )
+На сервере нам нужен только доступ по ssh и сам каталог куда будем складывать кэш</div>
 
   
   <footer>
@@ -259,7 +267,11 @@ $ tr -d '\r' &lt; input.file &gt; output.file
     <div class="date">Sat, Feb 4, 2012</div>
     <div class="title"><a href="http://ewok.github.io/prosto-tak-i-pro-odnoklassnikov-tozhie">Просто так... и про одноклассников тоже.</a></div>
   </header>
-  <div class="body">Сижу сейчас на arch-e. Так я и не нашел приличного клиента для аськи, под линуксом. Хотя сторонники pidgin, qutim могут возразить. Pidgin всем хорош, функционалом, количеством поддерживаемых протоколов. Но! Он ужасно выглядит. Вот хоть убейся, не нравиться он мне. Qutim уже лучше, но все равно не фонтан, подглючивает. В итоге остановился на psi+. Всем нравиться, только одно &ldquo;но&rdquo;. Из поддерживаемых протоколов только Jabber :)). Поднял на хостинге сервак openfire. Поставил на него транспорт для аськи.</div>
+  <div class="body">Сижу сейчас на arch-e.
+Так я и не нашел приличного клиента для аськи, под линуксом. Хотя сторонники pidgin, qutim могут возразить.
+Pidgin всем хорош, функционалом, количеством поддерживаемых протоколов. Но! Он ужасно выглядит. Вот хоть убейся, не нравиться он мне.
+Qutim уже лучше, но все равно не фонтан, подглючивает.
+В итоге остановился на psi+. Всем нравиться, только одно &ldquo;но&rdquo;. Из поддерживаемых протоколов только Jabber :)). Поднял на хостинге сервак openfire. Поставил на него транспорт для аськи.</div>
 
   
   <footer>
@@ -293,15 +305,6 @@ $ tr -d '\r' &lt; input.file &gt; output.file
 <aside class="site">
 
     
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2 class="panel-title">Search</h2>
-    </div>
-    <div class="list-group">
-        <gcse:search>
-    </div>
-  </div>
-  
 
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -355,11 +358,11 @@ $ tr -d '\r' &lt; input.file &gt; output.file
       
       <a href="http://ewok.github.io/tags/news" class="list-group-item">news (6)</a>
       
+      <a href="http://ewok.github.io/tags/haskell" class="list-group-item">haskell (4)</a>
+      
       <a href="http://ewok.github.io/tags/video" class="list-group-item">video (4)</a>
       
       <a href="http://ewok.github.io/tags/vim" class="list-group-item">vim (4)</a>
-      
-      <a href="http://ewok.github.io/tags/haskell" class="list-group-item">haskell (4)</a>
       
       <a href="http://ewok.github.io/tags/python" class="list-group-item">python (3)</a>
       
@@ -383,7 +386,7 @@ $ tr -d '\r' &lt; input.file &gt; output.file
 
     <footer class="site">
       <div class="container">
-        <p>&copy; 2016 Artur Taranchiev</p>
+        <p>&copy; 2016 Записки Турыча</p>
         <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
         <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
       </div>
@@ -394,48 +397,6 @@ $ tr -d '\r' &lt; input.file &gt; output.file
     <script src="/js/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
-
-<script>
-  (function() {
-      var cx = '018232319146837403043:ugnaw2yq0s8';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-
-
-
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter22971493 = new Ya.Metrika({
-                    id:22971493,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/22971493" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
 
 

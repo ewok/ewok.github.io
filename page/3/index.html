@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="generator" content="Hugo 0.16-DEV" />
+    <meta name="generator" content="Hugo 0.18-DEV" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
     <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -124,7 +124,15 @@
     <div class="date">Mon, Sep 1, 2014</div>
     <div class="title"><a href="http://ewok.github.io/liubimyie-ghoriachiie-klavishy-v-pycharm">Любимые горячие клавишы в pycharm</a></div>
   </header>
-  <div class="body">New File - Alt+Ins Settings - Ctrl+Alt+S Find Usage - Alt+F7 Select Word - Ctrl+W Quick Definition - Ctrl+Shift+I Quick Documentation - Ctrl+Q Parameters - Ctrl+P Find Class - Ctrl+N Diclaration - Ctrl+B Implementaion - Ctrl+Alt+B Super method - Ctrl+U Test - Ctrl+Shift+T Bookmark - F11/Ctrl+F11 Show - Shift+F11 Structure + Ctrl+F12 Type + Ctrl+H Next Error - F2 Override method - Ctrl+O Surround - Ctrl+Alt+T Live templ + Ctrl+J</div>
+  <div class="body">New File - Alt+Ins Settings - Ctrl+Alt+S Find Usage - Alt+F7 Select Word - Ctrl+W Quick Definition - Ctrl+Shift+I Quick Documentation - Ctrl+Q Parameters - Ctrl+P  Find
+ Class - Ctrl+N Diclaration - Ctrl+B Implementaion - Ctrl+Alt+B Super method - Ctrl+U
+ Test - Ctrl+Shift+T
+ Bookmark - F11/Ctrl+F11
+ Show - Shift+F11
+ Structure + Ctrl+F12
+ Type + Ctrl+H
+ Next Error - F2
+ Override method - Ctrl+O</div>
 
   
   <footer>
@@ -166,7 +174,8 @@
     <div class="date">Mon, May 5, 2014</div>
     <div class="title"><a href="http://ewok.github.io/bibliotieka-sh-dlia-python">Библиотека sh для python</a></div>
   </header>
-  <div class="body">Классная штука. Позволяет обращаться к командам shell в контексте языка python. Примеры из документации: from sh import ifconfig print(ifconfig(&quot;wlan0&quot;)) # checkout master branch git.checkout(&quot;master&quot;) # print(the contents of this directory print(ls(&quot;-l&quot;)) # get the longest line of this file longest_line = wc(\_\_file\_\_, &quot;-L&quot;) from sh import git, sudo # resolves to &quot;git branch -v&quot; print(git.branch(&quot;-v&quot;)) print(git(&quot;branch&quot;, &quot;-v&quot;)) # the same command # resolves to &quot;sudo /bin/ls /root&quot; print(sudo.ls(&quot;/root&quot;)) print(sudo(&quot;/bin/ls&quot;, &quot;/root&quot;)) # the same command Единственное замечание это с вызовами имен файлов по маске.</div>
+  <div class="body">Классная штука. Позволяет обращаться к командам shell в контексте языка python. Примеры из документации:
+from sh import ifconfig print(ifconfig(&quot;wlan0&quot;)) # checkout master branch git.checkout(&quot;master&quot;) # print(the contents of this directory print(ls(&quot;-l&quot;)) # get the longest line of this file longest_line = wc(\_\_file\_\_, &quot;-L&quot;) from sh import git, sudo # resolves to &quot;git branch -v&quot; print(git.branch(&quot;-v&quot;)) print(git(&quot;branch&quot;, &quot;-v&quot;)) # the same command # resolves to &quot;sudo /bin/ls /root&quot; print(sudo.ls(&quot;/root&quot;)) print(sudo(&quot;/bin/ls&quot;, &quot;/root&quot;)) # the same command  Единственное замечание это с вызовами имен файлов по маске.</div>
 
   
   <footer>
@@ -218,12 +227,96 @@ $ pulseaudio &gt;&amp; /dev/null &amp;
     <div class="date">Thu, Jan 23, 2014</div>
     <div class="title"><a href="http://ewok.github.io/pacman_2">Шпаргалка по pacman(archlinux)</a></div>
   </header>
-  <div class="body"># Установка ### Установка пакетов $ pacman -S имя_пакета ### Установка пакета с обновлением системы $ pacman -Syu ### Установка пакета из файла $ pacman -U /путь_к_файлу/файл.tar.xz ### или из сети $ pacman -U http://www.example.com/repo/example.pkg.tar.xz # Сохранение/восстановление ### Просмотреть список установленных пакетов $ pacman -Qqe | grep -v &quot;$(pacman -Qmq)&quot; ### Сохранить список установленных пакетов $ pacman -Qqe | grep -v &quot;$(pacman -Qmq)&quot; &gt; pkglist ### Установить из списка пакеты</div>
+  <div class="body">
 
-  
-  <footer>
-    <a href="http://ewok.github.io/pacman_2" class="btn btn-default">Read More…</a>
-  </footer>
+<h4 id="установка"># Установка</h4>
+
+<h3 id="установка-пакетов">### Установка пакетов</h3>
+
+<pre><code>$ pacman -S имя_пакета
+</code></pre>
+
+<h3 id="установка-пакета-с-обновлением-системы">### Установка пакета с обновлением системы</h3>
+
+<pre><code>$ pacman -Syu
+</code></pre>
+
+<h3 id="установка-пакета-из-файла">### Установка пакета из файла</h3>
+
+<pre><code>$ pacman -U /путь_к_файлу/файл.tar.xz
+</code></pre>
+
+<h3 id="или-из-сети">### или из сети</h3>
+
+<pre><code>$ pacman -U http://www.example.com/repo/example.pkg.tar.xz
+</code></pre>
+
+<h4 id="сохранение-восстановление"># Сохранение/восстановление</h4>
+
+<h3 id="просмотреть-список-установленных-пакетов">### Просмотреть список установленных пакетов</h3>
+
+<pre><code>$ pacman -Qqe | grep -v &quot;$(pacman -Qmq)&quot;
+</code></pre>
+
+<h3 id="сохранить-список-установленных-пакетов">### Сохранить список установленных пакетов</h3>
+
+<pre><code>$ pacman -Qqe | grep -v &quot;$(pacman -Qmq)&quot; &gt; pkglist
+</code></pre>
+
+<h3 id="установить-из-списка-пакеты">### Установить из списка пакеты</h3>
+
+<pre><code>$ pacman -S $(cat pkglist)
+</code></pre>
+
+<h4 id="чистка"># Чистка</h4>
+
+<h3 id="просмотреть-список-пакетов-сирот">### Просмотреть список пакетов сирот</h3>
+
+<pre><code>$ pacman -Qdt
+</code></pre>
+
+<h4 id="удаление"># Удаление</h4>
+
+<h3 id="удалить-пакет">### Удалить пакет</h3>
+
+<pre><code>$ pacman -R имя_пакета
+</code></pre>
+
+<h3 id="удалить-пакет-с-зависимостями-не-используемыми-другими-пакетами">### Удалить пакет с зависимостями(не используемыми другими пакетами)</h3>
+
+<pre><code>$ pacman -Rs имя_пакета
+</code></pre>
+
+<h3 id="удалить-пакет-с-зависимыми-и-зависящами-пакетами">### Удалить пакет с зависимыми и зависящами пакетами</h3>
+
+<pre><code>$ pacman -Rsc имя_пакета
+</code></pre>
+
+<h3 id="удалить-пакеты-сироты">### Удалить пакеты &ldquo;сироты&rdquo;</h3>
+
+<pre><code>$ pacman -Rsn $(pacman -Qdtq)
+</code></pre>
+
+<h4 id="работа-с-кэшем"># Работа с кэшем</h4>
+
+<h3 id="очистка-кэша-неустановленных-пакетов">### Очистка кэша неустановленных пакетов</h3>
+
+<pre><code>$ pacman -Sc
+</code></pre>
+
+<h3 id="очистка-кэша-пакетов">### Очистка кэша пакетов</h3>
+
+<pre><code>$ pacman -Scc
+</code></pre>
+
+<h4 id="обновление"># Обновление</h4>
+
+<h3 id="обновление-системы">### Обновление системы</h3>
+
+<pre><code>$ pacman -Syu
+</code></pre>
+</div>
+
   
 </article>
 <hr>
@@ -252,15 +345,6 @@ $ pulseaudio &gt;&amp; /dev/null &amp;
 <aside class="site">
 
     
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2 class="panel-title">Search</h2>
-    </div>
-    <div class="list-group">
-        <gcse:search>
-    </div>
-  </div>
-  
 
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -306,23 +390,23 @@ $ pulseaudio &gt;&amp; /dev/null &amp;
       
       <a href="http://ewok.github.io/tags/dev" class="list-group-item">dev (14)</a>
       
+      <a href="http://ewok.github.io/tags/music" class="list-group-item">music (10)</a>
+      
       <a href="http://ewok.github.io/tags/online" class="list-group-item">online (10)</a>
       
       <a href="http://ewok.github.io/tags/other" class="list-group-item">other (10)</a>
       
-      <a href="http://ewok.github.io/tags/music" class="list-group-item">music (10)</a>
-      
       <a href="http://ewok.github.io/tags/news" class="list-group-item">news (6)</a>
-      
-      <a href="http://ewok.github.io/tags/vim" class="list-group-item">vim (4)</a>
       
       <a href="http://ewok.github.io/tags/haskell" class="list-group-item">haskell (4)</a>
       
       <a href="http://ewok.github.io/tags/video" class="list-group-item">video (4)</a>
       
-      <a href="http://ewok.github.io/tags/sport" class="list-group-item">sport (3)</a>
+      <a href="http://ewok.github.io/tags/vim" class="list-group-item">vim (4)</a>
       
       <a href="http://ewok.github.io/tags/python" class="list-group-item">python (3)</a>
+      
+      <a href="http://ewok.github.io/tags/sport" class="list-group-item">sport (3)</a>
       
       <a href="http://ewok.github.io/tags/go" class="list-group-item">go (2)</a>
       
@@ -342,7 +426,7 @@ $ pulseaudio &gt;&amp; /dev/null &amp;
 
     <footer class="site">
       <div class="container">
-        <p>&copy; 2016 Artur Taranchiev</p>
+        <p>&copy; 2016 Записки Турыча</p>
         <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
         <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
       </div>
@@ -353,48 +437,6 @@ $ pulseaudio &gt;&amp; /dev/null &amp;
     <script src="/js/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
-
-<script>
-  (function() {
-      var cx = '018232319146837403043:ugnaw2yq0s8';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-
-
-
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter22971493 = new Ya.Metrika({
-                    id:22971493,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/22971493" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
 
 
