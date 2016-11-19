@@ -1,0 +1,69 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#welcome-to-mkdocs", 
+            "text": "For full documentation visit  mkdocs.org .", 
+            "title": "Welcome to MkDocs"
+        }, 
+        {
+            "location": "/#commands", 
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
+            "title": "Commands"
+        }, 
+        {
+            "location": "/#project-layout", 
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Project layout"
+        }, 
+        {
+            "location": "/elk/", 
+            "text": "Health\n\n\ncurl -XGET http://localhost:9200/_cluster/health?pretty\n\n\n\n\n\nShards\n\n\ncurl -XGET http://localhost:9200/_cat/shards\n\n\n\n\n\nReroute shards\n\n\nfor shard in $(curl -XGET http://localhost:9200/_cat/shards | grep UNASSIGNED | awk '{print $2}'); do\n    curl -XPOST 'localhost:9200/_cluster/reroute' -d '{\n        \ncommands\n : [ {\n              \nallocate\n : {\n                  \nindex\n : \nt37\n, \n                  \nshard\n : $shard, \n                  \nnode\n : \ndatanode15\n, \n                  \nallow_primary\n : true\n              }\n            }\n        ]\n    }'\n    sleep 5\ndone\n\nNODE=\nYOUR NODE NAME\n\nIFS=$'\\n'\nfor line in $(curl -s 'localhost:9200/_cat/shards' | fgrep UNASSIGNED); do\n  INDEX=$(echo $line | (awk '{print $1}'))\n  SHARD=$(echo $line | (awk '{print $2}'))\n\n  curl -XPOST 'localhost:9200/_cluster/reroute' -d '{\n     \ncommands\n: [\n        {\n            \nallocate\n: {\n                \nindex\n: \n'$INDEX'\n,\n                \nshard\n: '$SHARD',\n                \nnode\n: \n'$NODE'\n,\n                \nallow_primary\n: true\n          }\n        }\n    ]\n  }'\ndone\n\n\n\n\nDelete index\n\n\ncurl -XDELETE 'http://localhost:9200/twitter/'\n\n\n\n\nrm size.tmp\nfor i in {1..6};do ssh prod-elk$i.kyc.megafon.ru \ndu -sch /var/lib/elasticsearch/prod-elk/nodes/0/indices/*\n \n size.tmp;done\ncat size.tmp | gsort -h\n\n\n\n\nGET /_cat/shards\n\n\nGET /_flush/synced\n\n\nGET /_cluster/health\n\n\nGET _cluster/health?level=shards\n\n\nPUT /_cluster/settings \n\n\n{\n\n\n\"transient\" : {\n\n\n\"cluster.routing.allocation.enable\" : \"all\"\n\n\n}\n\n\n}\n\n\nput /logstash-2016.08.31/_settings\n\n\n{\"index.routing.allocation.disable_allocation\": false}\n\n\nMass index deletion\n\n\nfor index in $(curl -XGET esmaster:9200/_cat/indices | awk \u2018/pattern/ {print $3}\u2019); do curl -XDELETE esmaster:9200/$index?master_timeout=120s; done\n\n\nOptimize cluster -----------------------------\n\n\ncurl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.cluster_concurrent_rebalance\u201d: 20,\n \u201cindices.recovery.concurrent_streams\u201d: 20,\n \u201ccluster.routing.allocation.node_initial_primaries_recoveries\u201d: 20,\n \u201ccluster.routing.allocation.node_concurrent_recoveries\u201d: 20,\n \u201cindices.recovery.max_bytes_per_sec\u201d: \u201c2048mb\u201d,\n \u201ccluster.routing.allocation.disk.threshold_enabled\u201d : true,\n \u201ccluster.routing.allocation.disk.watermark.low\u201d : \u201c90%\u201d,\n \u201ccluster.routing.allocation.disk.watermark.high\u201d : \u201c98%\u201d,\n \u201ccluster.routing.allocation.enable\u201d: \u201cprimary\u201d\n }\n}\u2019\n\n\nThen, once cluster become yellow\n\n\ncurl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.enable\u201d: \u201call\u201d\n }\n}\u2019\n\n\nOptimize cluster -----------------------------\n\n\nGet info about cluster\n\n\ncurl -XGET https://escluster/_cat/nodes?v\nh=host,r,d,hc,rc,fdc,l\n\n\nSort by free disk space\n\n\ncurl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 3\n\n\nSort by heap capacity\n\n\ncurl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 4\n\n\nRecovery information\n\n\ncurl -XGET https://escluster/_recovery?pretty\nactive_only", 
+            "title": "Elastic Search"
+        }, 
+        {
+            "location": "/elk/#mass-index-deletion", 
+            "text": "for index in $(curl -XGET esmaster:9200/_cat/indices | awk \u2018/pattern/ {print $3}\u2019); do curl -XDELETE esmaster:9200/$index?master_timeout=120s; done", 
+            "title": "Mass index deletion"
+        }, 
+        {
+            "location": "/elk/#optimize-cluster-", 
+            "text": "curl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.cluster_concurrent_rebalance\u201d: 20,\n \u201cindices.recovery.concurrent_streams\u201d: 20,\n \u201ccluster.routing.allocation.node_initial_primaries_recoveries\u201d: 20,\n \u201ccluster.routing.allocation.node_concurrent_recoveries\u201d: 20,\n \u201cindices.recovery.max_bytes_per_sec\u201d: \u201c2048mb\u201d,\n \u201ccluster.routing.allocation.disk.threshold_enabled\u201d : true,\n \u201ccluster.routing.allocation.disk.watermark.low\u201d : \u201c90%\u201d,\n \u201ccluster.routing.allocation.disk.watermark.high\u201d : \u201c98%\u201d,\n \u201ccluster.routing.allocation.enable\u201d: \u201cprimary\u201d\n }\n}\u2019", 
+            "title": "Optimize cluster -----------------------------"
+        }, 
+        {
+            "location": "/elk/#then-once-cluster-become-yellow", 
+            "text": "curl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.enable\u201d: \u201call\u201d\n }\n}\u2019", 
+            "title": "Then, once cluster become yellow"
+        }, 
+        {
+            "location": "/elk/#optimize-cluster-_1", 
+            "text": "", 
+            "title": "Optimize cluster -----------------------------"
+        }, 
+        {
+            "location": "/elk/#get-info-about-cluster", 
+            "text": "curl -XGET https://escluster/_cat/nodes?v h=host,r,d,hc,rc,fdc,l", 
+            "title": "Get info about cluster"
+        }, 
+        {
+            "location": "/elk/#sort-by-free-disk-space", 
+            "text": "curl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 3", 
+            "title": "Sort by free disk space"
+        }, 
+        {
+            "location": "/elk/#sort-by-heap-capacity", 
+            "text": "curl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 4", 
+            "title": "Sort by heap capacity"
+        }, 
+        {
+            "location": "/elk/#recovery-information", 
+            "text": "curl -XGET https://escluster/_recovery?pretty active_only", 
+            "title": "Recovery information"
+        }
+    ]
+}

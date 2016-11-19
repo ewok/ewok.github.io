@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Elastic Search - ewoks notes</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Elastic Search";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ewoks notes</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Devops</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Elastic Search</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#health">Health</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#shards">Shards</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#reroute-shards">Reroute shards</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#delete-index">Delete index</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#mass-index-deletion">Mass index deletion</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optimize-cluster-">Optimize cluster -----------------------------</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#then-once-cluster-become-yellow">Then, once cluster become yellow</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optimize-cluster-_1">Optimize cluster -----------------------------</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#get-info-about-cluster">Get info about cluster</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#sort-by-free-disk-space">Sort by free disk space</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#sort-by-heap-capacity">Sort by heap capacity</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#recovery-information">Recovery information</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ewoks notes</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Devops &raquo;</li>
+        
+      
+    
+    <li>Elastic Search</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="health">Health</h3>
+<pre><code class="sh">curl -XGET http://localhost:9200/_cluster/health?pretty
+
+</code></pre>
+
+<h3 id="shards">Shards</h3>
+<pre><code class="sh">curl -XGET http://localhost:9200/_cat/shards
+
+</code></pre>
+
+<h3 id="reroute-shards">Reroute shards</h3>
+<pre><code class="sh">for shard in $(curl -XGET http://localhost:9200/_cat/shards | grep UNASSIGNED | awk '{print $2}'); do
+    curl -XPOST 'localhost:9200/_cluster/reroute' -d '{
+        &quot;commands&quot; : [ {
+              &quot;allocate&quot; : {
+                  &quot;index&quot; : &quot;t37&quot;, 
+                  &quot;shard&quot; : $shard, 
+                  &quot;node&quot; : &quot;datanode15&quot;, 
+                  &quot;allow_primary&quot; : true
+              }
+            }
+        ]
+    }'
+    sleep 5
+done
+
+NODE=&quot;YOUR NODE NAME&quot;
+IFS=$'\n'
+for line in $(curl -s 'localhost:9200/_cat/shards' | fgrep UNASSIGNED); do
+  INDEX=$(echo $line | (awk '{print $1}'))
+  SHARD=$(echo $line | (awk '{print $2}'))
+
+  curl -XPOST 'localhost:9200/_cluster/reroute' -d '{
+     &quot;commands&quot;: [
+        {
+            &quot;allocate&quot;: {
+                &quot;index&quot;: &quot;'$INDEX'&quot;,
+                &quot;shard&quot;: '$SHARD',
+                &quot;node&quot;: &quot;'$NODE'&quot;,
+                &quot;allow_primary&quot;: true
+          }
+        }
+    ]
+  }'
+done
+</code></pre>
+
+<h3 id="delete-index">Delete index</h3>
+<pre><code class="sh">curl -XDELETE 'http://localhost:9200/twitter/'
+</code></pre>
+
+<pre><code class="sh">rm size.tmp
+for i in {1..6};do ssh prod-elk$i.kyc.megafon.ru &quot;du -sch /var/lib/elasticsearch/prod-elk/nodes/0/indices/*&quot; &gt;&gt; size.tmp;done
+cat size.tmp | gsort -h
+</code></pre>
+
+<p>GET /_cat/shards</p>
+<p>GET /_flush/synced</p>
+<p>GET /_cluster/health</p>
+<p>GET _cluster/health?level=shards</p>
+<p>PUT /_cluster/settings </p>
+<p>{</p>
+<p>"transient" : {</p>
+<p>"cluster.routing.allocation.enable" : "all"</p>
+<p>}</p>
+<p>}</p>
+<p>put /logstash-2016.08.31/_settings</p>
+<p>{"index.routing.allocation.disable_allocation": false}</p>
+<h1 id="mass-index-deletion">Mass index deletion</h1>
+<p>for index in $(curl -XGET esmaster:9200/_cat/indices | awk ‘/pattern/ {print $3}’); do curl -XDELETE esmaster:9200/$index?master_timeout=120s; done</p>
+<h1 id="optimize-cluster-">Optimize cluster -----------------------------</h1>
+<p>curl -XPUT ‘http://escluster:9200/_cluster/settings' -d ‘{
+ “transient” : {
+ “cluster.routing.allocation.cluster_concurrent_rebalance”: 20,
+ “indices.recovery.concurrent_streams”: 20,
+ “cluster.routing.allocation.node_initial_primaries_recoveries”: 20,
+ “cluster.routing.allocation.node_concurrent_recoveries”: 20,
+ “indices.recovery.max_bytes_per_sec”: “2048mb”,
+ “cluster.routing.allocation.disk.threshold_enabled” : true,
+ “cluster.routing.allocation.disk.watermark.low” : “90%”,
+ “cluster.routing.allocation.disk.watermark.high” : “98%”,
+ “cluster.routing.allocation.enable”: “primary”
+ }
+}’</p>
+<h1 id="then-once-cluster-become-yellow">Then, once cluster become yellow</h1>
+<p>curl -XPUT ‘http://escluster:9200/_cluster/settings' -d ‘{
+ “transient” : {
+ “cluster.routing.allocation.enable”: “all”
+ }
+}’</p>
+<h1 id="optimize-cluster-_1">Optimize cluster -----------------------------</h1>
+<h1 id="get-info-about-cluster">Get info about cluster</h1>
+<p>curl -XGET https://escluster/_cat/nodes?v&amp;h=host,r,d,hc,rc,fdc,l</p>
+<h1 id="sort-by-free-disk-space">Sort by free disk space</h1>
+<p>curl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 3</p>
+<h1 id="sort-by-heap-capacity">Sort by heap capacity</h1>
+<p>curl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 4</p>
+<h1 id="recovery-information">Recovery information</h1>
+<p>curl -XGET https://escluster/_recovery?pretty&amp;active_only</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+
+</body>
+</html>
