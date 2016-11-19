@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on Записки Турыча</title>
-    <link>http://ewok.github.io/tags/news/index.xml</link>
+    <link>https://ewok.github.io/tags/news/index.xml</link>
     <description>Recent content in News on Записки Турыча</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru_RU</language>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Очередной переезд</title>
-      <link>http://ewok.github.io/ochieriednoi-pierieiezd</link>
+      <link>https://ewok.github.io/ochieriednoi-pierieiezd</link>
       <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/ochieriednoi-pierieiezd</guid>
+      <guid>https://ewok.github.io/ochieriednoi-pierieiezd</guid>
       <description>&lt;p&gt;На этот раз решил опробовать движок для блогов под названием &lt;a href=&#34;https://ghost.org/&#34;&gt;ghost&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Проект открытый, путь свой начал с kickstarter, набрав хорошую сумму.
@@ -27,10 +27,10 @@
     
     <item>
       <title>Запустил новый блог на статике</title>
-      <link>http://ewok.github.io/zapustil-novyi-blogh-na-statikie</link>
+      <link>https://ewok.github.io/zapustil-novyi-blogh-na-statikie</link>
       <pubDate>Sat, 12 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/zapustil-novyi-blogh-na-statikie</guid>
+      <guid>https://ewok.github.io/zapustil-novyi-blogh-na-statikie</guid>
       <description>&lt;p&gt;Запускаю блог на статике. Старый блог на самописном django уходит в life.ewok.ru.&lt;/p&gt;
 
 &lt;p&gt;Для генерации использую pelican(python)&lt;/p&gt;
@@ -39,10 +39,10 @@
     
     <item>
       <title>Обновилсся</title>
-      <link>http://ewok.github.io/obnovilssia</link>
+      <link>https://ewok.github.io/obnovilssia</link>
       <pubDate>Tue, 02 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/obnovilssia</guid>
+      <guid>https://ewok.github.io/obnovilssia</guid>
       <description>&lt;p&gt;Обновил свой арчик. На гигабайт обновлений накачалось. Из глобальных обновлений случился filesystem. По убирали к ядренефене /bin /sbin, оставили только симлинки на /usr/bin к этим папкам.
 После перезагрузки система не запустилась&amp;hellip; :(   Не сюр, ожидаемо. Если не часто обновляешься. В общем в grub убежал файл menu.lst. После возврата, всё встало на места.
 Жду новых сюрпризов.&lt;/p&gt;
@@ -51,20 +51,20 @@
     
     <item>
       <title>Простой шаблон</title>
-      <link>http://ewok.github.io/prostoi-shablon</link>
+      <link>https://ewok.github.io/prostoi-shablon</link>
       <pubDate>Mon, 12 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/prostoi-shablon</guid>
+      <guid>https://ewok.github.io/prostoi-shablon</guid>
       <description>&lt;p&gt;Смотрел я на дизайн своего блога и что-то мне не нравилось. Хотелось чего то простого и светлого. В итоге был взят шаблон по адресу &lt;a href=&#34;http://cssr.ru/simpliste/&#34;&gt;http://cssr.ru/simpliste/&lt;/a&gt; и натянут на движок. Чем в итоге я оказался доволен. Что из этого получилось смотрите по адресу основного блога.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Подключил rss в блоге</title>
-      <link>http://ewok.github.io/podkliuchil-rss-v-bloghie</link>
+      <link>https://ewok.github.io/podkliuchil-rss-v-bloghie</link>
       <pubDate>Wed, 29 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/podkliuchil-rss-v-bloghie</guid>
+      <guid>https://ewok.github.io/podkliuchil-rss-v-bloghie</guid>
       <description>&lt;p&gt;Подключил rss трансляцию. По джангокниге.&lt;/p&gt;
 
 &lt;p&gt;Самый простой вариант:&lt;/p&gt;
@@ -119,10 +119,10 @@ url(r&#39;^rss$&#39;, LatestEntriesFeed()),
     
     <item>
       <title>Поменял дизайн блога</title>
-      <link>http://ewok.github.io/pomienial-dizain-blogha</link>
+      <link>https://ewok.github.io/pomienial-dizain-blogha</link>
       <pubDate>Tue, 14 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/pomienial-dizain-blogha</guid>
+      <guid>https://ewok.github.io/pomienial-dizain-blogha</guid>
       <description>&lt;p&gt;По мере того как изучал верстку, решил поменять дизайн блога.&lt;/p&gt;
 
 &lt;p&gt;Еще переделал работу с шаблонами в движке.&lt;/p&gt;

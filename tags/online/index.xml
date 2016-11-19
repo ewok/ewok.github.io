@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Online on Записки Турыча</title>
-    <link>http://ewok.github.io/tags/online/index.xml</link>
+    <link>https://ewok.github.io/tags/online/index.xml</link>
     <description>Recent content in Online on Записки Турыча</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru_RU</language>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Держим приложение запущенным(macos x)</title>
-      <link>http://ewok.github.io/keep-running-app</link>
+      <link>https://ewok.github.io/keep-running-app</link>
       <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/keep-running-app</guid>
+      <guid>https://ewok.github.io/keep-running-app</guid>
       <description>&lt;p&gt;Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -55,10 +55,10 @@
     
     <item>
       <title>Еще больше vim</title>
-      <link>http://ewok.github.io/vim-hardtime</link>
+      <link>https://ewok.github.io/vim-hardtime</link>
       <pubDate>Sun, 03 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/vim-hardtime</guid>
+      <guid>https://ewok.github.io/vim-hardtime</guid>
       <description>&lt;p&gt;Для тех кто хочет использовать vim в стиле vim way:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/wikitopian/hardmode&#34;&gt;hardmode&lt;/a&gt; и &lt;a href=&#34;https://github.com/takac/vim-hardtime&#34;&gt;hardtime&lt;/a&gt;&lt;/p&gt;
@@ -67,10 +67,10 @@
     
     <item>
       <title>Достигатор целей</title>
-      <link>http://ewok.github.io/dostighator-tsieliei</link>
+      <link>https://ewok.github.io/dostighator-tsieliei</link>
       <pubDate>Thu, 05 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/dostighator-tsieliei</guid>
+      <guid>https://ewok.github.io/dostighator-tsieliei</guid>
       <description>&lt;p&gt;Интересный сервис для людей которые хотят достичь определенной цели.&lt;/p&gt;
 
 &lt;p&gt;Есть справочные материалы по правильной постановке целей, определение &amp;ldquo;чистоты&amp;rdquo; цели, &amp;ldquo;цена слова&amp;rdquo;, шаблоны и многое другое. Есть социальная составляющая, друзья, комментарии, подписки.&lt;/p&gt;
@@ -81,20 +81,20 @@
     
     <item>
       <title>Крипта</title>
-      <link>http://ewok.github.io/kripta</link>
+      <link>https://ewok.github.io/kripta</link>
       <pubDate>Sat, 18 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/kripta</guid>
+      <guid>https://ewok.github.io/kripta</guid>
       <description>&lt;p&gt;Если пользуетесь Яндекс, то можете получить характеристику вашей деятельности в интернете. Я на 88% Сова, 71% Семейный человек, 46% Гик, 44% Меломан и всего лишь на 9% Мама :)))&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Смартфонам оказывает уже 20 лет</title>
-      <link>http://ewok.github.io/smartfonam-okazyvaiet-uzhie-20-liet</link>
+      <link>https://ewok.github.io/smartfonam-okazyvaiet-uzhie-20-liet</link>
       <pubDate>Mon, 26 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/smartfonam-okazyvaiet-uzhie-20-liet</guid>
+      <guid>https://ewok.github.io/smartfonam-okazyvaiet-uzhie-20-liet</guid>
       <description>&lt;p&gt;Подумать только! Уже как двадцать лет существуют такие устройства как смартфоны. В ноябре 1992 года компания IBM представила самый первый в мире смартфон. Он умел звонить, принимать/отправлять факсы, имел почту, игры, контакты&amp;hellip; В общем имел практически полноценный функционал. Стоил он чуть меньше 900 долларов. И за первые пол года продажи достигли 50 тысяч единиц. Конечно технические характеристики он имел довольно слабые, это сейчас мы носим полноценные компьютеры в карманах. А раньше довольствовались всего по одному мегабайту памяти озу и пзу и 16 мегагерцами в процессоре. Так что смотрите и сравнивайте. :)&lt;/p&gt;
 
 &lt;p&gt;О новости прочитал на 3dnews.ru&lt;/p&gt;
@@ -103,30 +103,30 @@
     
     <item>
       <title>Шифр</title>
-      <link>http://ewok.github.io/shifr</link>
+      <link>https://ewok.github.io/shifr</link>
       <pubDate>Fri, 23 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/shifr</guid>
+      <guid>https://ewok.github.io/shifr</guid>
       <description>&lt;p&gt;Это шифровка и останки голубя, которые нашли в одном из дымоходов дома Великобритании. Шифровку датируют 1944 годом. Ученые считают, что в шифровке могут быть интересные факты, о том периоде.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Большой и грозный полицейский рунета</title>
-      <link>http://ewok.github.io/bolshoi-i-ghroznyi-politsieiskii-runieta</link>
+      <link>https://ewok.github.io/bolshoi-i-ghroznyi-politsieiskii-runieta</link>
       <pubDate>Tue, 20 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/bolshoi-i-ghroznyi-politsieiskii-runieta</guid>
+      <guid>https://ewok.github.io/bolshoi-i-ghroznyi-politsieiskii-runieta</guid>
       <description>&lt;p&gt;Начинает набирать обороты, грозный инструмент закона - Роскомнадзор. Великий цензор рунета. По закону Роскомнадзор может без суда заблокировать любой сайт если на нем содержится какая либо противоправная информация. Как говориться идея хорошо, но реализация подкачала. Вариант с предварительной блокировкой сайта и лишь последующим разбирательством, вызывает, как минимум &amp;ldquo;легкое&amp;rdquo; недоумение. Под &amp;ldquo;банхаммером&amp;rdquo; уже успели побывать такие известные ресурсы как: Луркоморье, РуТреккер,  Либрусек, ВКонтакте и даже каким то образом Гугл. После блокирования сайта владельцу дается три дня на удаление противоправного контента. Если удаления не будет, видимо ресурс ждет суд и пожизненный бан. Интересно и то что под определенные статьи закона можно подписать очень много разных ресурсов, да даже Википедию если покопаться. Там где есть возможность генерации контента обычными пользователями, возникает возможность появления информации, за которую в последующем обязательно последует блокировка. А жесткая блокировка для крупных ресурсов несет за собой убытки, причем не малые. Да и сама блокировка по IP адресу в корне не верна, потому что на одном IP могут находиться очень много разных ресурсов. В общем закон и его реализация требует доработки.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Ingress</title>
-      <link>http://ewok.github.io/ingress</link>
+      <link>https://ewok.github.io/ingress</link>
       <pubDate>Mon, 19 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/ingress</guid>
+      <guid>https://ewok.github.io/ingress</guid>
       <description>&lt;p&gt;Новая игра от Google. Научно-фантастического жанра. Многопользовательская мобильная использует реальный мир как игровое пространство. В задачу игрока входит сбор нового вида энергии. Игроки собирают капсулы и относят их к порталам и меняют их на право прохождения новой миссии. Игроки делятся на две команды Просвещенные и Сопротивление. Игра мобильная и предназначена для устройств на Андроиде. Игра пока в бете и чтобы участвовать в ней нужно получить пароль на официальном сайте www.ingress.com.
 Самое интересное что есть устройство Google Glass. Очки через которое на реальную картину мира накладываются определенные данные. Что-то в этом есть знакомое. Во многих фэнтазийных книгах, фильмах описываются подобные устройства, устройства из будущего. Вот оно и приходит будущее :)&lt;/p&gt;
 </description>
@@ -134,20 +134,20 @@
     
     <item>
       <title>Прикольная страница 404 у GitHub</title>
-      <link>http://ewok.github.io/prikolnaia-stranitsa-404-u-github</link>
+      <link>https://ewok.github.io/prikolnaia-stranitsa-404-u-github</link>
       <pubDate>Wed, 14 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/prikolnaia-stranitsa-404-u-github</guid>
+      <guid>https://ewok.github.io/prikolnaia-stranitsa-404-u-github</guid>
       <description>&lt;p&gt;Это не те дроиды которые вам нужны&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>vacuum im</title>
-      <link>http://ewok.github.io/vacuum-im</link>
+      <link>https://ewok.github.io/vacuum-im</link>
       <pubDate>Tue, 21 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/vacuum-im</guid>
+      <guid>https://ewok.github.io/vacuum-im</guid>
       <description>&lt;p&gt;Попался мне на глаза еще один клиент для jabber. По аннотации выглядит &amp;ldquo;вкусно&amp;rdquo;.
 Vacuum
 Возможности&lt;/p&gt;

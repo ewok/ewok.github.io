@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Admins on Записки Турыча</title>
-    <link>http://ewok.github.io/tags/admins/index.xml</link>
+    <link>https://ewok.github.io/tags/admins/index.xml</link>
     <description>Recent content in Admins on Записки Турыча</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru_RU</language>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Интересное в сети</title>
-      <link>http://ewok.github.io/intieriesnoie-v-sieti</link>
+      <link>https://ewok.github.io/intieriesnoie-v-sieti</link>
       <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/intieriesnoie-v-sieti</guid>
+      <guid>https://ewok.github.io/intieriesnoie-v-sieti</guid>
       <description>
 
 &lt;h3 id=&#34;haskell&#34;&gt;Haskell&lt;/h3&gt;
@@ -98,10 +98,10 @@
     
     <item>
       <title>Ansible-dar</title>
-      <link>http://ewok.github.io/ansible-dar</link>
+      <link>https://ewok.github.io/ansible-dar</link>
       <pubDate>Mon, 13 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/ansible-dar</guid>
+      <guid>https://ewok.github.io/ansible-dar</guid>
       <description>&lt;p&gt;DiskARchive плагин для ansible.
 &lt;a href=&#34;https://github.com/ewok/ansible-modules/blob/master/dar.py&#34;&gt;https://github.com/ewok/ansible-modules/blob/master/dar.py&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -109,10 +109,10 @@
     
     <item>
       <title>Пробел в точке монтирования fstab</title>
-      <link>http://ewok.github.io/probiel-v-tochkie-montirovaniia-fstab</link>
+      <link>https://ewok.github.io/probiel-v-tochkie-montirovaniia-fstab</link>
       <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/probiel-v-tochkie-montirovaniia-fstab</guid>
+      <guid>https://ewok.github.io/probiel-v-tochkie-montirovaniia-fstab</guid>
       <description>&lt;p&gt;Если требуется пробел в точке монтирования:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;    /dev/choto /mnt/kuda\040to ext4 ... и т.д
@@ -122,10 +122,10 @@
     
     <item>
       <title>libvirt - полезные комманды</title>
-      <link>http://ewok.github.io/virsh-polieznyie-kommandy</link>
+      <link>https://ewok.github.io/virsh-polieznyie-kommandy</link>
       <pubDate>Thu, 02 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/virsh-polieznyie-kommandy</guid>
+      <guid>https://ewok.github.io/virsh-polieznyie-kommandy</guid>
       <description>
 
 &lt;h1 id=&#34;установка&#34;&gt;Установка&lt;/h1&gt;
@@ -184,10 +184,10 @@
     
     <item>
       <title>Если перестал обновляться файл resolv.conf на mint</title>
-      <link>http://ewok.github.io/iesli-pieriestal-obnovliatsia-fail-resolv-conf-na-mint</link>
+      <link>https://ewok.github.io/iesli-pieriestal-obnovliatsia-fail-resolv-conf-na-mint</link>
       <pubDate>Thu, 19 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/iesli-pieriestal-obnovliatsia-fail-resolv-conf-na-mint</guid>
+      <guid>https://ewok.github.io/iesli-pieriestal-obnovliatsia-fail-resolv-conf-na-mint</guid>
       <description>&lt;p&gt;Можно попробовать так:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;sudo dpkg-reconfigure resolvconf
@@ -212,10 +212,10 @@ sudo resolvconf --enable-updates
     
     <item>
       <title>TypeError: $(...).tipuesearch is not a function</title>
-      <link>http://ewok.github.io/typeerror-tipuesearch-is-not-a-function</link>
+      <link>https://ewok.github.io/typeerror-tipuesearch-is-not-a-function</link>
       <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/typeerror-tipuesearch-is-not-a-function</guid>
+      <guid>https://ewok.github.io/typeerror-tipuesearch-is-not-a-function</guid>
       <description>&lt;p&gt;Решение:&lt;/p&gt;
 
 &lt;p&gt;Устанавливаем поиск по инструкции с сайта &lt;a href=&#34;http://www.tipue.com/search/docs/&#34;&gt;http://www.tipue.com/search/docs/&lt;/a&gt;. Но! Функция показа результатов должна быть такой:&lt;/p&gt;
@@ -236,10 +236,10 @@ $j(document).ready(function() {
     
     <item>
       <title>File too large. Qcow2 file.</title>
-      <link>http://ewok.github.io/file-too-large-qcow2-file</link>
+      <link>https://ewok.github.io/file-too-large-qcow2-file</link>
       <pubDate>Mon, 08 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/file-too-large-qcow2-file</guid>
+      <guid>https://ewok.github.io/file-too-large-qcow2-file</guid>
       <description>&lt;p&gt;Если испортился при работе с qcow через qemu-img у вас вылезла ошибка &amp;ldquo;File too large&amp;rdquo;. То вытащить данные можно таким способом. Качаем исходники qemu версии 1.7.2. Разархивируем и делаем &amp;ldquo;./configure &amp;amp;&amp;amp; make&amp;rdquo;. То есть БЕЗ установки. Далее забираем файл qemu-img и используем его для конвертации в raw.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;./qemu-img convert -f qcow2 -O raw откуда куда&lt;/code&gt;&lt;/p&gt;
@@ -250,10 +250,10 @@ $j(document).ready(function() {
     
     <item>
       <title>Выполнение по крону в последний день месяца</title>
-      <link>http://ewok.github.io/vypolnieniie-po-kronu-v-posliednii-dien-miesiatsa</link>
+      <link>https://ewok.github.io/vypolnieniie-po-kronu-v-posliednii-dien-miesiatsa</link>
       <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/vypolnieniie-po-kronu-v-posliednii-dien-miesiatsa</guid>
+      <guid>https://ewok.github.io/vypolnieniie-po-kronu-v-posliednii-dien-miesiatsa</guid>
       <description>&lt;p&gt;Так&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;0 0 28,29 2 * /path/to/chego/to/tam
@@ -271,10 +271,10 @@ $j(document).ready(function() {
     
     <item>
       <title>Удаление хрипов в skype под linux</title>
-      <link>http://ewok.github.io/skype-pulse</link>
+      <link>https://ewok.github.io/skype-pulse</link>
       <pubDate>Sun, 23 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/skype-pulse</guid>
+      <guid>https://ewok.github.io/skype-pulse</guid>
       <description>&lt;p&gt;Удаление хрипов pulseaudio в skype под linux:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# Редактируем &#39;/etc/pulse/default.pa&#39;
@@ -292,10 +292,10 @@ $ pulseaudio &amp;gt;&amp;amp; /dev/null &amp;amp;
     
     <item>
       <title>Шпаргалка по pacman(archlinux)</title>
-      <link>http://ewok.github.io/pacman_2</link>
+      <link>https://ewok.github.io/pacman_2</link>
       <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/pacman_2</guid>
+      <guid>https://ewok.github.io/pacman_2</guid>
       <description>
 
 &lt;h4 id=&#34;установка&#34;&gt;# Установка&lt;/h4&gt;
@@ -389,10 +389,10 @@ $ pulseaudio &amp;gt;&amp;amp; /dev/null &amp;amp;
     
     <item>
       <title>Если неправильно отображается кодировка на сайте(для админов)</title>
-      <link>http://ewok.github.io/iesli-niepravilno-otobrazhaietsia-kodirovka-na-saitiedlia-adminov</link>
+      <link>https://ewok.github.io/iesli-niepravilno-otobrazhaietsia-kodirovka-na-saitiedlia-adminov</link>
       <pubDate>Wed, 11 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/iesli-niepravilno-otobrazhaietsia-kodirovka-na-saitiedlia-adminov</guid>
+      <guid>https://ewok.github.io/iesli-niepravilno-otobrazhaietsia-kodirovka-na-saitiedlia-adminov</guid>
       <description>&lt;p&gt;Столкнулся с проблемой вывода текста из базы данных mysql.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Исходные данные:&lt;/strong&gt;&lt;/p&gt;
@@ -414,10 +414,10 @@ $ pulseaudio &amp;gt;&amp;amp; /dev/null &amp;amp;
     
     <item>
       <title>Шпаргалка по администрированию mysql</title>
-      <link>http://ewok.github.io/shparghalka-po-administrirovaniiu-mysql</link>
+      <link>https://ewok.github.io/shparghalka-po-administrirovaniiu-mysql</link>
       <pubDate>Mon, 11 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/shparghalka-po-administrirovaniiu-mysql</guid>
+      <guid>https://ewok.github.io/shparghalka-po-administrirovaniiu-mysql</guid>
       <description>
 
 &lt;h1 id=&#34;сброс-пароля&#34;&gt;Сброс пароля&lt;/h1&gt;
@@ -499,10 +499,10 @@ mysql&amp;gt; SELECT table_schema, table_name
     
     <item>
       <title>Интересные команды linux консоли</title>
-      <link>http://ewok.github.io/intieriesnyie-komandy-linux-konsoli</link>
+      <link>https://ewok.github.io/intieriesnyie-komandy-linux-konsoli</link>
       <pubDate>Sun, 20 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/intieriesnyie-komandy-linux-konsoli</guid>
+      <guid>https://ewok.github.io/intieriesnyie-komandy-linux-konsoli</guid>
       <description>
 
 &lt;h1 id=&#34;предыдущая-команда-из-под-рута&#34;&gt;Предыдущая команда из под рута&lt;/h1&gt;
@@ -532,10 +532,10 @@ $ netstat -tlnp
     
     <item>
       <title>Смена CRLF на LF и наоборот</title>
-      <link>http://ewok.github.io/smiena-crlf-na-lf-i-naoborot</link>
+      <link>https://ewok.github.io/smiena-crlf-na-lf-i-naoborot</link>
       <pubDate>Sat, 19 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/smiena-crlf-na-lf-i-naoborot</guid>
+      <guid>https://ewok.github.io/smiena-crlf-na-lf-i-naoborot</guid>
       <description>&lt;p&gt;CRLF -&amp;gt; LF&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# вариант с sed. Что-бы получить символ &#39;^M&#39; нужно использовать &#39;Ctrl+V Ctrl+M&#39;
@@ -556,10 +556,10 @@ $ tr -d &#39;\r&#39; &amp;lt; input.file &amp;gt; output.file
     
     <item>
       <title>Переименование файлов по порядку</title>
-      <link>http://ewok.github.io/pierieimienovaniie-failov-po-poriadku</link>
+      <link>https://ewok.github.io/pierieimienovaniie-failov-po-poriadku</link>
       <pubDate>Tue, 15 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/pierieimienovaniie-failov-po-poriadku</guid>
+      <guid>https://ewok.github.io/pierieimienovaniie-failov-po-poriadku</guid>
       <description>&lt;p&gt;Переименовывается в такой вид: 1.* 2.* 3.*&amp;hellip;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;i= ; ls | while read; do mv &amp;quot;$REPLY&amp;quot; $((++i))&amp;quot;.${REPLY//*.}&amp;quot;; done

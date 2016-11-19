@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Записки Турыча</title>
-    <link>http://ewok.github.io/tags/python/index.xml</link>
+    <link>https://ewok.github.io/tags/python/index.xml</link>
     <description>Recent content in Python on Записки Турыча</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru_RU</language>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Интересное в сети 2</title>
-      <link>http://ewok.github.io/intieriesnoie-v-sieti-2</link>
+      <link>https://ewok.github.io/intieriesnoie-v-sieti-2</link>
       <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/intieriesnoie-v-sieti-2</guid>
+      <guid>https://ewok.github.io/intieriesnoie-v-sieti-2</guid>
       <description>
 
 &lt;h3 id=&#34;haskell&#34;&gt;Haskell&lt;/h3&gt;
@@ -53,10 +53,10 @@
     
     <item>
       <title>Интересное в сети</title>
-      <link>http://ewok.github.io/intieriesnoie-v-sieti</link>
+      <link>https://ewok.github.io/intieriesnoie-v-sieti</link>
       <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/intieriesnoie-v-sieti</guid>
+      <guid>https://ewok.github.io/intieriesnoie-v-sieti</guid>
       <description>
 
 &lt;h3 id=&#34;haskell&#34;&gt;Haskell&lt;/h3&gt;
@@ -141,10 +141,10 @@
     
     <item>
       <title>Python</title>
-      <link>http://ewok.github.io/python</link>
+      <link>https://ewok.github.io/python</link>
       <pubDate>Sat, 26 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/python</guid>
+      <guid>https://ewok.github.io/python</guid>
       <description>&lt;p&gt;Здесь пойдет таймлайн для замечательного скриптового ЯП python. С которым я познакомился несколько лет назад и применяю до сих пор в своей работе и дома.&lt;/p&gt;
 </description>
     </item>

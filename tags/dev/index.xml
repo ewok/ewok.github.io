@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dev on Записки Турыча</title>
-    <link>http://ewok.github.io/tags/dev/index.xml</link>
+    <link>https://ewok.github.io/tags/dev/index.xml</link>
     <description>Recent content in Dev on Записки Турыча</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru_RU</language>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Интересное в сети</title>
-      <link>http://ewok.github.io/intieriesnoie-v-sieti</link>
+      <link>https://ewok.github.io/intieriesnoie-v-sieti</link>
       <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/intieriesnoie-v-sieti</guid>
+      <guid>https://ewok.github.io/intieriesnoie-v-sieti</guid>
       <description>
 
 &lt;h3 id=&#34;haskell&#34;&gt;Haskell&lt;/h3&gt;
@@ -98,10 +98,10 @@
     
     <item>
       <title>Vim plugins</title>
-      <link>http://ewok.github.io/follow-my-lead</link>
+      <link>https://ewok.github.io/follow-my-lead</link>
       <pubDate>Sat, 10 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/follow-my-lead</guid>
+      <guid>https://ewok.github.io/follow-my-lead</guid>
       <description>&lt;p&gt;Интересные и полезные плагины&lt;/p&gt;
 
 &lt;ul&gt;
@@ -119,10 +119,10 @@
     
     <item>
       <title>Любимые горячие клавишы в pycharm</title>
-      <link>http://ewok.github.io/liubimyie-ghoriachiie-klavishy-v-pycharm</link>
+      <link>https://ewok.github.io/liubimyie-ghoriachiie-klavishy-v-pycharm</link>
       <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/liubimyie-ghoriachiie-klavishy-v-pycharm</guid>
+      <guid>https://ewok.github.io/liubimyie-ghoriachiie-klavishy-v-pycharm</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;New File - Alt+Ins&lt;/li&gt;
 &lt;li&gt;Settings - Ctrl+Alt+S&lt;/li&gt;
@@ -173,20 +173,20 @@
     
     <item>
       <title>Интерактивный учебник по vim</title>
-      <link>http://ewok.github.io/intieraktivnyi-uchiebnik-po-vim</link>
+      <link>https://ewok.github.io/intieraktivnyi-uchiebnik-po-vim</link>
       <pubDate>Mon, 09 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/intieraktivnyi-uchiebnik-po-vim</guid>
+      <guid>https://ewok.github.io/intieraktivnyi-uchiebnik-po-vim</guid>
       <description>&lt;p&gt;Кто давно хотел изучить замечательный редактор vim, но кого останавливал высокий порог вхождения, могут попробовать &lt;a href=&#34;http://www.openvim.com/tutorial.html&#34;&gt;интерактивный учебник&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Библиотека sh для python</title>
-      <link>http://ewok.github.io/bibliotieka-sh-dlia-python</link>
+      <link>https://ewok.github.io/bibliotieka-sh-dlia-python</link>
       <pubDate>Mon, 05 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/bibliotieka-sh-dlia-python</guid>
+      <guid>https://ewok.github.io/bibliotieka-sh-dlia-python</guid>
       <description>&lt;p&gt;Классная штука. Позволяет обращаться к командам shell в контексте языка python. Примеры из документации:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;from sh import ifconfig
@@ -230,10 +230,10 @@ sh.ls(sh.glob(&amp;quot;*.py&amp;quot;))
     
     <item>
       <title>TimeComplexity(python)</title>
-      <link>http://ewok.github.io/timecomplexitypython</link>
+      <link>https://ewok.github.io/timecomplexitypython</link>
       <pubDate>Thu, 20 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/timecomplexitypython</guid>
+      <guid>https://ewok.github.io/timecomplexitypython</guid>
       <description>&lt;p&gt;Шпаргалка&lt;/p&gt;
 
 &lt;p&gt;&amp;lsquo;n&amp;rsquo; - количество элементов в контейнере
@@ -286,10 +286,10 @@ Iteration       O(n)            O(n)
     
     <item>
       <title>django-filebrowser-no-grappelli &#43; tinymce</title>
-      <link>http://ewok.github.io/django-filebrowser-no-grappelli-tinymce</link>
+      <link>https://ewok.github.io/django-filebrowser-no-grappelli-tinymce</link>
       <pubDate>Wed, 14 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/django-filebrowser-no-grappelli-tinymce</guid>
+      <guid>https://ewok.github.io/django-filebrowser-no-grappelli-tinymce</guid>
       <description>&lt;p&gt;Настройка, уже вполне популярной связки django-filebrowser-no-grappelli + tinymce.&lt;/p&gt;
 
 &lt;p&gt;Настройку я производил по инструкции из гугла:&lt;/p&gt;
@@ -318,30 +318,30 @@ FILEBROWSER_MEDIA_URL = STATIC_URL
     
     <item>
       <title>Sqlalchemy</title>
-      <link>http://ewok.github.io/sqlalchemy</link>
+      <link>https://ewok.github.io/sqlalchemy</link>
       <pubDate>Sat, 03 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/sqlalchemy</guid>
+      <guid>https://ewok.github.io/sqlalchemy</guid>
       <description>&lt;p&gt;Познакомился с питоновской ORM(Object Relational Mapper) sqlalchemy. Похожа на джанговскую но имеет больше возможностей. Закопался в документацию, читать не перечитать.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Flask</title>
-      <link>http://ewok.github.io/flask</link>
+      <link>https://ewok.github.io/flask</link>
       <pubDate>Thu, 01 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/flask</guid>
+      <guid>https://ewok.github.io/flask</guid>
       <description>&lt;p&gt;Flask микро фреймворк написанный на python. Легковесный, на нем я решил написать для себя сайт портфолио. Совмещу изучение фреймворка с полезным делом.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>zip zip</title>
-      <link>http://ewok.github.io/zip-zip</link>
+      <link>https://ewok.github.io/zip-zip</link>
       <pubDate>Sun, 14 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/zip-zip</guid>
+      <guid>https://ewok.github.io/zip-zip</guid>
       <description>&lt;p&gt;Прикольный пример из книги Лутца(&amp;ldquo;Изучаем Python&amp;rdquo;).&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; X = (1, 2)
@@ -365,10 +365,10 @@ FILEBROWSER_MEDIA_URL = STATIC_URL
     
     <item>
       <title>hibernate через pm-utils</title>
-      <link>http://ewok.github.io/hibernate-chieriez-pm-utils</link>
+      <link>https://ewok.github.io/hibernate-chieriez-pm-utils</link>
       <pubDate>Wed, 22 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/hibernate-chieriez-pm-utils</guid>
+      <guid>https://ewok.github.io/hibernate-chieriez-pm-utils</guid>
       <description>&lt;p&gt;В русской вики arch в статье о pm-utils там где описывается настройка hibernate, почему то не указано что нужно прописывать hook: resume для в mkinitcpio.&lt;/p&gt;
 
 &lt;p&gt;Поэтому у меня в hibernate уходил комп нормально, но не возвращался из него. Рекомендую читать английский вариант статьи там все прописано.&lt;/p&gt;
@@ -404,10 +404,10 @@ initrd /kernel26.img
     
     <item>
       <title>Экспериментирую с кэшем</title>
-      <link>http://ewok.github.io/ekspierimientiruiu-s-keshiem</link>
+      <link>https://ewok.github.io/ekspierimientiruiu-s-keshiem</link>
       <pubDate>Wed, 15 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/ekspierimientiruiu-s-keshiem</guid>
+      <guid>https://ewok.github.io/ekspierimientiruiu-s-keshiem</guid>
       <description>&lt;p&gt;Добавил кэширование страниц в блоге. Нагрузки конечно нет никакой, просто ради эксперимента.&lt;/p&gt;
 
 &lt;p&gt;Почитать о том как это работает можно здесь:&lt;/p&gt;
@@ -418,10 +418,10 @@ initrd /kernel26.img
     
     <item>
       <title>Django Aggregation</title>
-      <link>http://ewok.github.io/django-aggregation</link>
+      <link>https://ewok.github.io/django-aggregation</link>
       <pubDate>Thu, 19 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/django-aggregation</guid>
+      <guid>https://ewok.github.io/django-aggregation</guid>
       <description>&lt;p&gt;ORM это всегда баланс между производительностью и переносимостью.&lt;/p&gt;
 
 &lt;p&gt;Наткнулся на очень интересную тему. Расширение функционала ORM джанги. Изучив материал, переделал и оптимизировал модели блога.&lt;/p&gt;
@@ -495,10 +495,10 @@ class Store(models.Model):
     
     <item>
       <title>PEP8 коротко и по-русски</title>
-      <link>http://ewok.github.io/pep8-korotko-i-po-russki</link>
+      <link>https://ewok.github.io/pep8-korotko-i-po-russki</link>
       <pubDate>Mon, 16 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://ewok.github.io/pep8-korotko-i-po-russki</guid>
+      <guid>https://ewok.github.io/pep8-korotko-i-po-russki</guid>
       <description>&lt;p&gt;Взято отсюда
 Полезно знать как писать в python стиле:&lt;/p&gt;
 
