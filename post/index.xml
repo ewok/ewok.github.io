@@ -15,9 +15,9 @@
       <pubDate>Mon, 22 Feb 2016 17:50:45 +0300</pubDate>
       
       <guid>https://ewok.github.io/hugo-and-go</guid>
-      <description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://ewok.github.io/images/2016/02/gopher_head.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://ewok.github.io/images/2016/02/gopher_head.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Во первых, я очередной раз сменил блоговый движок. На этот раз я остановил свой выбор на &lt;a href=&#34;http://gohugo.io&#34;&gt;hugo&lt;/a&gt;. Hugo - генератор статичных страниц, написанный на &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt;. Довольно таки зрелый продукт. Подробнее познакомиться с ним можно на &lt;a href=&#34;http://gohugo.io&#34;&gt;официальной странице&lt;/a&gt;.&lt;/p&gt;
 
@@ -59,8 +59,7 @@
 &lt;li&gt;Рефлексируем структуры - &lt;a href=&#34;https://github.com/fatih/structs&#34;&gt;structs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Делаем дашборд в терминале - &lt;a href=&#34;https://github.com/gizak/termui&#34;&gt;termui&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;VPN с помощью DHT - &lt;a href=&#34;https://github.com/meshbird/meshbird&#34;&gt;meshbird&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -70,6 +69,8 @@
       
       <guid>https://ewok.github.io/keep-running-app</guid>
       <description>&lt;p&gt;Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт:&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Прописываем агент в ~/Library/LaunchAgents&lt;/li&gt;
@@ -104,8 +105,7 @@
 &lt;/ul&gt;
 
 &lt;pre&gt;&lt;code&gt;launchctl remove user.telegram
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
@@ -114,9 +114,7 @@
       <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
       
       <guid>https://ewok.github.io/intieriesnoie-v-sieti-2</guid>
-      <description>
-
-&lt;h3 id=&#34;haskell&#34;&gt;Haskell&lt;/h3&gt;
+      <description>&lt;h3 id=&#34;haskell&#34;&gt;Haskell&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://habrahabr.ru/post/257491/&#34;&gt;REST-сервер для простого блога на Haskell&lt;/a&gt;&lt;/li&gt;
@@ -148,7 +146,8 @@
 &lt;h3 id=&#34;разное&#34;&gt;Разное&lt;/h3&gt;
 
 &lt;p&gt;Играем и учимся программировать - &lt;a href=&#34;https://github.com/colobot/colobot&#34;&gt;colobot&lt;/a&gt;&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -300,8 +299,7 @@ main = do
       <guid>https://ewok.github.io/vim-hardtime</guid>
       <description>&lt;p&gt;Для тех кто хочет использовать vim в стиле vim way:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/wikitopian/hardmode&#34;&gt;hardmode&lt;/a&gt; и &lt;a href=&#34;https://github.com/takac/vim-hardtime&#34;&gt;hardtime&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a href=&#34;https://github.com/wikitopian/hardmode&#34;&gt;hardmode&lt;/a&gt; и &lt;a href=&#34;https://github.com/takac/vim-hardtime&#34;&gt;hardtime&lt;/a&gt; &lt;/p&gt;</description>
     </item>
     
     <item>

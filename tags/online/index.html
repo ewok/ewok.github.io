@@ -89,10 +89,9 @@
   </header>
 
   
-  <div class="summary">Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт:
- Прописываем агент в ~/Library/LaunchAgents  Например telegram.plist
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt; &lt;plist version=&quot;1.0&quot;&gt; &lt;dict&gt; &lt;key&gt;Label&lt;/key&gt; &lt;string&gt;user.telegram&lt;/string&gt; &lt;key&gt;KeepAlive&lt;/key&gt; &lt;true/&gt; &lt;key&gt;Program&lt;/key&gt; &lt;string&gt;/Applications/Telegram.app/Contents/MacOS/Telegram&lt;/string&gt; &lt;/dict&gt; &lt;/plist&gt;   Запускаем наш агент  launchctl load ~/Library/LaunchAgents/telegram.plist  После этого наше приложение будет постоянно запускаться после закрытия.
- Вернуть как было, можно командой:  launchctl remove user.</div>
+  <div class="summary"><p>Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт:</p>
+
+<p></p></div>
 
   <footer>
     <a href="https://ewok.github.io/keep-running-app" title="Держим приложение запущенным(macos x)">Read More…</a>
@@ -111,8 +110,9 @@
   </header>
 
   
-  <div class="summary">Для тех кто хочет использовать vim в стиле vim way:
-hardmode и hardtime</div>
+  <div class="summary"><p>Для тех кто хочет использовать vim в стиле vim way:</p>
+
+<p><a href="https://github.com/wikitopian/hardmode">hardmode</a> и <a href="https://github.com/takac/vim-hardtime">hardtime</a> </p></div>
 
   <footer>
     <a href="https://ewok.github.io/vim-hardtime" title="Еще больше vim">Read More…</a>
@@ -288,11 +288,9 @@ http://smartprogress.do</div>
   
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h2 class="panel-title">Search</h2>
+      <div class="panel-title">Search</div>
     </div>
-    <div class="list-group">
-        <gcse:search>
-    </div>
+        <gcse:search></gcse:search>
   </div>
   
 
@@ -382,7 +380,7 @@ http://smartprogress.do</div>
 
 <script>
   (function() {
-      var cx = '';
+      var cx = '018232319146837403043:ugnaw2yq0s8';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;

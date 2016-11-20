@@ -85,10 +85,9 @@
   </header>
 
   
-  <div class="summary">Во первых, я очередной раз сменил блоговый движок. На этот раз я остановил свой выбор на hugo. Hugo - генератор статичных страниц, написанный на Go. Довольно таки зрелый продукт. Подробнее познакомиться с ним можно на официальной странице.
-Во вторых, я познакомился с языком Go. Я нашел что язык мне симпатичен, прост в освоении и удобен в повседневных задачах devops инженера, и не только.
-Основными плюсами для меня стали:
- Хорошая поддержка кроссплатформенности Скорость выполнения Параллелизм Компиляция в один бинарник, без зависимостей  Очень удобно написать какую нибудь небольшую программку, закинуть ее на сервер и не думать о сторонних библиотеках(как например в python).</div>
+  <div class="summary"><p><img src="/images/2016/02/gopher_head.png" alt="" /></p>
+
+<p></p></div>
 
   <footer>
     <a href="https://ewok.github.io/hugo-and-go" title="HuGo and Go">Read More…</a>
@@ -107,10 +106,9 @@
   </header>
 
   
-  <div class="summary">Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт:
- Прописываем агент в ~/Library/LaunchAgents  Например telegram.plist
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt; &lt;plist version=&quot;1.0&quot;&gt; &lt;dict&gt; &lt;key&gt;Label&lt;/key&gt; &lt;string&gt;user.telegram&lt;/string&gt; &lt;key&gt;KeepAlive&lt;/key&gt; &lt;true/&gt; &lt;key&gt;Program&lt;/key&gt; &lt;string&gt;/Applications/Telegram.app/Contents/MacOS/Telegram&lt;/string&gt; &lt;/dict&gt; &lt;/plist&gt;   Запускаем наш агент  launchctl load ~/Library/LaunchAgents/telegram.plist  После этого наше приложение будет постоянно запускаться после закрытия.
- Вернуть как было, можно командой:  launchctl remove user.</div>
+  <div class="summary"><p>Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт:</p>
+
+<p></p></div>
 
   <footer>
     <a href="https://ewok.github.io/keep-running-app" title="Держим приложение запущенным(macos x)">Read More…</a>
@@ -129,7 +127,40 @@
   </header>
 
   
-  <div class="summary">Haskell  REST-сервер для простого блога на Haskell :) лисп диалект Парсим логи  Vim  В vim добавили jsonencode() и jsondecode() До этого я пользовался внешними утилитами Кто как vim-т Редактор тем  Python  В копилку tgbot CLI для DO - pantoon  Go  Nginx access log parser for Golang  Разное Играем и учимся программировать - colobot</div>
+  <div class="summary"><h3 id="haskell">Haskell</h3>
+
+<ul>
+<li><a href="https://habrahabr.ru/post/257491/">REST-сервер для простого блога на Haskell</a></li>
+<li><a href="http://emojilisp.com/">:) лисп диалект</a></li>
+<li><a href="https://www.schoolofhaskell.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/attoparsec">Парсим логи</a></li>
+</ul>
+
+<h3 id="vim">Vim</h3>
+
+<ul>
+<li><a href="https://github.com/vim/vim/commit/520e1e41f35b063ede63b41738c82d6636e78c34">В vim добавили jsonencode() и jsondecode()</a> До этого я пользовался внешними утилитами</li>
+<li><a href="http://howivim.com/">Кто как vim-т</a></li>
+<li><a href="http://mswift42.github.io/themecreator/">Редактор тем</a></li>
+</ul>
+
+<h3 id="python">Python</h3>
+
+<ul>
+<li>В копилку <a href="https://pypi.python.org/pypi/tgbot">tgbot</a></li>
+<li>CLI для DO - <a href="https://pypi.python.org/pypi/pontoon/">pantoon</a></li>
+</ul>
+
+<h3 id="go">Go</h3>
+
+<ul>
+<li><a href="https://github.com/satyrius/gonx">Nginx access log parser for Golang</a></li>
+</ul>
+
+<h3 id="разное">Разное</h3>
+
+<p>Играем и учимся программировать - <a href="https://github.com/colobot/colobot">colobot</a></p>
+
+<p></p></div>
 
   <footer>
     <a href="https://ewok.github.io/intieriesnoie-v-sieti-2" title="Интересное в сети 2">Read More…</a>
@@ -214,8 +245,9 @@
   </header>
 
   
-  <div class="summary">Для тех кто хочет использовать vim в стиле vim way:
-hardmode и hardtime</div>
+  <div class="summary"><p>Для тех кто хочет использовать vim в стиле vim way:</p>
+
+<p><a href="https://github.com/wikitopian/hardmode">hardmode</a> и <a href="https://github.com/takac/vim-hardtime">hardtime</a> </p></div>
 
   <footer>
     <a href="https://ewok.github.io/vim-hardtime" title="Еще больше vim">Read More…</a>
@@ -310,11 +342,9 @@ hardmode и hardtime</div>
   
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h2 class="panel-title">Search</h2>
+      <div class="panel-title">Search</div>
     </div>
-    <div class="list-group">
-        <gcse:search>
-    </div>
+        <gcse:search></gcse:search>
   </div>
   
 
@@ -404,7 +434,7 @@ hardmode и hardtime</div>
 
 <script>
   (function() {
-      var cx = '';
+      var cx = '018232319146837403043:ugnaw2yq0s8';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;

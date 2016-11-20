@@ -14,9 +14,7 @@
       <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
       
       <guid>https://ewok.github.io/intieriesnoie-v-sieti-2</guid>
-      <description>
-
-&lt;h3 id=&#34;haskell&#34;&gt;Haskell&lt;/h3&gt;
+      <description>&lt;h3 id=&#34;haskell&#34;&gt;Haskell&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://habrahabr.ru/post/257491/&#34;&gt;REST-сервер для простого блога на Haskell&lt;/a&gt;&lt;/li&gt;
@@ -48,7 +46,8 @@
 &lt;h3 id=&#34;разное&#34;&gt;Разное&lt;/h3&gt;
 
 &lt;p&gt;Играем и учимся программировать - &lt;a href=&#34;https://github.com/colobot/colobot&#34;&gt;colobot&lt;/a&gt;&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -147,8 +146,7 @@
       <guid>https://ewok.github.io/vim-hardtime</guid>
       <description>&lt;p&gt;Для тех кто хочет использовать vim в стиле vim way:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/wikitopian/hardmode&#34;&gt;hardmode&lt;/a&gt; и &lt;a href=&#34;https://github.com/takac/vim-hardtime&#34;&gt;hardtime&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a href=&#34;https://github.com/wikitopian/hardmode&#34;&gt;hardmode&lt;/a&gt; и &lt;a href=&#34;https://github.com/takac/vim-hardtime&#34;&gt;hardtime&lt;/a&gt; &lt;/p&gt;</description>
     </item>
     
     <item>

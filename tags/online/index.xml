@@ -16,6 +16,8 @@
       <guid>https://ewok.github.io/keep-running-app</guid>
       <description>&lt;p&gt;Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт:&lt;/p&gt;
 
+&lt;p&gt;&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Прописываем агент в ~/Library/LaunchAgents&lt;/li&gt;
 &lt;/ul&gt;
@@ -49,8 +51,7 @@
 &lt;/ul&gt;
 
 &lt;pre&gt;&lt;code&gt;launchctl remove user.telegram
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
@@ -61,8 +62,7 @@
       <guid>https://ewok.github.io/vim-hardtime</guid>
       <description>&lt;p&gt;Для тех кто хочет использовать vim в стиле vim way:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/wikitopian/hardmode&#34;&gt;hardmode&lt;/a&gt; и &lt;a href=&#34;https://github.com/takac/vim-hardtime&#34;&gt;hardtime&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a href=&#34;https://github.com/wikitopian/hardmode&#34;&gt;hardmode&lt;/a&gt; и &lt;a href=&#34;https://github.com/takac/vim-hardtime&#34;&gt;hardtime&lt;/a&gt; &lt;/p&gt;</description>
     </item>
     
     <item>

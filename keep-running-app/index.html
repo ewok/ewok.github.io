@@ -17,21 +17,21 @@
     <link rel="icon" type="image/png" href="https://ewok.github.io//favicon.png" />
     <title>Держим приложение запущенным(macos x) - Записки Турыча</title>
     
-<meta name="description" content="Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт: Прописываем агент в ~/Library/LaunchAgents  Например telegram.plist&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;quot;-//Apple//DTD PLIST 1.0//EN&amp;quot; &amp;quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;quot;&amp;gt; &amp;lt;plist version=&amp;quot;1.0&amp;quot;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;Label&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;user.telegram&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;KeepAlive&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;key&amp;gt;Program&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;/Applications/Telegram.app/Contents/MacOS/Telegram&amp;lt;/string&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt;   Запускаем наш агент  launchctl load ~/Library/LaunchAgents/telegram.plist  После этого наше приложение будет постоянно запускаться после закрытия. Вернуть как было, можно командой:  launchctl remove user.">
+<meta name="description" content="&lt;p&gt;Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт:&lt;/p&gt;&lt;p&gt;&lt;/p&gt;">
 
 <meta property="og:title" content="Держим приложение запущенным(macos x) - Записки Турыча">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://ewok.github.io/keep-running-app">
 <meta property="og:image" content="https://ewok.github.io/images/default.png">
 <meta property="og:site_name" content="Записки Турыча">
-<meta property="og:description" content="Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт: Прописываем агент в ~/Library/LaunchAgents  Например telegram.plist&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;quot;-//Apple//DTD PLIST 1.0//EN&amp;quot; &amp;quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;quot;&amp;gt; &amp;lt;plist version=&amp;quot;1.0&amp;quot;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;Label&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;user.telegram&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;KeepAlive&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;key&amp;gt;Program&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;/Applications/Telegram.app/Contents/MacOS/Telegram&amp;lt;/string&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt;   Запускаем наш агент  launchctl load ~/Library/LaunchAgents/telegram.plist  После этого наше приложение будет постоянно запускаться после закрытия. Вернуть как было, можно командой:  launchctl remove user.">
+<meta property="og:description" content="&lt;p&gt;Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт:&lt;/p&gt;&lt;p&gt;&lt;/p&gt;">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="Записки Турыча">
 <meta name="twitter:url" content="https://ewok.github.io/keep-running-app">
 <meta name="twitter:title" content="Держим приложение запущенным(macos x) - Записки Турыча">
-<meta name="twitter:description" content="Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт: Прописываем агент в ~/Library/LaunchAgents  Например telegram.plist&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;quot;-//Apple//DTD PLIST 1.0//EN&amp;quot; &amp;quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;quot;&amp;gt; &amp;lt;plist version=&amp;quot;1.0&amp;quot;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;Label&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;user.telegram&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;KeepAlive&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;key&amp;gt;Program&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;/Applications/Telegram.app/Contents/MacOS/Telegram&amp;lt;/string&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt;   Запускаем наш агент  launchctl load ~/Library/LaunchAgents/telegram.plist  После этого наше приложение будет постоянно запускаться после закрытия. Вернуть как было, можно командой:  launchctl remove user.">
+<meta name="twitter:description" content="&lt;p&gt;Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт:&lt;/p&gt;&lt;p&gt;&lt;/p&gt;">
 <meta name="twitter:image" content="https://ewok.github.io/images/default.png">
 
 
@@ -66,7 +66,7 @@
         "height": 60
       }
     },
-    "description": "Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт:\n Прописываем агент в ~\/Library\/LaunchAgents  Например telegram.plist\n\x26lt;?xml version=\x26quot;1.0\x26quot; encoding=\x26quot;UTF-8\x26quot;?\x26gt; \x26lt;!DOCTYPE plist PUBLIC \x26quot;-\/\/Apple\/\/DTD PLIST 1.0\/\/EN\x26quot; \x26quot;http:\/\/www.apple.com\/DTDs\/PropertyList-1.0.dtd\x26quot;\x26gt; \x26lt;plist version=\x26quot;1.0\x26quot;\x26gt; \x26lt;dict\x26gt; \x26lt;key\x26gt;Label\x26lt;\/key\x26gt; \x26lt;string\x26gt;user.telegram\x26lt;\/string\x26gt; \x26lt;key\x26gt;KeepAlive\x26lt;\/key\x26gt; \x26lt;true\/\x26gt; \x26lt;key\x26gt;Program\x26lt;\/key\x26gt; \x26lt;string\x26gt;\/Applications\/Telegram.app\/Contents\/MacOS\/Telegram\x26lt;\/string\x26gt; \x26lt;\/dict\x26gt; \x26lt;\/plist\x26gt;   Запускаем наш агент  launchctl load ~\/Library\/LaunchAgents\/telegram.plist  После этого наше приложение будет постоянно запускаться после закрытия.\n Вернуть как было, можно командой:  launchctl remove user."
+    "description": "\x3cp\x3eЕсли у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт:\x3c\/p\x3e\n\n\x3cp\x3e\x3c\/p\x3e"
   }
 </script>
 
@@ -149,6 +149,8 @@
 
   <div class="article-body"><p>Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт:</p>
 
+<p></p>
+
 <ul>
 <li>Прописываем агент в ~/Library/LaunchAgents</li>
 </ul>
@@ -182,8 +184,7 @@
 </ul>
 
 <pre><code>launchctl remove user.telegram
-</code></pre>
-</div>
+</code></pre></div>
 
   <footer class="article-footer">
     
@@ -232,11 +233,9 @@
   
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h2 class="panel-title">Search</h2>
+      <div class="panel-title">Search</div>
     </div>
-    <div class="list-group">
-        <gcse:search>
-    </div>
+        <gcse:search></gcse:search>
   </div>
   
 
@@ -326,7 +325,7 @@
 
 <script>
   (function() {
-      var cx = '';
+      var cx = '018232319146837403043:ugnaw2yq0s8';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
