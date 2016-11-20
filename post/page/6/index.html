@@ -2,28 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="generator" content="Hugo 0.18-DEV" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
-    <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/solarized_dark.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/custom.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://ewok.github.io//index.xml">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.18-DEV" />
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://ewok.github.io/post/index.xml">
+
+<link rel="canonical" href="https://ewok.github.io/post/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <link rel="icon" type="image/png" href="https://ewok.github.io//favicon.png" />
-    
     <title>Posts - Записки Турыча</title>
-    <meta property='og:title' content="Posts - Записки Турыча">
-    <meta property="og:type" content="article">
+    
+    <link href="https://ewok.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
     
 
-    <meta property="og:url" content="https://ewok.github.io/post/">
-    
-    
-  </head>
-  <body>
-    <header class="site">
+    <header class="l-header">
       <nav class="navbar navbar-default">
         <div class="container">
           <div class="navbar-header">
@@ -35,6 +37,8 @@
             </button>
             <a class="navbar-brand" href="https://ewok.github.io/">Записки Турыча</a>
           </div>
+
+          
           <div id="navbar" class="collapse navbar-collapse">
             
             <ul class="nav navbar-nav navbar-right">
@@ -54,175 +58,231 @@
             </ul>
             
           </div>
+          
+
         </div>
       </nav>
     </header>
-    <div class="site">
+
+    <main>
       <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
 
-<div class="list">
+    
+    <header class="page-header">
+      <h1>Posts</h1>
+    </header>
+    
 
-  <div class="row">
-    <div class="col-md-8">
-      <header class="page-title">Posts</header>
-
+    <ul class="p-articles">
       
-      <article class="li">
+      <li><article class="li">
   <header>
-    <div class="date">Tue, Oct 15, 2013</div>
-    <div class="title"><a href="https://ewok.github.io/pierieimienovaniie-failov-po-poriadku">Переименование файлов по порядку</a></div>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2013-10-15T00:00:00JST">Oct 15, 2013</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/pierieimienovaniie-failov-po-poriadku">Переименование файлов по порядку</a></h2>
   </header>
-  <div class="body"><p>Переименовывается в такой вид: 1.* 2.* 3.*&hellip;.</p>
-
-<pre><code>i= ; ls | while read; do mv &quot;$REPLY&quot; $((++i))&quot;.${REPLY//*.}&quot;; done
-</code></pre>
-</div>
 
   
-</article>
-<hr>
+  <div class="summary">Переименовывается в такой вид: 1.* 2.* 3.*&hellip;.
+i= ; ls | while read; do mv &quot;$REPLY&quot; $((++i))&quot;.${REPLY//*.}&quot;; done  </div>
 
-      
-      <article class="li">
-  <header>
-    <div class="date">Mon, Oct 14, 2013</div>
-    <div class="title"><a href="https://ewok.github.io/dievushka-dnia-1">Девушка дня 1</a></div>
-  </header>
-  <div class="body"><p><img src="/images/2015/03/girl1.jpg" alt="" /></p>
-</div>
-
-  
-</article>
-<hr>
-
-      
-      <article class="li">
-  <header>
-    <div class="date">Sun, Oct 13, 2013</div>
-    <div class="title"><a href="https://ewok.github.io/btsync">Btsync</a></div>
-  </header>
-  <div class="body"><p>Как я применяю btsync:</p>
-
-<ol>
-<li>Деплой на личный сервер(не критичный к простоям)</li>
-<li>Бэкап</li>
-<li>Обмен файлами с мобилкой на андроиде</li>
-</ol>
-</div>
-
-  
-</article>
-<hr>
-
-      
-      <article class="li">
-  <header>
-    <div class="date">Sat, Oct 12, 2013</div>
-    <div class="title"><a href="https://ewok.github.io/zapustil-novyi-blogh-na-statikie">Запустил новый блог на статике</a></div>
-  </header>
-  <div class="body"><p>Запускаю блог на статике. Старый блог на самописном django уходит в life.ewok.ru.</p>
-
-<p>Для генерации использую pelican(python)</p>
-</div>
-
-  
-</article>
-<hr>
-
-      
-      <article class="li">
-  <header>
-    <div class="date">Wed, Jul 10, 2013</div>
-    <div class="title"><a href="https://ewok.github.io/zyxel-keenetic-ii">Zyxel Keenetic II</a></div>
-  </header>
-  <div class="body">Первый Keenetic не оправдал надежд. В режиме обыкновенного роутера всё хорошо. Но после подключения торрента, ftp, cifs, начинаются дикие тормоза. Если еще и файл какой-нибудь по фтп перекидывать то доступ к роутеру получить практически невозможно. В конце концов первый кинет вообще заглючил. В итоге обменял его на второй. У второго помощнее процессор, больше памяти, 2 usb вместо одного, ну и по мелочи. Будем тестировать. Первые впечатления положительные, одновременное копирования с фтп, просмотр фильма по DLNA, торрент + серфинг, грузят процессор максимум на 50%(в среднем 20%).</div>
-
-  
   <footer>
-    <a href="https://ewok.github.io/zyxel-keenetic-ii" class="btn btn-default">Read More…</a>
+    <a href="https://ewok.github.io/pierieimienovaniie-failov-po-poriadku" title="Переименование файлов по порядку">Read More…</a>
   </footer>
-  
 </article>
-<hr>
-
+</li>
       
-      <article class="li">
+      <li><article class="li">
   <header>
-    <div class="date">Sun, Jul 7, 2013</div>
-    <div class="title"><a href="https://ewok.github.io/shikarnoie-vidieo-ot-makaskilla">Шикарное видео от МакАскилла!</a></div>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2013-10-14T00:00:00JST">Oct 14, 2013</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/dievushka-dnia-1">Девушка дня 1</a></h2>
   </header>
-  <div class="body"><iframe width="560" height="315" src="https://www.youtube.com/embed/Sv3xVOs7_No" frameborder="0" allowfullscreen></iframe>
-</div>
 
   
-</article>
-<hr>
+  <div class="summary"></div>
 
+  <footer>
+    <a href="https://ewok.github.io/dievushka-dnia-1" title="Девушка дня 1">Read More…</a>
+  </footer>
+</article>
+</li>
       
-      <article class="li">
+      <li><article class="li">
   <header>
-    <div class="date">Tue, Jul 2, 2013</div>
-    <div class="title"><a href="https://ewok.github.io/zyxel-keenetic">Zyxel Keenetic</a></div>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2013-10-13T00:00:00JST">Oct 13, 2013</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/btsync">Btsync</a></h2>
   </header>
-  <div class="body"><p>Приобрел сей девайс. Может подключаться к инету через 3g, 4g модемы, ethernet, wifi. Раздает на 300 мегабит по вайфаю, 100 мегабит по ethernet. Поддерживает файловый сервер, принт сервер. Пока не думаю про альтернативные прошивки, время покажет. Вторую серию  этой модели, считаю, брать пока рано. Изменений не так много.</p>
-</div>
 
   
-</article>
-<hr>
+  <div class="summary">Как я применяю btsync:
+ Деплой на личный сервер(не критичный к простоям) Бэкап Обмен файлами с мобилкой на андроиде  </div>
 
+  <footer>
+    <a href="https://ewok.github.io/btsync" title="Btsync">Read More…</a>
+  </footer>
+</article>
+</li>
       
-      <article class="li">
+      <li><article class="li">
   <header>
-    <div class="date">Tue, Jul 2, 2013</div>
-    <div class="title"><a href="https://ewok.github.io/obnovilssia">Обновилсся</a></div>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2013-10-12T00:00:00JST">Oct 12, 2013</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/zapustil-novyi-blogh-na-statikie">Запустил новый блог на статике</a></h2>
   </header>
-  <div class="body"><p>Обновил свой арчик. На гигабайт обновлений накачалось. Из глобальных обновлений случился filesystem. По убирали к ядренефене /bin /sbin, оставили только симлинки на /usr/bin к этим папкам.
-После перезагрузки система не запустилась&hellip; :(   Не сюр, ожидаемо. Если не часто обновляешься. В общем в grub убежал файл menu.lst. После возврата, всё встало на места.
-Жду новых сюрпризов.</p>
-</div>
 
   
-</article>
-<hr>
+  <div class="summary">Запускаю блог на статике. Старый блог на самописном django уходит в life.ewok.ru.
+Для генерации использую pelican(python)</div>
 
+  <footer>
+    <a href="https://ewok.github.io/zapustil-novyi-blogh-na-statikie" title="Запустил новый блог на статике">Read More…</a>
+  </footer>
+</article>
+</li>
       
-      <article class="li">
+      <li><article class="li">
   <header>
-    <div class="date">Sat, Jun 29, 2013</div>
-    <div class="title"><a href="https://ewok.github.io/dlia-nastroieniia">Для настроения!</a></div>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2013-07-10T00:00:00JST">Jul 10, 2013</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/zyxel-keenetic-ii">Zyxel Keenetic II</a></h2>
   </header>
-  <div class="body"><iframe width="560" height="315" src="https://www.youtube.com/embed/lExW80sXsHs" frameborder="0" allowfullscreen></iframe>
-</div>
 
   
-</article>
-<hr>
+  <div class="summary">Первый Keenetic не оправдал надежд. В режиме обыкновенного роутера всё хорошо. Но после подключения торрента, ftp, cifs, начинаются дикие тормоза. Если еще и файл какой-нибудь по фтп перекидывать то доступ к роутеру получить практически невозможно. В конце концов первый кинет вообще заглючил. В итоге обменял его на второй. У второго помощнее процессор, больше памяти, 2 usb вместо одного, ну и по мелочи. Будем тестировать. Первые впечатления положительные, одновременное копирования с фтп, просмотр фильма по DLNA, торрент + серфинг, грузят процессор максимум на 50%(в среднем 20%).</div>
 
+  <footer>
+    <a href="https://ewok.github.io/zyxel-keenetic-ii" title="Zyxel Keenetic II">Read More…</a>
+  </footer>
+</article>
+</li>
       
-      <article class="li">
+      <li><article class="li">
   <header>
-    <div class="date">Sat, May 18, 2013</div>
-    <div class="title"><a href="https://ewok.github.io/kripta">Крипта</a></div>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2013-07-07T00:00:00JST">Jul 7, 2013</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/shikarnoie-vidieo-ot-makaskilla">Шикарное видео от МакАскилла!</a></h2>
   </header>
-  <div class="body"><p>Если пользуетесь Яндекс, то можете получить характеристику вашей деятельности в интернете. Я на 88% Сова, 71% Семейный человек, 46% Гик, 44% Меломан и всего лишь на 9% Мама :)))</p>
-</div>
 
   
-</article>
-<hr>
+  <div class="summary"> </div>
 
+  <footer>
+    <a href="https://ewok.github.io/shikarnoie-vidieo-ot-makaskilla" title="Шикарное видео от МакАскилла!">Read More…</a>
+  </footer>
+</article>
+</li>
       
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2013-07-02T00:00:00JST">Jul 2, 2013</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
       
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/zyxel-keenetic">Zyxel Keenetic</a></h2>
+  </header>
+
+  
+  <div class="summary">Приобрел сей девайс. Может подключаться к инету через 3g, 4g модемы, ethernet, wifi. Раздает на 300 мегабит по вайфаю, 100 мегабит по ethernet. Поддерживает файловый сервер, принт сервер. Пока не думаю про альтернативные прошивки, время покажет. Вторую серию этой модели, считаю, брать пока рано. Изменений не так много.</div>
+
+  <footer>
+    <a href="https://ewok.github.io/zyxel-keenetic" title="Zyxel Keenetic">Read More…</a>
+  </footer>
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2013-07-02T00:00:00JST">Jul 2, 2013</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/obnovilssia">Обновилсся</a></h2>
+  </header>
+
+  
+  <div class="summary">Обновил свой арчик. На гигабайт обновлений накачалось. Из глобальных обновлений случился filesystem. По убирали к ядренефене /bin /sbin, оставили только симлинки на /usr/bin к этим папкам. После перезагрузки система не запустилась&hellip; :( Не сюр, ожидаемо. Если не часто обновляешься. В общем в grub убежал файл menu.lst. После возврата, всё встало на места. Жду новых сюрпризов.</div>
+
+  <footer>
+    <a href="https://ewok.github.io/obnovilssia" title="Обновилсся">Read More…</a>
+  </footer>
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2013-06-29T00:00:00JST">Jun 29, 2013</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/dlia-nastroieniia">Для настроения!</a></h2>
+  </header>
+
+  
+  <div class="summary"> </div>
+
+  <footer>
+    <a href="https://ewok.github.io/dlia-nastroieniia" title="Для настроения!">Read More…</a>
+  </footer>
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2013-05-18T00:00:00JST">May 18, 2013</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/kripta">Крипта</a></h2>
+  </header>
+
+  
+  <div class="summary">Если пользуетесь Яндекс, то можете получить характеристику вашей деятельности в интернете. Я на 88% Сова, 71% Семейный человек, 46% Гик, 44% Меломан и всего лишь на 9% Мама :)))</div>
+
+  <footer>
+    <a href="https://ewok.github.io/kripta" title="Крипта">Read More…</a>
+  </footer>
+</article>
+</li>
+      
+    </ul>
+
+    
 <nav>
   <ul class="pager">
 
     
-    <li><a href="/post/page/5">Previous</a></li>
+    <li><a href="/post/page/5/">Previous</a></li>
     
 
     
-    <li><a href="/post/page/7">Next</a></li>
+    <li><a href="/post/page/7/">Next</a></li>
     
 
   </ul>
@@ -230,16 +290,25 @@
 
 
 
-    </div>
-    <div class="col-md-4">
-      
-<aside class="site">
-
+  </div>
+  <div class="col-md-4">
     
+<aside class="l-sidebar">
 
+  
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h2 class="panel-title">LatestPosts</h2>
+      <h2 class="panel-title">Search</h2>
+    </div>
+    <div class="list-group">
+        <gcse:search>
+    </div>
+  </div>
+  
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
     </div>
     <div class="list-group">
       
@@ -264,71 +333,104 @@
       <a href="https://ewok.github.io/follow-my-lead" class="list-group-item">Vim plugins</a>
       
     </div>
-  </div>
+  </section>
 
   
-  <div class="panel panel-default">
+  <section class="panel panel-default">
     <div class="panel-heading">
-      <h2 class="panel-title">tag</h2>
+      <div class="panel-title">TAG</div>
     </div>
     <div class="list-group">
       
-      <a href="https://ewok.github.io/tags/pictures" class="list-group-item">pictures (25)</a>
+      <a href="https://ewok.github.io/tags/pictures" class="list-group-item">pictures</a>
       
-      <a href="https://ewok.github.io/tags/admins" class="list-group-item">admins (23)</a>
+      <a href="https://ewok.github.io/tags/admins" class="list-group-item">admins</a>
       
-      <a href="https://ewok.github.io/tags/offline" class="list-group-item">offline (17)</a>
+      <a href="https://ewok.github.io/tags/offline" class="list-group-item">offline</a>
       
-      <a href="https://ewok.github.io/tags/dev" class="list-group-item">dev (14)</a>
+      <a href="https://ewok.github.io/tags/dev" class="list-group-item">dev</a>
       
-      <a href="https://ewok.github.io/tags/music" class="list-group-item">music (10)</a>
+      <a href="https://ewok.github.io/tags/music" class="list-group-item">music</a>
       
-      <a href="https://ewok.github.io/tags/online" class="list-group-item">online (10)</a>
+      <a href="https://ewok.github.io/tags/online" class="list-group-item">online</a>
       
-      <a href="https://ewok.github.io/tags/other" class="list-group-item">other (10)</a>
+      <a href="https://ewok.github.io/tags/other" class="list-group-item">other</a>
       
-      <a href="https://ewok.github.io/tags/news" class="list-group-item">news (6)</a>
+      <a href="https://ewok.github.io/tags/news" class="list-group-item">news</a>
       
-      <a href="https://ewok.github.io/tags/haskell" class="list-group-item">haskell (4)</a>
+      <a href="https://ewok.github.io/tags/haskell" class="list-group-item">haskell</a>
       
-      <a href="https://ewok.github.io/tags/video" class="list-group-item">video (4)</a>
-      
-      <a href="https://ewok.github.io/tags/vim" class="list-group-item">vim (4)</a>
-      
-      <a href="https://ewok.github.io/tags/python" class="list-group-item">python (3)</a>
-      
-      <a href="https://ewok.github.io/tags/sport" class="list-group-item">sport (3)</a>
-      
-      <a href="https://ewok.github.io/tags/go" class="list-group-item">go (2)</a>
+      <a href="https://ewok.github.io/tags/video" class="list-group-item">video</a>
       
     </div>
-  </div>
+  </section>
   
 
 </aside>
 
 
-    </div>
   </div>
-
 </div>
-      </div>
-    </div>
 
-    <footer class="site">
+      </div>
+    </main>
+
+    <footer class="l-footer">
       <div class="container">
-        <p>&copy; 2016 Записки Турыча</p>
-        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
-        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+        <p><span class="h-logo">&copy; Записки Турыча</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
       </div>
     </footer>
 
-    <script src="/js/jquery-2.1.3.min.js"></script>
-    <script src="/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="/js/highlight.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
+<script>
+  (function() {
+      var cx = '';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 
+
+
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter22971493 = new Ya.Metrika({
+                    id:22971493,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/22971493" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
 
   </body>

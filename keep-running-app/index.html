@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.18-DEV" />
+
+
+
+<link rel="canonical" href="https://ewok.github.io/keep-running-app">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="icon" type="image/png" href="https://ewok.github.io//favicon.png" />
+    <title>Держим приложение запущенным(macos x) - Записки Турыча</title>
+    
+<meta name="description" content="Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт: Прописываем агент в ~/Library/LaunchAgents  Например telegram.plist&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;quot;-//Apple//DTD PLIST 1.0//EN&amp;quot; &amp;quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;quot;&amp;gt; &amp;lt;plist version=&amp;quot;1.0&amp;quot;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;Label&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;user.telegram&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;KeepAlive&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;key&amp;gt;Program&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;/Applications/Telegram.app/Contents/MacOS/Telegram&amp;lt;/string&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt;   Запускаем наш агент  launchctl load ~/Library/LaunchAgents/telegram.plist  После этого наше приложение будет постоянно запускаться после закрытия. Вернуть как было, можно командой:  launchctl remove user.">
+
+<meta property="og:title" content="Держим приложение запущенным(macos x) - Записки Турыча">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ewok.github.io/keep-running-app">
+<meta property="og:image" content="https://ewok.github.io/images/default.png">
+<meta property="og:site_name" content="Записки Турыча">
+<meta property="og:description" content="Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт: Прописываем агент в ~/Library/LaunchAgents  Например telegram.plist&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;quot;-//Apple//DTD PLIST 1.0//EN&amp;quot; &amp;quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;quot;&amp;gt; &amp;lt;plist version=&amp;quot;1.0&amp;quot;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;Label&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;user.telegram&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;KeepAlive&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;key&amp;gt;Program&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;/Applications/Telegram.app/Contents/MacOS/Telegram&amp;lt;/string&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt;   Запускаем наш агент  launchctl load ~/Library/LaunchAgents/telegram.plist  После этого наше приложение будет постоянно запускаться после закрытия. Вернуть как было, можно командой:  launchctl remove user.">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Записки Турыча">
+<meta name="twitter:url" content="https://ewok.github.io/keep-running-app">
+<meta name="twitter:title" content="Держим приложение запущенным(macos x) - Записки Турыча">
+<meta name="twitter:description" content="Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт: Прописываем агент в ~/Library/LaunchAgents  Например telegram.plist&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;quot;-//Apple//DTD PLIST 1.0//EN&amp;quot; &amp;quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;quot;&amp;gt; &amp;lt;plist version=&amp;quot;1.0&amp;quot;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;Label&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;user.telegram&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;KeepAlive&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;key&amp;gt;Program&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;/Applications/Telegram.app/Contents/MacOS/Telegram&amp;lt;/string&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt;   Запускаем наш агент  launchctl load ~/Library/LaunchAgents/telegram.plist  После этого наше приложение будет постоянно запускаться после закрытия. Вернуть как было, можно командой:  launchctl remove user.">
+<meta name="twitter:image" content="https://ewok.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https:\/\/ewok.github.io\/"
+    },
+    "headline": "Держим приложение запущенным(macos x) - Записки Турыча",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https:\/\/ewok.github.io\/images\/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2016-02-01T00:00:00JST",
+    "dateModified": "2016-02-01T00:00:00JST",
+    "author": {
+      "@type": "Person",
+      "name": "Записки Турыча"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Записки Турыча",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https:\/\/ewok.github.io\/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт:\n Прописываем агент в ~\/Library\/LaunchAgents  Например telegram.plist\n\x26lt;?xml version=\x26quot;1.0\x26quot; encoding=\x26quot;UTF-8\x26quot;?\x26gt; \x26lt;!DOCTYPE plist PUBLIC \x26quot;-\/\/Apple\/\/DTD PLIST 1.0\/\/EN\x26quot; \x26quot;http:\/\/www.apple.com\/DTDs\/PropertyList-1.0.dtd\x26quot;\x26gt; \x26lt;plist version=\x26quot;1.0\x26quot;\x26gt; \x26lt;dict\x26gt; \x26lt;key\x26gt;Label\x26lt;\/key\x26gt; \x26lt;string\x26gt;user.telegram\x26lt;\/string\x26gt; \x26lt;key\x26gt;KeepAlive\x26lt;\/key\x26gt; \x26lt;true\/\x26gt; \x26lt;key\x26gt;Program\x26lt;\/key\x26gt; \x26lt;string\x26gt;\/Applications\/Telegram.app\/Contents\/MacOS\/Telegram\x26lt;\/string\x26gt; \x26lt;\/dict\x26gt; \x26lt;\/plist\x26gt;   Запускаем наш агент  launchctl load ~\/Library\/LaunchAgents\/telegram.plist  После этого наше приложение будет постоянно запускаться после закрытия.\n Вернуть как было, можно командой:  launchctl remove user."
+  }
+</script>
+
+
+    <link href="https://ewok.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://ewok.github.io/">Записки Турыча</a>
+          </div>
+
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/docs">Docs</a></li>
+              
+              
+              
+              <li><a href="https://github.com/ewok">GitHub</a></li>
+              
+              
+              
+              <li><a href="https://twitter.com/ewokru">Twitter</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://ewok.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://ewok.github.io/post/" itemprop="url"><span itemprop="title">post</span></a></li>
+        
+        <li class="active">Держим приложение запущенным(macos x)</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-02-01T00:00:00JST">Feb 1, 2016</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+
+    <h1 class="title">Держим приложение запущенным(macos x)</h1>
+  </header>
+
+  
+
+  <div class="article-body"><p>Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт:</p>
+
+<ul>
+<li>Прописываем агент в ~/Library/LaunchAgents</li>
+</ul>
+
+<p>Например telegram.plist</p>
+
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+&lt;dict&gt;
+  &lt;key&gt;Label&lt;/key&gt;
+  &lt;string&gt;user.telegram&lt;/string&gt;
+  &lt;key&gt;KeepAlive&lt;/key&gt;
+  &lt;true/&gt;
+  &lt;key&gt;Program&lt;/key&gt;  &lt;string&gt;/Applications/Telegram.app/Contents/MacOS/Telegram&lt;/string&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
+</code></pre>
+
+<ul>
+<li>Запускаем наш агент</li>
+</ul>
+
+<pre><code>launchctl load ~/Library/LaunchAgents/telegram.plist
+</code></pre>
+
+<p>После этого наше приложение будет постоянно запускаться после закрытия.</p>
+
+<ul>
+<li>Вернуть как было, можно командой:</li>
+</ul>
+
+<pre><code>launchctl remove user.telegram
+</code></pre>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://ewok.github.io/tags/online/">online</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'ewokru';
+    var disqus_identifier = 'https:\/\/ewok.github.io\/keep-running-app';
+    var disqus_title = 'Держим приложение запущенным(macos x)';
+    var disqus_url = 'https:\/\/ewok.github.io\/keep-running-app';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">Search</h2>
+    </div>
+    <div class="list-group">
+        <gcse:search>
+    </div>
+  </div>
+  
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://ewok.github.io/hugo-and-go" class="list-group-item">HuGo and Go</a>
+      
+      <a href="https://ewok.github.io/keep-running-app" class="list-group-item">Держим приложение запущенным(macos x)</a>
+      
+      <a href="https://ewok.github.io/intieriesnoie-v-sieti-2" class="list-group-item">Интересное в сети 2</a>
+      
+      <a href="https://ewok.github.io/rapoo-3300p" class="list-group-item">Купил забавного зверя</a>
+      
+      <a href="https://ewok.github.io/intieriesnoie-v-sieti" class="list-group-item">Интересное в сети</a>
+      
+      <a href="https://ewok.github.io/haskell-issue1" class="list-group-item">Haskell на неделе</a>
+      
+      <a href="https://ewok.github.io/vim-hardtime" class="list-group-item">Еще больше vim</a>
+      
+      <a href="https://ewok.github.io/haskell-init" class="list-group-item">Haskell init</a>
+      
+      <a href="https://ewok.github.io/python" class="list-group-item">Python</a>
+      
+      <a href="https://ewok.github.io/follow-my-lead" class="list-group-item">Vim plugins</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://ewok.github.io/tags/pictures" class="list-group-item">pictures</a>
+      
+      <a href="https://ewok.github.io/tags/admins" class="list-group-item">admins</a>
+      
+      <a href="https://ewok.github.io/tags/offline" class="list-group-item">offline</a>
+      
+      <a href="https://ewok.github.io/tags/dev" class="list-group-item">dev</a>
+      
+      <a href="https://ewok.github.io/tags/music" class="list-group-item">music</a>
+      
+      <a href="https://ewok.github.io/tags/online" class="list-group-item">online</a>
+      
+      <a href="https://ewok.github.io/tags/other" class="list-group-item">other</a>
+      
+      <a href="https://ewok.github.io/tags/news" class="list-group-item">news</a>
+      
+      <a href="https://ewok.github.io/tags/haskell" class="list-group-item">haskell</a>
+      
+      <a href="https://ewok.github.io/tags/video" class="list-group-item">video</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; Записки Турыча</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+  (function() {
+      var cx = '';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter22971493 = new Ya.Metrika({
+                    id:22971493,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/22971493" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+
+  </body>
+</html>
+

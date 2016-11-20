@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.18-DEV" />
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://ewok.github.io/tags/online/index.xml">
+
+<link rel="canonical" href="https://ewok.github.io/tags/online/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="icon" type="image/png" href="https://ewok.github.io//favicon.png" />
+    <title>Online - Записки Турыча</title>
+    
+    <link href="https://ewok.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://ewok.github.io/">Записки Турыча</a>
+          </div>
+
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/docs">Docs</a></li>
+              
+              
+              
+              <li><a href="https://github.com/ewok">GitHub</a></li>
+              
+              
+              
+              <li><a href="https://twitter.com/ewokru">Twitter</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    
+    <header class="page-header">
+      <h1>Online</h1>
+    </header>
+    
+
+    <ul class="p-articles">
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-02-01T00:00:00JST">Feb 1, 2016</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/keep-running-app">Держим приложение запущенным(macos x)</a></h2>
+  </header>
+
+  
+  <div class="summary">Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт:
+ Прописываем агент в ~/Library/LaunchAgents  Например telegram.plist
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt; &lt;plist version=&quot;1.0&quot;&gt; &lt;dict&gt; &lt;key&gt;Label&lt;/key&gt; &lt;string&gt;user.telegram&lt;/string&gt; &lt;key&gt;KeepAlive&lt;/key&gt; &lt;true/&gt; &lt;key&gt;Program&lt;/key&gt; &lt;string&gt;/Applications/Telegram.app/Contents/MacOS/Telegram&lt;/string&gt; &lt;/dict&gt; &lt;/plist&gt;   Запускаем наш агент  launchctl load ~/Library/LaunchAgents/telegram.plist  После этого наше приложение будет постоянно запускаться после закрытия.
+ Вернуть как было, можно командой:  launchctl remove user.</div>
+
+  <footer>
+    <a href="https://ewok.github.io/keep-running-app" title="Держим приложение запущенным(macos x)">Read More…</a>
+  </footer>
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-01-03T00:00:00JST">Jan 3, 2016</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/vim-hardtime">Еще больше vim</a></h2>
+  </header>
+
+  
+  <div class="summary">Для тех кто хочет использовать vim в стиле vim way:
+hardmode и hardtime</div>
+
+  <footer>
+    <a href="https://ewok.github.io/vim-hardtime" title="Еще больше vim">Read More…</a>
+  </footer>
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2015-02-05T00:00:00JST">Feb 5, 2015</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/dostighator-tsieliei">Достигатор целей</a></h2>
+  </header>
+
+  
+  <div class="summary">Интересный сервис для людей которые хотят достичь определенной цели.
+Есть справочные материалы по правильной постановке целей, определение &ldquo;чистоты&rdquo; цели, &ldquo;цена слова&rdquo;, шаблоны и многое другое. Есть социальная составляющая, друзья, комментарии, подписки.
+http://smartprogress.do</div>
+
+  <footer>
+    <a href="https://ewok.github.io/dostighator-tsieliei" title="Достигатор целей">Read More…</a>
+  </footer>
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2013-05-18T00:00:00JST">May 18, 2013</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/kripta">Крипта</a></h2>
+  </header>
+
+  
+  <div class="summary">Если пользуетесь Яндекс, то можете получить характеристику вашей деятельности в интернете. Я на 88% Сова, 71% Семейный человек, 46% Гик, 44% Меломан и всего лишь на 9% Мама :)))</div>
+
+  <footer>
+    <a href="https://ewok.github.io/kripta" title="Крипта">Read More…</a>
+  </footer>
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-11-26T00:00:00JST">Nov 26, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/smartfonam-okazyvaiet-uzhie-20-liet">Смартфонам оказывает уже 20 лет</a></h2>
+  </header>
+
+  
+  <div class="summary">Подумать только! Уже как двадцать лет существуют такие устройства как смартфоны. В ноябре 1992 года компания IBM представила самый первый в мире смартфон. Он умел звонить, принимать/отправлять факсы, имел почту, игры, контакты&hellip; В общем имел практически полноценный функционал. Стоил он чуть меньше 900 долларов. И за первые пол года продажи достигли 50 тысяч единиц. Конечно технические характеристики он имел довольно слабые, это сейчас мы носим полноценные компьютеры в карманах. А раньше довольствовались всего по одному мегабайту памяти озу и пзу и 16 мегагерцами в процессоре.</div>
+
+  <footer>
+    <a href="https://ewok.github.io/smartfonam-okazyvaiet-uzhie-20-liet" title="Смартфонам оказывает уже 20 лет">Read More…</a>
+  </footer>
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-11-23T00:00:00JST">Nov 23, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/shifr">Шифр</a></h2>
+  </header>
+
+  
+  <div class="summary">Это шифровка и останки голубя, которые нашли в одном из дымоходов дома Великобритании. Шифровку датируют 1944 годом. Ученые считают, что в шифровке могут быть интересные факты, о том периоде.</div>
+
+  <footer>
+    <a href="https://ewok.github.io/shifr" title="Шифр">Read More…</a>
+  </footer>
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-11-20T00:00:00JST">Nov 20, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/bolshoi-i-ghroznyi-politsieiskii-runieta">Большой и грозный полицейский рунета</a></h2>
+  </header>
+
+  
+  <div class="summary">Начинает набирать обороты, грозный инструмент закона - Роскомнадзор. Великий цензор рунета. По закону Роскомнадзор может без суда заблокировать любой сайт если на нем содержится какая либо противоправная информация. Как говориться идея хорошо, но реализация подкачала. Вариант с предварительной блокировкой сайта и лишь последующим разбирательством, вызывает, как минимум &ldquo;легкое&rdquo; недоумение. Под &ldquo;банхаммером&rdquo; уже успели побывать такие известные ресурсы как: Луркоморье, РуТреккер, Либрусек, ВКонтакте и даже каким то образом Гугл. После блокирования сайта владельцу дается три дня на удаление противоправного контента.</div>
+
+  <footer>
+    <a href="https://ewok.github.io/bolshoi-i-ghroznyi-politsieiskii-runieta" title="Большой и грозный полицейский рунета">Read More…</a>
+  </footer>
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-11-19T00:00:00JST">Nov 19, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/ingress">Ingress</a></h2>
+  </header>
+
+  
+  <div class="summary">Новая игра от Google. Научно-фантастического жанра. Многопользовательская мобильная использует реальный мир как игровое пространство. В задачу игрока входит сбор нового вида энергии. Игроки собирают капсулы и относят их к порталам и меняют их на право прохождения новой миссии. Игроки делятся на две команды Просвещенные и Сопротивление. Игра мобильная и предназначена для устройств на Андроиде. Игра пока в бете и чтобы участвовать в ней нужно получить пароль на официальном сайте www.ingress.com. Самое интересное что есть устройство Google Glass.</div>
+
+  <footer>
+    <a href="https://ewok.github.io/ingress" title="Ingress">Read More…</a>
+  </footer>
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-11-14T00:00:00JST">Nov 14, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/prikolnaia-stranitsa-404-u-github">Прикольная страница 404 у GitHub</a></h2>
+  </header>
+
+  
+  <div class="summary">Это не те дроиды которые вам нужны</div>
+
+  <footer>
+    <a href="https://ewok.github.io/prikolnaia-stranitsa-404-u-github" title="Прикольная страница 404 у GitHub">Read More…</a>
+  </footer>
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-02-21T00:00:00JST">Feb 21, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/vacuum-im">vacuum im</a></h2>
+  </header>
+
+  
+  <div class="summary">Попался мне на глаза еще один клиент для jabber. По аннотации выглядит &ldquo;вкусно&rdquo;. Vacuum Возможности
+ Несколько независимых профилей Несколько аккаунтов в одном профиле Вложенные группы в ростере Поддержка JID с экранированными запрещенными символами Хранение истории как локально так и на сервере, с возможностью репликации истории с сервера на локальный компьютер Согласованное отключение сохранения сообщений (режим OTR) Полная поддержка джаббер конференций Создание закладок на конференции с возможностью автовхода Поддержка CAPTCHA форм, с возможностью прохождения без использования браузера Несколько именованных окон со вкладками для чатов и конференций Поддержка Adium стилей оформления сообщений Анимированные смайлики (при использовании Adium стиля) Уведомления об активности пользователя в чате Автоматическая смена транспорта с сохранением имён, расположений, подписок а также архива сообщений Списки приватности, с возможностью игнорирования либо перехода в невидимый режим как для отдельных контактов, так и для групп Многоступенчатая автоматическая смена статуса в зависимости от времени бездействия Возможность задать различные статус-иконки как для отдельных контактов, так и для групп контактов подключенных через транспорты Поддержка аватар с возможностью задания контакту произвольного изображения в качестве аватара Комментарии к контактам Ad-Hoc команды Передача файлов XML консоль  </div>
+
+  <footer>
+    <a href="https://ewok.github.io/vacuum-im" title="vacuum im">Read More…</a>
+  </footer>
+</article>
+</li>
+      
+    </ul>
+
+    
+
+
+  </div>
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">Search</h2>
+    </div>
+    <div class="list-group">
+        <gcse:search>
+    </div>
+  </div>
+  
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://ewok.github.io/hugo-and-go" class="list-group-item">HuGo and Go</a>
+      
+      <a href="https://ewok.github.io/keep-running-app" class="list-group-item">Держим приложение запущенным(macos x)</a>
+      
+      <a href="https://ewok.github.io/intieriesnoie-v-sieti-2" class="list-group-item">Интересное в сети 2</a>
+      
+      <a href="https://ewok.github.io/rapoo-3300p" class="list-group-item">Купил забавного зверя</a>
+      
+      <a href="https://ewok.github.io/intieriesnoie-v-sieti" class="list-group-item">Интересное в сети</a>
+      
+      <a href="https://ewok.github.io/haskell-issue1" class="list-group-item">Haskell на неделе</a>
+      
+      <a href="https://ewok.github.io/vim-hardtime" class="list-group-item">Еще больше vim</a>
+      
+      <a href="https://ewok.github.io/haskell-init" class="list-group-item">Haskell init</a>
+      
+      <a href="https://ewok.github.io/python" class="list-group-item">Python</a>
+      
+      <a href="https://ewok.github.io/follow-my-lead" class="list-group-item">Vim plugins</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://ewok.github.io/tags/pictures" class="list-group-item">pictures</a>
+      
+      <a href="https://ewok.github.io/tags/admins" class="list-group-item">admins</a>
+      
+      <a href="https://ewok.github.io/tags/offline" class="list-group-item">offline</a>
+      
+      <a href="https://ewok.github.io/tags/dev" class="list-group-item">dev</a>
+      
+      <a href="https://ewok.github.io/tags/music" class="list-group-item">music</a>
+      
+      <a href="https://ewok.github.io/tags/online" class="list-group-item">online</a>
+      
+      <a href="https://ewok.github.io/tags/other" class="list-group-item">other</a>
+      
+      <a href="https://ewok.github.io/tags/news" class="list-group-item">news</a>
+      
+      <a href="https://ewok.github.io/tags/haskell" class="list-group-item">haskell</a>
+      
+      <a href="https://ewok.github.io/tags/video" class="list-group-item">video</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; Записки Турыча</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+  (function() {
+      var cx = '';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter22971493 = new Ya.Metrika({
+                    id:22971493,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/22971493" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+
+  </body>
+</html>
+

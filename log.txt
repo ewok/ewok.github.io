@@ -332,3 +332,16 @@ LOG:   2016/11/20 02:12:19 site.go:2213: 0 non-page files copied
 LOG:   2016/11/20 02:12:19 site.go:2214: 0 paginator pages created
 LOG:   2016/11/20 02:12:19 site.go:2218: 14 tags created
 LOG:   2016/11/20 02:12:19 hugo_sites.go:252: total in 83 ms
+WARN: 2016/11/20 02:15:28 template_i18n.go:65: No translation bundle found for default language "en"
+WARN: 2016/11/20 02:15:28 template_i18n.go:47: Translation func for language en not found, use default.
+WARN: 2016/11/20 02:15:28 template_i18n.go:47: Translation func for language en not found, use default.
+WARN: 2016/11/20 02:15:28 template_i18n.go:47: Translation func for language en not found, use default.
+LOG:   2016/11/20 02:15:28 site.go:2208: Built site for language en:
+LOG:   2016/11/20 02:15:28 site.go:2209: 0 of 1 draft rendered
+LOG:   2016/11/20 02:15:28 site.go:2210: 0 future content
+LOG:   2016/11/20 02:15:28 site.go:2211: 0 expired content
+LOG:   2016/11/20 02:15:28 site.go:2212: 127 pages created
+LOG:   2016/11/20 02:15:28 site.go:2213: 0 non-page files copied
+LOG:   2016/11/20 02:15:28 site.go:2214: 46 paginator pages created
+LOG:   2016/11/20 02:15:28 site.go:2218: 14 tags created
+LOG:   2016/11/20 02:15:28 hugo_sites.go:252: total in 299 ms

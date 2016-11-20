@@ -2,28 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="generator" content="Hugo 0.18-DEV" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
-    <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/solarized_dark.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/custom.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://ewok.github.io//index.xml">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.18-DEV" />
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://ewok.github.io/tags/dev/index.xml">
+
+<link rel="canonical" href="https://ewok.github.io/tags/dev/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <link rel="icon" type="image/png" href="https://ewok.github.io//favicon.png" />
-    
     <title>Dev - Записки Турыча</title>
-    <meta property='og:title' content="Dev - Записки Турыча">
-    <meta property="og:type" content="article">
+    
+    <link href="https://ewok.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
     
 
-    <meta property="og:url" content="https://ewok.github.io/tags/dev/">
-    
-    
-  </head>
-  <body>
-    <header class="site">
+    <header class="l-header">
       <nav class="navbar navbar-default">
         <div class="container">
           <div class="navbar-header">
@@ -35,6 +37,8 @@
             </button>
             <a class="navbar-brand" href="https://ewok.github.io/">Записки Турыча</a>
           </div>
+
+          
           <div id="navbar" class="collapse navbar-collapse">
             
             <ul class="nav navbar-nav navbar-right">
@@ -54,99 +58,121 @@
             </ul>
             
           </div>
+          
+
         </div>
       </nav>
     </header>
-    <div class="site">
+
+    <main>
       <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
 
-<div class="list">
+    
+    <header class="page-header">
+      <h1>Dev</h1>
+    </header>
+    
 
-  <div class="row">
-    <div class="col-md-8">
-      <header class="page-title">Dev</header>
-
+    <ul class="p-articles">
       
-      <article class="li">
+      <li><article class="li">
   <header>
-    <div class="date">Wed, Feb 22, 2012</div>
-    <div class="title"><a href="https://ewok.github.io/hibernate-chieriez-pm-utils">hibernate через pm-utils</a></div>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-02-22T00:00:00JST">Feb 22, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/hibernate-chieriez-pm-utils">hibernate через pm-utils</a></h2>
   </header>
-  <div class="body">В русской вики arch в статье о pm-utils там где описывается настройка hibernate, почему то не указано что нужно прописывать hook: resume для в mkinitcpio.
+
+  
+  <div class="summary">В русской вики arch в статье о pm-utils там где описывается настройка hibernate, почему то не указано что нужно прописывать hook: resume для в mkinitcpio.
 Поэтому у меня в hibernate уходил комп нормально, но не возвращался из него. Рекомендую читать английский вариант статьи там все прописано.
 В итоге все выглядит так:
 В файл /boot/grub/menu.lst добавляется resume=/path/to/swap/drive
 # (0) Arch Linux title Arch Linux root (hd0,0) kernel /vmlinuz26 root=/dev/sda3 resume=/dev/sda2 ro vga=0 initrd /kernel26.</div>
 
-  
   <footer>
-    <a href="https://ewok.github.io/hibernate-chieriez-pm-utils" class="btn btn-default">Read More…</a>
+    <a href="https://ewok.github.io/hibernate-chieriez-pm-utils" title="hibernate через pm-utils">Read More…</a>
   </footer>
-  
 </article>
-<hr>
-
+</li>
       
-      <article class="li">
+      <li><article class="li">
   <header>
-    <div class="date">Wed, Feb 15, 2012</div>
-    <div class="title"><a href="https://ewok.github.io/ekspierimientiruiu-s-keshiem">Экспериментирую с кэшем</a></div>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-02-15T00:00:00JST">Feb 15, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/ekspierimientiruiu-s-keshiem">Экспериментирую с кэшем</a></h2>
   </header>
-  <div class="body"><p>Добавил кэширование страниц в блоге. Нагрузки конечно нет никакой, просто ради эксперимента.</p>
-
-<p>Почитать о том как это работает можно здесь:</p>
-
-<p><a href="http://djbook.ru/ch13.html">http://djbook.ru/ch13.html</a></p>
-</div>
 
   
-</article>
-<hr>
+  <div class="summary">Добавил кэширование страниц в блоге. Нагрузки конечно нет никакой, просто ради эксперимента.
+Почитать о том как это работает можно здесь:
+http://djbook.ru/ch13.html</div>
 
+  <footer>
+    <a href="https://ewok.github.io/ekspierimientiruiu-s-keshiem" title="Экспериментирую с кэшем">Read More…</a>
+  </footer>
+</article>
+</li>
       
-      <article class="li">
+      <li><article class="li">
   <header>
-    <div class="date">Thu, Jan 19, 2012</div>
-    <div class="title"><a href="https://ewok.github.io/django-aggregation">Django Aggregation</a></div>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-01-19T00:00:00JST">Jan 19, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/django-aggregation">Django Aggregation</a></h2>
   </header>
-  <div class="body">ORM это всегда баланс между производительностью и переносимостью.
+
+  
+  <div class="summary">ORM это всегда баланс между производительностью и переносимостью.
 Наткнулся на очень интересную тему. Расширение функционала ORM джанги. Изучив материал, переделал и оптимизировал модели блога.
 Коротко в примерах.
 Есть модель:
 class Author(models.Model): name = models.CharField(max_length=100) age = models.IntegerField() friends = models.ManyToManyField('self', blank=True) class Publisher(models.Model): name = models.CharField(max_length=300) num_awards = models.IntegerField() class Book(models.Model): isbn = models.CharField(max_length=9) name = models.CharField(max_length=300) pages = models.IntegerField() price = models.DecimalField(max_digits=10, decimal_places=2) rating = models.FloatField() authors = models.ManyToManyField(Author) publisher = models.</div>
 
-  
   <footer>
-    <a href="https://ewok.github.io/django-aggregation" class="btn btn-default">Read More…</a>
+    <a href="https://ewok.github.io/django-aggregation" title="Django Aggregation">Read More…</a>
   </footer>
-  
 </article>
-<hr>
-
+</li>
       
-      <article class="li">
+      <li><article class="li">
   <header>
-    <div class="date">Mon, Jan 16, 2012</div>
-    <div class="title"><a href="https://ewok.github.io/pep8-korotko-i-po-russki">PEP8 коротко и по-русски</a></div>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-01-16T00:00:00JST">Jan 16, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/pep8-korotko-i-po-russki">PEP8 коротко и по-русски</a></h2>
   </header>
-  <div class="body">Взято отсюда Полезно знать как писать в python стиле:
+
+  
+  <div class="summary">Взято отсюда Полезно знать как писать в python стиле:
  используйте 4 пробела для отступа и не используйте табы, не смешивайте их максимальная длина строки 79 символов; для разрыва строки используйте отступы или бэкслеш функции верхнего уровня и определения классов отделяйте двумя пустыми строками определения методов внутри класса отделяйте одной пустой строкой дополнительные пустые строки используйте для логической группировки методов кодировка файлов должна быть Latin-1, а в Питоне 3 и выше - utf-8 каждый импортируемый модуль с новой строки порядок импортов: стандартные модули, third-party модули, локальные модули приложения пустая строка между каждой группой импортов избегайте лишних пробелов внутри скобок; перед запятыми, точкой с запятой и двоеточиями избегайте лишних пробелов перед скобками с аргументами функций и скобками с индексами избегайте больше чем одного пробела между операторами (= - + итд) используйте одиночный пробел для выделения операторов избегайте пробелов вокруг &lsquo;=&rsquo;, который используется для параметров по-умолчанию и keyword аргументов обновляйте комментарии вместе с кодом пишите комментарии по-английски избегайте имён из одиночных l, O, I для модулей и пакетов используйте короткие всестрочные имена для классов используйте СловаНачинаютсяЗаглавными имена для функций используйте слова_с_подчёркиваниями (или смешанныйРегистр если так получилось исторически) для методов используйте слова_с_подчёркиваниями имена для внутренних методов и переменных _подчёркивание_перед_словом для проверки на None используйте is или is not, не используйте операторы сравнения используйте исключения основанные на классах &ndash; наследованные от Exception используйте методы класса string вместо строковых функций используйте &ldquo;.</div>
 
-  
   <footer>
-    <a href="https://ewok.github.io/pep8-korotko-i-po-russki" class="btn btn-default">Read More…</a>
+    <a href="https://ewok.github.io/pep8-korotko-i-po-russki" title="PEP8 коротко и по-русски">Read More…</a>
   </footer>
-  
 </article>
-<hr>
+</li>
+      
+    </ul>
 
-      
-      
+    
 <nav>
   <ul class="pager">
 
     
-    <li><a href="/tags/dev/page/1">Previous</a></li>
+    <li><a href="/tags/dev/">Previous</a></li>
     
 
     
@@ -158,16 +184,25 @@ class Author(models.Model): name = models.CharField(max_length=100) age = models
 
 
 
-    </div>
-    <div class="col-md-4">
-      
-<aside class="site">
-
+  </div>
+  <div class="col-md-4">
     
+<aside class="l-sidebar">
 
+  
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h2 class="panel-title">LatestPosts</h2>
+      <h2 class="panel-title">Search</h2>
+    </div>
+    <div class="list-group">
+        <gcse:search>
+    </div>
+  </div>
+  
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
     </div>
     <div class="list-group">
       
@@ -192,71 +227,104 @@ class Author(models.Model): name = models.CharField(max_length=100) age = models
       <a href="https://ewok.github.io/follow-my-lead" class="list-group-item">Vim plugins</a>
       
     </div>
-  </div>
+  </section>
 
   
-  <div class="panel panel-default">
+  <section class="panel panel-default">
     <div class="panel-heading">
-      <h2 class="panel-title">tag</h2>
+      <div class="panel-title">TAG</div>
     </div>
     <div class="list-group">
       
-      <a href="https://ewok.github.io/tags/pictures" class="list-group-item">pictures (25)</a>
+      <a href="https://ewok.github.io/tags/pictures" class="list-group-item">pictures</a>
       
-      <a href="https://ewok.github.io/tags/admins" class="list-group-item">admins (23)</a>
+      <a href="https://ewok.github.io/tags/admins" class="list-group-item">admins</a>
       
-      <a href="https://ewok.github.io/tags/offline" class="list-group-item">offline (17)</a>
+      <a href="https://ewok.github.io/tags/offline" class="list-group-item">offline</a>
       
-      <a href="https://ewok.github.io/tags/dev" class="list-group-item">dev (14)</a>
+      <a href="https://ewok.github.io/tags/dev" class="list-group-item">dev</a>
       
-      <a href="https://ewok.github.io/tags/music" class="list-group-item">music (10)</a>
+      <a href="https://ewok.github.io/tags/music" class="list-group-item">music</a>
       
-      <a href="https://ewok.github.io/tags/online" class="list-group-item">online (10)</a>
+      <a href="https://ewok.github.io/tags/online" class="list-group-item">online</a>
       
-      <a href="https://ewok.github.io/tags/other" class="list-group-item">other (10)</a>
+      <a href="https://ewok.github.io/tags/other" class="list-group-item">other</a>
       
-      <a href="https://ewok.github.io/tags/news" class="list-group-item">news (6)</a>
+      <a href="https://ewok.github.io/tags/news" class="list-group-item">news</a>
       
-      <a href="https://ewok.github.io/tags/haskell" class="list-group-item">haskell (4)</a>
+      <a href="https://ewok.github.io/tags/haskell" class="list-group-item">haskell</a>
       
-      <a href="https://ewok.github.io/tags/video" class="list-group-item">video (4)</a>
-      
-      <a href="https://ewok.github.io/tags/vim" class="list-group-item">vim (4)</a>
-      
-      <a href="https://ewok.github.io/tags/python" class="list-group-item">python (3)</a>
-      
-      <a href="https://ewok.github.io/tags/sport" class="list-group-item">sport (3)</a>
-      
-      <a href="https://ewok.github.io/tags/go" class="list-group-item">go (2)</a>
+      <a href="https://ewok.github.io/tags/video" class="list-group-item">video</a>
       
     </div>
-  </div>
+  </section>
   
 
 </aside>
 
 
-    </div>
   </div>
-
 </div>
-      </div>
-    </div>
 
-    <footer class="site">
+      </div>
+    </main>
+
+    <footer class="l-footer">
       <div class="container">
-        <p>&copy; 2016 Записки Турыча</p>
-        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
-        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+        <p><span class="h-logo">&copy; Записки Турыча</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
       </div>
     </footer>
 
-    <script src="/js/jquery-2.1.3.min.js"></script>
-    <script src="/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="/js/highlight.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
+<script>
+  (function() {
+      var cx = '';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 
+
+
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter22971493 = new Ya.Metrika({
+                    id:22971493,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/22971493" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
 
   </body>

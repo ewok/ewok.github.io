@@ -2,28 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="generator" content="Hugo 0.18-DEV" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
-    <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/solarized_dark.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/custom.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://ewok.github.io//index.xml">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.18-DEV" />
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://ewok.github.io/post/index.xml">
+
+<link rel="canonical" href="https://ewok.github.io/post/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <link rel="icon" type="image/png" href="https://ewok.github.io//favicon.png" />
-    
     <title>Posts - Записки Турыча</title>
-    <meta property='og:title' content="Posts - Записки Турыча">
-    <meta property="og:type" content="article">
+    
+    <link href="https://ewok.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
     
 
-    <meta property="og:url" content="https://ewok.github.io/post/">
-    
-    
-  </head>
-  <body>
-    <header class="site">
+    <header class="l-header">
       <nav class="navbar navbar-default">
         <div class="container">
           <div class="navbar-header">
@@ -35,6 +37,8 @@
             </button>
             <a class="navbar-brand" href="https://ewok.github.io/">Записки Турыча</a>
           </div>
+
+          
           <div id="navbar" class="collapse navbar-collapse">
             
             <ul class="nav navbar-nav navbar-right">
@@ -54,218 +58,243 @@
             </ul>
             
           </div>
+          
+
         </div>
       </nav>
     </header>
-    <div class="site">
+
+    <main>
       <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
 
-<div class="list">
+    
+    <header class="page-header">
+      <h1>Posts</h1>
+    </header>
+    
 
-  <div class="row">
-    <div class="col-md-8">
-      <header class="page-title">Posts</header>
-
+    <ul class="p-articles">
       
-      <article class="li">
+      <li><article class="li">
   <header>
-    <div class="date">Tue, Oct 23, 2012</div>
-    <div class="title"><a href="https://ewok.github.io/ssh-proksi">ssh прокси</a></div>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-10-23T00:00:00JST">Oct 23, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/ssh-proksi">ssh прокси</a></h2>
   </header>
-  <div class="body"><p>Интересный вариант использования ssh в виде socks5 сервера.</p>
-
-<p>Команда:</p>
-
-<pre><code>$ ssh -D &lt;num_port&gt; &lt;remote_hostname&gt;
-</code></pre>
-
-<p>запустит на локальной машине socks5 сервер с портом num_port, подключенный к remote_hostname.</p>
-
-<p>Для авторизации лучше использовать ключи.</p>
-</div>
 
   
+  <div class="summary">Интересный вариант использования ssh в виде socks5 сервера.
+Команда:
+$ ssh -D &lt;num_port&gt; &lt;remote_hostname&gt;  запустит на локальной машине socks5 сервер с портом num_port, подключенный к remote_hostname.
+Для авторизации лучше использовать ключи.</div>
+
+  <footer>
+    <a href="https://ewok.github.io/ssh-proksi" title="ssh прокси">Read More…</a>
+  </footer>
 </article>
-<hr>
-
+</li>
       
-      <article class="li">
+      <li><article class="li">
   <header>
-    <div class="date">Sun, Oct 14, 2012</div>
-    <div class="title"><a href="https://ewok.github.io/zip-zip">zip zip</a></div>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-10-14T00:00:00JST">Oct 14, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/zip-zip">zip zip</a></h2>
   </header>
-  <div class="body"><p>Прикольный пример из книги Лутца(&ldquo;Изучаем Python&rdquo;).</p>
-
-<pre><code>&gt;&gt;&gt; X = (1, 2)
-
-&gt;&gt;&gt; Y = (3, 4)
-
-&gt;&gt;&gt; A, B = zip(*zip(X, Y))
-
-&gt;&gt;&gt; A
-
-(1, 2)
-
-&gt;&gt;&gt; B
-
-(3, 4)
-</code></pre>
-
-<p>Распаковываем запакованные кортежи запаковыванием.</p>
-</div>
 
   
-</article>
-<hr>
+  <div class="summary">Прикольный пример из книги Лутца(&ldquo;Изучаем Python&rdquo;).
+&gt;&gt;&gt; X = (1, 2) &gt;&gt;&gt; Y = (3, 4) &gt;&gt;&gt; A, B = zip(*zip(X, Y)) &gt;&gt;&gt; A (1, 2) &gt;&gt;&gt; B (3, 4)  Распаковываем запакованные кортежи запаковыванием.</div>
 
+  <footer>
+    <a href="https://ewok.github.io/zip-zip" title="zip zip">Read More…</a>
+  </footer>
+</article>
+</li>
       
-      <article class="li">
+      <li><article class="li">
   <header>
-    <div class="date">Sun, Oct 14, 2012</div>
-    <div class="title"><a href="https://ewok.github.io/pismo">Письмо</a></div>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-10-14T00:00:00JST">Oct 14, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/pismo">Письмо</a></h2>
   </header>
-  <div class="body">Здравствуй!
+
+  
+  <div class="summary">Здравствуй!
 Ты давно не писал, наверное на почте задерживают твои письма. Ты же знаешь как работает наша почта. Мы все скучаем, особенно Джек. С тех пор как ты уехал, он каждый день выходит к калитке и смотрит на дорогу. Не ест совсем, уже ребра торчат.
 Мама делает вид что все хорошо. Смеётся, говорит что ты скоро приедешь, но видно что сдаёт потихоньку. Волнуется за тебя, наша старушка. Ты же её знаешь.</div>
 
-  
   <footer>
-    <a href="https://ewok.github.io/pismo" class="btn btn-default">Read More…</a>
+    <a href="https://ewok.github.io/pismo" title="Письмо">Read More…</a>
   </footer>
-  
 </article>
-<hr>
-
+</li>
       
-      <article class="li">
+      <li><article class="li">
   <header>
-    <div class="date">Sun, Sep 23, 2012</div>
-    <div class="title"><a href="https://ewok.github.io/iuiu">ЮЮ</a></div>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-09-23T00:00:00JST">Sep 23, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/iuiu">ЮЮ</a></h2>
   </header>
-  <div class="body"><p>репост <a href="http://eot-su.livejournal.com/588258.html">отсюда</a></p>
-
-<hr />
-
-<p>Во избежание упреков, что родительская общественность зря поднимает шум с ювенальной юстицией, решил составить данный пост и разобрать некоторые моменты, законопроекта о социальном партронате. Он уже направлен в Госдуму РФ, а рассмотрение в первом чтении начнется 25 сентября 2012 года.</p>
-</div>
 
   
-</article>
-<hr>
+  <div class="summary">репост отсюда
+Во избежание упреков, что родительская общественность зря поднимает шум с ювенальной юстицией, решил составить данный пост и разобрать некоторые моменты, законопроекта о социальном партронате. Он уже направлен в Госдуму РФ, а рассмотрение в первом чтении начнется 25 сентября 2012 года.</div>
 
+  <footer>
+    <a href="https://ewok.github.io/iuiu" title="ЮЮ">Read More…</a>
+  </footer>
+</article>
+</li>
       
-      <article class="li">
+      <li><article class="li">
   <header>
-    <div class="date">Sat, Sep 8, 2012</div>
-    <div class="title"><a href="https://ewok.github.io/pro-kurivo">Про куриво</a></div>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-09-08T00:00:00JST">Sep 8, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/pro-kurivo">Про куриво</a></h2>
   </header>
-  <div class="body"><p>Смотришь старые фильмы и понимаешь насколько раньше было другое отношение к сигаретам, папиросам и вообще к курению. Пересматривал вчера &ldquo;Место встречи изменить нельзя&rdquo;. Курят практически все. Снято так что не заметить пропаганду папирос невозможно. Особенно порадовал слоган на рекламном плакате: &ldquo;На папиросы в жизни я не сетую, сам курю и вам советую!&rdquo;. Смешно и необычно на такое смотреть. Сейчас же увидеть сигарету в фильме, почти невозможно.</p>
-</div>
 
   
-</article>
-<hr>
+  <div class="summary">Смотришь старые фильмы и понимаешь насколько раньше было другое отношение к сигаретам, папиросам и вообще к курению. Пересматривал вчера &ldquo;Место встречи изменить нельзя&rdquo;. Курят практически все. Снято так что не заметить пропаганду папирос невозможно. Особенно порадовал слоган на рекламном плакате: &ldquo;На папиросы в жизни я не сетую, сам курю и вам советую!&rdquo;. Смешно и необычно на такое смотреть. Сейчас же увидеть сигарету в фильме, почти невозможно.</div>
 
+  <footer>
+    <a href="https://ewok.github.io/pro-kurivo" title="Про куриво">Read More…</a>
+  </footer>
+</article>
+</li>
       
-      <article class="li">
+      <li><article class="li">
   <header>
-    <div class="date">Fri, Aug 10, 2012</div>
-    <div class="title"><a href="https://ewok.github.io/po-odnomu">По одному!</a></div>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-08-10T00:00:00JST">Aug 10, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/po-odnomu">По одному!</a></h2>
   </header>
-  <div class="body">В последнее время, заметил, что пишу по одному посту в месяц. Или от недостатка интернета, или от нехватки времени, но что есть то есть.
+
+  
+  <div class="summary">В последнее время, заметил, что пишу по одному посту в месяц. Или от недостатка интернета, или от нехватки времени, но что есть то есть.
 Из последних новостей.
 Собрал велосипеды, теперь устраиваем велопрогулки. Тем более сейчас жара спала, можно с комфортом прокатится.
 Забрал документы на участок. Теперь осталось разметить границы и можно строиться. Завтра поставлю какую нибудь программу, буду чертить проект дома. Хочется конечно побольше да повыше, но вопрос в деньгах. На сколько осилим, как говориться.</div>
 
-  
   <footer>
-    <a href="https://ewok.github.io/po-odnomu" class="btn btn-default">Read More…</a>
+    <a href="https://ewok.github.io/po-odnomu" title="По одному!">Read More…</a>
   </footer>
-  
 </article>
-<hr>
-
+</li>
       
-      <article class="li">
+      <li><article class="li">
   <header>
-    <div class="date">Sun, Jul 8, 2012</div>
-    <div class="title"><a href="https://ewok.github.io/putieshiestvuiem">Путешествуем...</a></div>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-07-08T00:00:00JST">Jul 8, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/putieshiestvuiem">Путешествуем...</a></h2>
   </header>
-  <div class="body">Вкусное мороженое. Первое что приходит в голову, когда спрашивают: &ldquo;Ну как тебе на новом месте?&rdquo;. Мороженое действительно вкусное, и колбаса с сыром тоже.
+
+  
+  <div class="summary">Вкусное мороженое. Первое что приходит в голову, когда спрашивают: &ldquo;Ну как тебе на новом месте?&rdquo;. Мороженое действительно вкусное, и колбаса с сыром тоже.
 Ездим в последнее время мы много. По двести километров в день. Прописка, военкомат, контейнер, гражданство, страховки, жилье&hellip;
 Скоро пора будем думать о машине и работе. Интернет с мобильного, за компьютером почти не сижу. Даже кино смотрю с мобильника. Прикупил себе Sony Xperia S. Доволен всем кроме батарейки. Пришлось купить внешний аккумулятор на 8000 мАч.</div>
 
-  
   <footer>
-    <a href="https://ewok.github.io/putieshiestvuiem" class="btn btn-default">Read More…</a>
+    <a href="https://ewok.github.io/putieshiestvuiem" title="Путешествуем...">Read More…</a>
   </footer>
-  
 </article>
-<hr>
-
+</li>
       
-      <article class="li">
+      <li><article class="li">
   <header>
-    <div class="date">Sun, Jun 10, 2012</div>
-    <div class="title"><a href="https://ewok.github.io/pokinuli-rodnoi-bishkiek">Покинули родной Бишкек</a></div>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-06-10T00:00:00JST">Jun 10, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/pokinuli-rodnoi-bishkiek">Покинули родной Бишкек</a></h2>
   </header>
-  <div class="body"><p>Шумно, со всеми попрощались. С кучей сумок и котом погрузились в самолет и полетели в Москву. В Москве погостим пару дней и поедем дальше.</p>
-</div>
 
   
-</article>
-<hr>
+  <div class="summary">Шумно, со всеми попрощались. С кучей сумок и котом погрузились в самолет и полетели в Москву. В Москве погостим пару дней и поедем дальше.</div>
 
+  <footer>
+    <a href="https://ewok.github.io/pokinuli-rodnoi-bishkiek" title="Покинули родной Бишкек">Read More…</a>
+  </footer>
+</article>
+</li>
       
-      <article class="li">
+      <li><article class="li">
   <header>
-    <div class="date">Wed, May 9, 2012</div>
-    <div class="title"><a href="https://ewok.github.io/s-dniem-pobiedy">С днем победы!</a></div>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-05-09T00:00:00JST">May 9, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/s-dniem-pobiedy">С днем победы!</a></h2>
   </header>
-  <div class="body"><p>Поздравляю всех с днем победы на фашистской Германией. Всем кто участвовал в Великой Отечественной Войне большое СПАСИБО, за нас и наше будущее. Уважайте ветеранов их осталось очень мало!</p>
-</div>
 
   
-</article>
-<hr>
+  <div class="summary">Поздравляю всех с днем победы на фашистской Германией. Всем кто участвовал в Великой Отечественной Войне большое СПАСИБО, за нас и наше будущее. Уважайте ветеранов их осталось очень мало!</div>
 
+  <footer>
+    <a href="https://ewok.github.io/s-dniem-pobiedy" title="С днем победы!">Read More…</a>
+  </footer>
+</article>
+</li>
       
-      <article class="li">
+      <li><article class="li">
   <header>
-    <div class="date">Tue, Apr 3, 2012</div>
-    <div class="title"><a href="https://ewok.github.io/samsung-galaxy-tab-7-7untitled">Samsung Galaxy Tab 7.7</a></div>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-04-03T00:00:00JST">Apr 3, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/samsung-galaxy-tab-7-7untitled">Samsung Galaxy Tab 7.7</a></h2>
   </header>
-  <div class="body"><p>Приобрел себе, а вернее апгрейдился с Galaxy Tab 1, этого зверька. Пока доволен.</p>
-
-<p>Жаль что андроид 3.2, ждем четвертый. Экран яркий. Подтормаживание интерфейса заметил только при одновременной установки множества программ с маркета и загрузкой фильма на флешку.</p>
-
-<p>По основным параметрам имеем на борту:</p>
-
-<ul>
-<li>1.4 Гц двухядрённый проц,</li>
-<li>1 Гб оперативной памяти,</li>
-<li>16 флэш(доступна не вся),</li>
-<li>5100 мАмперчасную батарею, которая вполне соответствует экрану</li>
-<li>экран самолёт+ 7.7 дюймов, 1280x800 (super amoled plus)</li>
-<li>видео НЕ tegra 2 (а то были вопросы про установку игрушек под tegra 2</li>
-</ul>
-</div>
 
   
-</article>
-<hr>
+  <div class="summary">Приобрел себе, а вернее апгрейдился с Galaxy Tab 1, этого зверька. Пока доволен.
+Жаль что андроид 3.2, ждем четвертый. Экран яркий. Подтормаживание интерфейса заметил только при одновременной установки множества программ с маркета и загрузкой фильма на флешку.
+По основным параметрам имеем на борту:
+ 1.4 Гц двухядрённый проц, 1 Гб оперативной памяти, 16 флэш(доступна не вся), 5100 мАмперчасную батарею, которая вполне соответствует экрану экран самолёт+ 7.7 дюймов, 1280x800 (super amoled plus) видео НЕ tegra 2 (а то были вопросы про установку игрушек под tegra 2  </div>
 
+  <footer>
+    <a href="https://ewok.github.io/samsung-galaxy-tab-7-7untitled" title="Samsung Galaxy Tab 7.7">Read More…</a>
+  </footer>
+</article>
+</li>
       
-      
+    </ul>
+
+    
 <nav>
   <ul class="pager">
 
     
-    <li><a href="/post/page/8">Previous</a></li>
+    <li><a href="/post/page/8/">Previous</a></li>
     
 
     
-    <li><a href="/post/page/10">Next</a></li>
+    <li><a href="/post/page/10/">Next</a></li>
     
 
   </ul>
@@ -273,16 +302,25 @@
 
 
 
-    </div>
-    <div class="col-md-4">
-      
-<aside class="site">
-
+  </div>
+  <div class="col-md-4">
     
+<aside class="l-sidebar">
 
+  
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h2 class="panel-title">LatestPosts</h2>
+      <h2 class="panel-title">Search</h2>
+    </div>
+    <div class="list-group">
+        <gcse:search>
+    </div>
+  </div>
+  
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
     </div>
     <div class="list-group">
       
@@ -307,71 +345,104 @@
       <a href="https://ewok.github.io/follow-my-lead" class="list-group-item">Vim plugins</a>
       
     </div>
-  </div>
+  </section>
 
   
-  <div class="panel panel-default">
+  <section class="panel panel-default">
     <div class="panel-heading">
-      <h2 class="panel-title">tag</h2>
+      <div class="panel-title">TAG</div>
     </div>
     <div class="list-group">
       
-      <a href="https://ewok.github.io/tags/pictures" class="list-group-item">pictures (25)</a>
+      <a href="https://ewok.github.io/tags/pictures" class="list-group-item">pictures</a>
       
-      <a href="https://ewok.github.io/tags/admins" class="list-group-item">admins (23)</a>
+      <a href="https://ewok.github.io/tags/admins" class="list-group-item">admins</a>
       
-      <a href="https://ewok.github.io/tags/offline" class="list-group-item">offline (17)</a>
+      <a href="https://ewok.github.io/tags/offline" class="list-group-item">offline</a>
       
-      <a href="https://ewok.github.io/tags/dev" class="list-group-item">dev (14)</a>
+      <a href="https://ewok.github.io/tags/dev" class="list-group-item">dev</a>
       
-      <a href="https://ewok.github.io/tags/music" class="list-group-item">music (10)</a>
+      <a href="https://ewok.github.io/tags/music" class="list-group-item">music</a>
       
-      <a href="https://ewok.github.io/tags/online" class="list-group-item">online (10)</a>
+      <a href="https://ewok.github.io/tags/online" class="list-group-item">online</a>
       
-      <a href="https://ewok.github.io/tags/other" class="list-group-item">other (10)</a>
+      <a href="https://ewok.github.io/tags/other" class="list-group-item">other</a>
       
-      <a href="https://ewok.github.io/tags/news" class="list-group-item">news (6)</a>
+      <a href="https://ewok.github.io/tags/news" class="list-group-item">news</a>
       
-      <a href="https://ewok.github.io/tags/haskell" class="list-group-item">haskell (4)</a>
+      <a href="https://ewok.github.io/tags/haskell" class="list-group-item">haskell</a>
       
-      <a href="https://ewok.github.io/tags/video" class="list-group-item">video (4)</a>
-      
-      <a href="https://ewok.github.io/tags/vim" class="list-group-item">vim (4)</a>
-      
-      <a href="https://ewok.github.io/tags/python" class="list-group-item">python (3)</a>
-      
-      <a href="https://ewok.github.io/tags/sport" class="list-group-item">sport (3)</a>
-      
-      <a href="https://ewok.github.io/tags/go" class="list-group-item">go (2)</a>
+      <a href="https://ewok.github.io/tags/video" class="list-group-item">video</a>
       
     </div>
-  </div>
+  </section>
   
 
 </aside>
 
 
-    </div>
   </div>
-
 </div>
-      </div>
-    </div>
 
-    <footer class="site">
+      </div>
+    </main>
+
+    <footer class="l-footer">
       <div class="container">
-        <p>&copy; 2016 Записки Турыча</p>
-        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
-        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+        <p><span class="h-logo">&copy; Записки Турыча</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
       </div>
     </footer>
 
-    <script src="/js/jquery-2.1.3.min.js"></script>
-    <script src="/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="/js/highlight.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
+<script>
+  (function() {
+      var cx = '';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 
+
+
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter22971493 = new Ya.Metrika({
+                    id:22971493,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/22971493" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
 
   </body>
