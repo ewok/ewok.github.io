@@ -6,8 +6,18 @@
     <description>Recent content on Записки Турыча</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru_RU</language>
-    <lastBuildDate>Mon, 22 Feb 2016 17:50:45 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 20 Nov 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://ewok.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>No one puts Java in the container</title>
+      <link>https://ewok.github.io/no-one-puts-java-in-the-container</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/no-one-puts-java-in-the-container</guid>
+      <description>&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/hJyAfC-Z2xk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>HuGo and Go</title>
@@ -508,68 +518,6 @@ main = do
 
 &lt;pre&gt;&lt;code&gt;    /dev/choto /mnt/kuda\040to ext4 ... и т.д
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>libvirt - полезные комманды</title>
-      <link>https://ewok.github.io/virsh-polieznyie-kommandy</link>
-      <pubDate>Thu, 02 Apr 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://ewok.github.io/virsh-polieznyie-kommandy</guid>
-      <description>
-
-&lt;h1 id=&#34;установка&#34;&gt;Установка&lt;/h1&gt;
-
-&lt;p&gt;Debian/ubuntu и производные:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    apt-get instll libvirt-bin -y
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;На rhel подобных что-то типа:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    yum install libvirt-client -y
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&#34;virsh&#34;&gt;virsh&lt;/h1&gt;
-
-&lt;p&gt;Консоль для управления виртуальным окружением&lt;br&gt;
-Подключение: &lt;code&gt;virsh --connect=&amp;lt;строка подключения&amp;gt;&lt;/code&gt;&lt;br&gt;&lt;/p&gt;
-
-&lt;p&gt;Примеры строки подключения:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;qemu:///system&lt;/code&gt; - локальный сервер&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;qemu+ssh://root@ip/system&lt;/code&gt; - удаленный сервер по адресу &lt;strong&gt;ip&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code&gt;virsh list [--inactive | --all]&lt;/code&gt; - список виртуальных машин [отключенных | всех]&lt;br&gt;
-&lt;code&gt;virsh start &amp;lt;domain&amp;gt;&lt;/code&gt; - запуск вирт. машины &lt;strong&gt;domain&lt;/strong&gt;&lt;br&gt;
-&lt;code&gt;virsh shutdown &amp;lt;domain&amp;gt;&lt;/code&gt; - остановка вирт. машины &lt;strong&gt;domain&lt;/strong&gt;&lt;br&gt;
-&lt;code&gt;virsh destroy &amp;lt;domain&amp;gt;&lt;/code&gt; - разрушить (остановить) вирт. машину&lt;br&gt;
-&lt;code&gt;virsh reboot &amp;lt;domain&amp;gt;&lt;/code&gt; - перезагрузить вирт. машину&lt;br&gt;
-&lt;code&gt;virsh reset &amp;lt;domain&amp;gt;&lt;/code&gt; - перезагрузить вирт. машину(эмуляция нажатия кнопки &lt;em&gt;reset&lt;/em&gt;)&lt;br&gt;
-&lt;code&gt;virsh define &amp;lt;domain&amp;gt;&lt;/code&gt; - определить (но не запускать) домен из файла XML&lt;br&gt;
-&lt;code&gt;virsh undefine &amp;lt;domain&amp;gt;&lt;/code&gt; - удаление вирт. машины из определенных доменов(убрать из списка)&lt;br&gt;
-&lt;code&gt;virsh suspend &amp;lt;domain&amp;gt;&lt;/code&gt; - приостановить вирт. машину&lt;br&gt;
-&lt;code&gt;virsh resume &amp;lt;domain&amp;gt;&lt;/code&gt; - продолжить работу вирт. машины&lt;br&gt;
-&lt;code&gt;virsh save &amp;lt;domain&amp;gt; &amp;lt;file&amp;gt;&lt;/code&gt; - сохранить состояние вирт. машины в файл&lt;br&gt;
-&lt;code&gt;virsh restore &amp;lt;file&amp;gt;&lt;/code&gt; - восстановить состояние вирт. машины из файла&lt;br&gt;
-&lt;code&gt;virsh edit &amp;lt;domain&amp;gt;&lt;/code&gt; - редактирование XML-конфигурации вирт. машины&lt;br&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;virt-viewer&#34;&gt;virt-viewer&lt;/h1&gt;
-
-&lt;p&gt;Подключение к vnc&lt;br&gt;
-&lt;code&gt;virt-viewer -c &amp;lt;строка подключение&amp;gt; &amp;lt;domain&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;virt-install&#34;&gt;virt-install&lt;/h1&gt;
-
-&lt;p&gt;Установка вирт. машин&lt;br&gt;
-Имеет много опций, которые можно посмотреть по комманде &lt;code&gt;man virt-install&lt;/code&gt;&lt;br&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;virt-manager&#34;&gt;virt-manager&lt;/h1&gt;
-
-&lt;p&gt;Графическая утилита для работы с libvirt&lt;/p&gt;
 </description>
     </item>
     
