@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>travis-ci - ewoks docs(notes)</title>
+  <title>keybase - ewoks docs(notes)</title>
   
 
   <link rel="shortcut icon" href="../../img/favicon.ico">
@@ -20,7 +20,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "travis-ci";
+    var mkdocs_page_name = "keybase";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -63,26 +63,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../">What is this all about</a>
+        <a class="" href="../../devops/">What is this all about</a>
         
     </li>
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">travis-ci</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#travis-ci">Travis-ci</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#recipes">Recipes</a></li>
-                
-                    <li><a class="toctree-l4" href="#use-ssh-to-deploy">Use ssh to deploy</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../../devops/travis-ci/">travis-ci</a>
         
     </li>
 
@@ -127,49 +115,65 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../tools/bash/">bash</a>
+        <a class="" href="../bash/">bash</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../tools/fzf/">fzf</a>
+        <a class="" href="../fzf/">fzf</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../tools/git/">git</a>
+        <a class="" href="../git/">git</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">keybase</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#about">About</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#cheat-sheet">Cheat Sheet</a></li>
+                
+                    <li><a class="toctree-l4" href="#common-cmds">Common cmds</a></li>
+                
+                    <li><a class="toctree-l4" href="#follow-smb">Follow smb</a></li>
+                
+                    <li><a class="toctree-l4" href="#working-with-data">Working with data</a></li>
+                
+            
+            </ul>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../tools/keybase/">keybase</a>
+        <a class="" href="../nvim/">neovim</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../tools/nvim/">neovim</a>
+        <a class="" href="../vim/">vim</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../tools/vim/">vim</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../tools/zsh/">zsh</a>
+        <a class="" href="../zsh/">zsh</a>
         
     </li>
 
@@ -236,11 +240,11 @@
     
       
         
-          <li>Devops &raquo;</li>
+          <li>Tools &raquo;</li>
         
       
     
-    <li>travis-ci</li>
+    <li>keybase</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -250,28 +254,66 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="travis-ci">Travis-ci</h1>
-<p>Test and Deploy with Confidence</p>
-<p><a href="https://travis-ci.org/">Link</a></p>
-<h1 id="recipes">Recipes</h1>
-<h2 id="use-ssh-to-deploy">Use ssh to deploy</h2>
-<p>Generate ssh key</p>
-<pre><code>ssh-keygen -t rsa -b 4096 -C '&lt;repo&gt;@travis-ci.org' -f ./deploy_rsa
-travis encrypt-file deploy_rsa --add
-ssh-copy-id -i deploy_rsa.pub &lt;ssh-user&gt;@&lt;deploy-host&gt;
-rm -f deploy_rsa deploy_rsa.pub
-git add deploy_rsa.enc .travis.yml
+                <h1 id="about">About</h1>
+<p><strong>
+Keybase.io
+</strong></p>
+<p><em>
+Keys for everyone!
+</em></p>
+<p>Keybase maps your identity to your public keys, and vice versa.</p>
+<p><a href="https://keybase.io/">Link</a></p>
+<h1 id="cheat-sheet">Cheat Sheet</h1>
+<h2 id="common-cmds">Common cmds</h2>
+<pre><code>keybase login         # or signup
+keybase prove twitter # prove thyself
+keybase prove github  # etc.
+keybase encrypt ewok -m &quot;a secret&quot;
+keybase sign -m &quot;hello world&quot;
 
+# The new Keybase filesystem
+# https://keybase.io/docs/kbfs
+
+cd /keybase/private/ewok
+echo &quot;a secret for me&quot; &gt; diary.txt
+
+cd /keybase/public/ewok
+echo &quot;I abdicate the throne&quot; &gt; signed_by_me.txt
 </code></pre>
 
-<p>Configure .travis.yml</p>
-<pre><code>addons:
-  ssh_known_hosts: &lt;deploy-host&gt;
-before_deploy:
-- openssl aes-256-cbc aes-256-cbc -K $encrypted_&lt;...&gt;_key -iv $encrypted_&lt;...&gt;_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d
-- eval &quot;$(ssh-agent -s)&quot;
-- chmod 600 /tmp/deploy_rsa
-- ssh-add /tmp/deploy_rsa
+<h2 id="follow-smb">Follow smb</h2>
+<p>(ex: hashicorp)</p>
+<pre><code>keybase id hashicorp
+keybase follow hashicorp
+keybase encrypt hashicorp -m &quot;a secret msg&quot;
+
+# The new Keybase filesystem
+# https://keybase.io/docs/kbfs
+
+cd /keybase/private/ewok,hashicorp
+echo &quot;Pst. My CC is 4147...&quot; &gt; ewok_cc.txt
+cp ~/FAilVid-ewok-and-hashicorp.mp4 .
+
+# any public, signed files?
+ls /keybase/public/hashicorp
+</code></pre>
+
+<h2 id="working-with-data">Working with data</h2>
+<pre><code># view someone else's signed files
+cd /keybase/public/chris
+cat plan.txt
+
+# your encrypted, private directory
+cd /keybase/private/ewok
+echo &quot;I have a secret&quot; &gt; diary.txt
+
+# your public, signed directory
+cd /keybase/public/ewok
+echo &quot;This is signed.&quot; &gt; a_contract_with_the_world.txt
+
+# an encrypted end-to-end directory with a friend
+cd /keybase/private/ewok,chris
+echo &quot;Wicked.&quot; &gt; awes.txt
 </code></pre>
               
             </div>
@@ -280,10 +322,10 @@ before_deploy:
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../hashicorp/vault/" class="btn btn-neutral float-right" title="Vault"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../nvim/" class="btn btn-neutral float-right" title="neovim"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../" class="btn btn-neutral" title="What is this all about"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../git/" class="btn btn-neutral" title="git"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -309,10 +351,10 @@ before_deploy:
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../git/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../hashicorp/vault/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../nvim/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

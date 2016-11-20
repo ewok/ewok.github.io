@@ -21,71 +21,6 @@
             "title": "Devops"
         }, 
         {
-            "location": "/elk/", 
-            "text": "About\n\n\nElasticsearch is a distributed, RESTful search and analytics engine capable of solving a growing number of use cases.\n\n\nLink\n\n\nTroubleshooting\n\n\nHealth\n\n\ncurl -XGET http://localhost:9200/_cluster/health?pretty\n\n\n\n\n\nShards\n\n\ncurl -XGET http://localhost:9200/_cat/shards\n\n\n\n\n\nReroute shards\n\n\nNODE=\nYOUR NODE NAME\n\nIFS=$'\\n'\nfor line in $(curl -s 'localhost:9200/_cat/shards' | fgrep UNASSIGNED); do\n  INDEX=$(echo $line | (awk '{print $1}'))\n  SHARD=$(echo $line | (awk '{print $2}'))\n\n  curl -XPOST 'localhost:9200/_cluster/reroute' -d '{\n     \ncommands\n: [\n        {\n            \nallocate\n: {\n                \nindex\n: \n'$INDEX'\n,\n                \nshard\n: '$SHARD',\n                \nnode\n: \n'$NODE'\n,\n                \nallow_primary\n: true\n          }\n        }\n    ]\n  }'\ndone\n\n\n\n\nDelete index\n\n\ncurl -XDELETE 'http://localhost:9200/twitter/'\n\n\n\n\nMass index deletion\n\n\nfor index in $(curl -XGET esmaster:9200/_cat/indices | awk \u2018/pattern/ {print $3}\u2019); do curl -XDELETE esmaster:9200/$index?master_timeout=120s; done\n\n\n\n\nOptimize cluster\n\n\ncurl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.cluster_concurrent_rebalance\u201d: 20,\n \u201cindices.recovery.concurrent_streams\u201d: 20,\n \u201ccluster.routing.allocation.node_initial_primaries_recoveries\u201d: 20,\n \u201ccluster.routing.allocation.node_concurrent_recoveries\u201d: 20,\n \u201cindices.recovery.max_bytes_per_sec\u201d: \u201c2048mb\u201d,\n \u201ccluster.routing.allocation.disk.threshold_enabled\u201d : true,\n \u201ccluster.routing.allocation.disk.watermark.low\u201d : \u201c90%\u201d,\n \u201ccluster.routing.allocation.disk.watermark.high\u201d : \u201c98%\u201d,\n \u201ccluster.routing.allocation.enable\u201d: \u201cprimary\u201d\n }\n}\u2019\n\n\n\n\nThen, once cluster become yellow\n\n\ncurl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.enable\u201d: \u201call\u201d\n }\n}\u2019\n\n\n\n\nGet info about cluster\n\n\ncurl -XGET https://escluster/_cat/nodes?v\nh=host,r,d,hc,rc,fdc,l\n\n\n\n\nSort by free disk space\n\n\ncurl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 3\n\n\n\n\nSort by heap capacity\n\n\ncurl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 4\n\n\n\n\nRecovery information\n\n\ncurl -XGET https://escluster/_recovery?pretty\nactive_only", 
-            "title": "Elastic Search"
-        }, 
-        {
-            "location": "/elk/#about", 
-            "text": "Elasticsearch is a distributed, RESTful search and analytics engine capable of solving a growing number of use cases.  Link", 
-            "title": "About"
-        }, 
-        {
-            "location": "/elk/#troubleshooting", 
-            "text": "", 
-            "title": "Troubleshooting"
-        }, 
-        {
-            "location": "/elk/#health", 
-            "text": "curl -XGET http://localhost:9200/_cluster/health?pretty", 
-            "title": "Health"
-        }, 
-        {
-            "location": "/elk/#shards", 
-            "text": "curl -XGET http://localhost:9200/_cat/shards", 
-            "title": "Shards"
-        }, 
-        {
-            "location": "/elk/#reroute-shards", 
-            "text": "NODE= YOUR NODE NAME \nIFS=$'\\n'\nfor line in $(curl -s 'localhost:9200/_cat/shards' | fgrep UNASSIGNED); do\n  INDEX=$(echo $line | (awk '{print $1}'))\n  SHARD=$(echo $line | (awk '{print $2}'))\n\n  curl -XPOST 'localhost:9200/_cluster/reroute' -d '{\n      commands : [\n        {\n             allocate : {\n                 index :  '$INDEX' ,\n                 shard : '$SHARD',\n                 node :  '$NODE' ,\n                 allow_primary : true\n          }\n        }\n    ]\n  }'\ndone", 
-            "title": "Reroute shards"
-        }, 
-        {
-            "location": "/elk/#delete-index", 
-            "text": "curl -XDELETE 'http://localhost:9200/twitter/'", 
-            "title": "Delete index"
-        }, 
-        {
-            "location": "/elk/#mass-index-deletion", 
-            "text": "for index in $(curl -XGET esmaster:9200/_cat/indices | awk \u2018/pattern/ {print $3}\u2019); do curl -XDELETE esmaster:9200/$index?master_timeout=120s; done", 
-            "title": "Mass index deletion"
-        }, 
-        {
-            "location": "/elk/#optimize-cluster", 
-            "text": "curl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.cluster_concurrent_rebalance\u201d: 20,\n \u201cindices.recovery.concurrent_streams\u201d: 20,\n \u201ccluster.routing.allocation.node_initial_primaries_recoveries\u201d: 20,\n \u201ccluster.routing.allocation.node_concurrent_recoveries\u201d: 20,\n \u201cindices.recovery.max_bytes_per_sec\u201d: \u201c2048mb\u201d,\n \u201ccluster.routing.allocation.disk.threshold_enabled\u201d : true,\n \u201ccluster.routing.allocation.disk.watermark.low\u201d : \u201c90%\u201d,\n \u201ccluster.routing.allocation.disk.watermark.high\u201d : \u201c98%\u201d,\n \u201ccluster.routing.allocation.enable\u201d: \u201cprimary\u201d\n }\n}\u2019  Then, once cluster become yellow  curl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.enable\u201d: \u201call\u201d\n }\n}\u2019", 
-            "title": "Optimize cluster"
-        }, 
-        {
-            "location": "/elk/#get-info-about-cluster", 
-            "text": "curl -XGET https://escluster/_cat/nodes?v h=host,r,d,hc,rc,fdc,l", 
-            "title": "Get info about cluster"
-        }, 
-        {
-            "location": "/elk/#sort-by-free-disk-space", 
-            "text": "curl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 3", 
-            "title": "Sort by free disk space"
-        }, 
-        {
-            "location": "/elk/#sort-by-heap-capacity", 
-            "text": "curl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 4", 
-            "title": "Sort by heap capacity"
-        }, 
-        {
-            "location": "/elk/#recovery-information", 
-            "text": "curl -XGET https://escluster/_recovery?pretty active_only", 
-            "title": "Recovery information"
-        }, 
-        {
             "location": "/devops/travis-ci/", 
             "text": "Travis-ci\n\n\nTest and Deploy with Confidence\n\n\nLink\n\n\nRecipes\n\n\nUse ssh to deploy\n\n\nGenerate ssh key\n\n\nssh-keygen -t rsa -b 4096 -C '\nrepo\n@travis-ci.org' -f ./deploy_rsa\ntravis encrypt-file deploy_rsa --add\nssh-copy-id -i deploy_rsa.pub \nssh-user\n@\ndeploy-host\n\nrm -f deploy_rsa deploy_rsa.pub\ngit add deploy_rsa.enc .travis.yml\n\n\n\n\n\nConfigure .travis.yml\n\n\naddons:\n  ssh_known_hosts: \ndeploy-host\n\nbefore_deploy:\n- openssl aes-256-cbc aes-256-cbc -K $encrypted_\n...\n_key -iv $encrypted_\n...\n_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d\n- eval \n$(ssh-agent -s)\n\n- chmod 600 /tmp/deploy_rsa\n- ssh-add /tmp/deploy_rsa", 
             "title": "travis-ci"
@@ -106,14 +41,109 @@
             "title": "Use ssh to deploy"
         }, 
         {
-            "location": "/english/", 
-            "text": "English", 
-            "title": "English"
+            "location": "/hashicorp/vault/", 
+            "text": "About\n\n\nCheatSheet\n\n\nWrite\n\n\nvault write secret/text value=\nvalue\n\nvault write secret/file value=@file.txt\n\n\n\n\nRead\n\n\nvault read secret/text", 
+            "title": "Vault"
         }, 
         {
-            "location": "/english/#english", 
+            "location": "/hashicorp/vault/#about", 
             "text": "", 
-            "title": "English"
+            "title": "About"
+        }, 
+        {
+            "location": "/hashicorp/vault/#cheatsheet", 
+            "text": "", 
+            "title": "CheatSheet"
+        }, 
+        {
+            "location": "/hashicorp/vault/#write", 
+            "text": "vault write secret/text value= value \nvault write secret/file value=@file.txt", 
+            "title": "Write"
+        }, 
+        {
+            "location": "/hashicorp/vault/#read", 
+            "text": "vault read secret/text", 
+            "title": "Read"
+        }, 
+        {
+            "location": "/elk/elasticsearch/", 
+            "text": "About\n\n\nElasticsearch is a distributed, RESTful search and analytics engine capable of solving a growing number of use cases.\n\n\nLink\n\n\nTroubleshooting\n\n\nHealth\n\n\ncurl -XGET http://localhost:9200/_cluster/health?pretty\n\n\n\n\n\nShards\n\n\ncurl -XGET http://localhost:9200/_cat/shards\n\n\n\n\n\nReroute shards\n\n\nNODE=\nYOUR NODE NAME\n\nIFS=$'\\n'\nfor line in $(curl -s 'localhost:9200/_cat/shards' | fgrep UNASSIGNED); do\n  INDEX=$(echo $line | (awk '{print $1}'))\n  SHARD=$(echo $line | (awk '{print $2}'))\n\n  curl -XPOST 'localhost:9200/_cluster/reroute' -d '{\n     \ncommands\n: [\n        {\n            \nallocate\n: {\n                \nindex\n: \n'$INDEX'\n,\n                \nshard\n: '$SHARD',\n                \nnode\n: \n'$NODE'\n,\n                \nallow_primary\n: true\n          }\n        }\n    ]\n  }'\ndone\n\n\n\n\nDelete index\n\n\ncurl -XDELETE 'http://localhost:9200/twitter/'\n\n\n\n\nMass index deletion\n\n\nfor index in $(curl -XGET esmaster:9200/_cat/indices | awk \u2018/pattern/ {print $3}\u2019); do curl -XDELETE esmaster:9200/$index?master_timeout=120s; done\n\n\n\n\nOptimize cluster\n\n\ncurl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.cluster_concurrent_rebalance\u201d: 20,\n \u201cindices.recovery.concurrent_streams\u201d: 20,\n \u201ccluster.routing.allocation.node_initial_primaries_recoveries\u201d: 20,\n \u201ccluster.routing.allocation.node_concurrent_recoveries\u201d: 20,\n \u201cindices.recovery.max_bytes_per_sec\u201d: \u201c2048mb\u201d,\n \u201ccluster.routing.allocation.disk.threshold_enabled\u201d : true,\n \u201ccluster.routing.allocation.disk.watermark.low\u201d : \u201c90%\u201d,\n \u201ccluster.routing.allocation.disk.watermark.high\u201d : \u201c98%\u201d,\n \u201ccluster.routing.allocation.enable\u201d: \u201cprimary\u201d\n }\n}\u2019\n\n\n\n\nThen, once cluster become yellow\n\n\ncurl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.enable\u201d: \u201call\u201d\n }\n}\u2019\n\n\n\n\nGet info about cluster\n\n\ncurl -XGET https://escluster/_cat/nodes?v\nh=host,r,d,hc,rc,fdc,l\n\n\n\n\nSort by free disk space\n\n\ncurl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 3\n\n\n\n\nSort by heap capacity\n\n\ncurl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 4\n\n\n\n\nRecovery information\n\n\ncurl -XGET https://escluster/_recovery?pretty\nactive_only", 
+            "title": "Elastic Search"
+        }, 
+        {
+            "location": "/elk/elasticsearch/#about", 
+            "text": "Elasticsearch is a distributed, RESTful search and analytics engine capable of solving a growing number of use cases.  Link", 
+            "title": "About"
+        }, 
+        {
+            "location": "/elk/elasticsearch/#troubleshooting", 
+            "text": "", 
+            "title": "Troubleshooting"
+        }, 
+        {
+            "location": "/elk/elasticsearch/#health", 
+            "text": "curl -XGET http://localhost:9200/_cluster/health?pretty", 
+            "title": "Health"
+        }, 
+        {
+            "location": "/elk/elasticsearch/#shards", 
+            "text": "curl -XGET http://localhost:9200/_cat/shards", 
+            "title": "Shards"
+        }, 
+        {
+            "location": "/elk/elasticsearch/#reroute-shards", 
+            "text": "NODE= YOUR NODE NAME \nIFS=$'\\n'\nfor line in $(curl -s 'localhost:9200/_cat/shards' | fgrep UNASSIGNED); do\n  INDEX=$(echo $line | (awk '{print $1}'))\n  SHARD=$(echo $line | (awk '{print $2}'))\n\n  curl -XPOST 'localhost:9200/_cluster/reroute' -d '{\n      commands : [\n        {\n             allocate : {\n                 index :  '$INDEX' ,\n                 shard : '$SHARD',\n                 node :  '$NODE' ,\n                 allow_primary : true\n          }\n        }\n    ]\n  }'\ndone", 
+            "title": "Reroute shards"
+        }, 
+        {
+            "location": "/elk/elasticsearch/#delete-index", 
+            "text": "curl -XDELETE 'http://localhost:9200/twitter/'", 
+            "title": "Delete index"
+        }, 
+        {
+            "location": "/elk/elasticsearch/#mass-index-deletion", 
+            "text": "for index in $(curl -XGET esmaster:9200/_cat/indices | awk \u2018/pattern/ {print $3}\u2019); do curl -XDELETE esmaster:9200/$index?master_timeout=120s; done", 
+            "title": "Mass index deletion"
+        }, 
+        {
+            "location": "/elk/elasticsearch/#optimize-cluster", 
+            "text": "curl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.cluster_concurrent_rebalance\u201d: 20,\n \u201cindices.recovery.concurrent_streams\u201d: 20,\n \u201ccluster.routing.allocation.node_initial_primaries_recoveries\u201d: 20,\n \u201ccluster.routing.allocation.node_concurrent_recoveries\u201d: 20,\n \u201cindices.recovery.max_bytes_per_sec\u201d: \u201c2048mb\u201d,\n \u201ccluster.routing.allocation.disk.threshold_enabled\u201d : true,\n \u201ccluster.routing.allocation.disk.watermark.low\u201d : \u201c90%\u201d,\n \u201ccluster.routing.allocation.disk.watermark.high\u201d : \u201c98%\u201d,\n \u201ccluster.routing.allocation.enable\u201d: \u201cprimary\u201d\n }\n}\u2019  Then, once cluster become yellow  curl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.enable\u201d: \u201call\u201d\n }\n}\u2019", 
+            "title": "Optimize cluster"
+        }, 
+        {
+            "location": "/elk/elasticsearch/#get-info-about-cluster", 
+            "text": "curl -XGET https://escluster/_cat/nodes?v h=host,r,d,hc,rc,fdc,l", 
+            "title": "Get info about cluster"
+        }, 
+        {
+            "location": "/elk/elasticsearch/#sort-by-free-disk-space", 
+            "text": "curl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 3", 
+            "title": "Sort by free disk space"
+        }, 
+        {
+            "location": "/elk/elasticsearch/#sort-by-heap-capacity", 
+            "text": "curl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 4", 
+            "title": "Sort by heap capacity"
+        }, 
+        {
+            "location": "/elk/elasticsearch/#recovery-information", 
+            "text": "curl -XGET https://escluster/_recovery?pretty active_only", 
+            "title": "Recovery information"
+        }, 
+        {
+            "location": "/tools/bash/", 
+            "text": "About\n\n\nBash\n\n\nRecipes", 
+            "title": "bash"
+        }, 
+        {
+            "location": "/tools/bash/#about", 
+            "text": "Bash", 
+            "title": "About"
+        }, 
+        {
+            "location": "/tools/bash/#recipes", 
+            "text": "", 
+            "title": "Recipes"
         }, 
         {
             "location": "/tools/fzf/", 
@@ -141,6 +171,76 @@
             "title": "Author"
         }, 
         {
+            "location": "/tools/git/", 
+            "text": "About\n\n\ngit\n\n\nCheat Sheet\n\n\nBranches\n\n\n\n\nshow last commit\n\ngit branch -v\n\n\nshow only merged or no-merged branches\n\ngit branch --(no-)merged\n\n\nremove merged branch\n\ngit branch -d \nnoncurrent_branch_name\n\n\nforce removing branch(changes will be lost)\n\ngit branch -D \nnoncurrent_branch_name\n\n\nremove remote branche\n\ngit push origin --delete \nremote_branch_name", 
+            "title": "git"
+        }, 
+        {
+            "location": "/tools/git/#about", 
+            "text": "git", 
+            "title": "About"
+        }, 
+        {
+            "location": "/tools/git/#cheat-sheet", 
+            "text": "", 
+            "title": "Cheat Sheet"
+        }, 
+        {
+            "location": "/tools/git/#branches", 
+            "text": "show last commit git branch -v  show only merged or no-merged branches git branch --(no-)merged  remove merged branch git branch -d  noncurrent_branch_name  force removing branch(changes will be lost) git branch -D  noncurrent_branch_name  remove remote branche git push origin --delete  remote_branch_name", 
+            "title": "Branches"
+        }, 
+        {
+            "location": "/tools/keybase/", 
+            "text": "About\n\n\n\nKeybase.io\n\n\n\n\nKeys for everyone!\n\n\n\nKeybase maps your identity to your public keys, and vice versa.\n\n\nLink\n\n\nCheat Sheet\n\n\nCommon cmds\n\n\nkeybase login         # or signup\nkeybase prove twitter # prove thyself\nkeybase prove github  # etc.\nkeybase encrypt ewok -m \na secret\n\nkeybase sign -m \nhello world\n\n\n# The new Keybase filesystem\n# https://keybase.io/docs/kbfs\n\ncd /keybase/private/ewok\necho \na secret for me\n \n diary.txt\n\ncd /keybase/public/ewok\necho \nI abdicate the throne\n \n signed_by_me.txt\n\n\n\n\nFollow smb\n\n\n(ex: hashicorp)\n\n\nkeybase id hashicorp\nkeybase follow hashicorp\nkeybase encrypt hashicorp -m \na secret msg\n\n\n# The new Keybase filesystem\n# https://keybase.io/docs/kbfs\n\ncd /keybase/private/ewok,hashicorp\necho \nPst. My CC is 4147...\n \n ewok_cc.txt\ncp ~/FAilVid-ewok-and-hashicorp.mp4 .\n\n# any public, signed files?\nls /keybase/public/hashicorp\n\n\n\n\nWorking with data\n\n\n# view someone else's signed files\ncd /keybase/public/chris\ncat plan.txt\n\n# your encrypted, private directory\ncd /keybase/private/ewok\necho \nI have a secret\n \n diary.txt\n\n# your public, signed directory\ncd /keybase/public/ewok\necho \nThis is signed.\n \n a_contract_with_the_world.txt\n\n# an encrypted end-to-end directory with a friend\ncd /keybase/private/ewok,chris\necho \nWicked.\n \n awes.txt", 
+            "title": "keybase"
+        }, 
+        {
+            "location": "/tools/keybase/#about", 
+            "text": "Keybase.io  \nKeys for everyone!  Keybase maps your identity to your public keys, and vice versa.  Link", 
+            "title": "About"
+        }, 
+        {
+            "location": "/tools/keybase/#cheat-sheet", 
+            "text": "", 
+            "title": "Cheat Sheet"
+        }, 
+        {
+            "location": "/tools/keybase/#common-cmds", 
+            "text": "keybase login         # or signup\nkeybase prove twitter # prove thyself\nkeybase prove github  # etc.\nkeybase encrypt ewok -m  a secret \nkeybase sign -m  hello world \n\n# The new Keybase filesystem\n# https://keybase.io/docs/kbfs\n\ncd /keybase/private/ewok\necho  a secret for me    diary.txt\n\ncd /keybase/public/ewok\necho  I abdicate the throne    signed_by_me.txt", 
+            "title": "Common cmds"
+        }, 
+        {
+            "location": "/tools/keybase/#follow-smb", 
+            "text": "(ex: hashicorp)  keybase id hashicorp\nkeybase follow hashicorp\nkeybase encrypt hashicorp -m  a secret msg \n\n# The new Keybase filesystem\n# https://keybase.io/docs/kbfs\n\ncd /keybase/private/ewok,hashicorp\necho  Pst. My CC is 4147...    ewok_cc.txt\ncp ~/FAilVid-ewok-and-hashicorp.mp4 .\n\n# any public, signed files?\nls /keybase/public/hashicorp", 
+            "title": "Follow smb"
+        }, 
+        {
+            "location": "/tools/keybase/#working-with-data", 
+            "text": "# view someone else's signed files\ncd /keybase/public/chris\ncat plan.txt\n\n# your encrypted, private directory\ncd /keybase/private/ewok\necho  I have a secret    diary.txt\n\n# your public, signed directory\ncd /keybase/public/ewok\necho  This is signed.    a_contract_with_the_world.txt\n\n# an encrypted end-to-end directory with a friend\ncd /keybase/private/ewok,chris\necho  Wicked.    awes.txt", 
+            "title": "Working with data"
+        }, 
+        {
+            "location": "/tools/nvim/", 
+            "text": "About\n\n\nNeoVim\n\n\nRecipes\n\n\nInstall from HEAD (macosx)\n\n\nbrew install --HEAD --with-release neovim\npip2 install neovim\npip3 install neovim", 
+            "title": "neovim"
+        }, 
+        {
+            "location": "/tools/nvim/#about", 
+            "text": "NeoVim", 
+            "title": "About"
+        }, 
+        {
+            "location": "/tools/nvim/#recipes", 
+            "text": "", 
+            "title": "Recipes"
+        }, 
+        {
+            "location": "/tools/nvim/#install-from-head-macosx", 
+            "text": "brew install --HEAD --with-release neovim\npip2 install neovim\npip3 install neovim", 
+            "title": "Install from HEAD (macosx)"
+        }, 
+        {
             "location": "/tools/vim/", 
             "text": "About\n\n\n\n\nVim is an advanced text editor that seeks to provide the power of the de-facto Unix editor 'Vi', with a more complete feature set.\n\nhttp://www.vim.org/about.php\n\n\nGitHub\n\n\nRecipes", 
             "title": "vim"
@@ -154,6 +254,46 @@
             "location": "/tools/vim/#recipes", 
             "text": "", 
             "title": "Recipes"
+        }, 
+        {
+            "location": "/tools/zsh/", 
+            "text": "About\n\n\nZsh\n\n\nRecipes", 
+            "title": "zsh"
+        }, 
+        {
+            "location": "/tools/zsh/#about", 
+            "text": "Zsh", 
+            "title": "About"
+        }, 
+        {
+            "location": "/tools/zsh/#recipes", 
+            "text": "", 
+            "title": "Recipes"
+        }, 
+        {
+            "location": "/golang/about/", 
+            "text": "Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.\n\n\nOfficial site\n\n\nGo docs", 
+            "title": "About"
+        }, 
+        {
+            "location": "/golang/cheatsheet/", 
+            "text": "Build directives\n\n\nenv GOOS=darwin  GOARCH=amd64 go build -o packet_macosx\nenv GOOS=linux   GOARCH=386   go build -o packet_linux32\nenv GOOS=linux   GOARCH=amd64 go build -o packet_linux64\nenv GOOS=windows GOARCH=amd64 go build -o packet_win64", 
+            "title": "Cheat Sheet"
+        }, 
+        {
+            "location": "/golang/cheatsheet/#build-directives", 
+            "text": "env GOOS=darwin  GOARCH=amd64 go build -o packet_macosx\nenv GOOS=linux   GOARCH=386   go build -o packet_linux32\nenv GOOS=linux   GOARCH=amd64 go build -o packet_linux64\nenv GOOS=windows GOARCH=amd64 go build -o packet_win64", 
+            "title": "Build directives"
+        }, 
+        {
+            "location": "/english/", 
+            "text": "English", 
+            "title": "English"
+        }, 
+        {
+            "location": "/english/#english", 
+            "text": "", 
+            "title": "English"
         }
     ]
 }
