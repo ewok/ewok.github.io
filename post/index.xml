@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Post-rsses on Записки Турыча</title>
+    <title>Posts on Записки Турыча</title>
     <link>https://ewok.github.io/post/index.xml</link>
-    <description>Recent content in Post-rsses on Записки Турыча</description>
+    <description>Recent content in Posts on Записки Турыча</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru_RU</language>
     <lastBuildDate>Mon, 22 Feb 2016 17:50:45 +0300</lastBuildDate>
