@@ -23,6 +23,12 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>None/devops/travis-ci/</loc>
+     <lastmod>2016-11-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
@@ -31,6 +37,22 @@
      <lastmod>2016-11-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
+    
+
+    
+        
+    <url>
+     <loc>None/tools/fzf/</loc>
+     <lastmod>2016-11-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/tools/vim/</loc>
+     <lastmod>2016-11-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
 </urlset>

@@ -22,8 +22,38 @@
         }, 
         {
             "location": "/elk/", 
-            "text": "Health\n\n\ncurl -XGET http://localhost:9200/_cluster/health?pretty\n\n\n\n\n\nShards\n\n\ncurl -XGET http://localhost:9200/_cat/shards\n\n\n\n\n\nReroute shards\n\n\nfor shard in $(curl -XGET http://localhost:9200/_cat/shards | grep UNASSIGNED | awk '{print $2}'); do\n    curl -XPOST 'localhost:9200/_cluster/reroute' -d '{\n        \ncommands\n : [ {\n              \nallocate\n : {\n                  \nindex\n : \nt37\n, \n                  \nshard\n : $shard, \n                  \nnode\n : \ndatanode15\n, \n                  \nallow_primary\n : true\n              }\n            }\n        ]\n    }'\n    sleep 5\ndone\n\nNODE=\nYOUR NODE NAME\n\nIFS=$'\\n'\nfor line in $(curl -s 'localhost:9200/_cat/shards' | fgrep UNASSIGNED); do\n  INDEX=$(echo $line | (awk '{print $1}'))\n  SHARD=$(echo $line | (awk '{print $2}'))\n\n  curl -XPOST 'localhost:9200/_cluster/reroute' -d '{\n     \ncommands\n: [\n        {\n            \nallocate\n: {\n                \nindex\n: \n'$INDEX'\n,\n                \nshard\n: '$SHARD',\n                \nnode\n: \n'$NODE'\n,\n                \nallow_primary\n: true\n          }\n        }\n    ]\n  }'\ndone\n\n\n\n\nDelete index\n\n\ncurl -XDELETE 'http://localhost:9200/twitter/'\n\n\n\n\nrm size.tmp\nfor i in {1..6};do ssh prod-elk$i.kyc.megafon.ru \ndu -sch /var/lib/elasticsearch/prod-elk/nodes/0/indices/*\n \n size.tmp;done\ncat size.tmp | gsort -h\n\n\n\n\nGET /_cat/shards\n\n\nGET /_flush/synced\n\n\nGET /_cluster/health\n\n\nGET _cluster/health?level=shards\n\n\nPUT /_cluster/settings \n\n\n{\n\n\n\"transient\" : {\n\n\n\"cluster.routing.allocation.enable\" : \"all\"\n\n\n}\n\n\n}\n\n\nput /logstash-2016.08.31/_settings\n\n\n{\"index.routing.allocation.disable_allocation\": false}\n\n\nMass index deletion\n\n\nfor index in $(curl -XGET esmaster:9200/_cat/indices | awk \u2018/pattern/ {print $3}\u2019); do curl -XDELETE esmaster:9200/$index?master_timeout=120s; done\n\n\nOptimize cluster -----------------------------\n\n\ncurl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.cluster_concurrent_rebalance\u201d: 20,\n \u201cindices.recovery.concurrent_streams\u201d: 20,\n \u201ccluster.routing.allocation.node_initial_primaries_recoveries\u201d: 20,\n \u201ccluster.routing.allocation.node_concurrent_recoveries\u201d: 20,\n \u201cindices.recovery.max_bytes_per_sec\u201d: \u201c2048mb\u201d,\n \u201ccluster.routing.allocation.disk.threshold_enabled\u201d : true,\n \u201ccluster.routing.allocation.disk.watermark.low\u201d : \u201c90%\u201d,\n \u201ccluster.routing.allocation.disk.watermark.high\u201d : \u201c98%\u201d,\n \u201ccluster.routing.allocation.enable\u201d: \u201cprimary\u201d\n }\n}\u2019\n\n\nThen, once cluster become yellow\n\n\ncurl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.enable\u201d: \u201call\u201d\n }\n}\u2019\n\n\nOptimize cluster -----------------------------\n\n\nGet info about cluster\n\n\ncurl -XGET https://escluster/_cat/nodes?v\nh=host,r,d,hc,rc,fdc,l\n\n\nSort by free disk space\n\n\ncurl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 3\n\n\nSort by heap capacity\n\n\ncurl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 4\n\n\nRecovery information\n\n\ncurl -XGET https://escluster/_recovery?pretty\nactive_only", 
+            "text": "About\n\n\nElasticsearch is a distributed, RESTful search and analytics engine capable of solving a growing number of use cases.\n\n\nLink\n\n\nTroubleshooting\n\n\nHealth\n\n\ncurl -XGET http://localhost:9200/_cluster/health?pretty\n\n\n\n\n\nShards\n\n\ncurl -XGET http://localhost:9200/_cat/shards\n\n\n\n\n\nReroute shards\n\n\nNODE=\nYOUR NODE NAME\n\nIFS=$'\\n'\nfor line in $(curl -s 'localhost:9200/_cat/shards' | fgrep UNASSIGNED); do\n  INDEX=$(echo $line | (awk '{print $1}'))\n  SHARD=$(echo $line | (awk '{print $2}'))\n\n  curl -XPOST 'localhost:9200/_cluster/reroute' -d '{\n     \ncommands\n: [\n        {\n            \nallocate\n: {\n                \nindex\n: \n'$INDEX'\n,\n                \nshard\n: '$SHARD',\n                \nnode\n: \n'$NODE'\n,\n                \nallow_primary\n: true\n          }\n        }\n    ]\n  }'\ndone\n\n\n\n\nDelete index\n\n\ncurl -XDELETE 'http://localhost:9200/twitter/'\n\n\n\n\nMass index deletion\n\n\nfor index in $(curl -XGET esmaster:9200/_cat/indices | awk \u2018/pattern/ {print $3}\u2019); do curl -XDELETE esmaster:9200/$index?master_timeout=120s; done\n\n\n\n\nOptimize cluster\n\n\ncurl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.cluster_concurrent_rebalance\u201d: 20,\n \u201cindices.recovery.concurrent_streams\u201d: 20,\n \u201ccluster.routing.allocation.node_initial_primaries_recoveries\u201d: 20,\n \u201ccluster.routing.allocation.node_concurrent_recoveries\u201d: 20,\n \u201cindices.recovery.max_bytes_per_sec\u201d: \u201c2048mb\u201d,\n \u201ccluster.routing.allocation.disk.threshold_enabled\u201d : true,\n \u201ccluster.routing.allocation.disk.watermark.low\u201d : \u201c90%\u201d,\n \u201ccluster.routing.allocation.disk.watermark.high\u201d : \u201c98%\u201d,\n \u201ccluster.routing.allocation.enable\u201d: \u201cprimary\u201d\n }\n}\u2019\n\n\n\n\nThen, once cluster become yellow\n\n\ncurl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.enable\u201d: \u201call\u201d\n }\n}\u2019\n\n\n\n\nGet info about cluster\n\n\ncurl -XGET https://escluster/_cat/nodes?v\nh=host,r,d,hc,rc,fdc,l\n\n\n\n\nSort by free disk space\n\n\ncurl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 3\n\n\n\n\nSort by heap capacity\n\n\ncurl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 4\n\n\n\n\nRecovery information\n\n\ncurl -XGET https://escluster/_recovery?pretty\nactive_only", 
             "title": "Elastic Search"
+        }, 
+        {
+            "location": "/elk/#about", 
+            "text": "Elasticsearch is a distributed, RESTful search and analytics engine capable of solving a growing number of use cases.  Link", 
+            "title": "About"
+        }, 
+        {
+            "location": "/elk/#troubleshooting", 
+            "text": "", 
+            "title": "Troubleshooting"
+        }, 
+        {
+            "location": "/elk/#health", 
+            "text": "curl -XGET http://localhost:9200/_cluster/health?pretty", 
+            "title": "Health"
+        }, 
+        {
+            "location": "/elk/#shards", 
+            "text": "curl -XGET http://localhost:9200/_cat/shards", 
+            "title": "Shards"
+        }, 
+        {
+            "location": "/elk/#reroute-shards", 
+            "text": "NODE= YOUR NODE NAME \nIFS=$'\\n'\nfor line in $(curl -s 'localhost:9200/_cat/shards' | fgrep UNASSIGNED); do\n  INDEX=$(echo $line | (awk '{print $1}'))\n  SHARD=$(echo $line | (awk '{print $2}'))\n\n  curl -XPOST 'localhost:9200/_cluster/reroute' -d '{\n      commands : [\n        {\n             allocate : {\n                 index :  '$INDEX' ,\n                 shard : '$SHARD',\n                 node :  '$NODE' ,\n                 allow_primary : true\n          }\n        }\n    ]\n  }'\ndone", 
+            "title": "Reroute shards"
+        }, 
+        {
+            "location": "/elk/#delete-index", 
+            "text": "curl -XDELETE 'http://localhost:9200/twitter/'", 
+            "title": "Delete index"
         }, 
         {
             "location": "/elk/#mass-index-deletion", 
@@ -31,19 +61,9 @@
             "title": "Mass index deletion"
         }, 
         {
-            "location": "/elk/#optimize-cluster-", 
-            "text": "curl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.cluster_concurrent_rebalance\u201d: 20,\n \u201cindices.recovery.concurrent_streams\u201d: 20,\n \u201ccluster.routing.allocation.node_initial_primaries_recoveries\u201d: 20,\n \u201ccluster.routing.allocation.node_concurrent_recoveries\u201d: 20,\n \u201cindices.recovery.max_bytes_per_sec\u201d: \u201c2048mb\u201d,\n \u201ccluster.routing.allocation.disk.threshold_enabled\u201d : true,\n \u201ccluster.routing.allocation.disk.watermark.low\u201d : \u201c90%\u201d,\n \u201ccluster.routing.allocation.disk.watermark.high\u201d : \u201c98%\u201d,\n \u201ccluster.routing.allocation.enable\u201d: \u201cprimary\u201d\n }\n}\u2019", 
-            "title": "Optimize cluster -----------------------------"
-        }, 
-        {
-            "location": "/elk/#then-once-cluster-become-yellow", 
-            "text": "curl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.enable\u201d: \u201call\u201d\n }\n}\u2019", 
-            "title": "Then, once cluster become yellow"
-        }, 
-        {
-            "location": "/elk/#optimize-cluster-_1", 
-            "text": "", 
-            "title": "Optimize cluster -----------------------------"
+            "location": "/elk/#optimize-cluster", 
+            "text": "curl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.cluster_concurrent_rebalance\u201d: 20,\n \u201cindices.recovery.concurrent_streams\u201d: 20,\n \u201ccluster.routing.allocation.node_initial_primaries_recoveries\u201d: 20,\n \u201ccluster.routing.allocation.node_concurrent_recoveries\u201d: 20,\n \u201cindices.recovery.max_bytes_per_sec\u201d: \u201c2048mb\u201d,\n \u201ccluster.routing.allocation.disk.threshold_enabled\u201d : true,\n \u201ccluster.routing.allocation.disk.watermark.low\u201d : \u201c90%\u201d,\n \u201ccluster.routing.allocation.disk.watermark.high\u201d : \u201c98%\u201d,\n \u201ccluster.routing.allocation.enable\u201d: \u201cprimary\u201d\n }\n}\u2019  Then, once cluster become yellow  curl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.enable\u201d: \u201call\u201d\n }\n}\u2019", 
+            "title": "Optimize cluster"
         }, 
         {
             "location": "/elk/#get-info-about-cluster", 
@@ -66,6 +86,26 @@
             "title": "Recovery information"
         }, 
         {
+            "location": "/devops/travis-ci/", 
+            "text": "Travis-ci\n\n\nTest and Deploy with Confidence\n\n\nLink\n\n\nRecipes\n\n\nUse ssh to deploy\n\n\nGenerate ssh key\n\n\nssh-keygen -t rsa -b 4096 -C '\nrepo\n@travis-ci.org' -f ./deploy_rsa\ntravis encrypt-file deploy_rsa --add\nssh-copy-id -i deploy_rsa.pub \nssh-user\n@\ndeploy-host\n\nrm -f deploy_rsa deploy_rsa.pub\ngit add deploy_rsa.enc .travis.yml\n\n\n\n\n\nConfigure .travis.yml\n\n\naddons:\n  ssh_known_hosts: \ndeploy-host\n\nbefore_deploy:\n- openssl aes-256-cbc aes-256-cbc -K $encrypted_\n...\n_key -iv $encrypted_\n...\n_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d\n- eval \n$(ssh-agent -s)\n\n- chmod 600 /tmp/deploy_rsa\n- ssh-add /tmp/deploy_rsa", 
+            "title": "travis-ci"
+        }, 
+        {
+            "location": "/devops/travis-ci/#travis-ci", 
+            "text": "Test and Deploy with Confidence  Link", 
+            "title": "Travis-ci"
+        }, 
+        {
+            "location": "/devops/travis-ci/#recipes", 
+            "text": "", 
+            "title": "Recipes"
+        }, 
+        {
+            "location": "/devops/travis-ci/#use-ssh-to-deploy", 
+            "text": "Generate ssh key  ssh-keygen -t rsa -b 4096 -C ' repo @travis-ci.org' -f ./deploy_rsa\ntravis encrypt-file deploy_rsa --add\nssh-copy-id -i deploy_rsa.pub  ssh-user @ deploy-host \nrm -f deploy_rsa deploy_rsa.pub\ngit add deploy_rsa.enc .travis.yml  Configure .travis.yml  addons:\n  ssh_known_hosts:  deploy-host \nbefore_deploy:\n- openssl aes-256-cbc aes-256-cbc -K $encrypted_ ... _key -iv $encrypted_ ... _iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d\n- eval  $(ssh-agent -s) \n- chmod 600 /tmp/deploy_rsa\n- ssh-add /tmp/deploy_rsa", 
+            "title": "Use ssh to deploy"
+        }, 
+        {
             "location": "/english/", 
             "text": "English", 
             "title": "English"
@@ -74,6 +114,46 @@
             "location": "/english/#english", 
             "text": "", 
             "title": "English"
+        }, 
+        {
+            "location": "/tools/fzf/", 
+            "text": "A command-line fuzzy finder written in Go\n\n\n\n\nFast, without dependencies. You can use it with \nvim\n/\nneovim\n. \nBash\n/\nzsh\n completions.\n\n\nLink\n\n\nCheatsheet\n\n\n\n\n\n\n\n\nToken\n\n\nMatch type\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nsbtrkt\n\n\nfuzzy-match\n\n\nItems that match sbtrkt\n\n\n\n\n\n\n^music\n\n\nprefix-exact-match\n\n\nItems that start with music\n\n\n\n\n\n\n.mp3$\n\n\nsuffix-exact-match\n\n\nItems that end with .mp3\n\n\n\n\n\n\n'wild\n\n\nexact-match (quoted)\n\n\nItems that include wild\n\n\n\n\n\n\n!fire\n\n\ninverse-exact-match\n\n\nItems that do not include fire\n\n\n\n\n\n\n!.mp3$\n\n\ninverse-suffix-exact-match\n\n\nItems that do not end with .mp3\n\n\n\n\n\n\n\n\nLicense\n\n\nMIT\n\n\nAuthor\n\n\nJunegunn Choi", 
+            "title": "fzf"
+        }, 
+        {
+            "location": "/tools/fzf/#a-command-line-fuzzy-finder-written-in-go", 
+            "text": "Fast, without dependencies. You can use it with  vim / neovim .  Bash / zsh  completions.  Link", 
+            "title": "A command-line fuzzy finder written in Go"
+        }, 
+        {
+            "location": "/tools/fzf/#cheatsheet", 
+            "text": "Token  Match type  Description      sbtrkt  fuzzy-match  Items that match sbtrkt    ^music  prefix-exact-match  Items that start with music    .mp3$  suffix-exact-match  Items that end with .mp3    'wild  exact-match (quoted)  Items that include wild    !fire  inverse-exact-match  Items that do not include fire    !.mp3$  inverse-suffix-exact-match  Items that do not end with .mp3", 
+            "title": "Cheatsheet"
+        }, 
+        {
+            "location": "/tools/fzf/#license", 
+            "text": "MIT", 
+            "title": "License"
+        }, 
+        {
+            "location": "/tools/fzf/#author", 
+            "text": "Junegunn Choi", 
+            "title": "Author"
+        }, 
+        {
+            "location": "/tools/vim/", 
+            "text": "About\n\n\n\n\nVim is an advanced text editor that seeks to provide the power of the de-facto Unix editor 'Vi', with a more complete feature set.\n\nhttp://www.vim.org/about.php\n\n\nGitHub\n\n\nRecipes", 
+            "title": "vim"
+        }, 
+        {
+            "location": "/tools/vim/#about", 
+            "text": "Vim is an advanced text editor that seeks to provide the power of the de-facto Unix editor 'Vi', with a more complete feature set. http://www.vim.org/about.php  GitHub", 
+            "title": "About"
+        }, 
+        {
+            "location": "/tools/vim/#recipes", 
+            "text": "", 
+            "title": "Recipes"
         }
     ]
 }

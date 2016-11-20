@@ -74,43 +74,40 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#health">Health</a></li>
+                <li class="toctree-l3"><a href="#about">About</a></li>
                 
             
-                <li class="toctree-l3"><a href="#shards">Shards</a></li>
+                <li class="toctree-l3"><a href="#troubleshooting">Troubleshooting</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#reroute-shards">Reroute shards</a></li>
+                    <li><a class="toctree-l4" href="#health">Health</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#delete-index">Delete index</a></li>
+                    <li><a class="toctree-l4" href="#shards">Shards</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#mass-index-deletion">Mass index deletion</a></li>
+                    <li><a class="toctree-l4" href="#reroute-shards">Reroute shards</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#optimize-cluster-">Optimize cluster -----------------------------</a></li>
+                    <li><a class="toctree-l4" href="#delete-index">Delete index</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#then-once-cluster-become-yellow">Then, once cluster become yellow</a></li>
+                    <li><a class="toctree-l4" href="#mass-index-deletion">Mass index deletion</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#optimize-cluster-_1">Optimize cluster -----------------------------</a></li>
+                    <li><a class="toctree-l4" href="#optimize-cluster">Optimize cluster</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#get-info-about-cluster">Get info about cluster</a></li>
+                    <li><a class="toctree-l4" href="#get-info-about-cluster">Get info about cluster</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#sort-by-free-disk-space">Sort by free disk space</a></li>
+                    <li><a class="toctree-l4" href="#sort-by-free-disk-space">Sort by free disk space</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#sort-by-heap-capacity">Sort by heap capacity</a></li>
+                    <li><a class="toctree-l4" href="#sort-by-heap-capacity">Sort by heap capacity</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#recovery-information">Recovery information</a></li>
+                    <li><a class="toctree-l4" href="#recovery-information">Recovery information</a></li>
                 
             
             </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../devops/travis-ci/">travis-ci</a>
         
     </li>
 
@@ -123,6 +120,28 @@
         <a class="" href="../english/">English</a>
         
     </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Tools</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../tools/fzf/">fzf</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../tools/vim/">vim</a>
+        
+    </li>
+
+        
+    </ul>
 <li>
           
         </ul>
@@ -161,33 +180,22 @@
           <div role="main">
             <div class="section">
               
-                <h3 id="health">Health</h3>
+                <h1 id="about">About</h1>
+<p>Elasticsearch is a distributed, RESTful search and analytics engine capable of solving a growing number of use cases.</p>
+<p><a href="https://www.elastic.co/">Link</a></p>
+<h1 id="troubleshooting">Troubleshooting</h1>
+<h2 id="health">Health</h2>
 <pre><code class="sh">curl -XGET http://localhost:9200/_cluster/health?pretty
 
 </code></pre>
 
-<h3 id="shards">Shards</h3>
+<h2 id="shards">Shards</h2>
 <pre><code class="sh">curl -XGET http://localhost:9200/_cat/shards
 
 </code></pre>
 
-<h3 id="reroute-shards">Reroute shards</h3>
-<pre><code class="sh">for shard in $(curl -XGET http://localhost:9200/_cat/shards | grep UNASSIGNED | awk '{print $2}'); do
-    curl -XPOST 'localhost:9200/_cluster/reroute' -d '{
-        &quot;commands&quot; : [ {
-              &quot;allocate&quot; : {
-                  &quot;index&quot; : &quot;t37&quot;, 
-                  &quot;shard&quot; : $shard, 
-                  &quot;node&quot; : &quot;datanode15&quot;, 
-                  &quot;allow_primary&quot; : true
-              }
-            }
-        ]
-    }'
-    sleep 5
-done
-
-NODE=&quot;YOUR NODE NAME&quot;
+<h2 id="reroute-shards">Reroute shards</h2>
+<pre><code class="sh">NODE=&quot;YOUR NODE NAME&quot;
 IFS=$'\n'
 for line in $(curl -s 'localhost:9200/_cat/shards' | fgrep UNASSIGNED); do
   INDEX=$(echo $line | (awk '{print $1}'))
@@ -208,31 +216,16 @@ for line in $(curl -s 'localhost:9200/_cat/shards' | fgrep UNASSIGNED); do
 done
 </code></pre>
 
-<h3 id="delete-index">Delete index</h3>
+<h2 id="delete-index">Delete index</h2>
 <pre><code class="sh">curl -XDELETE 'http://localhost:9200/twitter/'
 </code></pre>
 
-<pre><code class="sh">rm size.tmp
-for i in {1..6};do ssh prod-elk$i.kyc.megafon.ru &quot;du -sch /var/lib/elasticsearch/prod-elk/nodes/0/indices/*&quot; &gt;&gt; size.tmp;done
-cat size.tmp | gsort -h
+<h2 id="mass-index-deletion">Mass index deletion</h2>
+<pre><code class="sh">for index in $(curl -XGET esmaster:9200/_cat/indices | awk ‘/pattern/ {print $3}’); do curl -XDELETE esmaster:9200/$index?master_timeout=120s; done
 </code></pre>
 
-<p>GET /_cat/shards</p>
-<p>GET /_flush/synced</p>
-<p>GET /_cluster/health</p>
-<p>GET _cluster/health?level=shards</p>
-<p>PUT /_cluster/settings </p>
-<p>{</p>
-<p>"transient" : {</p>
-<p>"cluster.routing.allocation.enable" : "all"</p>
-<p>}</p>
-<p>}</p>
-<p>put /logstash-2016.08.31/_settings</p>
-<p>{"index.routing.allocation.disable_allocation": false}</p>
-<h1 id="mass-index-deletion">Mass index deletion</h1>
-<p>for index in $(curl -XGET esmaster:9200/_cat/indices | awk ‘/pattern/ {print $3}’); do curl -XDELETE esmaster:9200/$index?master_timeout=120s; done</p>
-<h1 id="optimize-cluster-">Optimize cluster -----------------------------</h1>
-<p>curl -XPUT ‘http://escluster:9200/_cluster/settings' -d ‘{
+<h2 id="optimize-cluster">Optimize cluster</h2>
+<pre><code class="sh">curl -XPUT ‘http://escluster:9200/_cluster/settings' -d ‘{
  “transient” : {
  “cluster.routing.allocation.cluster_concurrent_rebalance”: 20,
  “indices.recovery.concurrent_streams”: 20,
@@ -244,22 +237,32 @@ cat size.tmp | gsort -h
  “cluster.routing.allocation.disk.watermark.high” : “98%”,
  “cluster.routing.allocation.enable”: “primary”
  }
-}’</p>
-<h1 id="then-once-cluster-become-yellow">Then, once cluster become yellow</h1>
-<p>curl -XPUT ‘http://escluster:9200/_cluster/settings' -d ‘{
+}’
+</code></pre>
+
+<p>Then, once cluster become yellow</p>
+<pre><code class="sh">curl -XPUT ‘http://escluster:9200/_cluster/settings' -d ‘{
  “transient” : {
  “cluster.routing.allocation.enable”: “all”
  }
-}’</p>
-<h1 id="optimize-cluster-_1">Optimize cluster -----------------------------</h1>
-<h1 id="get-info-about-cluster">Get info about cluster</h1>
-<p>curl -XGET https://escluster/_cat/nodes?v&amp;h=host,r,d,hc,rc,fdc,l</p>
-<h1 id="sort-by-free-disk-space">Sort by free disk space</h1>
-<p>curl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 3</p>
-<h1 id="sort-by-heap-capacity">Sort by heap capacity</h1>
-<p>curl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 4</p>
-<h1 id="recovery-information">Recovery information</h1>
-<p>curl -XGET https://escluster/_recovery?pretty&amp;active_only</p>
+}’
+</code></pre>
+
+<h2 id="get-info-about-cluster">Get info about cluster</h2>
+<pre><code class="sh">curl -XGET https://escluster/_cat/nodes?v&amp;h=host,r,d,hc,rc,fdc,l
+</code></pre>
+
+<h2 id="sort-by-free-disk-space">Sort by free disk space</h2>
+<pre><code class="sh">curl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 3
+</code></pre>
+
+<h2 id="sort-by-heap-capacity">Sort by heap capacity</h2>
+<pre><code class="sh">curl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 4
+</code></pre>
+
+<h2 id="recovery-information">Recovery information</h2>
+<pre><code class="sh">curl -XGET https://escluster/_recovery?pretty&amp;active_only
+</code></pre>
               
             </div>
           </div>
@@ -267,7 +270,7 @@ cat size.tmp | gsort -h
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../english/" class="btn btn-neutral float-right" title="English"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../devops/travis-ci/" class="btn btn-neutral float-right" title="travis-ci"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../devops/" class="btn btn-neutral" title="What is this all about"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -299,7 +302,7 @@ cat size.tmp | gsort -h
         <span><a href="../devops/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../english/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../devops/travis-ci/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
