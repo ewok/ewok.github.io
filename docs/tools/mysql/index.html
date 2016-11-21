@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Elastic Search - ewoks docs(notes)</title>
+  <title>mysql - ewoks docs(notes)</title>
   
 
   <link rel="shortcut icon" href="../../img/favicon.ico">
@@ -20,7 +20,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Elastic Search";
+    var mkdocs_page_name = "mysql";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -99,18 +99,8 @@
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Elastic Search</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#about">About</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#troubleshooting">Troubleshooting</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../../elk/elasticsearch/">Elastic Search</a>
         
     </li>
 
@@ -125,84 +115,94 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../tools/bash/">bash</a>
+        <a class="" href="../bash/">bash</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../tools/cron/">cron</a>
+        <a class="" href="../cron/">cron</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../tools/fzf/">fzf</a>
+        <a class="" href="../fzf/">fzf</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../tools/git/">git</a>
+        <a class="" href="../git/">git</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../tools/iptables/">iptables</a>
+        <a class="" href="../iptables/">iptables</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../tools/keybase/">keybase</a>
+        <a class="" href="../keybase/">keybase</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../tools/kvm/">kvm</a>
+        <a class="" href="../kvm/">kvm</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../tools/linux/">linux</a>
+        <a class="" href="../linux/">linux</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">mysql</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#about">About</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#recipes">Recipes</a></li>
+                
+            
+            </ul>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../tools/mysql/">mysql</a>
+        <a class="" href="../nvim/">neovim</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../tools/nvim/">neovim</a>
+        <a class="" href="../vim/">vim</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../tools/vim/">vim</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../tools/zsh/">zsh</a>
+        <a class="" href="../zsh/">zsh</a>
         
     </li>
 
@@ -269,11 +269,11 @@
     
       
         
-          <li>ELK &raquo;</li>
+          <li>Tools &raquo;</li>
         
       
     
-    <li>Elastic Search</li>
+    <li>mysql</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -284,87 +284,16 @@
             <div class="section">
               
                 <h1 id="about">About</h1>
-<p>Elasticsearch is a distributed, RESTful search and analytics engine capable of solving a growing number of use cases.</p>
-<p><a href="https://www.elastic.co/">Link</a></p>
-<h1 id="troubleshooting">Troubleshooting</h1>
-<p><strong>Health</strong></p>
-<pre><code class="sh">curl -XGET http://localhost:9200/_cluster/health?pretty
+<p>Mysql</p>
+<h1 id="recipes">Recipes</h1>
+<p><strong>Dump tables with mask</strong></p>
+<pre><code class="sh">for i in $(mysql csn -se &quot;show tables like 'b\_stat\_event\_list'&quot;);echo $i done
 
+for i in $(mysql csn -se &quot;show tables like 'b\_stat%'&quot;);do mysqldump csn $i \&gt; $i.sql ; done
 </code></pre>
 
-<p><strong>Shards</strong></p>
-<pre><code class="sh">curl -XGET http://localhost:9200/_cat/shards
-
-</code></pre>
-
-<p><strong>Reroute shards</strong></p>
-<pre><code class="sh">NODE=&quot;YOUR NODE NAME&quot;
-IFS=$'\n'
-for line in $(curl -s 'localhost:9200/_cat/shards' | fgrep UNASSIGNED); do
-  INDEX=$(echo $line | (awk '{print $1}'))
-  SHARD=$(echo $line | (awk '{print $2}'))
-
-  curl -XPOST 'localhost:9200/_cluster/reroute' -d '{
-     &quot;commands&quot;: [
-        {
-            &quot;allocate&quot;: {
-                &quot;index&quot;: &quot;'$INDEX'&quot;,
-                &quot;shard&quot;: '$SHARD',
-                &quot;node&quot;: &quot;'$NODE'&quot;,
-                &quot;allow_primary&quot;: true
-          }
-        }
-    ]
-  }'
-done
-</code></pre>
-
-<p><strong>Delete index</strong></p>
-<pre><code class="sh">curl -XDELETE 'http://localhost:9200/twitter/'
-</code></pre>
-
-<p><strong>Mass index deletion</strong></p>
-<pre><code class="sh">for index in $(curl -XGET esmaster:9200/_cat/indices | awk ‘/pattern/ {print $3}’); do curl -XDELETE esmaster:9200/$index?master_timeout=120s; done
-</code></pre>
-
-<p><strong>Optimize cluster</strong></p>
-<pre><code class="sh">curl -XPUT ‘http://escluster:9200/_cluster/settings' -d ‘{
- “transient” : {
- “cluster.routing.allocation.cluster_concurrent_rebalance”: 20,
- “indices.recovery.concurrent_streams”: 20,
- “cluster.routing.allocation.node_initial_primaries_recoveries”: 20,
- “cluster.routing.allocation.node_concurrent_recoveries”: 20,
- “indices.recovery.max_bytes_per_sec”: “2048mb”,
- “cluster.routing.allocation.disk.threshold_enabled” : true,
- “cluster.routing.allocation.disk.watermark.low” : “90%”,
- “cluster.routing.allocation.disk.watermark.high” : “98%”,
- “cluster.routing.allocation.enable”: “primary”
- }
-}’
-</code></pre>
-
-<p>Then, once cluster become yellow</p>
-<pre><code class="sh">curl -XPUT ‘http://escluster:9200/_cluster/settings' -d ‘{
- “transient” : {
- “cluster.routing.allocation.enable”: “all”
- }
-}’
-</code></pre>
-
-<p><strong>Get info about cluster</strong></p>
-<pre><code class="sh">curl -XGET https://escluster/_cat/nodes?v&amp;h=host,r,d,hc,rc,fdc,l
-</code></pre>
-
-<p><strong>Sort by free disk space</strong></p>
-<pre><code class="sh">curl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 3
-</code></pre>
-
-<p><strong>Sort by heap capacity</strong></p>
-<pre><code class="sh">curl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 4
-</code></pre>
-
-<p><strong>Recovery information</strong></p>
-<pre><code class="sh">curl -XGET https://escluster/_recovery?pretty&amp;active_only
+<p><strong>Table optimization</strong></p>
+<pre><code class="sh">mysqlcheck -u root --auto-repair --optimize --all-databases
 </code></pre>
               
             </div>
@@ -373,10 +302,10 @@ done
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../tools/bash/" class="btn btn-neutral float-right" title="bash"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../nvim/" class="btn btn-neutral float-right" title="neovim"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../hashicorp/vault/" class="btn btn-neutral" title="Vault"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../linux/" class="btn btn-neutral" title="linux"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -402,10 +331,10 @@ done
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../../hashicorp/vault/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../linux/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../tools/bash/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../nvim/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

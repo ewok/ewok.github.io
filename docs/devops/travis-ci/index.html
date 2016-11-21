@@ -74,12 +74,10 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#travis-ci">Travis-ci</a></li>
+                <li class="toctree-l3"><a href="#about">About</a></li>
                 
             
                 <li class="toctree-l3"><a href="#recipes">Recipes</a></li>
-                
-                    <li><a class="toctree-l4" href="#use-ssh-to-deploy">Use ssh to deploy</a></li>
                 
             
             </ul>
@@ -134,6 +132,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../../tools/cron/">cron</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../../tools/fzf/">fzf</a>
         
     </li>
@@ -148,7 +153,35 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../../tools/iptables/">iptables</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../../tools/keybase/">keybase</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../tools/kvm/">kvm</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../tools/linux/">linux</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../tools/mysql/">mysql</a>
         
     </li>
 
@@ -250,11 +283,12 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="travis-ci">Travis-ci</h1>
+                <h1 id="about">About</h1>
+<p>Travis-ci</p>
 <p>Test and Deploy with Confidence</p>
 <p><a href="https://travis-ci.org/">Link</a></p>
 <h1 id="recipes">Recipes</h1>
-<h2 id="use-ssh-to-deploy">Use ssh to deploy</h2>
+<p><strong>Use ssh to deploy</strong></p>
 <p>Generate ssh key</p>
 <pre><code>ssh-keygen -t rsa -b 4096 -C '&lt;repo&gt;@travis-ci.org' -f ./deploy_rsa
 travis encrypt-file deploy_rsa --add

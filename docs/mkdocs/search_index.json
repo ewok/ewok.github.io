@@ -22,27 +22,22 @@
         }, 
         {
             "location": "/devops/travis-ci/", 
-            "text": "Travis-ci\n\n\nTest and Deploy with Confidence\n\n\nLink\n\n\nRecipes\n\n\nUse ssh to deploy\n\n\nGenerate ssh key\n\n\nssh-keygen -t rsa -b 4096 -C '\nrepo\n@travis-ci.org' -f ./deploy_rsa\ntravis encrypt-file deploy_rsa --add\nssh-copy-id -i deploy_rsa.pub \nssh-user\n@\ndeploy-host\n\nrm -f deploy_rsa deploy_rsa.pub\ngit add deploy_rsa.enc .travis.yml\n\n\n\n\n\nConfigure .travis.yml\n\n\naddons:\n  ssh_known_hosts: \ndeploy-host\n\nbefore_deploy:\n- openssl aes-256-cbc aes-256-cbc -K $encrypted_\n...\n_key -iv $encrypted_\n...\n_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d\n- eval \n$(ssh-agent -s)\n\n- chmod 600 /tmp/deploy_rsa\n- ssh-add /tmp/deploy_rsa", 
+            "text": "About\n\n\nTravis-ci\n\n\nTest and Deploy with Confidence\n\n\nLink\n\n\nRecipes\n\n\nUse ssh to deploy\n\n\nGenerate ssh key\n\n\nssh-keygen -t rsa -b 4096 -C '\nrepo\n@travis-ci.org' -f ./deploy_rsa\ntravis encrypt-file deploy_rsa --add\nssh-copy-id -i deploy_rsa.pub \nssh-user\n@\ndeploy-host\n\nrm -f deploy_rsa deploy_rsa.pub\ngit add deploy_rsa.enc .travis.yml\n\n\n\n\n\nConfigure .travis.yml\n\n\naddons:\n  ssh_known_hosts: \ndeploy-host\n\nbefore_deploy:\n- openssl aes-256-cbc aes-256-cbc -K $encrypted_\n...\n_key -iv $encrypted_\n...\n_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d\n- eval \n$(ssh-agent -s)\n\n- chmod 600 /tmp/deploy_rsa\n- ssh-add /tmp/deploy_rsa", 
             "title": "travis-ci"
         }, 
         {
-            "location": "/devops/travis-ci/#travis-ci", 
-            "text": "Test and Deploy with Confidence  Link", 
-            "title": "Travis-ci"
+            "location": "/devops/travis-ci/#about", 
+            "text": "Travis-ci  Test and Deploy with Confidence  Link", 
+            "title": "About"
         }, 
         {
             "location": "/devops/travis-ci/#recipes", 
-            "text": "", 
+            "text": "Use ssh to deploy  Generate ssh key  ssh-keygen -t rsa -b 4096 -C ' repo @travis-ci.org' -f ./deploy_rsa\ntravis encrypt-file deploy_rsa --add\nssh-copy-id -i deploy_rsa.pub  ssh-user @ deploy-host \nrm -f deploy_rsa deploy_rsa.pub\ngit add deploy_rsa.enc .travis.yml  Configure .travis.yml  addons:\n  ssh_known_hosts:  deploy-host \nbefore_deploy:\n- openssl aes-256-cbc aes-256-cbc -K $encrypted_ ... _key -iv $encrypted_ ... _iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d\n- eval  $(ssh-agent -s) \n- chmod 600 /tmp/deploy_rsa\n- ssh-add /tmp/deploy_rsa", 
             "title": "Recipes"
         }, 
         {
-            "location": "/devops/travis-ci/#use-ssh-to-deploy", 
-            "text": "Generate ssh key  ssh-keygen -t rsa -b 4096 -C ' repo @travis-ci.org' -f ./deploy_rsa\ntravis encrypt-file deploy_rsa --add\nssh-copy-id -i deploy_rsa.pub  ssh-user @ deploy-host \nrm -f deploy_rsa deploy_rsa.pub\ngit add deploy_rsa.enc .travis.yml  Configure .travis.yml  addons:\n  ssh_known_hosts:  deploy-host \nbefore_deploy:\n- openssl aes-256-cbc aes-256-cbc -K $encrypted_ ... _key -iv $encrypted_ ... _iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d\n- eval  $(ssh-agent -s) \n- chmod 600 /tmp/deploy_rsa\n- ssh-add /tmp/deploy_rsa", 
-            "title": "Use ssh to deploy"
-        }, 
-        {
             "location": "/hashicorp/vault/", 
-            "text": "About\n\n\nCheatSheet\n\n\nWrite\n\n\nvault write secret/text value=\nvalue\n\nvault write secret/file value=@file.txt\n\n\n\n\nRead\n\n\nvault read secret/text", 
+            "text": "About\n\n\nRecipes\n\n\nWrite\n\n\nvault write secret/text value=\nvalue\n\nvault write secret/file value=@file.txt\n\n\n\n\nRead\n\n\nvault read secret/text", 
             "title": "Vault"
         }, 
         {
@@ -51,19 +46,9 @@
             "title": "About"
         }, 
         {
-            "location": "/hashicorp/vault/#cheatsheet", 
-            "text": "", 
-            "title": "CheatSheet"
-        }, 
-        {
-            "location": "/hashicorp/vault/#write", 
-            "text": "vault write secret/text value= value \nvault write secret/file value=@file.txt", 
-            "title": "Write"
-        }, 
-        {
-            "location": "/hashicorp/vault/#read", 
-            "text": "vault read secret/text", 
-            "title": "Read"
+            "location": "/hashicorp/vault/#recipes", 
+            "text": "Write  vault write secret/text value= value \nvault write secret/file value=@file.txt  Read  vault read secret/text", 
+            "title": "Recipes"
         }, 
         {
             "location": "/elk/elasticsearch/", 
@@ -77,62 +62,12 @@
         }, 
         {
             "location": "/elk/elasticsearch/#troubleshooting", 
-            "text": "", 
+            "text": "Health  curl -XGET http://localhost:9200/_cluster/health?pretty  Shards  curl -XGET http://localhost:9200/_cat/shards  Reroute shards  NODE= YOUR NODE NAME \nIFS=$'\\n'\nfor line in $(curl -s 'localhost:9200/_cat/shards' | fgrep UNASSIGNED); do\n  INDEX=$(echo $line | (awk '{print $1}'))\n  SHARD=$(echo $line | (awk '{print $2}'))\n\n  curl -XPOST 'localhost:9200/_cluster/reroute' -d '{\n      commands : [\n        {\n             allocate : {\n                 index :  '$INDEX' ,\n                 shard : '$SHARD',\n                 node :  '$NODE' ,\n                 allow_primary : true\n          }\n        }\n    ]\n  }'\ndone  Delete index  curl -XDELETE 'http://localhost:9200/twitter/'  Mass index deletion  for index in $(curl -XGET esmaster:9200/_cat/indices | awk \u2018/pattern/ {print $3}\u2019); do curl -XDELETE esmaster:9200/$index?master_timeout=120s; done  Optimize cluster  curl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.cluster_concurrent_rebalance\u201d: 20,\n \u201cindices.recovery.concurrent_streams\u201d: 20,\n \u201ccluster.routing.allocation.node_initial_primaries_recoveries\u201d: 20,\n \u201ccluster.routing.allocation.node_concurrent_recoveries\u201d: 20,\n \u201cindices.recovery.max_bytes_per_sec\u201d: \u201c2048mb\u201d,\n \u201ccluster.routing.allocation.disk.threshold_enabled\u201d : true,\n \u201ccluster.routing.allocation.disk.watermark.low\u201d : \u201c90%\u201d,\n \u201ccluster.routing.allocation.disk.watermark.high\u201d : \u201c98%\u201d,\n \u201ccluster.routing.allocation.enable\u201d: \u201cprimary\u201d\n }\n}\u2019  Then, once cluster become yellow  curl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.enable\u201d: \u201call\u201d\n }\n}\u2019  Get info about cluster  curl -XGET https://escluster/_cat/nodes?v h=host,r,d,hc,rc,fdc,l  Sort by free disk space  curl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 3  Sort by heap capacity  curl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 4  Recovery information  curl -XGET https://escluster/_recovery?pretty active_only", 
             "title": "Troubleshooting"
         }, 
         {
-            "location": "/elk/elasticsearch/#health", 
-            "text": "curl -XGET http://localhost:9200/_cluster/health?pretty", 
-            "title": "Health"
-        }, 
-        {
-            "location": "/elk/elasticsearch/#shards", 
-            "text": "curl -XGET http://localhost:9200/_cat/shards", 
-            "title": "Shards"
-        }, 
-        {
-            "location": "/elk/elasticsearch/#reroute-shards", 
-            "text": "NODE= YOUR NODE NAME \nIFS=$'\\n'\nfor line in $(curl -s 'localhost:9200/_cat/shards' | fgrep UNASSIGNED); do\n  INDEX=$(echo $line | (awk '{print $1}'))\n  SHARD=$(echo $line | (awk '{print $2}'))\n\n  curl -XPOST 'localhost:9200/_cluster/reroute' -d '{\n      commands : [\n        {\n             allocate : {\n                 index :  '$INDEX' ,\n                 shard : '$SHARD',\n                 node :  '$NODE' ,\n                 allow_primary : true\n          }\n        }\n    ]\n  }'\ndone", 
-            "title": "Reroute shards"
-        }, 
-        {
-            "location": "/elk/elasticsearch/#delete-index", 
-            "text": "curl -XDELETE 'http://localhost:9200/twitter/'", 
-            "title": "Delete index"
-        }, 
-        {
-            "location": "/elk/elasticsearch/#mass-index-deletion", 
-            "text": "for index in $(curl -XGET esmaster:9200/_cat/indices | awk \u2018/pattern/ {print $3}\u2019); do curl -XDELETE esmaster:9200/$index?master_timeout=120s; done", 
-            "title": "Mass index deletion"
-        }, 
-        {
-            "location": "/elk/elasticsearch/#optimize-cluster", 
-            "text": "curl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.cluster_concurrent_rebalance\u201d: 20,\n \u201cindices.recovery.concurrent_streams\u201d: 20,\n \u201ccluster.routing.allocation.node_initial_primaries_recoveries\u201d: 20,\n \u201ccluster.routing.allocation.node_concurrent_recoveries\u201d: 20,\n \u201cindices.recovery.max_bytes_per_sec\u201d: \u201c2048mb\u201d,\n \u201ccluster.routing.allocation.disk.threshold_enabled\u201d : true,\n \u201ccluster.routing.allocation.disk.watermark.low\u201d : \u201c90%\u201d,\n \u201ccluster.routing.allocation.disk.watermark.high\u201d : \u201c98%\u201d,\n \u201ccluster.routing.allocation.enable\u201d: \u201cprimary\u201d\n }\n}\u2019  Then, once cluster become yellow  curl -XPUT \u2018http://escluster:9200/_cluster/settings' -d \u2018{\n \u201ctransient\u201d : {\n \u201ccluster.routing.allocation.enable\u201d: \u201call\u201d\n }\n}\u2019", 
-            "title": "Optimize cluster"
-        }, 
-        {
-            "location": "/elk/elasticsearch/#get-info-about-cluster", 
-            "text": "curl -XGET https://escluster/_cat/nodes?v h=host,r,d,hc,rc,fdc,l", 
-            "title": "Get info about cluster"
-        }, 
-        {
-            "location": "/elk/elasticsearch/#sort-by-free-disk-space", 
-            "text": "curl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 3", 
-            "title": "Sort by free disk space"
-        }, 
-        {
-            "location": "/elk/elasticsearch/#sort-by-heap-capacity", 
-            "text": "curl -XGET https://escluster/_cat/nodes?h=host,r,d,hc,rc,fdc,l | sort -hrk 4", 
-            "title": "Sort by heap capacity"
-        }, 
-        {
-            "location": "/elk/elasticsearch/#recovery-information", 
-            "text": "curl -XGET https://escluster/_recovery?pretty active_only", 
-            "title": "Recovery information"
-        }, 
-        {
             "location": "/tools/bash/", 
-            "text": "About\n\n\nBash\n\n\nRecipes", 
+            "text": "About\n\n\nBash\n\n\nRecipes\n\n\nLock script\n\n\nscriptname=$(basename $0)\npidfile=\n/var/run/${scriptname}\n\n\n# lock it\nexec 200\n$pidfile\nflock -n 200 || exit 1\npid=$$\necho $pid 1\n200\n\n\n\n\nLogging\n\n\nlog()\n {\n  while read text\n  do\n  LOGTIME=`date \n+%Y-%m-%d %H:%M:%S\n`\n  # If log file is not defined, just echo the output\n  if [ \n$LOG_FILE\u201d == \n ]; then\n  echo $LOGTIME\n: $text\n;\n  else\n  LOG=$LOG_FILE.`date +%Y%m%d`\n  touch $LOG\n  if [ ! -f $LOG ]; then echo \nERROR!! Cannot create log file $LOG. Exiting.\n; exit 1; fi\n  echo $LOGTIME\n: $text\n | tee -a $LOG;\n  fi\n  done\n }\n\n echo \nLog it!\n | log\n\n\n\n\nCurrent dir\n\n\ndirname \"$(readlink -f \"$0\")\"\n\n\nTry to find printers\n\n\nnmap -p 9100,515,631 192.168.1.1/24 -oX printers.xml\n\n\n\n\nRandom number\n\n\nshuf -n 1 -i 60000-61000\n\n\n\n\nFill all memory\n\n\nperl -e 'print \nMy PID: $$n\n;\n while(1){$x.=\nx\nx(1024**2); print \nLen: \n,length($x),\nn\n; sleep 1}'\n\n\n\n\nSize of directories\n\n\ndu -smch --exclude={proc,sys,dev} ./\\* | sort -h", 
             "title": "bash"
         }, 
         {
@@ -142,23 +77,38 @@
         }, 
         {
             "location": "/tools/bash/#recipes", 
-            "text": "", 
+            "text": "Lock script  scriptname=$(basename $0)\npidfile= /var/run/${scriptname} \n\n# lock it\nexec 200 $pidfile\nflock -n 200 || exit 1\npid=$$\necho $pid 1 200  Logging  log()\n {\n  while read text\n  do\n  LOGTIME=`date  +%Y-%m-%d %H:%M:%S `\n  # If log file is not defined, just echo the output\n  if [  $LOG_FILE\u201d ==   ]; then\n  echo $LOGTIME : $text ;\n  else\n  LOG=$LOG_FILE.`date +%Y%m%d`\n  touch $LOG\n  if [ ! -f $LOG ]; then echo  ERROR!! Cannot create log file $LOG. Exiting. ; exit 1; fi\n  echo $LOGTIME : $text  | tee -a $LOG;\n  fi\n  done\n }\n\n echo  Log it!  | log  Current dir  dirname \"$(readlink -f \"$0\")\"  Try to find printers  nmap -p 9100,515,631 192.168.1.1/24 -oX printers.xml  Random number  shuf -n 1 -i 60000-61000  Fill all memory  perl -e 'print  My PID: $$n ;\n while(1){$x.= x x(1024**2); print  Len:  ,length($x), n ; sleep 1}'  Size of directories  du -smch --exclude={proc,sys,dev} ./\\* | sort -h", 
+            "title": "Recipes"
+        }, 
+        {
+            "location": "/tools/cron/", 
+            "text": "About\n\n\ncron\n\n\nRecipes\n\n\nRun smt in last day of a month\n\n\n0 0 28,29 2 \\* /path/to/smth\n0 0 31 1,3,5,7,8,10,12 \\* /path/to/smth\n0 0 30 4,6,9,11 \\* /path/to/smth\n\nOr\n\n30 23 \\* \\* \\* root if ( `date -v +1d \n+%d\n` 01 ) command", 
+            "title": "cron"
+        }, 
+        {
+            "location": "/tools/cron/#about", 
+            "text": "cron", 
+            "title": "About"
+        }, 
+        {
+            "location": "/tools/cron/#recipes", 
+            "text": "Run smt in last day of a month  0 0 28,29 2 \\* /path/to/smth\n0 0 31 1,3,5,7,8,10,12 \\* /path/to/smth\n0 0 30 4,6,9,11 \\* /path/to/smth\n\nOr\n\n30 23 \\* \\* \\* root if ( `date -v +1d  +%d ` 01 ) command", 
             "title": "Recipes"
         }, 
         {
             "location": "/tools/fzf/", 
-            "text": "A command-line fuzzy finder written in Go\n\n\n\n\nFast, without dependencies. You can use it with \nvim\n/\nneovim\n. \nBash\n/\nzsh\n completions.\n\n\nLink\n\n\nCheatsheet\n\n\n\n\n\n\n\n\nToken\n\n\nMatch type\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nsbtrkt\n\n\nfuzzy-match\n\n\nItems that match sbtrkt\n\n\n\n\n\n\n^music\n\n\nprefix-exact-match\n\n\nItems that start with music\n\n\n\n\n\n\n.mp3$\n\n\nsuffix-exact-match\n\n\nItems that end with .mp3\n\n\n\n\n\n\n'wild\n\n\nexact-match (quoted)\n\n\nItems that include wild\n\n\n\n\n\n\n!fire\n\n\ninverse-exact-match\n\n\nItems that do not include fire\n\n\n\n\n\n\n!.mp3$\n\n\ninverse-suffix-exact-match\n\n\nItems that do not end with .mp3\n\n\n\n\n\n\n\n\nLicense\n\n\nMIT\n\n\nAuthor\n\n\nJunegunn Choi", 
+            "text": "About\n\n\nA command-line fuzzy finder written in Go\n\n\n\n\nFast, without dependencies. You can use it with \nvim\n/\nneovim\n. \nBash\n/\nzsh\n completions.\n\n\nLink\n\n\nRecipes\n\n\nSearch patterns\n\n\n\n\n\n\n\n\nToken\n\n\nMatch type\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nsbtrkt\n\n\nfuzzy-match\n\n\nItems that match sbtrkt\n\n\n\n\n\n\n^music\n\n\nprefix-exact-match\n\n\nItems that start with music\n\n\n\n\n\n\n.mp3$\n\n\nsuffix-exact-match\n\n\nItems that end with .mp3\n\n\n\n\n\n\n'wild\n\n\nexact-match (quoted)\n\n\nItems that include wild\n\n\n\n\n\n\n!fire\n\n\ninverse-exact-match\n\n\nItems that do not include fire\n\n\n\n\n\n\n!.mp3$\n\n\ninverse-suffix-exact-match\n\n\nItems that do not end with .mp3\n\n\n\n\n\n\n\n\nLicense\n\n\nMIT\n\n\nAuthor\n\n\nJunegunn Choi", 
             "title": "fzf"
         }, 
         {
-            "location": "/tools/fzf/#a-command-line-fuzzy-finder-written-in-go", 
-            "text": "Fast, without dependencies. You can use it with  vim / neovim .  Bash / zsh  completions.  Link", 
-            "title": "A command-line fuzzy finder written in Go"
+            "location": "/tools/fzf/#about", 
+            "text": "A command-line fuzzy finder written in Go   Fast, without dependencies. You can use it with  vim / neovim .  Bash / zsh  completions.  Link", 
+            "title": "About"
         }, 
         {
-            "location": "/tools/fzf/#cheatsheet", 
-            "text": "Token  Match type  Description      sbtrkt  fuzzy-match  Items that match sbtrkt    ^music  prefix-exact-match  Items that start with music    .mp3$  suffix-exact-match  Items that end with .mp3    'wild  exact-match (quoted)  Items that include wild    !fire  inverse-exact-match  Items that do not include fire    !.mp3$  inverse-suffix-exact-match  Items that do not end with .mp3", 
-            "title": "Cheatsheet"
+            "location": "/tools/fzf/#recipes", 
+            "text": "Search patterns     Token  Match type  Description      sbtrkt  fuzzy-match  Items that match sbtrkt    ^music  prefix-exact-match  Items that start with music    .mp3$  suffix-exact-match  Items that end with .mp3    'wild  exact-match (quoted)  Items that include wild    !fire  inverse-exact-match  Items that do not include fire    !.mp3$  inverse-suffix-exact-match  Items that do not end with .mp3", 
+            "title": "Recipes"
         }, 
         {
             "location": "/tools/fzf/#license", 
@@ -172,7 +122,7 @@
         }, 
         {
             "location": "/tools/git/", 
-            "text": "About\n\n\ngit\n\n\nCheat Sheet\n\n\nBranches\n\n\n\n\nshow last commit\n\ngit branch -v\n\n\nshow only merged or no-merged branches\n\ngit branch --(no-)merged\n\n\nremove merged branch\n\ngit branch -d \nnoncurrent_branch_name\n\n\nforce removing branch(changes will be lost)\n\ngit branch -D \nnoncurrent_branch_name\n\n\nremove remote branche\n\ngit push origin --delete \nremote_branch_name", 
+            "text": "About\n\n\ngit\n\n\nRecipes\n\n\nBranches\n\n\n\n\nshow last commit\n\ngit branch -v\n\n\nshow only merged or no-merged branches\n\ngit branch --(no-)merged\n\n\nremove merged branch\n\ngit branch -d \nnoncurrent_branch_name\n\n\nforce removing branch(changes will be lost)\n\ngit branch -D \nnoncurrent_branch_name\n\n\nremove remote branche\n\ngit push origin --delete \nremote_branch_name\n\n\n\n\nIgnore file attributes\n\n\ngit config core.filemode false\n\n\n\n\nClone all projects from github\n\n\ncurl -u \nTOKEN_HERE\n:x-oauth-basic \\\n-s https://api.github.com/orgs/kycml/repos?per_page=200 | \\\n\nruby -rubygems \\\n-e 'require \njson\n; JSON.load(STDIN.read).each { |repo| %x[git clone #{repo[\nssh_url\n]} ]}'\n\n\n\n\n\nRemove file from git history\n\n\n\n#!/bin/bash\nset -o errexit\n\n# Author: David Underhill\n# Script to permanently delete files/folders from your git repository.  To use \n# it, cd to your repository's root and then run the script with a list of paths\n# you want to delete, e.g., git-delete-history path1 path2\n\nif [ $# -eq 0 ]; then\n    exit 0\nfi\n\n# make sure we're at the root of git repo\nif [ ! -d .git ]; then\n    echo \nError: must run this script from the root of a git repository\n\n    exit 1\nfi\n\n# remove all paths passed as arguments from the history of the repo\nfiles=$@\ngit filter-branch --index-filter \ngit rm -rf --cached --ignore-unmatch $files\n HEAD\n\n# remove the temporary history git-filter-branch otherwise leaves behind for a long time\nrm -rf .git/refs/original/ \n git reflog expire --all \n  git gc --aggressive --prune\n\n\n\n\nMy IP\n\n\nwget http://ipinfo.io/ip -qO -\n\n\n\n\nPrint every 10th line\n\n\nsed -n -e '0~10p' file\n\n\n\n\nShow top 20 open file descriptors uses\n\n\nlsof | awk '{ print $2 \n \n $1; }' | sort -rn | uniq -c | sort -rn | head -20\n\n\n\n\nTurn off users password expiration\n\n\n# Status\nchage -l \nusername\n\n\n# Turn off\nchage -I -1 -m 0 -M 99999 -E -1 \nusername\n\n\n\n\n\nTime converting\n\n\n\n# from epoch\ndate -r 12345678\n\n# to epoch\nLANG=C date -j -f \n%d %b %Y %H:%M:%S %Z\n \n13 Sep 2013 17:16:45 MSK\n +%s\n\nLANG=C date -j -f \n%Y%m%d%H%M%S%Z\n \n$1\n +%s", 
             "title": "git"
         }, 
         {
@@ -181,44 +131,79 @@
             "title": "About"
         }, 
         {
-            "location": "/tools/git/#cheat-sheet", 
-            "text": "", 
-            "title": "Cheat Sheet"
+            "location": "/tools/git/#recipes", 
+            "text": "Branches   show last commit git branch -v  show only merged or no-merged branches git branch --(no-)merged  remove merged branch git branch -d  noncurrent_branch_name  force removing branch(changes will be lost) git branch -D  noncurrent_branch_name  remove remote branche git push origin --delete  remote_branch_name   Ignore file attributes  git config core.filemode false  Clone all projects from github  curl -u  TOKEN_HERE :x-oauth-basic \\\n-s https://api.github.com/orgs/kycml/repos?per_page=200 | \\\n\nruby -rubygems \\\n-e 'require  json ; JSON.load(STDIN.read).each { |repo| %x[git clone #{repo[ ssh_url ]} ]}'  Remove file from git history  \n#!/bin/bash\nset -o errexit\n\n# Author: David Underhill\n# Script to permanently delete files/folders from your git repository.  To use \n# it, cd to your repository's root and then run the script with a list of paths\n# you want to delete, e.g., git-delete-history path1 path2\n\nif [ $# -eq 0 ]; then\n    exit 0\nfi\n\n# make sure we're at the root of git repo\nif [ ! -d .git ]; then\n    echo  Error: must run this script from the root of a git repository \n    exit 1\nfi\n\n# remove all paths passed as arguments from the history of the repo\nfiles=$@\ngit filter-branch --index-filter  git rm -rf --cached --ignore-unmatch $files  HEAD\n\n# remove the temporary history git-filter-branch otherwise leaves behind for a long time\nrm -rf .git/refs/original/   git reflog expire --all    git gc --aggressive --prune  My IP  wget http://ipinfo.io/ip -qO -  Print every 10th line  sed -n -e '0~10p' file  Show top 20 open file descriptors uses  lsof | awk '{ print $2     $1; }' | sort -rn | uniq -c | sort -rn | head -20  Turn off users password expiration  # Status\nchage -l  username \n\n# Turn off\nchage -I -1 -m 0 -M 99999 -E -1  username   Time converting  \n# from epoch\ndate -r 12345678\n\n# to epoch\nLANG=C date -j -f  %d %b %Y %H:%M:%S %Z   13 Sep 2013 17:16:45 MSK  +%s\n\nLANG=C date -j -f  %Y%m%d%H%M%S%Z   $1  +%s", 
+            "title": "Recipes"
         }, 
         {
-            "location": "/tools/git/#branches", 
-            "text": "show last commit git branch -v  show only merged or no-merged branches git branch --(no-)merged  remove merged branch git branch -d  noncurrent_branch_name  force removing branch(changes will be lost) git branch -D  noncurrent_branch_name  remove remote branche git push origin --delete  remote_branch_name", 
-            "title": "Branches"
+            "location": "/tools/iptables/", 
+            "text": "About\n\n\niptables\n\n\nRecipes\n\n\nOpen ftp ports\n\n\nIPTABLES_MODULES=\nip_conntrack_ftp", 
+            "title": "iptables"
+        }, 
+        {
+            "location": "/tools/iptables/#about", 
+            "text": "iptables", 
+            "title": "About"
+        }, 
+        {
+            "location": "/tools/iptables/#recipes", 
+            "text": "Open ftp ports  IPTABLES_MODULES= ip_conntrack_ftp", 
+            "title": "Recipes"
         }, 
         {
             "location": "/tools/keybase/", 
-            "text": "About\n\n\n\nKeybase.io\n\n\n\n\nKeys for everyone!\n\n\n\nKeybase maps your identity to your public keys, and vice versa.\n\n\nLink\n\n\nCheat Sheet\n\n\nCommon cmds\n\n\nkeybase login         # or signup\nkeybase prove twitter # prove thyself\nkeybase prove github  # etc.\nkeybase encrypt ewok -m \na secret\n\nkeybase sign -m \nhello world\n\n\n# The new Keybase filesystem\n# https://keybase.io/docs/kbfs\n\ncd /keybase/private/ewok\necho \na secret for me\n \n diary.txt\n\ncd /keybase/public/ewok\necho \nI abdicate the throne\n \n signed_by_me.txt\n\n\n\n\nFollow smb\n\n\n(ex: hashicorp)\n\n\nkeybase id hashicorp\nkeybase follow hashicorp\nkeybase encrypt hashicorp -m \na secret msg\n\n\n# The new Keybase filesystem\n# https://keybase.io/docs/kbfs\n\ncd /keybase/private/ewok,hashicorp\necho \nPst. My CC is 4147...\n \n ewok_cc.txt\ncp ~/FAilVid-ewok-and-hashicorp.mp4 .\n\n# any public, signed files?\nls /keybase/public/hashicorp\n\n\n\n\nWorking with data\n\n\n# view someone else's signed files\ncd /keybase/public/chris\ncat plan.txt\n\n# your encrypted, private directory\ncd /keybase/private/ewok\necho \nI have a secret\n \n diary.txt\n\n# your public, signed directory\ncd /keybase/public/ewok\necho \nThis is signed.\n \n a_contract_with_the_world.txt\n\n# an encrypted end-to-end directory with a friend\ncd /keybase/private/ewok,chris\necho \nWicked.\n \n awes.txt", 
+            "text": "About\n\n\nKeybase.io\n\n\nKeys for everyone!\n\n\nKeybase maps your identity to your public keys, and vice versa.\n\n\nLink\n\n\nCheat Sheet\n\n\nCommon cmds\n\n\nkeybase login         # or signup\nkeybase prove twitter # prove thyself\nkeybase prove github  # etc.\nkeybase encrypt ewok -m \na secret\n\nkeybase sign -m \nhello world\n\n\n# The new Keybase filesystem\n# https://keybase.io/docs/kbfs\n\ncd /keybase/private/ewok\necho \na secret for me\n \n diary.txt\n\ncd /keybase/public/ewok\necho \nI abdicate the throne\n \n signed_by_me.txt\n\n\n\n\nFollow smb\n\n(ex: hashicorp)\n\n\nkeybase id hashicorp\nkeybase follow hashicorp\nkeybase encrypt hashicorp -m \na secret msg\n\n\n# The new Keybase filesystem\n# https://keybase.io/docs/kbfs\n\ncd /keybase/private/ewok,hashicorp\necho \nPst. My CC is 4147...\n \n ewok_cc.txt\ncp ~/FAilVid-ewok-and-hashicorp.mp4 .\n\n# any public, signed files?\nls /keybase/public/hashicorp\n\n\n\n\nWorking with data\n\n\n# view someone else's signed files\ncd /keybase/public/chris\ncat plan.txt\n\n# your encrypted, private directory\ncd /keybase/private/ewok\necho \nI have a secret\n \n diary.txt\n\n# your public, signed directory\ncd /keybase/public/ewok\necho \nThis is signed.\n \n a_contract_with_the_world.txt\n\n# an encrypted end-to-end directory with a friend\ncd /keybase/private/ewok,chris\necho \nWicked.\n \n awes.txt", 
             "title": "keybase"
         }, 
         {
             "location": "/tools/keybase/#about", 
-            "text": "Keybase.io  \nKeys for everyone!  Keybase maps your identity to your public keys, and vice versa.  Link", 
+            "text": "Keybase.io  Keys for everyone!  Keybase maps your identity to your public keys, and vice versa.  Link", 
             "title": "About"
         }, 
         {
             "location": "/tools/keybase/#cheat-sheet", 
-            "text": "", 
+            "text": "Common cmds  keybase login         # or signup\nkeybase prove twitter # prove thyself\nkeybase prove github  # etc.\nkeybase encrypt ewok -m  a secret \nkeybase sign -m  hello world \n\n# The new Keybase filesystem\n# https://keybase.io/docs/kbfs\n\ncd /keybase/private/ewok\necho  a secret for me    diary.txt\n\ncd /keybase/public/ewok\necho  I abdicate the throne    signed_by_me.txt  Follow smb \n(ex: hashicorp)  keybase id hashicorp\nkeybase follow hashicorp\nkeybase encrypt hashicorp -m  a secret msg \n\n# The new Keybase filesystem\n# https://keybase.io/docs/kbfs\n\ncd /keybase/private/ewok,hashicorp\necho  Pst. My CC is 4147...    ewok_cc.txt\ncp ~/FAilVid-ewok-and-hashicorp.mp4 .\n\n# any public, signed files?\nls /keybase/public/hashicorp  Working with data  # view someone else's signed files\ncd /keybase/public/chris\ncat plan.txt\n\n# your encrypted, private directory\ncd /keybase/private/ewok\necho  I have a secret    diary.txt\n\n# your public, signed directory\ncd /keybase/public/ewok\necho  This is signed.    a_contract_with_the_world.txt\n\n# an encrypted end-to-end directory with a friend\ncd /keybase/private/ewok,chris\necho  Wicked.    awes.txt", 
             "title": "Cheat Sheet"
         }, 
         {
-            "location": "/tools/keybase/#common-cmds", 
-            "text": "keybase login         # or signup\nkeybase prove twitter # prove thyself\nkeybase prove github  # etc.\nkeybase encrypt ewok -m  a secret \nkeybase sign -m  hello world \n\n# The new Keybase filesystem\n# https://keybase.io/docs/kbfs\n\ncd /keybase/private/ewok\necho  a secret for me    diary.txt\n\ncd /keybase/public/ewok\necho  I abdicate the throne    signed_by_me.txt", 
-            "title": "Common cmds"
+            "location": "/tools/kvm/", 
+            "text": "About\n\n\nKVM\n\n\nRecipes\n\n\nConvert images\n\n\nraw -\n qcow2\n\n\nqemu-img convert -f raw -O qcow2 centos64.dsk centos64.qcow2\n\n\nvmdk -\n raw\n\n\nqemu-img convert -f vmdk -O raw centos64.vmdk centos64.img", 
+            "title": "kvm"
         }, 
         {
-            "location": "/tools/keybase/#follow-smb", 
-            "text": "(ex: hashicorp)  keybase id hashicorp\nkeybase follow hashicorp\nkeybase encrypt hashicorp -m  a secret msg \n\n# The new Keybase filesystem\n# https://keybase.io/docs/kbfs\n\ncd /keybase/private/ewok,hashicorp\necho  Pst. My CC is 4147...    ewok_cc.txt\ncp ~/FAilVid-ewok-and-hashicorp.mp4 .\n\n# any public, signed files?\nls /keybase/public/hashicorp", 
-            "title": "Follow smb"
+            "location": "/tools/kvm/#about", 
+            "text": "KVM", 
+            "title": "About"
         }, 
         {
-            "location": "/tools/keybase/#working-with-data", 
-            "text": "# view someone else's signed files\ncd /keybase/public/chris\ncat plan.txt\n\n# your encrypted, private directory\ncd /keybase/private/ewok\necho  I have a secret    diary.txt\n\n# your public, signed directory\ncd /keybase/public/ewok\necho  This is signed.    a_contract_with_the_world.txt\n\n# an encrypted end-to-end directory with a friend\ncd /keybase/private/ewok,chris\necho  Wicked.    awes.txt", 
-            "title": "Working with data"
+            "location": "/tools/kvm/#recipes", 
+            "text": "Convert images  raw -  qcow2  qemu-img convert -f raw -O qcow2 centos64.dsk centos64.qcow2  vmdk -  raw  qemu-img convert -f vmdk -O raw centos64.vmdk centos64.img", 
+            "title": "Recipes"
+        }, 
+        {
+            "location": "/tools/linux/", 
+            "text": "Linux tools and recipes\n\n\nRecipes\n\n\nBlock user\n\n\nusermod -e 1 \n\n\nusermod -L", 
+            "title": "linux"
+        }, 
+        {
+            "location": "/tools/linux/#recipes", 
+            "text": "Block user  usermod -e 1   usermod -L", 
+            "title": "Recipes"
+        }, 
+        {
+            "location": "/tools/mysql/", 
+            "text": "About\n\n\nMysql\n\n\nRecipes\n\n\nDump tables with mask\n\n\nfor i in $(mysql csn -se \nshow tables like 'b\\_stat\\_event\\_list'\n);echo $i done\n\nfor i in $(mysql csn -se \nshow tables like 'b\\_stat%'\n);do mysqldump csn $i \\\n $i.sql ; done\n\n\n\n\nTable optimization\n\n\nmysqlcheck -u root --auto-repair --optimize --all-databases", 
+            "title": "mysql"
+        }, 
+        {
+            "location": "/tools/mysql/#about", 
+            "text": "Mysql", 
+            "title": "About"
+        }, 
+        {
+            "location": "/tools/mysql/#recipes", 
+            "text": "Dump tables with mask  for i in $(mysql csn -se  show tables like 'b\\_stat\\_event\\_list' );echo $i done\n\nfor i in $(mysql csn -se  show tables like 'b\\_stat%' );do mysqldump csn $i \\  $i.sql ; done  Table optimization  mysqlcheck -u root --auto-repair --optimize --all-databases", 
+            "title": "Recipes"
         }, 
         {
             "location": "/tools/nvim/", 
@@ -232,13 +217,8 @@
         }, 
         {
             "location": "/tools/nvim/#recipes", 
-            "text": "", 
+            "text": "Install from HEAD (macosx)  brew install --HEAD --with-release neovim\npip2 install neovim\npip3 install neovim", 
             "title": "Recipes"
-        }, 
-        {
-            "location": "/tools/nvim/#install-from-head-macosx", 
-            "text": "brew install --HEAD --with-release neovim\npip2 install neovim\npip3 install neovim", 
-            "title": "Install from HEAD (macosx)"
         }, 
         {
             "location": "/tools/vim/", 

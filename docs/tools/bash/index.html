@@ -132,6 +132,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../cron/">cron</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../fzf/">fzf</a>
         
     </li>
@@ -146,7 +153,35 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../iptables/">iptables</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../keybase/">keybase</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../kvm/">kvm</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../linux/">linux</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../mysql/">mysql</a>
         
     </li>
 
@@ -251,6 +286,56 @@
                 <h1 id="about">About</h1>
 <p>Bash</p>
 <h1 id="recipes">Recipes</h1>
+<p><strong>Lock script</strong></p>
+<pre><code class="sh">scriptname=$(basename $0)
+pidfile=&quot;/var/run/${scriptname}&quot;
+
+# lock it
+exec 200&gt;$pidfile
+flock -n 200 || exit 1
+pid=$$
+echo $pid 1&gt;&amp;200
+</code></pre>
+
+<p><strong>Logging</strong></p>
+<pre><code class="sh">log()
+ {
+  while read text
+  do
+  LOGTIME=`date &quot;+%Y-%m-%d %H:%M:%S&quot;`
+  # If log file is not defined, just echo the output
+  if [ &quot;$LOG_FILE” == &quot;&quot; ]; then
+  echo $LOGTIME&quot;: $text&quot;;
+  else
+  LOG=$LOG_FILE.`date +%Y%m%d`
+  touch $LOG
+  if [ ! -f $LOG ]; then echo &quot;ERROR!! Cannot create log file $LOG. Exiting.&quot;; exit 1; fi
+  echo $LOGTIME&quot;: $text&quot; | tee -a $LOG;
+  fi
+  done
+ }
+
+ echo &quot;Log it!&quot; | log
+</code></pre>
+
+<p><strong>Current dir</strong></p>
+<p><code>dirname "$(readlink -f "$0")"</code></p>
+<p><strong>Try to find printers</strong></p>
+<pre><code class="sh">nmap -p 9100,515,631 192.168.1.1/24 -oX printers.xml
+</code></pre>
+
+<p><strong>Random number</strong></p>
+<pre><code class="sh">shuf -n 1 -i 60000-61000
+</code></pre>
+
+<p><strong>Fill all memory</strong></p>
+<pre><code class="sh">perl -e 'print &quot;My PID: $$n&quot;;
+ while(1){$x.=&quot;x&quot;x(1024**2); print &quot;Len: &quot;,length($x),&quot;n&quot;; sleep 1}'
+</code></pre>
+
+<p><strong>Size of directories</strong></p>
+<pre><code class="sh">du -smch --exclude={proc,sys,dev} ./\* | sort -h
+</code></pre>
               
             </div>
           </div>
@@ -258,7 +343,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../fzf/" class="btn btn-neutral float-right" title="fzf"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../cron/" class="btn btn-neutral float-right" title="cron"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../../elk/elasticsearch/" class="btn btn-neutral" title="Elastic Search"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -290,7 +375,7 @@
         <span><a href="../../elk/elasticsearch/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../fzf/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../cron/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

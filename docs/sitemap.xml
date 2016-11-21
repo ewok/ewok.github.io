@@ -4,7 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-11-20</lastmod>
+     <lastmod>2016-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,13 +13,13 @@
         
     <url>
      <loc>None/devops/</loc>
-     <lastmod>2016-11-20</lastmod>
+     <lastmod>2016-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/devops/travis-ci/</loc>
-     <lastmod>2016-11-20</lastmod>
+     <lastmod>2016-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -29,7 +29,7 @@
         
     <url>
      <loc>None/hashicorp/vault/</loc>
-     <lastmod>2016-11-20</lastmod>
+     <lastmod>2016-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -39,7 +39,7 @@
         
     <url>
      <loc>None/elk/elasticsearch/</loc>
-     <lastmod>2016-11-20</lastmod>
+     <lastmod>2016-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -49,43 +49,73 @@
         
     <url>
      <loc>None/tools/bash/</loc>
-     <lastmod>2016-11-20</lastmod>
+     <lastmod>2016-11-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/tools/cron/</loc>
+     <lastmod>2016-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/tools/fzf/</loc>
-     <lastmod>2016-11-20</lastmod>
+     <lastmod>2016-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/tools/git/</loc>
-     <lastmod>2016-11-20</lastmod>
+     <lastmod>2016-11-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/tools/iptables/</loc>
+     <lastmod>2016-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/tools/keybase/</loc>
-     <lastmod>2016-11-20</lastmod>
+     <lastmod>2016-11-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/tools/kvm/</loc>
+     <lastmod>2016-11-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/tools/linux/</loc>
+     <lastmod>2016-11-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/tools/mysql/</loc>
+     <lastmod>2016-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/tools/nvim/</loc>
-     <lastmod>2016-11-20</lastmod>
+     <lastmod>2016-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/tools/vim/</loc>
-     <lastmod>2016-11-20</lastmod>
+     <lastmod>2016-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/tools/zsh/</loc>
-     <lastmod>2016-11-20</lastmod>
+     <lastmod>2016-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -104,7 +134,7 @@
     
     <url>
      <loc>None/english/</loc>
-     <lastmod>2016-11-20</lastmod>
+     <lastmod>2016-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
