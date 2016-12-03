@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>fzf - ewoks docs(notes)</title>
+  <title>Startup keys - ewoks docs(notes)</title>
   
 
   <link rel="shortcut icon" href="../../img/favicon.ico">
@@ -20,7 +20,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "fzf";
+    var mkdocs_page_name = "Startup keys";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -115,97 +115,84 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../bash/">bash</a>
+        <a class="" href="../../tools/bash/">bash</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../cron/">cron</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">fzf</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#about">About</a></li>
-                
-                    <li><a class="toctree-l4" href="#recipes">Recipes</a></li>
-                
-                    <li><a class="toctree-l4" href="#license">License</a></li>
-                
-                    <li><a class="toctree-l4" href="#author">Author</a></li>
-                
-            
-            </ul>
+        <a class="" href="../../tools/cron/">cron</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../git/">git</a>
+        <a class="" href="../../tools/fzf/">fzf</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../iptables/">iptables</a>
+        <a class="" href="../../tools/git/">git</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../keybase/">keybase</a>
+        <a class="" href="../../tools/iptables/">iptables</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../kvm/">kvm</a>
+        <a class="" href="../../tools/keybase/">keybase</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../linux/">linux</a>
+        <a class="" href="../../tools/kvm/">kvm</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../mysql/">mysql</a>
+        <a class="" href="../../tools/linux/">linux</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../nvim/">neovim</a>
+        <a class="" href="../../tools/mysql/">mysql</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../vim/">vim</a>
+        <a class="" href="../../tools/nvim/">neovim</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../zsh/">zsh</a>
+        <a class="" href="../../tools/vim/">vim</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../tools/zsh/">zsh</a>
         
     </li>
 
@@ -256,8 +243,12 @@
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../../macos/startupkeys/">Startup keys</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Startup keys</a>
+        
+            <ul>
+            
+            </ul>
         
     </li>
 
@@ -287,11 +278,11 @@
     
       
         
-          <li>Tools &raquo;</li>
+          <li>MacOs &raquo;</li>
         
       
     
-    <li>fzf</li>
+    <li>Startup keys</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -301,58 +292,77 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="about">About</h1>
-<p>A command-line fuzzy finder written in Go</p>
-<p><img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" width="200"></p>
-<p>Fast, without dependencies. You can use it with <a href="../vim">vim</a>/<a href="../nvim/">neovim</a>. <a href="../bash/">Bash</a>/<a href="../zsh/">zsh</a> completions.</p>
-<p><a href="https://github.com/junegunn/fzf">Link</a></p>
-<h2 id="recipes">Recipes</h2>
-<p><strong>Search patterns</strong></p>
-<table>
+                <table>
 <thead>
 <tr>
-<th>Token</th>
-<th>Match type</th>
+<th>Hold during startup</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>sbtrkt</td>
-<td>fuzzy-match</td>
-<td>Items that match sbtrkt</td>
+<td>Shift ⇧</td>
+<td>Start up in Safe Mode.</td>
 </tr>
 <tr>
-<td>^music</td>
-<td>prefix-exact-match</td>
-<td>Items that start with music</td>
+<td>Option ⌥</td>
+<td>Start up to Startup Manager.</td>
 </tr>
 <tr>
-<td>.mp3$</td>
-<td>suffix-exact-match</td>
-<td>Items that end with .mp3</td>
+<td>C</td>
+<td>Start up from a bootable CD, DVD, or USB thumb drive (such as OS X install media).</td>
 </tr>
 <tr>
-<td>'wild</td>
-<td>exact-match (quoted)</td>
-<td>Items that include wild</td>
+<td>D</td>
+<td>Start up to either Apple Hardware Test or Apple Diagnostics, depending on which Mac you're using.</td>
 </tr>
 <tr>
-<td>!fire</td>
-<td>inverse-exact-match</td>
-<td>Items that do not include fire</td>
+<td>Option-D</td>
+<td>Start up to either Apple Hardware Test or Apple Diagnostics over the Internet.</td>
 </tr>
 <tr>
-<td>!.mp3$</td>
-<td>inverse-suffix-exact-match</td>
-<td>Items that do not end with .mp3</td>
+<td>N</td>
+<td>Start up from a compatible NetBoot server.</td>
+</tr>
+<tr>
+<td>Option-N</td>
+<td>Start up from a NetBoot server using the default boot image.</td>
+</tr>
+<tr>
+<td>Command (⌘)-R</td>
+<td>Start up from OS X Recovery.</td>
+</tr>
+<tr>
+<td>Command-Option-R</td>
+<td>Start up from OS X Recovery over the Internet.</td>
+</tr>
+<tr>
+<td>Command-Option-P-R</td>
+<td>Reset NVRAM. Release the keys after you hear the startup sound again.</td>
+</tr>
+<tr>
+<td>Command-S</td>
+<td>Start up in single-user mode.</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Start up in target disk mode.</td>
+</tr>
+<tr>
+<td>X</td>
+<td>Start up from an OS X startup volume when the Mac would otherwise start up from a non-OS X startup volume.</td>
+</tr>
+<tr>
+<td>Command-V</td>
+<td>Start up in verbose mode.</td>
+</tr>
+<tr>
+<td>Eject (⏏), F12, mouse button, or trackpad button</td>
+<td>Eject removable media, such as an optical disc.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="license">License</h2>
-<p><a href="https://github.com/junegunn/fzf/blob/master/LICENSE">MIT</a></p>
-<h2 id="author">Author</h2>
-<p><a href="https://github.com/junegunn">Junegunn Choi</a></p>
+<p><a href="https://support.apple.com/en-us/HT201255">Link</a></p>
               
             </div>
           </div>
@@ -360,10 +370,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../git/" class="btn btn-neutral float-right" title="git"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../cron/" class="btn btn-neutral" title="cron"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../english/" class="btn btn-neutral" title="English"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -389,10 +397,8 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../cron/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../english/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../git/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

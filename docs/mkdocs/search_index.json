@@ -274,6 +274,11 @@
             "location": "/english/#english", 
             "text": "", 
             "title": "English"
+        }, 
+        {
+            "location": "/macos/startupkeys/", 
+            "text": "Hold during startup\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nShift \u21e7\n\n\nStart up in Safe Mode.\n\n\n\n\n\n\nOption \u2325\n\n\nStart up to Startup Manager.\n\n\n\n\n\n\nC\n\n\nStart up from a bootable CD, DVD, or USB thumb drive (such as OS X install media).\n\n\n\n\n\n\nD\n\n\nStart up to either Apple Hardware Test or Apple Diagnostics, depending on which Mac you're using.\n\n\n\n\n\n\nOption-D\n\n\nStart up to either Apple Hardware Test or Apple Diagnostics over the Internet.\n\n\n\n\n\n\nN\n\n\nStart up from a compatible NetBoot server.\n\n\n\n\n\n\nOption-N\n\n\nStart up from a NetBoot server using the default boot image.\n\n\n\n\n\n\nCommand (\u2318)-R\n\n\nStart up from OS X Recovery.\n\n\n\n\n\n\nCommand-Option-R\n\n\nStart up from OS X Recovery over the Internet.\n\n\n\n\n\n\nCommand-Option-P-R\n\n\nReset NVRAM. Release the keys after you hear the startup sound again.\n\n\n\n\n\n\nCommand-S\n\n\nStart up in single-user mode.\n\n\n\n\n\n\nT\n\n\nStart up in target disk mode.\n\n\n\n\n\n\nX\n\n\nStart up from an OS X startup volume when the Mac would otherwise start up from a non-OS X startup volume.\n\n\n\n\n\n\nCommand-V\n\n\nStart up in verbose mode.\n\n\n\n\n\n\nEject (\u23cf), F12, mouse button, or trackpad button\n\n\nEject removable media, such as an optical disc.\n\n\n\n\n\n\n\n\nLink", 
+            "title": "Startup keys"
         }
     ]
 }
