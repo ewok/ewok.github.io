@@ -2,537 +2,174 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dev on Записки Турыча</title>
-    <link>https://ewok.github.io/tags/dev/index.xml</link>
+    <link>https://ewok.github.io/tags/dev/</link>
     <description>Recent content in Dev on Записки Турыча</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru_RU</language>
-    <atom:link href="https://ewok.github.io/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ewok.github.io/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Интересное в сети</title>
-      <link>https://ewok.github.io/intieriesnoie-v-sieti</link>
+      <link>https://ewok.github.io/intieriesnoie-v-sieti/</link>
       <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/intieriesnoie-v-sieti</guid>
-      <description>
-
-&lt;h3 id=&#34;haskell&#34;&gt;Haskell&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/272871/&#34;&gt;Пример работы с VK&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/272115&#34;&gt;«Страшные» абстракции Haskell без математики и без кода (почти). Часть I&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/207126/&#34;&gt;Зоопарк Алгебрaических Типов Данных&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://ohaskell.dshevchenko.biz/ru/index.html&#34;&gt;О прекрасном языке - языком человеческим&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://wiki.haskell.org/Tutorials/Programming_Haskell/Argument_handling&#34;&gt;Argument handling&lt;/a&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/245797/&#34;&gt;Теория категорий для программистов: предисловие&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/246009/&#34;&gt;Категория: суть композиции&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/247765/&#34;&gt;Типы и функции&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/248257/&#34;&gt;Категории, большие и малые&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/249113/&#34;&gt;Категории Клейсли&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/271927/&#34;&gt;Произведения и копроизведения&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/274103/&#34;&gt;Простые алгебраические типы данных&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;python&#34;&gt;Python&lt;/h3&gt;
-
-&lt;p&gt;Фреймворк умеет алертить об аномалиях в elastic search &lt;a href=&#34;http://github.com/Yelp/elastalert&#34;&gt;http://github.com/Yelp/elastalert&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Docker контейнер kibana &lt;a href=&#34;https://hub.docker.com/_/kibana/&#34;&gt;https://hub.docker.com/_/kibana/&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/270717/&#34;&gt;Пример рабоы с VK&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/pedrohml/smartbot&#34;&gt;Бот для slack/telegram на&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/crista/exercises-in-programming-style&#34;&gt;exercises-in-programming-style&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://fadymak.com/pages/useful_python_snippets.html&#34;&gt;some python snippets&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;немного-про-vim&#34;&gt;Немного про VIM&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mhinz/vim-galore&#34;&gt;Еще один гайд&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;немного-про-hadoop&#34;&gt;Немного про Hadoop&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://hub.docker.com/r/cloudera/quickstart/&#34;&gt;Cloudera quickstart docker&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;немного-про-java&#34;&gt;Немного про Java&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.mojohaus.org/versions-maven-plugin/examples/display-dependency-updates.html&#34;&gt;Ищем dependency update&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;немного-про-devops&#34;&gt;Немного про Devops&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://coderwall.com/p/9b_lfq/deploying-maven-artifacts-from-travis&#34;&gt;Deploying maven artifacts from Travis&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Generate a shell based build script - &lt;a href=&#34;https://github.com/travis-ci/travis-build&#34;&gt;Travis Build&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;разное&#34;&gt;Разное&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/OrkoHunter/ping-me&#34;&gt;Пингани себя&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Еще одна попытка создать тайловый менеджер окон на Mac Os X, самая удачная(IMHO) - &lt;a href=&#34;https://github.com/koekeishiya/kwm&#34;&gt;https://github.com/koekeishiya/kwm&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://ewok.github.io/intieriesnoie-v-sieti/</guid>
+      <description>Haskell  Пример работы с VK «Страшные» абстракции Haskell без математики и без кода (почти). Часть I Зоопарк Алгебрaических Типов Данных О прекрасном языке - языком человеческим Argument handling
+ Теория категорий для программистов: предисловие
+ Категория: суть композиции
+ Типы и функции
+ Категории, большие и малые
+ Категории Клейсли
+ Произведения и копроизведения
+ Простые алгебраические типы данных   Python Фреймворк умеет алертить об аномалиях в elastic search http://github.</description>
     </item>
     
     <item>
       <title>Vim plugins</title>
-      <link>https://ewok.github.io/follow-my-lead</link>
+      <link>https://ewok.github.io/follow-my-lead/</link>
       <pubDate>Sat, 10 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/follow-my-lead</guid>
-      <description>&lt;p&gt;Интересные и полезные плагины&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ktonga/vim-follow-my-lead&#34;&gt;Follow-my-lead&lt;/a&gt; - плагин показывает все сочетания из вашего конфига с клавишей leader&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://sjl.bitbucket.org/gundo.vim&#34;&gt;Gundo&lt;/a&gt; - древовидное UNDO&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Shougo/unite.vim&#34;&gt;Unite&lt;/a&gt; - замена CtrlP и т.д. Быстрый доступ ко всякого рода спискам.&lt;/li&gt;
-&lt;li&gt;Fugitive - это git :)&lt;/li&gt;
-&lt;li&gt;Syntastic - проверка синтаксиса с очень большим списком поддерживаемых форматов&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/xolox/vim-session&#34;&gt;Vim-session&lt;/a&gt; - управление сессиями. Использую для сохранения состояния проектов.&lt;/li&gt;
-&lt;li&gt;Surround - это без комментариев :)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/vimwiki/vimwiki&#34;&gt;Vimwiki&lt;/a&gt; - wiki.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://ewok.github.io/follow-my-lead/</guid>
+      <description>Интересные и полезные плагины
+ Follow-my-lead - плагин показывает все сочетания из вашего конфига с клавишей leader Gundo - древовидное UNDO Unite - замена CtrlP и т.д. Быстрый доступ ко всякого рода спискам. Fugitive - это git :) Syntastic - проверка синтаксиса с очень большим списком поддерживаемых форматов Vim-session - управление сессиями. Использую для сохранения состояния проектов. Surround - это без комментариев :) Vimwiki - wiki.  </description>
     </item>
     
     <item>
       <title>Любимые горячие клавишы в pycharm</title>
-      <link>https://ewok.github.io/liubimyie-ghoriachiie-klavishy-v-pycharm</link>
+      <link>https://ewok.github.io/liubimyie-ghoriachiie-klavishy-v-pycharm/</link>
       <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/liubimyie-ghoriachiie-klavishy-v-pycharm</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;New File - Alt+Ins&lt;/li&gt;
-&lt;li&gt;Settings - Ctrl+Alt+S&lt;/li&gt;
-&lt;li&gt;Find Usage - Alt+F7&lt;/li&gt;
-&lt;li&gt;Select Word - Ctrl+W&lt;/li&gt;
-&lt;li&gt;Quick Definition - Ctrl+Shift+I&lt;/li&gt;
-&lt;li&gt;Quick Documentation - Ctrl+Q&lt;/li&gt;
-&lt;li&gt;Parameters - Ctrl+P&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Find&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Class - Ctrl+N&lt;/li&gt;
-&lt;li&gt;Diclaration - Ctrl+B&lt;/li&gt;
-&lt;li&gt;Implementaion - Ctrl+Alt+B&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Super method - Ctrl+U&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Test - Ctrl+Shift+T&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Bookmark - F11/Ctrl+F11&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Show  - Shift+F11&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Structure + Ctrl+F12&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Type + Ctrl+H&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Next Error - F2&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Override method - Ctrl+O&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Surround - Ctrl+Alt+T&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Live templ + Ctrl+J&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Reformat + Alt + L&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Auto indent + Ctrl+Alt+I&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;DoubleShift - Search everywhere&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Refactor this - Alt+R&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://ewok.github.io/liubimyie-ghoriachiie-klavishy-v-pycharm/</guid>
+      <description>New File - Alt+Ins Settings - Ctrl+Alt+S Find Usage - Alt+F7 Select Word - Ctrl+W Quick Definition - Ctrl+Shift+I Quick Documentation - Ctrl+Q Parameters - Ctrl+P  Find
+ Class - Ctrl+N Diclaration - Ctrl+B Implementaion - Ctrl+Alt+B Super method - Ctrl+U
+ Test - Ctrl+Shift+T
+ Bookmark - F11/Ctrl+F11
+ Show - Shift+F11
+ Structure + Ctrl+F12
+ Type + Ctrl+H
+ Next Error - F2
+ Override method - Ctrl+O</description>
     </item>
     
     <item>
       <title>Интерактивный учебник по vim</title>
-      <link>https://ewok.github.io/intieraktivnyi-uchiebnik-po-vim</link>
+      <link>https://ewok.github.io/intieraktivnyi-uchiebnik-po-vim/</link>
       <pubDate>Mon, 09 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/intieraktivnyi-uchiebnik-po-vim</guid>
-      <description>&lt;p&gt;Кто давно хотел изучить замечательный редактор vim, но кого останавливал высокий порог вхождения, могут попробовать &lt;a href=&#34;http://www.openvim.com/tutorial.html&#34;&gt;интерактивный учебник&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/intieraktivnyi-uchiebnik-po-vim/</guid>
+      <description>Кто давно хотел изучить замечательный редактор vim, но кого останавливал высокий порог вхождения, могут попробовать интерактивный учебник.</description>
     </item>
     
     <item>
       <title>Библиотека sh для python</title>
-      <link>https://ewok.github.io/bibliotieka-sh-dlia-python</link>
+      <link>https://ewok.github.io/bibliotieka-sh-dlia-python/</link>
       <pubDate>Mon, 05 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/bibliotieka-sh-dlia-python</guid>
-      <description>&lt;p&gt;Классная штука. Позволяет обращаться к командам shell в контексте языка python. Примеры из документации:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;from sh import ifconfig
-print(ifconfig(&amp;quot;wlan0&amp;quot;))
-
-# checkout master branch
-git.checkout(&amp;quot;master&amp;quot;)
-
-# print(the contents of this directory
-print(ls(&amp;quot;-l&amp;quot;))
-
-# get the longest line of this file
-longest_line = wc(\_\_file\_\_, &amp;quot;-L&amp;quot;)
-
-from sh import git, sudo
-
-# resolves to &amp;quot;git branch -v&amp;quot;
-print(git.branch(&amp;quot;-v&amp;quot;))
-print(git(&amp;quot;branch&amp;quot;, &amp;quot;-v&amp;quot;)) # the same command
-
-# resolves to &amp;quot;sudo /bin/ls /root&amp;quot;
-print(sudo.ls(&amp;quot;/root&amp;quot;))
-print(sudo(&amp;quot;/bin/ls&amp;quot;, &amp;quot;/root&amp;quot;)) # the same command
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Единственное замечание это с вызовами имен файлов по маске. Вот это не сработает:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import sh
-sh.ls(&amp;quot;*.py&amp;quot;)`
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Нужно так:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import sh
-sh.ls(sh.glob(&amp;quot;*.py&amp;quot;))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Подробнее в документации&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/bibliotieka-sh-dlia-python/</guid>
+      <description>Классная штука. Позволяет обращаться к командам shell в контексте языка python. Примеры из документации:
+from sh import ifconfig print(ifconfig(&amp;quot;wlan0&amp;quot;)) # checkout master branch git.checkout(&amp;quot;master&amp;quot;) # print(the contents of this directory print(ls(&amp;quot;-l&amp;quot;)) # get the longest line of this file longest_line = wc(\_\_file\_\_, &amp;quot;-L&amp;quot;) from sh import git, sudo # resolves to &amp;quot;git branch -v&amp;quot; print(git.branch(&amp;quot;-v&amp;quot;)) print(git(&amp;quot;branch&amp;quot;, &amp;quot;-v&amp;quot;)) # the same command # resolves to &amp;quot;sudo /bin/ls /root&amp;quot; print(sudo.ls(&amp;quot;/root&amp;quot;)) print(sudo(&amp;quot;/bin/ls&amp;quot;, &amp;quot;/root&amp;quot;)) # the same command  Единственное замечание это с вызовами имен файлов по маске.</description>
     </item>
     
     <item>
       <title>TimeComplexity(python)</title>
-      <link>https://ewok.github.io/timecomplexitypython</link>
+      <link>https://ewok.github.io/timecomplexitypython/</link>
       <pubDate>Thu, 20 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/timecomplexitypython</guid>
-      <description>&lt;p&gt;Шпаргалка&lt;/p&gt;
-
-&lt;p&gt;&amp;lsquo;n&amp;rsquo; - количество элементов в контейнере
-&amp;lsquo;k&amp;rsquo; - значение параметра либо количество элементов в параметре&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;list(Списки):
-
-Operation | Average Case | Amortized Worst Case
-Copy            O(n)                O(n)
-Appednd[1]      O(1)                O(1)
-Insert          O(n)                O(n)
-Get item        O(1)                O(1)
-Set item        O(1)                O(1)
-Delete item     O(n)                O(n)
-Iteration       O(n)                O(n)
-Get slice       O(k)                O(k)
-Delete slice    O(n)                O(n)
-Set slice       O(k + n)            O(k + n)
-Extend[1]       O(k)                O(k)
-Sort            O(n log n)          O(n log n)
-Multiply        O(nk)               O(nk)
-x in s          O(n)     
-min(s), max(s)  O(n)     
-Get length      O(1)                O(1)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;set(Множества):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Operation               Average Case                Worst Case
-x in s                      O(1)                        O(n) 
-Union s|t                   O(len(s) + len(t))       
-Intersection s&amp;amp;t            O(min(len(s), len(t))       O(len(s) * lent(t)) 
-Difference s-t              O(len(s))    
-s.difference_update(t)      O(len(t))    
-Symmetric Difference s^t    O(len(s))               O(len(s) * len(t)) 
-s.symmetric_difference_update(t)    O(len(t))       O(len(t) * len(s))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;dict(Словари):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Operation   Average Case    Worst Case
-Copy            O(n)            O(n)
-Get item        O(1)            O(n)
-Set item        O(1)            O(n)
-Delete item     O(1)            O(n)
-Iteration       O(n)            O(n)
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <guid>https://ewok.github.io/timecomplexitypython/</guid>
+      <description>Шпаргалка
+&amp;lsquo;n&amp;rsquo; - количество элементов в контейнере &amp;lsquo;k&amp;rsquo; - значение параметра либо количество элементов в параметре
+list(Списки): Operation | Average Case | Amortized Worst Case Copy O(n) O(n) Appednd[1] O(1) O(1) Insert O(n) O(n) Get item O(1) O(1) Set item O(1) O(1) Delete item O(n) O(n) Iteration O(n) O(n) Get slice O(k) O(k) Delete slice O(n) O(n) Set slice O(k + n) O(k + n) Extend[1] O(k) O(k) Sort O(n log n) O(n log n) Multiply O(nk) O(nk) x in s O(n) min(s), max(s) O(n) Get length O(1) O(1)  set(Множества):</description>
     </item>
     
     <item>
       <title>django-filebrowser-no-grappelli &#43; tinymce</title>
-      <link>https://ewok.github.io/django-filebrowser-no-grappelli-tinymce</link>
+      <link>https://ewok.github.io/django-filebrowser-no-grappelli-tinymce/</link>
       <pubDate>Wed, 14 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/django-filebrowser-no-grappelli-tinymce</guid>
-      <description>&lt;p&gt;Настройка, уже вполне популярной связки django-filebrowser-no-grappelli + tinymce.&lt;/p&gt;
-
-&lt;p&gt;Настройку я производил по инструкции из гугла:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Урлы:
-url(r&amp;rsquo;^tinymce/filebrowser/&amp;lsquo;,include(&amp;lsquo;filebrowser.urls&amp;rsquo;))&lt;/li&gt;
-&lt;li&gt;settings:
-INSTALLED_APPS = (&amp;hellip;, &amp;lsquo;filebrowser&amp;rsquo;,)
-FILEBROWSER_DIRECTORY = &amp;lsquo;upload/&amp;rsquo;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Но! Настройка не шла.
-Оказывается по умолчанию django-filebrowser за основу путей берет MEDIA_ROOT и MEDIA_URL, что вполне логично!
-А так как я ими не пользовался, все у меня было по STATIC_ROOT и STATIC_URL, то у меня вылазили ошибки.&lt;/p&gt;
-
-&lt;p&gt;Нужно указать:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;FILEBROWSER_MEDIA_ROOT = STATIC_ROOT
-FILEBROWSER_MEDIA_URL = STATIC_URL
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;После чего у меня все заработало как должно.&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/django-filebrowser-no-grappelli-tinymce/</guid>
+      <description>Настройка, уже вполне популярной связки django-filebrowser-no-grappelli + tinymce.
+Настройку я производил по инструкции из гугла:
+ Урлы: url(r&amp;rsquo;^tinymce/filebrowser/&amp;lsquo;,include(&amp;lsquo;filebrowser.urls&amp;rsquo;)) settings: INSTALLED_APPS = (&amp;hellip;, &amp;lsquo;filebrowser&amp;rsquo;,) FILEBROWSER_DIRECTORY = &amp;lsquo;upload/&amp;rsquo;  Но! Настройка не шла. Оказывается по умолчанию django-filebrowser за основу путей берет MEDIA_ROOT и MEDIA_URL, что вполне логично! А так как я ими не пользовался, все у меня было по STATIC_ROOT и STATIC_URL, то у меня вылазили ошибки.
+Нужно указать:
+FILEBROWSER_MEDIA_ROOT = STATIC_ROOT FILEBROWSER_MEDIA_URL = STATIC_URL  После чего у меня все заработало как должно.</description>
     </item>
     
     <item>
       <title>Sqlalchemy</title>
-      <link>https://ewok.github.io/sqlalchemy</link>
+      <link>https://ewok.github.io/sqlalchemy/</link>
       <pubDate>Sat, 03 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/sqlalchemy</guid>
-      <description>&lt;p&gt;Познакомился с питоновской ORM(Object Relational Mapper) sqlalchemy. Похожа на джанговскую но имеет больше возможностей. Закопался в документацию, читать не перечитать.&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/sqlalchemy/</guid>
+      <description>Познакомился с питоновской ORM(Object Relational Mapper) sqlalchemy. Похожа на джанговскую но имеет больше возможностей. Закопался в документацию, читать не перечитать.</description>
     </item>
     
     <item>
       <title>Flask</title>
-      <link>https://ewok.github.io/flask</link>
+      <link>https://ewok.github.io/flask/</link>
       <pubDate>Thu, 01 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/flask</guid>
-      <description>&lt;p&gt;Flask микро фреймворк написанный на python. Легковесный, на нем я решил написать для себя сайт портфолио. Совмещу изучение фреймворка с полезным делом.&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/flask/</guid>
+      <description>Flask микро фреймворк написанный на python. Легковесный, на нем я решил написать для себя сайт портфолио. Совмещу изучение фреймворка с полезным делом.</description>
     </item>
     
     <item>
       <title>zip zip</title>
-      <link>https://ewok.github.io/zip-zip</link>
+      <link>https://ewok.github.io/zip-zip/</link>
       <pubDate>Sun, 14 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/zip-zip</guid>
-      <description>&lt;p&gt;Прикольный пример из книги Лутца(&amp;ldquo;Изучаем Python&amp;rdquo;).&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; X = (1, 2)
-
-&amp;gt;&amp;gt;&amp;gt; Y = (3, 4)
-
-&amp;gt;&amp;gt;&amp;gt; A, B = zip(*zip(X, Y))
-
-&amp;gt;&amp;gt;&amp;gt; A
-
-(1, 2)
-
-&amp;gt;&amp;gt;&amp;gt; B
-
-(3, 4)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Распаковываем запакованные кортежи запаковыванием.&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/zip-zip/</guid>
+      <description>Прикольный пример из книги Лутца(&amp;ldquo;Изучаем Python&amp;rdquo;).
+&amp;gt;&amp;gt;&amp;gt; X = (1, 2) &amp;gt;&amp;gt;&amp;gt; Y = (3, 4) &amp;gt;&amp;gt;&amp;gt; A, B = zip(*zip(X, Y)) &amp;gt;&amp;gt;&amp;gt; A (1, 2) &amp;gt;&amp;gt;&amp;gt; B (3, 4)  Распаковываем запакованные кортежи запаковыванием.</description>
     </item>
     
     <item>
       <title>hibernate через pm-utils</title>
-      <link>https://ewok.github.io/hibernate-chieriez-pm-utils</link>
+      <link>https://ewok.github.io/hibernate-chieriez-pm-utils/</link>
       <pubDate>Wed, 22 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/hibernate-chieriez-pm-utils</guid>
-      <description>&lt;p&gt;В русской вики arch в статье о pm-utils там где описывается настройка hibernate, почему то не указано что нужно прописывать hook: resume для в mkinitcpio.&lt;/p&gt;
-
-&lt;p&gt;Поэтому у меня в hibernate уходил комп нормально, но не возвращался из него. Рекомендую читать английский вариант статьи там все прописано.&lt;/p&gt;
-
-&lt;p&gt;В итоге все выглядит так:&lt;/p&gt;
-
-&lt;p&gt;В файл /boot/grub/menu.lst добавляется resume=/path/to/swap/drive&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# (0) Arch Linux 
-title Arch Linux root (hd0,0) 
-kernel /vmlinuz26 root=/dev/sda3 resume=/dev/sda2 ro vga=0 
-initrd /kernel26.img
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Или вариант с UUD:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# (0) Arch Linux 
-title Arch Linux root (hd0,0) 
-kernel /vmlinuz26 cryptdevice=/dev/sda2:main root=/dev/mapper/main-root \
- resume=/dev/disk/by-uuid/1d893194-b151-43cd-a89e-6f89bd8b9f99 ro 
-
-initrd /kernel26.img
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;В файле /etc/mkinitcpio.conf добавляется хук resume после scsi pata но перед filesystems:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;HOOKS=&amp;quot;base udev fsck autodetect pata scsi sata usb resume filesystems usbinput shutdown&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;У меня все заработало. Для более тонких настроек читайте вики.&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/hibernate-chieriez-pm-utils/</guid>
+      <description>В русской вики arch в статье о pm-utils там где описывается настройка hibernate, почему то не указано что нужно прописывать hook: resume для в mkinitcpio.
+Поэтому у меня в hibernate уходил комп нормально, но не возвращался из него. Рекомендую читать английский вариант статьи там все прописано.
+В итоге все выглядит так:
+В файл /boot/grub/menu.lst добавляется resume=/path/to/swap/drive
+# (0) Arch Linux title Arch Linux root (hd0,0) kernel /vmlinuz26 root=/dev/sda3 resume=/dev/sda2 ro vga=0 initrd /kernel26.</description>
     </item>
     
     <item>
       <title>Экспериментирую с кэшем</title>
-      <link>https://ewok.github.io/ekspierimientiruiu-s-keshiem</link>
+      <link>https://ewok.github.io/ekspierimientiruiu-s-keshiem/</link>
       <pubDate>Wed, 15 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/ekspierimientiruiu-s-keshiem</guid>
-      <description>&lt;p&gt;Добавил кэширование страниц в блоге. Нагрузки конечно нет никакой, просто ради эксперимента.&lt;/p&gt;
-
-&lt;p&gt;Почитать о том как это работает можно здесь:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://djbook.ru/ch13.html&#34;&gt;http://djbook.ru/ch13.html&lt;/a&gt;&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/ekspierimientiruiu-s-keshiem/</guid>
+      <description>Добавил кэширование страниц в блоге. Нагрузки конечно нет никакой, просто ради эксперимента.
+Почитать о том как это работает можно здесь:
+http://djbook.ru/ch13.html</description>
     </item>
     
     <item>
       <title>Django Aggregation</title>
-      <link>https://ewok.github.io/django-aggregation</link>
+      <link>https://ewok.github.io/django-aggregation/</link>
       <pubDate>Thu, 19 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/django-aggregation</guid>
-      <description>&lt;p&gt;ORM это всегда баланс между производительностью и переносимостью.&lt;/p&gt;
-
-&lt;p&gt;Наткнулся на очень интересную тему. Расширение функционала ORM джанги. Изучив материал, переделал и оптимизировал модели блога.&lt;/p&gt;
-
-&lt;p&gt;Коротко в примерах.&lt;/p&gt;
-
-&lt;p&gt;Есть модель:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;class Author(models.Model):
-   name = models.CharField(max_length=100)
-   age = models.IntegerField()
-   friends = models.ManyToManyField(&#39;self&#39;, blank=True)
-
-class Publisher(models.Model):
-   name = models.CharField(max_length=300)
-   num_awards = models.IntegerField()
-
-class Book(models.Model):
-   isbn = models.CharField(max_length=9)
-   name = models.CharField(max_length=300)
-   pages = models.IntegerField()
-   price = models.DecimalField(max_digits=10, decimal_places=2)
-   rating = models.FloatField()
-   authors = models.ManyToManyField(Author)
-   publisher = models.ForeignKey(Publisher)
-   pubdate = models.DateField()
-
-class Store(models.Model):
-   name = models.CharField(max_length=300)
-   books = models.ManyToManyField(Book)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;С ней можно делать:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# Общее количество книг
-&amp;gt;&amp;gt;&amp;gt; Book.objects.count()
-2452
-
-# Общее количество книг с издателем BaloneyPress
-&amp;gt;&amp;gt;&amp;gt; Book.objects.filter(publisher__name=&#39;BaloneyPress&#39;).count()
-73
-
-# Средняя цена за книгу
-&amp;gt;&amp;gt;&amp;gt; from django.db.models import Avg
-&amp;gt;&amp;gt;&amp;gt; Book.objects.all().aggregate(Avg(&#39;price&#39;))
-{&#39;price__avg&#39;: 34.35}
-
-# Максимальная цена по всем книгам
-&amp;gt;&amp;gt;&amp;gt; from django.db.models import Max
-&amp;gt;&amp;gt;&amp;gt; Book.objects.all().aggregate(Max(&#39;price&#39;))
-{&#39;price__max&#39;: Decimal(&#39;81.20&#39;)}
-
-# По каждому издателю, количество книг как &amp;quot;num_books&amp;quot;.
-&amp;gt;&amp;gt;&amp;gt; from django.db.models import Count
-&amp;gt;&amp;gt;&amp;gt; pubs = Publisher.objects.annotate(num_books=Count(&#39;book&#39;))
-&amp;gt;&amp;gt;&amp;gt; pubs
-[&amp;lt;Publisher BaloneyPress&amp;gt;, &amp;lt;Publisher SalamiPress&amp;gt;, ...]
-&amp;gt;&amp;gt;&amp;gt; pubs[0].num_books
-73
-
-# Пятерка издателей по количеству книг.
-&amp;gt;&amp;gt;&amp;gt; from django.db.models import Count
-&amp;gt;&amp;gt;&amp;gt; pubs = Publisher.objects.annotate(num_books=Count(&#39;book&#39;)).order_by(&#39;-num_books&#39;)[:5]
-&amp;gt;&amp;gt;&amp;gt; pubs[0].num_books
-1323
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Причем все эти методы в итоге дают QuerySet который можно фильтровать, сортировать и т.д.&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/django-aggregation/</guid>
+      <description>ORM это всегда баланс между производительностью и переносимостью.
+Наткнулся на очень интересную тему. Расширение функционала ORM джанги. Изучив материал, переделал и оптимизировал модели блога.
+Коротко в примерах.
+Есть модель:
+class Author(models.Model): name = models.CharField(max_length=100) age = models.IntegerField() friends = models.ManyToManyField(&#39;self&#39;, blank=True) class Publisher(models.Model): name = models.CharField(max_length=300) num_awards = models.IntegerField() class Book(models.Model): isbn = models.CharField(max_length=9) name = models.CharField(max_length=300) pages = models.IntegerField() price = models.DecimalField(max_digits=10, decimal_places=2) rating = models.FloatField() authors = models.ManyToManyField(Author) publisher = models.</description>
     </item>
     
     <item>
       <title>PEP8 коротко и по-русски</title>
-      <link>https://ewok.github.io/pep8-korotko-i-po-russki</link>
+      <link>https://ewok.github.io/pep8-korotko-i-po-russki/</link>
       <pubDate>Mon, 16 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/pep8-korotko-i-po-russki</guid>
-      <description>&lt;p&gt;Взято отсюда
-Полезно знать как писать в python стиле:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;используйте 4 пробела для отступа и не используйте табы, не смешивайте их&lt;/li&gt;
-&lt;li&gt;максимальная длина строки 79 символов; для разрыва строки используйте отступы или бэкслеш&lt;/li&gt;
-&lt;li&gt;функции верхнего уровня и определения классов отделяйте двумя пустыми строками&lt;/li&gt;
-&lt;li&gt;определения методов внутри класса отделяйте одной пустой строкой&lt;/li&gt;
-&lt;li&gt;дополнительные пустые строки используйте для логической группировки методов&lt;/li&gt;
-&lt;li&gt;кодировка файлов должна быть Latin-1, а в Питоне 3 и выше - utf-8&lt;/li&gt;
-&lt;li&gt;каждый импортируемый модуль с новой строки&lt;/li&gt;
-&lt;li&gt;порядок импортов: стандартные модули, third-party модули, локальные модули приложения&lt;/li&gt;
-&lt;li&gt;пустая строка между каждой группой импортов&lt;/li&gt;
-&lt;li&gt;избегайте лишних пробелов внутри скобок; перед запятыми, точкой с запятой и двоеточиями&lt;/li&gt;
-&lt;li&gt;избегайте лишних пробелов перед скобками с аргументами функций и скобками с индексами&lt;/li&gt;
-&lt;li&gt;избегайте больше чем одного пробела между операторами (= - + итд)&lt;/li&gt;
-&lt;li&gt;используйте одиночный пробел для выделения операторов&lt;/li&gt;
-&lt;li&gt;избегайте пробелов вокруг &amp;lsquo;=&amp;rsquo;, который используется для параметров по-умолчанию и keyword аргументов&lt;/li&gt;
-&lt;li&gt;обновляйте комментарии вместе с кодом&lt;/li&gt;
-&lt;li&gt;пишите комментарии по-английски&lt;/li&gt;
-&lt;li&gt;избегайте имён из одиночных l, O, I&lt;/li&gt;
-&lt;li&gt;для модулей и пакетов используйте короткие всестрочные имена&lt;/li&gt;
-&lt;li&gt;для классов используйте СловаНачинаютсяЗаглавными имена&lt;/li&gt;
-&lt;li&gt;для функций используйте слова_с_подчёркиваниями (или смешанныйРегистр если так получилось исторически)&lt;/li&gt;
-&lt;li&gt;для методов используйте слова_с_подчёркиваниями имена&lt;/li&gt;
-&lt;li&gt;для внутренних методов и переменных _подчёркивание_перед_словом&lt;/li&gt;
-&lt;li&gt;для проверки на None используйте is или is not, не используйте операторы сравнения&lt;/li&gt;
-&lt;li&gt;используйте исключения основанные на классах &amp;ndash; наследованные от Exception&lt;/li&gt;
-&lt;li&gt;используйте методы класса string вместо строковых функций&lt;/li&gt;
-&lt;li&gt;используйте &amp;ldquo;.startswith() и &amp;ldquo;.endswith() вместо вырезки из строк для проверки префиксов и суффиксов&lt;/li&gt;
-&lt;li&gt;используйте isinstance() для проверки типа&lt;/li&gt;
-&lt;li&gt;не сравнивайте булевы переменные с True и False&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://ewok.github.io/pep8-korotko-i-po-russki/</guid>
+      <description>Взято отсюда Полезно знать как писать в python стиле:
+ используйте 4 пробела для отступа и не используйте табы, не смешивайте их максимальная длина строки 79 символов; для разрыва строки используйте отступы или бэкслеш функции верхнего уровня и определения классов отделяйте двумя пустыми строками определения методов внутри класса отделяйте одной пустой строкой дополнительные пустые строки используйте для логической группировки методов кодировка файлов должна быть Latin-1, а в Питоне 3 и выше - utf-8 каждый импортируемый модуль с новой строки порядок импортов: стандартные модули, third-party модули, локальные модули приложения пустая строка между каждой группой импортов избегайте лишних пробелов внутри скобок; перед запятыми, точкой с запятой и двоеточиями избегайте лишних пробелов перед скобками с аргументами функций и скобками с индексами избегайте больше чем одного пробела между операторами (= - + итд) используйте одиночный пробел для выделения операторов избегайте пробелов вокруг &amp;lsquo;=&amp;rsquo;, который используется для параметров по-умолчанию и keyword аргументов обновляйте комментарии вместе с кодом пишите комментарии по-английски избегайте имён из одиночных l, O, I для модулей и пакетов используйте короткие всестрочные имена для классов используйте СловаНачинаютсяЗаглавными имена для функций используйте слова_с_подчёркиваниями (или смешанныйРегистр если так получилось исторически) для методов используйте слова_с_подчёркиваниями имена для внутренних методов и переменных _подчёркивание_перед_словом для проверки на None используйте is или is not, не используйте операторы сравнения используйте исключения основанные на классах &amp;ndash; наследованные от Exception используйте методы класса string вместо строковых функций используйте &amp;ldquo;.</description>
     </item>
     
   </channel>

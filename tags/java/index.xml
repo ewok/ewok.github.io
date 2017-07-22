@@ -2,18 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on Записки Турыча</title>
-    <link>https://ewok.github.io/tags/java/index.xml</link>
+    <link>https://ewok.github.io/tags/java/</link>
     <description>Recent content in Java on Записки Турыча</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru_RU</language>
-    <atom:link href="https://ewok.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Nov 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ewok.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>No one puts Java in the container</title>
-      <link>https://ewok.github.io/no-one-puts-java-in-the-container</link>
+      <link>https://ewok.github.io/no-one-puts-java-in-the-container/</link>
       <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/no-one-puts-java-in-the-container</guid>
+      <guid>https://ewok.github.io/no-one-puts-java-in-the-container/</guid>
       <description>&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/hJyAfC-Z2xk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/p&gt;</description>
     </item>

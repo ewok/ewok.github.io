@@ -1,649 +1,753 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ewok.github.io/</loc>
+    <loc>https://ewok.github.io/no-one-puts-java-in-the-container/</loc>
     <lastmod>2016-11-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/no-one-puts-java-in-the-container</loc>
-    <lastmod>2016-11-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ewok.github.io/hugo-and-go</loc>
+    <loc>https://ewok.github.io/hugo-and-go/</loc>
     <lastmod>2016-02-22T17:50:45+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/keep-running-app</loc>
+    <loc>https://ewok.github.io/keep-running-app/</loc>
     <lastmod>2016-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/intieriesnoie-v-sieti-2</loc>
+    <loc>https://ewok.github.io/intieriesnoie-v-sieti-2/</loc>
     <lastmod>2016-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/rapoo-3300p</loc>
+    <loc>https://ewok.github.io/rapoo-3300p/</loc>
     <lastmod>2016-01-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/intieriesnoie-v-sieti</loc>
+    <loc>https://ewok.github.io/intieriesnoie-v-sieti/</loc>
     <lastmod>2016-01-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/haskell-issue1</loc>
+    <loc>https://ewok.github.io/haskell-issue1/</loc>
     <lastmod>2016-01-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/vim-hardtime</loc>
+    <loc>https://ewok.github.io/vim-hardtime/</loc>
     <lastmod>2016-01-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/haskell-init</loc>
+    <loc>https://ewok.github.io/haskell-init/</loc>
     <lastmod>2015-12-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/python</loc>
+    <loc>https://ewok.github.io/python/</loc>
     <lastmod>2015-12-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/follow-my-lead</loc>
+    <loc>https://ewok.github.io/follow-my-lead/</loc>
     <lastmod>2015-10-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/tak-prosto</loc>
+    <loc>https://ewok.github.io/tak-prosto/</loc>
     <lastmod>2015-09-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/ansible-dar</loc>
+    <loc>https://ewok.github.io/ansible-dar/</loc>
     <lastmod>2015-07-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/100-filmov-pro-zombiplan</loc>
+    <loc>https://ewok.github.io/100-filmov-pro-zombiplan/</loc>
     <lastmod>2015-05-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/probiel-v-tochkie-montirovaniia-fstab</loc>
+    <loc>https://ewok.github.io/probiel-v-tochkie-montirovaniia-fstab/</loc>
     <lastmod>2015-04-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/virsh-polieznyie-kommandy</loc>
+    <loc>https://ewok.github.io/virsh-polieznyie-kommandy/</loc>
     <lastmod>2015-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/wish-list</loc>
+    <loc>https://ewok.github.io/wish-list/</loc>
     <lastmod>2015-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/search</loc>
+    <loc>https://ewok.github.io/search/</loc>
     <lastmod>2015-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/ochieriednoi-pierieiezd</loc>
+    <loc>https://ewok.github.io/ochieriednoi-pierieiezd/</loc>
     <lastmod>2015-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/iesli-pieriestal-obnovliatsia-fail-resolv-conf-na-mint</loc>
+    <loc>https://ewok.github.io/iesli-pieriestal-obnovliatsia-fail-resolv-conf-na-mint/</loc>
     <lastmod>2015-03-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/typeerror-tipuesearch-is-not-a-function</loc>
+    <loc>https://ewok.github.io/typeerror-tipuesearch-is-not-a-function/</loc>
     <lastmod>2015-03-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/dostighator-tsieliei</loc>
+    <loc>https://ewok.github.io/dostighator-tsieliei/</loc>
     <lastmod>2015-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/file-too-large-qcow2-file</loc>
+    <loc>https://ewok.github.io/file-too-large-qcow2-file/</loc>
     <lastmod>2014-12-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/vypolnieniie-po-kronu-v-posliednii-dien-miesiatsa</loc>
+    <loc>https://ewok.github.io/vypolnieniie-po-kronu-v-posliednii-dien-miesiatsa/</loc>
     <lastmod>2014-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/liubimyie-ghoriachiie-klavishy-v-pycharm</loc>
+    <loc>https://ewok.github.io/liubimyie-ghoriachiie-klavishy-v-pycharm/</loc>
     <lastmod>2014-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/the-animals-house-of-the-rising-sundeath-metal-version</loc>
+    <loc>https://ewok.github.io/the-animals-house-of-the-rising-sundeath-metal-version/</loc>
     <lastmod>2014-06-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/intieraktivnyi-uchiebnik-po-vim</loc>
+    <loc>https://ewok.github.io/intieraktivnyi-uchiebnik-po-vim/</loc>
     <lastmod>2014-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/bibliotieka-sh-dlia-python</loc>
+    <loc>https://ewok.github.io/bibliotieka-sh-dlia-python/</loc>
     <lastmod>2014-05-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/s-1-aprielia</loc>
+    <loc>https://ewok.github.io/s-1-aprielia/</loc>
     <lastmod>2014-03-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/skype-pulse</loc>
+    <loc>https://ewok.github.io/skype-pulse/</loc>
     <lastmod>2014-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/pacman_2</loc>
+    <loc>https://ewok.github.io/pacman_2/</loc>
     <lastmod>2014-01-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/ulichnoye</loc>
+    <loc>https://ewok.github.io/ulichnoye/</loc>
     <lastmod>2014-01-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/vivaldi-tribute</loc>
+    <loc>https://ewok.github.io/vivaldi-tribute/</loc>
     <lastmod>2014-01-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/girl9</loc>
+    <loc>https://ewok.github.io/girl9/</loc>
     <lastmod>2014-01-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/s-nastupaiushchim-2014-ghodom</loc>
+    <loc>https://ewok.github.io/s-nastupaiushchim-2014-ghodom/</loc>
     <lastmod>2013-12-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/vzghliad</loc>
+    <loc>https://ewok.github.io/vzghliad/</loc>
     <lastmod>2013-12-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/dievushka-dnia-8</loc>
+    <loc>https://ewok.github.io/dievushka-dnia-8/</loc>
     <lastmod>2013-12-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/iesli-niepravilno-otobrazhaietsia-kodirovka-na-saitiedlia-adminov</loc>
+    <loc>https://ewok.github.io/iesli-niepravilno-otobrazhaietsia-kodirovka-na-saitiedlia-adminov/</loc>
     <lastmod>2013-12-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/shparghalka-po-administrirovaniiu-mysql</loc>
+    <loc>https://ewok.github.io/shparghalka-po-administrirovaniiu-mysql/</loc>
     <lastmod>2013-11-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/daft-punk-pentatonix</loc>
+    <loc>https://ewok.github.io/daft-punk-pentatonix/</loc>
     <lastmod>2013-11-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/dievushka-dnia-7</loc>
+    <loc>https://ewok.github.io/dievushka-dnia-7/</loc>
     <lastmod>2013-11-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/dievushka-dnia-6</loc>
+    <loc>https://ewok.github.io/dievushka-dnia-6/</loc>
     <lastmod>2013-10-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/dievushka-dnia-5</loc>
+    <loc>https://ewok.github.io/dievushka-dnia-5/</loc>
     <lastmod>2013-10-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/dievushka-dnia-4</loc>
+    <loc>https://ewok.github.io/dievushka-dnia-4/</loc>
     <lastmod>2013-10-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/dievushka-dnia-3</loc>
+    <loc>https://ewok.github.io/dievushka-dnia-3/</loc>
     <lastmod>2013-10-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/moby-dick-full</loc>
+    <loc>https://ewok.github.io/moby-dick-full/</loc>
     <lastmod>2013-10-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/intieriesnyie-komandy-linux-konsoli</loc>
+    <loc>https://ewok.github.io/intieriesnyie-komandy-linux-konsoli/</loc>
     <lastmod>2013-10-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/smiena-crlf-na-lf-i-naoborot</loc>
+    <loc>https://ewok.github.io/smiena-crlf-na-lf-i-naoborot/</loc>
     <lastmod>2013-10-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/dievushka-dnia-2</loc>
+    <loc>https://ewok.github.io/dievushka-dnia-2/</loc>
     <lastmod>2013-10-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/noch-svietla</loc>
+    <loc>https://ewok.github.io/noch-svietla/</loc>
     <lastmod>2013-10-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/guns-n-roses-dont-cry</loc>
+    <loc>https://ewok.github.io/guns-n-roses-dont-cry/</loc>
     <lastmod>2013-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/pierieimienovaniie-failov-po-poriadku</loc>
+    <loc>https://ewok.github.io/pierieimienovaniie-failov-po-poriadku/</loc>
     <lastmod>2013-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/dievushka-dnia-1</loc>
+    <loc>https://ewok.github.io/dievushka-dnia-1/</loc>
     <lastmod>2013-10-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/btsync</loc>
+    <loc>https://ewok.github.io/btsync/</loc>
     <lastmod>2013-10-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/zapustil-novyi-blogh-na-statikie</loc>
+    <loc>https://ewok.github.io/zapustil-novyi-blogh-na-statikie/</loc>
     <lastmod>2013-10-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/zyxel-keenetic-ii</loc>
+    <loc>https://ewok.github.io/zyxel-keenetic-ii/</loc>
     <lastmod>2013-07-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/shikarnoie-vidieo-ot-makaskilla</loc>
+    <loc>https://ewok.github.io/shikarnoie-vidieo-ot-makaskilla/</loc>
     <lastmod>2013-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/zyxel-keenetic</loc>
+    <loc>https://ewok.github.io/zyxel-keenetic/</loc>
     <lastmod>2013-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/obnovilssia</loc>
+    <loc>https://ewok.github.io/obnovilssia/</loc>
     <lastmod>2013-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/dlia-nastroieniia</loc>
+    <loc>https://ewok.github.io/dlia-nastroieniia/</loc>
     <lastmod>2013-06-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/kripta</loc>
+    <loc>https://ewok.github.io/kripta/</loc>
     <lastmod>2013-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/makiiazh-v-stilie-win8</loc>
+    <loc>https://ewok.github.io/makiiazh-v-stilie-win8/</loc>
     <lastmod>2013-05-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/mysli</loc>
+    <loc>https://ewok.github.io/mysli/</loc>
     <lastmod>2013-03-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/ant-na-sony-xperia-s-s-proshivkoi-cyanogenmod-10</loc>
+    <loc>https://ewok.github.io/ant-na-sony-xperia-s-s-proshivkoi-cyanogenmod-10/</loc>
     <lastmod>2013-03-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/tri-samykh-ghlavnykh-slova</loc>
+    <loc>https://ewok.github.io/tri-samykh-ghlavnykh-slova/</loc>
     <lastmod>2013-01-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/s-nastupaiushchim-2013-ghodom</loc>
+    <loc>https://ewok.github.io/s-nastupaiushchim-2013-ghodom/</loc>
     <lastmod>2012-12-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/p90x-miesiats-proshiel</loc>
+    <loc>https://ewok.github.io/p90x-miesiats-proshiel/</loc>
     <lastmod>2012-12-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/timecomplexitypython</loc>
+    <loc>https://ewok.github.io/timecomplexitypython/</loc>
     <lastmod>2012-12-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/zver</loc>
+    <loc>https://ewok.github.io/zver/</loc>
     <lastmod>2012-12-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/opiat-zima-v-kyrghyzstanie</loc>
+    <loc>https://ewok.github.io/opiat-zima-v-kyrghyzstanie/</loc>
     <lastmod>2012-12-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/p90x</loc>
+    <loc>https://ewok.github.io/p90x/</loc>
     <lastmod>2012-12-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/smartfonam-okazyvaiet-uzhie-20-liet</loc>
+    <loc>https://ewok.github.io/smartfonam-okazyvaiet-uzhie-20-liet/</loc>
     <lastmod>2012-11-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/shifr</loc>
+    <loc>https://ewok.github.io/shifr/</loc>
     <lastmod>2012-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/rolling-stones</loc>
+    <loc>https://ewok.github.io/rolling-stones/</loc>
     <lastmod>2012-11-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/bolshoi-i-ghroznyi-politsieiskii-runieta</loc>
+    <loc>https://ewok.github.io/bolshoi-i-ghroznyi-politsieiskii-runieta/</loc>
     <lastmod>2012-11-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/ingress</loc>
+    <loc>https://ewok.github.io/ingress/</loc>
     <lastmod>2012-11-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/django-filebrowser-no-grappelli-tinymce</loc>
+    <loc>https://ewok.github.io/django-filebrowser-no-grappelli-tinymce/</loc>
     <lastmod>2012-11-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/prikolnaia-stranitsa-404-u-github</loc>
+    <loc>https://ewok.github.io/prikolnaia-stranitsa-404-u-github/</loc>
     <lastmod>2012-11-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/prostoi-shablon</loc>
+    <loc>https://ewok.github.io/prostoi-shablon/</loc>
     <lastmod>2012-11-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/sqlalchemy</loc>
+    <loc>https://ewok.github.io/sqlalchemy/</loc>
     <lastmod>2012-11-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/flask</loc>
+    <loc>https://ewok.github.io/flask/</loc>
     <lastmod>2012-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/ssh-proksi</loc>
+    <loc>https://ewok.github.io/ssh-proksi/</loc>
     <lastmod>2012-10-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/zip-zip</loc>
+    <loc>https://ewok.github.io/zip-zip/</loc>
     <lastmod>2012-10-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/pismo</loc>
+    <loc>https://ewok.github.io/pismo/</loc>
     <lastmod>2012-10-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/iuiu</loc>
+    <loc>https://ewok.github.io/iuiu/</loc>
     <lastmod>2012-09-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/pro-kurivo</loc>
+    <loc>https://ewok.github.io/pro-kurivo/</loc>
     <lastmod>2012-09-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/po-odnomu</loc>
+    <loc>https://ewok.github.io/po-odnomu/</loc>
     <lastmod>2012-08-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/putieshiestvuiem</loc>
+    <loc>https://ewok.github.io/putieshiestvuiem/</loc>
     <lastmod>2012-07-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/pokinuli-rodnoi-bishkiek</loc>
+    <loc>https://ewok.github.io/pokinuli-rodnoi-bishkiek/</loc>
     <lastmod>2012-06-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/s-dniem-pobiedy</loc>
+    <loc>https://ewok.github.io/s-dniem-pobiedy/</loc>
     <lastmod>2012-05-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/samsung-galaxy-tab-7-7untitled</loc>
+    <loc>https://ewok.github.io/samsung-galaxy-tab-7-7untitled/</loc>
     <lastmod>2012-04-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/uff-zhara</loc>
+    <loc>https://ewok.github.io/uff-zhara/</loc>
     <lastmod>2012-03-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/rf-vyshla-iz-dvustoronniegho-soghlashieniia-s-kr-ob-uproshchiennom-poluchienii-ghrazhdanstva</loc>
+    <loc>https://ewok.github.io/rf-vyshla-iz-dvustoronniegho-soghlashieniia-s-kr-ob-uproshchiennom-poluchienii-ghrazhdanstva/</loc>
     <lastmod>2012-03-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/sdielali-kotu-pasport</loc>
+    <loc>https://ewok.github.io/sdielali-kotu-pasport/</loc>
     <lastmod>2012-03-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/nu-vot-i-viesna-prishla</loc>
+    <loc>https://ewok.github.io/nu-vot-i-viesna-prishla/</loc>
     <lastmod>2012-02-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/podkliuchil-rss-v-bloghie</loc>
+    <loc>https://ewok.github.io/podkliuchil-rss-v-bloghie/</loc>
     <lastmod>2012-02-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/proshu-proshchieniia-u-vsiekh-kogho-obidiel</loc>
+    <loc>https://ewok.github.io/proshu-proshchieniia-u-vsiekh-kogho-obidiel/</loc>
     <lastmod>2012-02-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/hibernate-chieriez-pm-utils</loc>
+    <loc>https://ewok.github.io/hibernate-chieriez-pm-utils/</loc>
     <lastmod>2012-02-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/vacuum-im</loc>
+    <loc>https://ewok.github.io/vacuum-im/</loc>
     <lastmod>2012-02-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/ekspierimientiruiu-s-keshiem</loc>
+    <loc>https://ewok.github.io/ekspierimientiruiu-s-keshiem/</loc>
     <lastmod>2012-02-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/pomienial-dizain-blogha</loc>
+    <loc>https://ewok.github.io/pomienial-dizain-blogha/</loc>
     <lastmod>2012-02-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/sborka-ustanovliennogho-softa-v-pakiet-iz-arch</loc>
+    <loc>https://ewok.github.io/sborka-ustanovliennogho-softa-v-pakiet-iz-arch/</loc>
     <lastmod>2012-02-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/tsientralnyi-pacman-kesh-dlia-domashniei-sieti</loc>
+    <loc>https://ewok.github.io/tsientralnyi-pacman-kesh-dlia-domashniei-sieti/</loc>
     <lastmod>2012-02-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/prosto-tak-i-pro-odnoklassnikov-tozhie</loc>
+    <loc>https://ewok.github.io/prosto-tak-i-pro-odnoklassnikov-tozhie/</loc>
     <lastmod>2012-02-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/sudo-insults</loc>
+    <loc>https://ewok.github.io/sudo-insults/</loc>
     <lastmod>2012-01-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/pozitiv-2</loc>
+    <loc>https://ewok.github.io/pozitiv-2/</loc>
     <lastmod>2012-01-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/pozitiv</loc>
+    <loc>https://ewok.github.io/pozitiv/</loc>
     <lastmod>2012-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/russkiie-v-massovom-poriadkie-pokidaiut-kirghiziiu</loc>
+    <loc>https://ewok.github.io/russkiie-v-massovom-poriadkie-pokidaiut-kirghiziiu/</loc>
     <lastmod>2012-01-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/django-aggregation</loc>
+    <loc>https://ewok.github.io/django-aggregation/</loc>
     <lastmod>2012-01-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/takaia-rabota</loc>
+    <loc>https://ewok.github.io/takaia-rabota/</loc>
     <lastmod>2012-01-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/death-vader</loc>
+    <loc>https://ewok.github.io/death-vader/</loc>
     <lastmod>2012-01-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/pep8-korotko-i-po-russki</loc>
+    <loc>https://ewok.github.io/pep8-korotko-i-po-russki/</loc>
     <lastmod>2012-01-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/brrr-zhim-zhim</loc>
+    <loc>https://ewok.github.io/brrr-zhim-zhim/</loc>
     <lastmod>2012-01-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/vot-eto-ia-ponimaiu-diieta</loc>
+    <loc>https://ewok.github.io/vot-eto-ia-ponimaiu-diieta/</loc>
     <lastmod>2011-12-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/it-happens-dukh-staroi-shkoly</loc>
+    <loc>https://ewok.github.io/it-happens-dukh-staroi-shkoly/</loc>
     <lastmod>2011-12-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/p-podkralsia-niezamietno</loc>
+    <loc>https://ewok.github.io/p-podkralsia-niezamietno/</loc>
     <lastmod>2011-12-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/skoro-novyi-god-tovarishchi</loc>
+    <loc>https://ewok.github.io/skoro-novyi-god-tovarishchi/</loc>
     <lastmod>2011-12-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/khlieboriez-so-stazhiem</loc>
+    <loc>https://ewok.github.io/khlieboriez-so-stazhiem/</loc>
     <lastmod>2011-12-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/glamurnaia-odiezhka-dlia-fotoapparata</loc>
+    <loc>https://ewok.github.io/glamurnaia-odiezhka-dlia-fotoapparata/</loc>
     <lastmod>2011-12-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/khudaia-kakai-to-naviernoie-iogh</loc>
+    <loc>https://ewok.github.io/khudaia-kakai-to-naviernoie-iogh/</loc>
     <lastmod>2011-11-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/kostiumchik-odnako</loc>
+    <loc>https://ewok.github.io/kostiumchik-odnako/</loc>
     <lastmod>2011-11-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/vot-takaia-pravda-zhizni</loc>
+    <loc>https://ewok.github.io/vot-takaia-pravda-zhizni/</loc>
     <lastmod>2011-10-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/django-reinhardt</loc>
+    <loc>https://ewok.github.io/django-reinhardt/</loc>
     <lastmod>2011-10-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/nirvana-smells-like-teen-spirit</loc>
+    <loc>https://ewok.github.io/nirvana-smells-like-teen-spirit/</loc>
     <lastmod>2011-08-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/vsielienskaia-srieda-razrabotki</loc>
+    <loc>https://ewok.github.io/vsielienskaia-srieda-razrabotki/</loc>
     <lastmod>2011-08-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/asus-eeepc-1018p</loc>
+    <loc>https://ewok.github.io/asus-eeepc-1018p/</loc>
     <lastmod>2011-01-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/openfire</loc>
+    <loc>https://ewok.github.io/openfire/</loc>
     <lastmod>2010-12-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ewok.github.io/stumpwm</loc>
+    <loc>https://ewok.github.io/stumpwm/</loc>
     <lastmod>2010-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ewok.github.io/tags/admins/</loc>
+    <lastmod>2016-01-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ewok.github.io/tags/dev/</loc>
+    <lastmod>2016-01-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ewok.github.io/tags/go/</loc>
+    <lastmod>2016-02-22T17:50:45+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ewok.github.io/tags/haskell/</loc>
+    <lastmod>2016-02-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ewok.github.io/tags/java/</loc>
+    <lastmod>2016-11-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ewok.github.io/tags/music/</loc>
+    <lastmod>2014-06-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ewok.github.io/tags/news/</loc>
+    <lastmod>2015-03-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ewok.github.io/tags/offline/</loc>
+    <lastmod>2016-01-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ewok.github.io/tags/online/</loc>
+    <lastmod>2016-02-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ewok.github.io/tags/other/</loc>
+    <lastmod>2015-05-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ewok.github.io/tags/pictures/</loc>
+    <lastmod>2015-09-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ewok.github.io/post/</loc>
+    <lastmod>2016-11-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ewok.github.io/tags/python/</loc>
+    <lastmod>2016-02-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ewok.github.io/tags/sport/</loc>
+    <lastmod>2012-12-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ewok.github.io/tags/</loc>
+    <lastmod>2016-01-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ewok.github.io/tags/video/</loc>
+    <lastmod>2014-01-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ewok.github.io/tags/vim/</loc>
+    <lastmod>2016-02-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ewok.github.io/</loc>
+    <lastmod>2016-11-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

@@ -2,128 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Записки Турыча</title>
-    <link>https://ewok.github.io/index.xml</link>
+    <link>https://ewok.github.io/</link>
     <description>Recent content on Записки Турыча</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru_RU</language>
     <lastBuildDate>Sun, 20 Nov 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ewok.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://ewok.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>No one puts Java in the container</title>
-      <link>https://ewok.github.io/no-one-puts-java-in-the-container</link>
+      <link>https://ewok.github.io/no-one-puts-java-in-the-container/</link>
       <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/no-one-puts-java-in-the-container</guid>
+      <guid>https://ewok.github.io/no-one-puts-java-in-the-container/</guid>
       <description>&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/hJyAfC-Z2xk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>HuGo and Go</title>
-      <link>https://ewok.github.io/hugo-and-go</link>
+      <link>https://ewok.github.io/hugo-and-go/</link>
       <pubDate>Mon, 22 Feb 2016 17:50:45 +0300</pubDate>
       
-      <guid>https://ewok.github.io/hugo-and-go</guid>
+      <guid>https://ewok.github.io/hugo-and-go/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://ewok.github.io/images/2016/02/gopher_head.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Во первых, я очередной раз сменил блоговый движок. На этот раз я остановил свой выбор на &lt;a href=&#34;http://gohugo.io&#34;&gt;hugo&lt;/a&gt;. Hugo - генератор статичных страниц, написанный на &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt;. Довольно таки зрелый продукт. Подробнее познакомиться с ним можно на &lt;a href=&#34;http://gohugo.io&#34;&gt;официальной странице&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Во вторых, я познакомился с языком &lt;a href=&#34;https://golang.org&#34;&gt;Go&lt;/a&gt;. Я нашел что язык мне симпатичен, прост в освоении и удобен в повседневных задачах devops инженера, и не только.&lt;/p&gt;
-
-&lt;p&gt;Основными плюсами для меня стали:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Хорошая поддержка кроссплатформенности&lt;/li&gt;
-&lt;li&gt;Скорость выполнения&lt;/li&gt;
-&lt;li&gt;Параллелизм&lt;/li&gt;
-&lt;li&gt;Компиляция в один бинарник, без зависимостей&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Очень удобно написать какую нибудь небольшую программку, закинуть ее на сервер и не думать о сторонних библиотеках(как например в python).&lt;/p&gt;
-
-&lt;p&gt;Есть конечно и минусы, но язык относительно молодой и будем надеяться с каждым релизом будет еще лучше.&lt;/p&gt;
-
-&lt;h2 id=&#34;материалы-по-go-для-начала&#34;&gt;Материалы по Go для начала:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Первое на что наткнулся, это &lt;a href=&#34;http://eao197.narod.ru/desc/short_effective_go.html&#34;&gt;Краткий пересказ Effective Go на русском языке&lt;/a&gt; - вещь довольно старая но еще актуальная.&lt;/li&gt;
-&lt;li&gt;Непосредственно сам &lt;a href=&#34;https://golang.org/doc/effective_go.html&#34;&gt;Effective Go&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gobyexample.com/&#34;&gt;Go в примерах&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.gitbook.com/book/astaxie/build-web-application-with-golang/details&#34;&gt;Build web application with Golang&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;тулзовины&#34;&gt;Тулзовины:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Продвинутый парсинг аргументов - &lt;a href=&#34;https://github.com/jessevdk/go-flags&#34;&gt;go-flags&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Для работы с github - &lt;a href=&#34;https://github.com/google/go-github&#34;&gt;go-github&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Конвертер curl запросов в код Go - &lt;a href=&#34;http://mholt.github.io/curl-to-go/&#34;&gt;curl-to-go&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Работаем с elasticsearch - &lt;a href=&#34;https://github.com/mattbaird/elastigo&#34;&gt;elastigo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Для любителей VIM - &lt;a href=&#34;https://github.com/fatih/vim-go&#34;&gt;vim-go&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Работа с yaml - &lt;a href=&#34;https://github.com/go-yaml/yaml&#34;&gt;go-yaml&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Демонизируем программу - &lt;a href=&#34;https://github.com/tyranron/daemonigo&#34;&gt;daemonigo&lt;/a&gt; -&lt;/li&gt;
-&lt;li&gt;Посылаем метрику в ганглию - &lt;a href=&#34;https://github.com/jbuchbinder/go-gmetric&#34;&gt;go-gmetric&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Рефлексируем структуры - &lt;a href=&#34;https://github.com/fatih/structs&#34;&gt;structs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Делаем дашборд в терминале - &lt;a href=&#34;https://github.com/gizak/termui&#34;&gt;termui&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;VPN с помощью DHT - &lt;a href=&#34;https://github.com/meshbird/meshbird&#34;&gt;meshbird&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Держим приложение запущенным(macos x)</title>
-      <link>https://ewok.github.io/keep-running-app</link>
+      <link>https://ewok.github.io/keep-running-app/</link>
       <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/keep-running-app</guid>
+      <guid>https://ewok.github.io/keep-running-app/</guid>
       <description>&lt;p&gt;Если у вас есть приложение которое вы бы хотели держать всегда запущенным, вам поможет этот рецепт:&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Прописываем агент в ~/Library/LaunchAgents&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Например telegram.plist&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
-&amp;lt;!DOCTYPE plist PUBLIC &amp;quot;-//Apple//DTD PLIST 1.0//EN&amp;quot; &amp;quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;quot;&amp;gt;
-&amp;lt;plist version=&amp;quot;1.0&amp;quot;&amp;gt;
-&amp;lt;dict&amp;gt;
-  &amp;lt;key&amp;gt;Label&amp;lt;/key&amp;gt;
-  &amp;lt;string&amp;gt;user.telegram&amp;lt;/string&amp;gt;
-  &amp;lt;key&amp;gt;KeepAlive&amp;lt;/key&amp;gt;
-  &amp;lt;true/&amp;gt;
-  &amp;lt;key&amp;gt;Program&amp;lt;/key&amp;gt;  &amp;lt;string&amp;gt;/Applications/Telegram.app/Contents/MacOS/Telegram&amp;lt;/string&amp;gt;
-&amp;lt;/dict&amp;gt;
-&amp;lt;/plist&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Запускаем наш агент&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;launchctl load ~/Library/LaunchAgents/telegram.plist
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;После этого наше приложение будет постоянно запускаться после закрытия.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Вернуть как было, можно командой:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;launchctl remove user.telegram
-&lt;/code&gt;&lt;/pre&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Интересное в сети 2</title>
-      <link>https://ewok.github.io/intieriesnoie-v-sieti-2</link>
+      <link>https://ewok.github.io/intieriesnoie-v-sieti-2/</link>
       <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/intieriesnoie-v-sieti-2</guid>
+      <guid>https://ewok.github.io/intieriesnoie-v-sieti-2/</guid>
       <description>&lt;h3 id=&#34;haskell&#34;&gt;Haskell&lt;/h3&gt;
 
 &lt;ul&gt;
@@ -162,151 +87,46 @@
     
     <item>
       <title>Купил забавного зверя</title>
-      <link>https://ewok.github.io/rapoo-3300p</link>
+      <link>https://ewok.github.io/rapoo-3300p/</link>
       <pubDate>Thu, 21 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/rapoo-3300p</guid>
-      <description>&lt;p&gt;Мелкий, недорогой. Питается &amp;ldquo;мизинчиковой&amp;rdquo; батарейкой.
-&lt;img src=&#34;https://ewok.github.io/images/2016/01/3300P_3300Pbai.png&#34; alt=&#34;rapoo 330P&#34; /&gt;&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/rapoo-3300p/</guid>
+      <description>Мелкий, недорогой. Питается &amp;ldquo;мизинчиковой&amp;rdquo; батарейкой. </description>
     </item>
     
     <item>
       <title>Интересное в сети</title>
-      <link>https://ewok.github.io/intieriesnoie-v-sieti</link>
+      <link>https://ewok.github.io/intieriesnoie-v-sieti/</link>
       <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/intieriesnoie-v-sieti</guid>
-      <description>
-
-&lt;h3 id=&#34;haskell&#34;&gt;Haskell&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/272871/&#34;&gt;Пример работы с VK&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/272115&#34;&gt;«Страшные» абстракции Haskell без математики и без кода (почти). Часть I&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/207126/&#34;&gt;Зоопарк Алгебрaических Типов Данных&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://ohaskell.dshevchenko.biz/ru/index.html&#34;&gt;О прекрасном языке - языком человеческим&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://wiki.haskell.org/Tutorials/Programming_Haskell/Argument_handling&#34;&gt;Argument handling&lt;/a&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/245797/&#34;&gt;Теория категорий для программистов: предисловие&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/246009/&#34;&gt;Категория: суть композиции&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/247765/&#34;&gt;Типы и функции&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/248257/&#34;&gt;Категории, большие и малые&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/249113/&#34;&gt;Категории Клейсли&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/271927/&#34;&gt;Произведения и копроизведения&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/274103/&#34;&gt;Простые алгебраические типы данных&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;python&#34;&gt;Python&lt;/h3&gt;
-
-&lt;p&gt;Фреймворк умеет алертить об аномалиях в elastic search &lt;a href=&#34;http://github.com/Yelp/elastalert&#34;&gt;http://github.com/Yelp/elastalert&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Docker контейнер kibana &lt;a href=&#34;https://hub.docker.com/_/kibana/&#34;&gt;https://hub.docker.com/_/kibana/&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://habrahabr.ru/post/270717/&#34;&gt;Пример рабоы с VK&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/pedrohml/smartbot&#34;&gt;Бот для slack/telegram на&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/crista/exercises-in-programming-style&#34;&gt;exercises-in-programming-style&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://fadymak.com/pages/useful_python_snippets.html&#34;&gt;some python snippets&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;немного-про-vim&#34;&gt;Немного про VIM&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mhinz/vim-galore&#34;&gt;Еще один гайд&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;немного-про-hadoop&#34;&gt;Немного про Hadoop&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://hub.docker.com/r/cloudera/quickstart/&#34;&gt;Cloudera quickstart docker&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;немного-про-java&#34;&gt;Немного про Java&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.mojohaus.org/versions-maven-plugin/examples/display-dependency-updates.html&#34;&gt;Ищем dependency update&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;немного-про-devops&#34;&gt;Немного про Devops&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://coderwall.com/p/9b_lfq/deploying-maven-artifacts-from-travis&#34;&gt;Deploying maven artifacts from Travis&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Generate a shell based build script - &lt;a href=&#34;https://github.com/travis-ci/travis-build&#34;&gt;Travis Build&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;разное&#34;&gt;Разное&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/OrkoHunter/ping-me&#34;&gt;Пингани себя&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Еще одна попытка создать тайловый менеджер окон на Mac Os X, самая удачная(IMHO) - &lt;a href=&#34;https://github.com/koekeishiya/kwm&#34;&gt;https://github.com/koekeishiya/kwm&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://ewok.github.io/intieriesnoie-v-sieti/</guid>
+      <description>Haskell  Пример работы с VK «Страшные» абстракции Haskell без математики и без кода (почти). Часть I Зоопарк Алгебрaических Типов Данных О прекрасном языке - языком человеческим Argument handling
+ Теория категорий для программистов: предисловие
+ Категория: суть композиции
+ Типы и функции
+ Категории, большие и малые
+ Категории Клейсли
+ Произведения и копроизведения
+ Простые алгебраические типы данных   Python Фреймворк умеет алертить об аномалиях в elastic search http://github.</description>
     </item>
     
     <item>
       <title>Haskell на неделе</title>
-      <link>https://ewok.github.io/haskell-issue1</link>
+      <link>https://ewok.github.io/haskell-issue1/</link>
       <pubDate>Sun, 03 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/haskell-issue1</guid>
-      <description>&lt;p&gt;Что интересного я встретил на неделе:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Изучение иностранных языков по технологии Learn languages through fiction - &lt;a href=&#34;https://github.com/jekor/vocabulink&#34;&gt;https://github.com/jekor/vocabulink&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Шелл на haskell - &lt;a href=&#34;https://github.com/chrisdone/hell&#34;&gt;https://github.com/chrisdone/hell&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jekor/hesh&#34;&gt;hesh&lt;/a&gt; - инструмент для удобного написания скриптов на haskell
-Пример:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# !/usr/bin/env hesh
--- Backup a PostgreSQL database to an encrypted file.
-
-main = do
-  args &amp;lt;- System.Environment.getArgs
-  case args of
-    [database] -&amp;gt; do
-      today &amp;lt;- $(date +%Y-%m-%d)
-      let file = database ++ &amp;quot;-&amp;quot; ++ today ++ &amp;quot;.sql.gpg&amp;quot;
-      $(pg_dump $database) |&amp;gt; $(gpg -e -r $EMAIL) /&amp;gt; file
-    _ -&amp;gt; do
-      progName &amp;lt;- System.Environment.getProgName
-      $(echo &amp;quot;Usage: $progName &amp;lt;database&amp;gt;&amp;quot;) /&amp;gt; &amp;quot;/dev/stderr&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Практическое применение haskell - &lt;a href=&#34;http://habrahabr.ru/post/272871/&#34;&gt;http://habrahabr.ru/post/272871/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Приобрел пару книжек(кстати скидки на packtpub) -&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Haskell Data Analysis Cookbook - Nishant Shukla&lt;/li&gt;
-&lt;li&gt;Haskell Design Patterns - Ryan Lemmer&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://ewok.github.io/haskell-issue1/</guid>
+      <description>Что интересного я встретил на неделе:
+ Изучение иностранных языков по технологии Learn languages through fiction - https://github.com/jekor/vocabulink Шелл на haskell - https://github.com/chrisdone/hell hesh - инструмент для удобного написания скриптов на haskell Пример:
+# !/usr/bin/env hesh -- Backup a PostgreSQL database to an encrypted file. main = do args &amp;lt;- System.Environment.getArgs case args of [database] -&amp;gt; do today &amp;lt;- $(date +%Y-%m-%d) let file = database ++ &amp;quot;-&amp;quot; ++ today ++ &amp;quot;.</description>
     </item>
     
     <item>
       <title>Еще больше vim</title>
-      <link>https://ewok.github.io/vim-hardtime</link>
+      <link>https://ewok.github.io/vim-hardtime/</link>
       <pubDate>Sun, 03 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/vim-hardtime</guid>
+      <guid>https://ewok.github.io/vim-hardtime/</guid>
       <description>&lt;p&gt;Для тех кто хочет использовать vim в стиле vim way:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/wikitopian/hardmode&#34;&gt;hardmode&lt;/a&gt; и &lt;a href=&#34;https://github.com/takac/vim-hardtime&#34;&gt;hardtime&lt;/a&gt; &lt;/p&gt;</description>
@@ -314,211 +134,1212 @@ main = do
     
     <item>
       <title>Haskell init</title>
-      <link>https://ewok.github.io/haskell-init</link>
+      <link>https://ewok.github.io/haskell-init/</link>
       <pubDate>Sat, 26 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/haskell-init</guid>
-      <description>&lt;p&gt;Первый пост в моем блоге про haskell.&lt;/p&gt;
-
-&lt;p&gt;Я давно собирался познакомиться с этим языком программирования, но меня отпугивал его синтаксис. Все эти стрелочки, точки и остальные знаки препинания.
-Прошлый раз поиск основного инструмента для работы, привел меня к &lt;a href=&#34;https://ewok.github.io/tag/python&#34;&gt;python&lt;/a&gt;, о чем я не жалею.&lt;/p&gt;
-
-&lt;p&gt;Но сейчас речь не об этом. Итак, haskell это чистый функциональный, ленивый, компилируемый язык программирования с сильной статической типизацией. С автоматическим выведением типов. На данный момент меня привлекает то что программу можно скомпилировать и (конечно же) функциональная составляющая.&lt;/p&gt;
-
-&lt;p&gt;Haskell в своем роде некая &amp;ldquo;песочница&amp;rdquo; для отработки новых технологий в ЯП. Многие языки заимствовали наработки из haskell. Например list comprehension в том же python.&lt;/p&gt;
-
-&lt;p&gt;Но всю эту информацию можно найти в интернете, не вижу смысла ее дублировать.&lt;/p&gt;
-
-&lt;p&gt;Прикладываю список ресурсов, который пригодится для знакомства с haskell(список будет обновляться):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.haskell.org/&#34;&gt;Официальный сайт&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://ruhaskell.org&#34;&gt;Русское сообщество хаскелистов&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gitter.im/ruHaskell/forall&#34;&gt;gitter вышеупомянутого сообщества&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://bananasandlenses.net&#34;&gt;Бананы и линзы&lt;/a&gt; - подкаст о haskell&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://learnyouahaskell.com&#34;&gt;Learn You a Haskell&lt;/a&gt; - книга пойдет для начинающих, можно почитать бесплатно online&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://ewok.github.io/haskell-init/</guid>
+      <description>Первый пост в моем блоге про haskell.
+Я давно собирался познакомиться с этим языком программирования, но меня отпугивал его синтаксис. Все эти стрелочки, точки и остальные знаки препинания. Прошлый раз поиск основного инструмента для работы, привел меня к python, о чем я не жалею.
+Но сейчас речь не об этом. Итак, haskell это чистый функциональный, ленивый, компилируемый язык программирования с сильной статической типизацией. С автоматическим выведением типов. На данный момент меня привлекает то что программу можно скомпилировать и (конечно же) функциональная составляющая.</description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>https://ewok.github.io/python</link>
+      <link>https://ewok.github.io/python/</link>
       <pubDate>Sat, 26 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/python</guid>
-      <description>&lt;p&gt;Здесь пойдет таймлайн для замечательного скриптового ЯП python. С которым я познакомился несколько лет назад и применяю до сих пор в своей работе и дома.&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/python/</guid>
+      <description>Здесь пойдет таймлайн для замечательного скриптового ЯП python. С которым я познакомился несколько лет назад и применяю до сих пор в своей работе и дома.</description>
     </item>
     
     <item>
       <title>Vim plugins</title>
-      <link>https://ewok.github.io/follow-my-lead</link>
+      <link>https://ewok.github.io/follow-my-lead/</link>
       <pubDate>Sat, 10 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/follow-my-lead</guid>
-      <description>&lt;p&gt;Интересные и полезные плагины&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ktonga/vim-follow-my-lead&#34;&gt;Follow-my-lead&lt;/a&gt; - плагин показывает все сочетания из вашего конфига с клавишей leader&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://sjl.bitbucket.org/gundo.vim&#34;&gt;Gundo&lt;/a&gt; - древовидное UNDO&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Shougo/unite.vim&#34;&gt;Unite&lt;/a&gt; - замена CtrlP и т.д. Быстрый доступ ко всякого рода спискам.&lt;/li&gt;
-&lt;li&gt;Fugitive - это git :)&lt;/li&gt;
-&lt;li&gt;Syntastic - проверка синтаксиса с очень большим списком поддерживаемых форматов&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/xolox/vim-session&#34;&gt;Vim-session&lt;/a&gt; - управление сессиями. Использую для сохранения состояния проектов.&lt;/li&gt;
-&lt;li&gt;Surround - это без комментариев :)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/vimwiki/vimwiki&#34;&gt;Vimwiki&lt;/a&gt; - wiki.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://ewok.github.io/follow-my-lead/</guid>
+      <description>Интересные и полезные плагины
+ Follow-my-lead - плагин показывает все сочетания из вашего конфига с клавишей leader Gundo - древовидное UNDO Unite - замена CtrlP и т.д. Быстрый доступ ко всякого рода спискам. Fugitive - это git :) Syntastic - проверка синтаксиса с очень большим списком поддерживаемых форматов Vim-session - управление сессиями. Использую для сохранения состояния проектов. Surround - это без комментариев :) Vimwiki - wiki.  </description>
     </item>
     
     <item>
       <title>Так просто</title>
-      <link>https://ewok.github.io/tak-prosto</link>
+      <link>https://ewok.github.io/tak-prosto/</link>
       <pubDate>Tue, 29 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/tak-prosto</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://ewok.github.io/images/2015/09/mir_podozhdet.gif&#34; alt=&#34;mir_podozhdet&#34; /&gt;&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/tak-prosto/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Ansible-dar</title>
-      <link>https://ewok.github.io/ansible-dar</link>
+      <link>https://ewok.github.io/ansible-dar/</link>
       <pubDate>Mon, 13 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/ansible-dar</guid>
-      <description>&lt;p&gt;DiskARchive плагин для ansible.
-&lt;a href=&#34;https://github.com/ewok/ansible-modules/blob/master/dar.py&#34;&gt;https://github.com/ewok/ansible-modules/blob/master/dar.py&lt;/a&gt;&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/ansible-dar/</guid>
+      <description>DiskARchive плагин для ansible. https://github.com/ewok/ansible-modules/blob/master/dar.py</description>
     </item>
     
     <item>
       <title>Фильмы про зомби(посмотреть)</title>
-      <link>https://ewok.github.io/100-filmov-pro-zombiplan</link>
+      <link>https://ewok.github.io/100-filmov-pro-zombiplan/</link>
       <pubDate>Sat, 09 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/100-filmov-pro-zombiplan</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://ewok.github.io/images/2015/09/olup-olup-dirileceksiniz-kLwJPswhgUavhs8IL6tVNQ.jpg&#34; alt=&#34;zombie&#34; /&gt;
-&lt;!--preview--&gt;
-Просмотреть&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;28 дней спустя&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Обитель зла&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;Операция «Мертвый снег»&lt;/li&gt;
-&lt;li&gt;Безумцы&lt;/li&gt;
-&lt;li&gt;Репортаж&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Земля мертвых&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Рассвет мертвецов&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Зловещие мертвецы&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;День мертвых&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Добро пожаловать в Zомбилэнд&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;28 Недель спустя&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;48 Недель спустя&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Ад живых мертвецов&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;Адский Бункер&lt;/li&gt;
-&lt;li&gt;Атака куриных Зомби&lt;/li&gt;
-&lt;li&gt;Бойня&lt;/li&gt;
-&lt;li&gt;В тихом омуте&lt;/li&gt;
-&lt;li&gt;Вампиры против зомби&lt;/li&gt;
-&lt;li&gt;Виноградник&lt;/li&gt;
-&lt;li&gt;Возвращение живых мертвецов&lt;/li&gt;
-&lt;li&gt;Возвращение живых мертвецов 2&lt;/li&gt;
-&lt;li&gt;Возвращение живых мертвецов 3&lt;/li&gt;
-&lt;li&gt;Возвращение живых мертвецов 4: Некрополис&lt;/li&gt;
-&lt;li&gt;Возвращение живых мертвецов 5: Рейв из могилы&lt;/li&gt;
-&lt;li&gt;Возвращение Реаниматора&lt;/li&gt;
-&lt;li&gt;Восставшие из мертвых&lt;/li&gt;
-&lt;li&gt;Выживание мертвецов&lt;/li&gt;
-&lt;li&gt;Город живых мертвецов&lt;/li&gt;
-&lt;li&gt;Два злобных взгляда&lt;/li&gt;
-&lt;li&gt;Демоны&lt;/li&gt;
-&lt;li&gt;Демоны 2&lt;/li&gt;
-&lt;li&gt;День мертвецов (1985)&lt;/li&gt;
-&lt;li&gt;День мертвецов (2008)&lt;/li&gt;
-&lt;li&gt;День мертвецов 2: Эпидемия&lt;/li&gt;
-&lt;li&gt;Дети живых мертвецов&lt;/li&gt;
-&lt;li&gt;Дневники зомби&lt;/li&gt;
-&lt;li&gt;Дневники мертвецов&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Добро пожаловать в Зомбилэнд&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;Дом 1000 трупов&lt;/li&gt;
-&lt;li&gt;Дом зомби&lt;/li&gt;
-&lt;li&gt;Дом мёртвых&lt;/li&gt;
-&lt;li&gt;Дом на краю кладбища&lt;/li&gt;
-&lt;li&gt;Загадка старого кладбища&lt;/li&gt;
-&lt;li&gt;Земля мёртвых&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Зловещие мертвецы&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;Зловещие мертвецы 2&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Зловещие мертвецы 3: Армия тьмы&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;Зловещие мертвецы 4&lt;/li&gt;
-&lt;li&gt;Змей и радуга&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Зомби по имени Фидо&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Карантин&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;Карантин 2: Терминал&lt;/li&gt;
-&lt;li&gt;Кладбище домашних животных&lt;/li&gt;
-&lt;li&gt;Кладбище домашних животных 2&lt;/li&gt;
-&lt;li&gt;Князь тьмы&lt;/li&gt;
-&lt;li&gt;Конура(будка)&lt;/li&gt;
-&lt;li&gt;Кошмар зомби&lt;/li&gt;
-&lt;li&gt;Кровавая баня Зомби&lt;/li&gt;
-&lt;li&gt;Кровавый пир&lt;/li&gt;
-&lt;li&gt;Легион&lt;/li&gt;
-&lt;li&gt;Легион живых мертвецов&lt;/li&gt;
-&lt;li&gt;Мальчики едят девочек&lt;/li&gt;
-&lt;li&gt;Мастера ужасов: История Хэкеля&lt;/li&gt;
-&lt;li&gt;Медовый месяц зомби&lt;/li&gt;
-&lt;li&gt;Мертвечина&lt;/li&gt;
-&lt;li&gt;Мутанты&lt;/li&gt;
-&lt;li&gt;Мясорубка&lt;/li&gt;
-&lt;li&gt;Невеста Реаниматора&lt;/li&gt;
-&lt;li&gt;Нечто: Тотальное заражение&lt;/li&gt;
-&lt;li&gt;Новая эра&lt;/li&gt;
-&lt;li&gt;Носители&lt;/li&gt;
-&lt;li&gt;Ночь демонов&lt;/li&gt;
-&lt;li&gt;Ночь демонов 2&lt;/li&gt;
-&lt;li&gt;Ночь демонов 3&lt;/li&gt;
-&lt;li&gt;Ночь живых мертвецов (1968)&lt;/li&gt;
-&lt;li&gt;Ночь живых мертвецов (1990)&lt;/li&gt;
-&lt;li&gt;Ночь живых мертвецов 3D&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Обитель зла&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Обитель зла 2: Апокалипсис&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Обитель зла 3: Вымирание&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Обитель зла 4: Жизнь после смерти&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;Озеро живых мертвецов&lt;/li&gt;
-&lt;li&gt;Озеро призраков&lt;/li&gt;
-&lt;li&gt;Операция Мёртвый снег&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Операция Мертвый снег 2&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;Паршивая овца&lt;/li&gt;
-&lt;li&gt;Планета страха&lt;/li&gt;
-&lt;li&gt;Реаниматор&lt;/li&gt;
-&lt;li&gt;Репортаж из преисподней&lt;/li&gt;
-&lt;li&gt;Седьмые врата ада&lt;/li&gt;
-&lt;li&gt;Слизняк&lt;/li&gt;
-&lt;li&gt;Стая&lt;/li&gt;
-&lt;li&gt;Телемертвецы&lt;/li&gt;
-&lt;li&gt;Убивая мертвецов&lt;/li&gt;
-&lt;li&gt;Фантазм&lt;/li&gt;
-&lt;li&gt;Хроники Мутантов&lt;/li&gt;
-&lt;li&gt;Хронос&lt;/li&gt;
-&lt;li&gt;Чума Зомби&lt;/li&gt;
-&lt;li&gt;Шоссе 666&lt;/li&gt;
-&lt;li&gt;Полицейский зомби&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://ewok.github.io/100-filmov-pro-zombiplan/</guid>
+      <description> Просмотреть
+ 28 дней спустя Обитель зла Операция «Мертвый снег» Безумцы Репортаж Земля мертвых Рассвет мертвецов Зловещие мертвецы День мертвых Добро пожаловать в Zомбилэнд 28 Недель спустя 48 Недель спустя Ад живых мертвецов Адский Бункер Атака куриных Зомби Бойня В тихом омуте Вампиры против зомби Виноградник Возвращение живых мертвецов Возвращение живых мертвецов 2 Возвращение живых мертвецов 3 Возвращение живых мертвецов 4: Некрополис Возвращение живых мертвецов 5: Рейв из могилы Возвращение Реаниматора Восставшие из мертвых Выживание мертвецов Город живых мертвецов Два злобных взгляда Демоны Демоны 2 День мертвецов (1985) День мертвецов (2008) День мертвецов 2: Эпидемия Дети живых мертвецов Дневники зомби Дневники мертвецов Добро пожаловать в Зомбилэнд Дом 1000 трупов Дом зомби Дом мёртвых Дом на краю кладбища Загадка старого кладбища Земля мёртвых Зловещие мертвецы Зловещие мертвецы 2 Зловещие мертвецы 3: Армия тьмы Зловещие мертвецы 4 Змей и радуга Зомби по имени Фидо Карантин Карантин 2: Терминал Кладбище домашних животных Кладбище домашних животных 2 Князь тьмы Конура(будка) Кошмар зомби Кровавая баня Зомби Кровавый пир Легион Легион живых мертвецов Мальчики едят девочек Мастера ужасов: История Хэкеля Медовый месяц зомби Мертвечина Мутанты Мясорубка Невеста Реаниматора Нечто: Тотальное заражение Новая эра Носители Ночь демонов Ночь демонов 2 Ночь демонов 3 Ночь живых мертвецов (1968) Ночь живых мертвецов (1990) Ночь живых мертвецов 3D Обитель зла Обитель зла 2: Апокалипсис Обитель зла 3: Вымирание Обитель зла 4: Жизнь после смерти Озеро живых мертвецов Озеро призраков Операция Мёртвый снег Операция Мертвый снег 2 Паршивая овца Планета страха Реаниматор Репортаж из преисподней Седьмые врата ада Слизняк Стая Телемертвецы Убивая мертвецов Фантазм Хроники Мутантов Хронос Чума Зомби Шоссе 666 Полицейский зомби  </description>
     </item>
     
     <item>
       <title>Пробел в точке монтирования fstab</title>
-      <link>https://ewok.github.io/probiel-v-tochkie-montirovaniia-fstab</link>
+      <link>https://ewok.github.io/probiel-v-tochkie-montirovaniia-fstab/</link>
       <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/probiel-v-tochkie-montirovaniia-fstab</guid>
-      <description>&lt;p&gt;Если требуется пробел в точке монтирования:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    /dev/choto /mnt/kuda\040to ext4 ... и т.д
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <guid>https://ewok.github.io/probiel-v-tochkie-montirovaniia-fstab/</guid>
+      <description>Если требуется пробел в точке монтирования:
+ /dev/choto /mnt/kuda\040to ext4 ... и т.д  </description>
+    </item>
+    
+    <item>
+      <title>libvirt - полезные комманды</title>
+      <link>https://ewok.github.io/virsh-polieznyie-kommandy/</link>
+      <pubDate>Thu, 02 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/virsh-polieznyie-kommandy/</guid>
+      <description>Установка Debian/ubuntu и производные:
+ apt-get instll libvirt-bin -y  На rhel подобных что-то типа:
+ yum install libvirt-client -y  virsh Консоль для управления виртуальным окружением
+Подключение: virsh --connect=&amp;lt;строка подключения&amp;gt;
+Примеры строки подключения:
+ qemu:///system - локальный сервер qemu+ssh://root@ip/system - удаленный сервер по адресу ip  virsh list [--inactive | --all] - список виртуальных машин [отключенных | всех]
+virsh start &amp;lt;domain&amp;gt; - запуск вирт. машины domain
+virsh shutdown &amp;lt;domain&amp;gt; - остановка вирт.</description>
+    </item>
+    
+    <item>
+      <title>Wish-list</title>
+      <link>https://ewok.github.io/wish-list/</link>
+      <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/wish-list/</guid>
+      <description>Здесь публикуется список вещей которые мне интересны
+Вещи
+ &amp;ldquo;Умный&amp;rdquo; фитнес браслет RaspberryPi Мобилу с 2G RAM :) Аккумулятор для ноута куплен SSD гигов на 60, для ноутбука + переходник в CD разъем - подарено, очень доволен Маленькая беспроводная мышка для ноутбука на радиоканале - взял пока обычную Видео-регистратор на машину - спасибо жене Небольшой металлический фонарик на аккумуляторах Набор разнокалиберных отверток с магнитным наконечником - куплено Зимняя резина :) - куплена Zalman VE300 - взял недорого VE200 Теплый халат(к зиме актуально) - подарили, спасибо маме.</description>
+    </item>
+    
+    <item>
+      <title>search</title>
+      <link>https://ewok.github.io/search/</link>
+      <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Очередной переезд</title>
+      <link>https://ewok.github.io/ochieriednoi-pierieiezd/</link>
+      <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/ochieriednoi-pierieiezd/</guid>
+      <description>На этот раз решил опробовать движок для блогов под названием ghost.
+Проект открытый, путь свой начал с kickstarter, набрав хорошую сумму. Не всё конечно есть, но захотелось попробовать.
+При переезде потерялись: поиск, категории, облако тегов и обновилась rss лента.
+Постепенно буду прикручивать недостоющие детали.</description>
+    </item>
+    
+    <item>
+      <title>Если перестал обновляться файл resolv.conf на mint</title>
+      <link>https://ewok.github.io/iesli-pieriestal-obnovliatsia-fail-resolv-conf-na-mint/</link>
+      <pubDate>Thu, 19 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/iesli-pieriestal-obnovliatsia-fail-resolv-conf-na-mint/</guid>
+      <description>Можно попробовать так:
+sudo dpkg-reconfigure resolvconf  Или так:
+sudo mv /etc/resolv.conf /run/resolvconf/resolv.conf sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf  Мне помог второй способ.
+Еще вариант:
+В /etc/NetworkManager/NetworkManager.conf закомментируйте dns=dnsmasq sudo dpkg-reconfigure resolvconf sudo resolvconf --enable-updates  </description>
+    </item>
+    
+    <item>
+      <title>TypeError: $(...).tipuesearch is not a function</title>
+      <link>https://ewok.github.io/typeerror-tipuesearch-is-not-a-function/</link>
+      <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/typeerror-tipuesearch-is-not-a-function/</guid>
+      <description>Решение:
+Устанавливаем поиск по инструкции с сайта http://www.tipue.com/search/docs/. Но! Функция показа результатов должна быть такой:
+&amp;lt;script&amp;gt; var $j = jQuery.noConflict(); $j(document).ready(function() { $j(&#39;#tipue_search_input&#39;).tipuesearch({ &#39;show&#39;: 10, &#39;mode&#39;: &#39;json&#39;, &#39;contentLocation&#39;: &#39;{{ SITEURL }}/tipuesearch_content.json&#39; }); }); &amp;lt;/script&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title>Достигатор целей</title>
+      <link>https://ewok.github.io/dostighator-tsieliei/</link>
+      <pubDate>Thu, 05 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/dostighator-tsieliei/</guid>
+      <description>Интересный сервис для людей которые хотят достичь определенной цели.
+Есть справочные материалы по правильной постановке целей, определение &amp;ldquo;чистоты&amp;rdquo; цели, &amp;ldquo;цена слова&amp;rdquo;, шаблоны и многое другое. Есть социальная составляющая, друзья, комментарии, подписки.
+http://smartprogress.do</description>
+    </item>
+    
+    <item>
+      <title>File too large. Qcow2 file.</title>
+      <link>https://ewok.github.io/file-too-large-qcow2-file/</link>
+      <pubDate>Mon, 08 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/file-too-large-qcow2-file/</guid>
+      <description>Если испортился при работе с qcow через qemu-img у вас вылезла ошибка &amp;ldquo;File too large&amp;rdquo;. То вытащить данные можно таким способом. Качаем исходники qemu версии 1.7.2. Разархивируем и делаем &amp;ldquo;./configure &amp;amp;&amp;amp; make&amp;rdquo;. То есть БЕЗ установки. Далее забираем файл qemu-img и используем его для конвертации в raw.
+./qemu-img convert -f qcow2 -O raw откуда куда
+В принципе с этого момента данные уже можно восстановить, примонтировав образ диска.</description>
+    </item>
+    
+    <item>
+      <title>Выполнение по крону в последний день месяца</title>
+      <link>https://ewok.github.io/vypolnieniie-po-kronu-v-posliednii-dien-miesiatsa/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/vypolnieniie-po-kronu-v-posliednii-dien-miesiatsa/</guid>
+      <description>Так
+0 0 28,29 2 * /path/to/chego/to/tam 0 0 31 1,3,5,7,8,10,12 * /path/to/chego/to/tam 0 0 30 4,6,9,11 * /path/to/chego/to/tam  &amp;hellip;или так
+&amp;gt; 30 23 * * * root if ( $(date -v +1d &amp;quot;+%d&amp;quot;) == 01 ) твоя_команда  </description>
+    </item>
+    
+    <item>
+      <title>Любимые горячие клавишы в pycharm</title>
+      <link>https://ewok.github.io/liubimyie-ghoriachiie-klavishy-v-pycharm/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/liubimyie-ghoriachiie-klavishy-v-pycharm/</guid>
+      <description>New File - Alt+Ins Settings - Ctrl+Alt+S Find Usage - Alt+F7 Select Word - Ctrl+W Quick Definition - Ctrl+Shift+I Quick Documentation - Ctrl+Q Parameters - Ctrl+P  Find
+ Class - Ctrl+N Diclaration - Ctrl+B Implementaion - Ctrl+Alt+B Super method - Ctrl+U
+ Test - Ctrl+Shift+T
+ Bookmark - F11/Ctrl+F11
+ Show - Shift+F11
+ Structure + Ctrl+F12
+ Type + Ctrl+H
+ Next Error - F2
+ Override method - Ctrl+O</description>
+    </item>
+    
+    <item>
+      <title>The Animals-House Of The Rising Sun(Death Metal Version</title>
+      <link>https://ewok.github.io/the-animals-house-of-the-rising-sundeath-metal-version/</link>
+      <pubDate>Tue, 24 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/the-animals-house-of-the-rising-sundeath-metal-version/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Интерактивный учебник по vim</title>
+      <link>https://ewok.github.io/intieraktivnyi-uchiebnik-po-vim/</link>
+      <pubDate>Mon, 09 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/intieraktivnyi-uchiebnik-po-vim/</guid>
+      <description>Кто давно хотел изучить замечательный редактор vim, но кого останавливал высокий порог вхождения, могут попробовать интерактивный учебник.</description>
+    </item>
+    
+    <item>
+      <title>Библиотека sh для python</title>
+      <link>https://ewok.github.io/bibliotieka-sh-dlia-python/</link>
+      <pubDate>Mon, 05 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/bibliotieka-sh-dlia-python/</guid>
+      <description>Классная штука. Позволяет обращаться к командам shell в контексте языка python. Примеры из документации:
+from sh import ifconfig print(ifconfig(&amp;quot;wlan0&amp;quot;)) # checkout master branch git.checkout(&amp;quot;master&amp;quot;) # print(the contents of this directory print(ls(&amp;quot;-l&amp;quot;)) # get the longest line of this file longest_line = wc(\_\_file\_\_, &amp;quot;-L&amp;quot;) from sh import git, sudo # resolves to &amp;quot;git branch -v&amp;quot; print(git.branch(&amp;quot;-v&amp;quot;)) print(git(&amp;quot;branch&amp;quot;, &amp;quot;-v&amp;quot;)) # the same command # resolves to &amp;quot;sudo /bin/ls /root&amp;quot; print(sudo.ls(&amp;quot;/root&amp;quot;)) print(sudo(&amp;quot;/bin/ls&amp;quot;, &amp;quot;/root&amp;quot;)) # the same command  Единственное замечание это с вызовами имен файлов по маске.</description>
+    </item>
+    
+    <item>
+      <title>С 1 апреля</title>
+      <link>https://ewok.github.io/s-1-aprielia/</link>
+      <pubDate>Mon, 31 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/s-1-aprielia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Удаление хрипов в skype под linux</title>
+      <link>https://ewok.github.io/skype-pulse/</link>
+      <pubDate>Sun, 23 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/skype-pulse/</guid>
+      <description>Удаление хрипов pulseaudio в skype под linux:
+# Редактируем &#39;/etc/pulse/default.pa&#39; # меняем load-module module-udev-detect # на load-module module-udev-detect tsched=0 # перезапускаем pulseaudio $ killall pulseaudio $ pulseaudio &amp;gt;&amp;amp; /dev/null &amp;amp;  </description>
+    </item>
+    
+    <item>
+      <title>Шпаргалка по pacman(archlinux)</title>
+      <link>https://ewok.github.io/pacman_2/</link>
+      <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/pacman_2/</guid>
+      <description> # Установка ### Установка пакетов $ pacman -S имя_пакета  ### Установка пакета с обновлением системы $ pacman -Syu  ### Установка пакета из файла $ pacman -U /путь_к_файлу/файл.tar.xz  ### или из сети $ pacman -U http://www.example.com/repo/example.pkg.tar.xz  # Сохранение/восстановление ### Просмотреть список установленных пакетов $ pacman -Qqe | grep -v &amp;quot;$(pacman -Qmq)&amp;quot;  ### Сохранить список установленных пакетов $ pacman -Qqe | grep -v &amp;quot;$(pacman -Qmq)&amp;quot; &amp;gt; pkglist  ### Установить из списка пакеты $ pacman -S $(cat pkglist)  # Чистка ### Просмотреть список пакетов сирот $ pacman -Qdt  # Удаление ### Удалить пакет $ pacman -R имя_пакета  ### Удалить пакет с зависимостями(не используемыми другими пакетами) $ pacman -Rs имя_пакета  ### Удалить пакет с зависимыми и зависящами пакетами $ pacman -Rsc имя_пакета  ### Удалить пакеты &amp;ldquo;сироты&amp;rdquo; $ pacman -Rsn $(pacman -Qdtq)  # Работа с кэшем ### Очистка кэша неустановленных пакетов $ pacman -Sc  ### Очистка кэша пакетов $ pacman -Scc  # Обновление ### Обновление системы $ pacman -Syu  </description>
+    </item>
+    
+    <item>
+      <title>Уличное творчество</title>
+      <link>https://ewok.github.io/ulichnoye/</link>
+      <pubDate>Sun, 19 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/ulichnoye/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Vivaldi tribute</title>
+      <link>https://ewok.github.io/vivaldi-tribute/</link>
+      <pubDate>Thu, 09 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/vivaldi-tribute/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Девушка дня 9</title>
+      <link>https://ewok.github.io/girl9/</link>
+      <pubDate>Thu, 09 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/girl9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>С наступающим 2014 годом!</title>
+      <link>https://ewok.github.io/s-nastupaiushchim-2014-ghodom/</link>
+      <pubDate>Tue, 31 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/s-nastupaiushchim-2014-ghodom/</guid>
+      <description>Традиционная ёлка! Желаю всем добра</description>
+    </item>
+    
+    <item>
+      <title>Взгляд</title>
+      <link>https://ewok.github.io/vzghliad/</link>
+      <pubDate>Tue, 24 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/vzghliad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Девушка дня 8</title>
+      <link>https://ewok.github.io/dievushka-dnia-8/</link>
+      <pubDate>Wed, 11 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/dievushka-dnia-8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Если неправильно отображается кодировка на сайте(для админов)</title>
+      <link>https://ewok.github.io/iesli-niepravilno-otobrazhaietsia-kodirovka-na-saitiedlia-adminov/</link>
+      <pubDate>Wed, 11 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/iesli-niepravilno-otobrazhaietsia-kodirovka-na-saitiedlia-adminov/</guid>
+      <description>Столкнулся с проблемой вывода текста из базы данных mysql.
+Исходные данные:
+ База mysql в utf-8 Сайт в windows-1251 Сайт выводится нормально, а данные из базы данных в виде: РљСЂР°С‚РєР°С.  Решение:
+ В .htaccess добавляем строчку &amp;ldquo;AddDefaultCharset windows-1251&amp;rdquo;. Апачу дается команда выводить сайт в кодировке windows-1251. Если у вас сайт на php. То после подключения к базе данных нужно сделать mysql_set_charset( &amp;lsquo;cp1251&amp;rsquo; );. Или дать каким либо способом запрос базе данных SET NAMES cp1251.</description>
+    </item>
+    
+    <item>
+      <title>Шпаргалка по администрированию mysql</title>
+      <link>https://ewok.github.io/shparghalka-po-administrirovaniiu-mysql/</link>
+      <pubDate>Mon, 11 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/shparghalka-po-administrirovaniiu-mysql/</guid>
+      <description>Сброс пароля # Запуск сервера без проверки пароля $ mysqld --skip-grant-tables # Вариант 1 mysql&amp;gt; SET PASSWORD FOR &#39;root&#39;@&#39;localhost&#39; = PASSWORD(&#39;новый пароль&#39;)\g # Вариант 2 mysql&amp;gt; use mysql; mysql&amp;gt; update user set password=PASSWORD(&amp;quot;новый пароль&amp;quot;) where user=&#39;root&#39; and host=&#39;localhost&#39;; mysql&amp;gt; flush privileges; # Выдрать одну базу данных $ cat dump.sql | sed -n -e &#39;/^CREATE DATABASE.*`&amp;lt;base_name&amp;gt;`/,/^CREATE DATABASE/ p&#39; | sed -e &#39;$d&#39; &amp;gt; &amp;lt;base_name&amp;gt;.sql # Посмотреть движок таблиц mysql&amp;gt; SELECT table_schema, table_name FROM INFORMATION_SCHEMA.</description>
+    </item>
+    
+    <item>
+      <title>Daft Punk - Pentatonix</title>
+      <link>https://ewok.github.io/daft-punk-pentatonix/</link>
+      <pubDate>Sun, 10 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/daft-punk-pentatonix/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Девушка дня 7</title>
+      <link>https://ewok.github.io/dievushka-dnia-7/</link>
+      <pubDate>Tue, 05 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/dievushka-dnia-7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Девушка дня 6</title>
+      <link>https://ewok.github.io/dievushka-dnia-6/</link>
+      <pubDate>Wed, 30 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/dievushka-dnia-6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Девушка дня 5</title>
+      <link>https://ewok.github.io/dievushka-dnia-5/</link>
+      <pubDate>Mon, 28 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/dievushka-dnia-5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Девушка дня 4</title>
+      <link>https://ewok.github.io/dievushka-dnia-4/</link>
+      <pubDate>Sat, 26 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/dievushka-dnia-4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Девушка дня 3</title>
+      <link>https://ewok.github.io/dievushka-dnia-3/</link>
+      <pubDate>Tue, 22 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/dievushka-dnia-3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Moby Dick full</title>
+      <link>https://ewok.github.io/moby-dick-full/</link>
+      <pubDate>Sun, 20 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/moby-dick-full/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Интересные команды linux консоли</title>
+      <link>https://ewok.github.io/intieriesnyie-komandy-linux-konsoli/</link>
+      <pubDate>Sun, 20 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/intieriesnyie-komandy-linux-konsoli/</guid>
+      <description> Предыдущая команда из под рута $ sudo !! # Что бы сохранить рутовый файл в vim не из под рута $ :w !sudo tee % # Предыдущая директория $ cd - # Если опечатались в предыдущей команде, можно это исправить(исправляет только первое вхождение) $ ^что_заменить^на_что_заменить # Заменить все вхождения $ !!:gs/что_заменить/на_что_заменить # Очистить файл $ &amp;gt; file.txt # Порты и приложения которые их слушают $ netstat -tlnp  </description>
+    </item>
+    
+    <item>
+      <title>Смена CRLF на LF и наоборот</title>
+      <link>https://ewok.github.io/smiena-crlf-na-lf-i-naoborot/</link>
+      <pubDate>Sat, 19 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/smiena-crlf-na-lf-i-naoborot/</guid>
+      <description>CRLF -&amp;gt; LF
+# вариант с sed. Что-бы получить символ &#39;^M&#39; нужно использовать &#39;Ctrl+V Ctrl+M&#39; $ sed &#39;s/^M$//&#39; input.txt &amp;gt; output.txt # или $ tr -d &#39;\r&#39; &amp;lt; input.file &amp;gt; output.file  LF -&amp;gt; CRLF
+$ sed &#39;s/$&#39;&amp;quot;/`echo \\\r`/&amp;quot; input.txt &amp;gt; output.txt  в nix можно установить утилиту dos2unix</description>
+    </item>
+    
+    <item>
+      <title>Девушка дня 2</title>
+      <link>https://ewok.github.io/dievushka-dnia-2/</link>
+      <pubDate>Wed, 16 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/dievushka-dnia-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ночь светла</title>
+      <link>https://ewok.github.io/noch-svietla/</link>
+      <pubDate>Wed, 16 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/noch-svietla/</guid>
+      <description>Em Ночь светла. Над рекой H7 Em Тихо светит луна. Am Em И блестит серебром H7 Em Голубая волна. D G Темный лес&amp;hellip; Там в тиши Am H7 Em Изумрудных ветвей Am Em Звонких песен своих H7 Em Не поет соловей.
+Полный текст песни «Ночь светла» ↑ Ночь светла. Над рекой Тихо светит луна. И блестит серебром Голубая волна. Темный лес... Там в тиши Изумрудных ветвей Звонких песен своих Не поет соловей.</description>
+    </item>
+    
+    <item>
+      <title>Guns N Roses - Dont Cry</title>
+      <link>https://ewok.github.io/guns-n-roses-dont-cry/</link>
+      <pubDate>Tue, 15 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/guns-n-roses-dont-cry/</guid>
+      <description>Строй: на полтона ниже (Eb Ab Db Gb Bb Eb)
+Аккорды:
+ Am C Dm E F G G/B --0----0---1----0---1---3-------- --1----1---3----0---1---3---3---- --2----0---2----1---2---0---0---- --2----2---0----2---3---0---0---- --0----3--------2---3---2---2---- ----------------0---1---3-------- | Am | Dm | G | C G/B | | Am | Dm | G | Am | Am Dm Talk to me softly G C G/B There&#39;s something in your eyes Am Dm Don&#39;t hang your head in sorrow G C G/B And please don&#39;t cry Am Dm I know how you feel inside I&#39;ve G C G/B I&#39;ve been there before Am Dm Somethin&#39; is changin&#39; inside you G C G/B And don&#39;t you know F G Am Don&#39;t you cry tonight I still love you baby F G Am Don&#39;t you cry tonight F G C G/B Am G Don&#39;t you cry tonight there&#39;s a heaven above you baby F G Am And don&#39;t you cry tonight Am Dm Give me a whisper G C G/B And give me a sigh Am Dm Give me a kiss before you G C G/B Tell me goodbye Am Dm Don&#39;t you take it so hard now G C G/B And please don&#39;t take it so bad Am Dm I&#39;ll still be thinkin&#39; of you G C G/B Am G And the times we had.</description>
+    </item>
+    
+    <item>
+      <title>Переименование файлов по порядку</title>
+      <link>https://ewok.github.io/pierieimienovaniie-failov-po-poriadku/</link>
+      <pubDate>Tue, 15 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/pierieimienovaniie-failov-po-poriadku/</guid>
+      <description>Переименовывается в такой вид: 1.* 2.* 3.*&amp;hellip;.
+i= ; ls | while read; do mv &amp;quot;$REPLY&amp;quot; $((++i))&amp;quot;.${REPLY//*.}&amp;quot;; done  </description>
+    </item>
+    
+    <item>
+      <title>Девушка дня 1</title>
+      <link>https://ewok.github.io/dievushka-dnia-1/</link>
+      <pubDate>Mon, 14 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/dievushka-dnia-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Btsync</title>
+      <link>https://ewok.github.io/btsync/</link>
+      <pubDate>Sun, 13 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/btsync/</guid>
+      <description>Как я применяю btsync:
+ Деплой на личный сервер(не критичный к простоям) Бэкап Обмен файлами с мобилкой на андроиде  </description>
+    </item>
+    
+    <item>
+      <title>Запустил новый блог на статике</title>
+      <link>https://ewok.github.io/zapustil-novyi-blogh-na-statikie/</link>
+      <pubDate>Sat, 12 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/zapustil-novyi-blogh-na-statikie/</guid>
+      <description>Запускаю блог на статике. Старый блог на самописном django уходит в life.ewok.ru.
+Для генерации использую pelican(python)</description>
+    </item>
+    
+    <item>
+      <title>Zyxel Keenetic II</title>
+      <link>https://ewok.github.io/zyxel-keenetic-ii/</link>
+      <pubDate>Wed, 10 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/zyxel-keenetic-ii/</guid>
+      <description>Первый Keenetic не оправдал надежд. В режиме обыкновенного роутера всё хорошо. Но после подключения торрента, ftp, cifs, начинаются дикие тормоза. Если еще и файл какой-нибудь по фтп перекидывать то доступ к роутеру получить практически невозможно. В конце концов первый кинет вообще заглючил. В итоге обменял его на второй. У второго помощнее процессор, больше памяти, 2 usb вместо одного, ну и по мелочи. Будем тестировать. Первые впечатления положительные, одновременное копирования с фтп, просмотр фильма по DLNA, торрент + серфинг, грузят процессор максимум на 50%(в среднем 20%).</description>
+    </item>
+    
+    <item>
+      <title>Шикарное видео от МакАскилла!</title>
+      <link>https://ewok.github.io/shikarnoie-vidieo-ot-makaskilla/</link>
+      <pubDate>Sun, 07 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/shikarnoie-vidieo-ot-makaskilla/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Zyxel Keenetic</title>
+      <link>https://ewok.github.io/zyxel-keenetic/</link>
+      <pubDate>Tue, 02 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/zyxel-keenetic/</guid>
+      <description>Приобрел сей девайс. Может подключаться к инету через 3g, 4g модемы, ethernet, wifi. Раздает на 300 мегабит по вайфаю, 100 мегабит по ethernet. Поддерживает файловый сервер, принт сервер. Пока не думаю про альтернативные прошивки, время покажет. Вторую серию этой модели, считаю, брать пока рано. Изменений не так много.</description>
+    </item>
+    
+    <item>
+      <title>Обновилсся</title>
+      <link>https://ewok.github.io/obnovilssia/</link>
+      <pubDate>Tue, 02 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/obnovilssia/</guid>
+      <description>Обновил свой арчик. На гигабайт обновлений накачалось. Из глобальных обновлений случился filesystem. По убирали к ядренефене /bin /sbin, оставили только симлинки на /usr/bin к этим папкам. После перезагрузки система не запустилась&amp;hellip; :( Не сюр, ожидаемо. Если не часто обновляешься. В общем в grub убежал файл menu.lst. После возврата, всё встало на места. Жду новых сюрпризов.</description>
+    </item>
+    
+    <item>
+      <title>Для настроения!</title>
+      <link>https://ewok.github.io/dlia-nastroieniia/</link>
+      <pubDate>Sat, 29 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/dlia-nastroieniia/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Крипта</title>
+      <link>https://ewok.github.io/kripta/</link>
+      <pubDate>Sat, 18 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/kripta/</guid>
+      <description>Если пользуетесь Яндекс, то можете получить характеристику вашей деятельности в интернете. Я на 88% Сова, 71% Семейный человек, 46% Гик, 44% Меломан и всего лишь на 9% Мама :)))</description>
+    </item>
+    
+    <item>
+      <title>Макияж в стиле win8</title>
+      <link>https://ewok.github.io/makiiazh-v-stilie-win8/</link>
+      <pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/makiiazh-v-stilie-win8/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Мысли...</title>
+      <link>https://ewok.github.io/mysli/</link>
+      <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/mysli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ant&#43; на Sony Xperia S с прошивкой CyanogenMod 10</title>
+      <link>https://ewok.github.io/ant-na-sony-xperia-s-s-proshivkoi-cyanogenmod-10/</link>
+      <pubDate>Wed, 13 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/ant-na-sony-xperia-s-s-proshivkoi-cyanogenmod-10/</guid>
+      <description>Оказалось для того чтобы заработал ant+ нужно включить Bluetooth. Не очевидная магия, однако!
+Для справки ant+ - протокол поддержки разной техники, такой как: пульсометры, каденсометры, весы и т.д. Используется в спорте(в основном</description>
+    </item>
+    
+    <item>
+      <title>Три самых главных слова</title>
+      <link>https://ewok.github.io/tri-samykh-ghlavnykh-slova/</link>
+      <pubDate>Sun, 06 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/tri-samykh-ghlavnykh-slova/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>С наступающим 2013 годом!</title>
+      <link>https://ewok.github.io/s-nastupaiushchim-2013-ghodom/</link>
+      <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/s-nastupaiushchim-2013-ghodom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>p90x месяц прошел</title>
+      <link>https://ewok.github.io/p90x-miesiats-proshiel/</link>
+      <pubDate>Sun, 23 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/p90x-miesiats-proshiel/</guid>
+      <description>Вчера начал второй месяц трехмесячной программы p90x. Сегодня болят мышцы, что я думаю показатель хороший.
+Из плюсов:
+ Урегулировал питание. Организм привыкает к физическим нагрузкам, в выходные дни даже немного скучно без упражнений. Общие состояние здоровья повышается.  Из минусов:
+ Приходится тратится на спорт инвентарь. Прощай пиво и прочие возлияния на праздниках и т.д. :)  Весной думаю еще заняться бегом.</description>
+    </item>
+    
+    <item>
+      <title>TimeComplexity(python)</title>
+      <link>https://ewok.github.io/timecomplexitypython/</link>
+      <pubDate>Thu, 20 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/timecomplexitypython/</guid>
+      <description>Шпаргалка
+&amp;lsquo;n&amp;rsquo; - количество элементов в контейнере &amp;lsquo;k&amp;rsquo; - значение параметра либо количество элементов в параметре
+list(Списки): Operation | Average Case | Amortized Worst Case Copy O(n) O(n) Appednd[1] O(1) O(1) Insert O(n) O(n) Get item O(1) O(1) Set item O(1) O(1) Delete item O(n) O(n) Iteration O(n) O(n) Get slice O(k) O(k) Delete slice O(n) O(n) Set slice O(k + n) O(k + n) Extend[1] O(k) O(k) Sort O(n log n) O(n log n) Multiply O(nk) O(nk) x in s O(n) min(s), max(s) O(n) Get length O(1) O(1)  set(Множества):</description>
+    </item>
+    
+    <item>
+      <title>звэр</title>
+      <link>https://ewok.github.io/zver/</link>
+      <pubDate>Wed, 19 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/zver/</guid>
+      <description>Такой зверь теперь обитает у нас дома. </description>
+    </item>
+    
+    <item>
+      <title>Опять зима в Кыргызстане!</title>
+      <link>https://ewok.github.io/opiat-zima-v-kyrghyzstanie/</link>
+      <pubDate>Tue, 18 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/opiat-zima-v-kyrghyzstanie/</guid>
+      <description>Каждая зима в Кыргызстане приходит, как говорится, неожиданно! По моим наблюдениям каждая следующая зима приносит все больше неожиданностей. С каждым разом все чаще отключают электричество и газ, дольше нет отопления, больше происшествий и больше мерзнет народу. Читая дизель-форум, удивляешься как же хреновее становится с каждым годом. Активисты создали тему помощи всем замерзающим, носят горячее питье и еду. Подвозят уголь. ТЕМА Как сообщает МТРК &amp;ldquo;Мир&amp;rdquo; на 18 декабря: &amp;ldquo;Бишкек останется без тепла еще неделю&amp;hellip;.</description>
+    </item>
+    
+    <item>
+      <title>p90x</title>
+      <link>https://ewok.github.io/p90x/</link>
+      <pubDate>Tue, 04 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/p90x/</guid>
+      <description>Полторы недели как занимаюсь по программе P90X. Тяжело, но нравится. Заказал себе гантели по 25 кг. Осталось только турник придумать куда приделать. ) По отзывам программа просто отличная. Решил проверить на себе.</description>
+    </item>
+    
+    <item>
+      <title>Смартфонам оказывает уже 20 лет</title>
+      <link>https://ewok.github.io/smartfonam-okazyvaiet-uzhie-20-liet/</link>
+      <pubDate>Mon, 26 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/smartfonam-okazyvaiet-uzhie-20-liet/</guid>
+      <description>Подумать только! Уже как двадцать лет существуют такие устройства как смартфоны. В ноябре 1992 года компания IBM представила самый первый в мире смартфон. Он умел звонить, принимать/отправлять факсы, имел почту, игры, контакты&amp;hellip; В общем имел практически полноценный функционал. Стоил он чуть меньше 900 долларов. И за первые пол года продажи достигли 50 тысяч единиц. Конечно технические характеристики он имел довольно слабые, это сейчас мы носим полноценные компьютеры в карманах. А раньше довольствовались всего по одному мегабайту памяти озу и пзу и 16 мегагерцами в процессоре.</description>
+    </item>
+    
+    <item>
+      <title>Шифр</title>
+      <link>https://ewok.github.io/shifr/</link>
+      <pubDate>Fri, 23 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/shifr/</guid>
+      <description>Это шифровка и останки голубя, которые нашли в одном из дымоходов дома Великобритании. Шифровку датируют 1944 годом. Ученые считают, что в шифровке могут быть интересные факты, о том периоде.</description>
+    </item>
+    
+    <item>
+      <title>Rolling Stones</title>
+      <link>https://ewok.github.io/rolling-stones/</link>
+      <pubDate>Wed, 21 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/rolling-stones/</guid>
+      <description>Первая песня за семь лет от Rolling Stones. Doom and Gloom - встречайте!</description>
+    </item>
+    
+    <item>
+      <title>Большой и грозный полицейский рунета</title>
+      <link>https://ewok.github.io/bolshoi-i-ghroznyi-politsieiskii-runieta/</link>
+      <pubDate>Tue, 20 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/bolshoi-i-ghroznyi-politsieiskii-runieta/</guid>
+      <description>Начинает набирать обороты, грозный инструмент закона - Роскомнадзор. Великий цензор рунета. По закону Роскомнадзор может без суда заблокировать любой сайт если на нем содержится какая либо противоправная информация. Как говориться идея хорошо, но реализация подкачала. Вариант с предварительной блокировкой сайта и лишь последующим разбирательством, вызывает, как минимум &amp;ldquo;легкое&amp;rdquo; недоумение. Под &amp;ldquo;банхаммером&amp;rdquo; уже успели побывать такие известные ресурсы как: Луркоморье, РуТреккер, Либрусек, ВКонтакте и даже каким то образом Гугл. После блокирования сайта владельцу дается три дня на удаление противоправного контента.</description>
+    </item>
+    
+    <item>
+      <title>Ingress</title>
+      <link>https://ewok.github.io/ingress/</link>
+      <pubDate>Mon, 19 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/ingress/</guid>
+      <description>Новая игра от Google. Научно-фантастического жанра. Многопользовательская мобильная использует реальный мир как игровое пространство. В задачу игрока входит сбор нового вида энергии. Игроки собирают капсулы и относят их к порталам и меняют их на право прохождения новой миссии. Игроки делятся на две команды Просвещенные и Сопротивление. Игра мобильная и предназначена для устройств на Андроиде. Игра пока в бете и чтобы участвовать в ней нужно получить пароль на официальном сайте www.ingress.com. Самое интересное что есть устройство Google Glass.</description>
+    </item>
+    
+    <item>
+      <title>django-filebrowser-no-grappelli &#43; tinymce</title>
+      <link>https://ewok.github.io/django-filebrowser-no-grappelli-tinymce/</link>
+      <pubDate>Wed, 14 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/django-filebrowser-no-grappelli-tinymce/</guid>
+      <description>Настройка, уже вполне популярной связки django-filebrowser-no-grappelli + tinymce.
+Настройку я производил по инструкции из гугла:
+ Урлы: url(r&amp;rsquo;^tinymce/filebrowser/&amp;lsquo;,include(&amp;lsquo;filebrowser.urls&amp;rsquo;)) settings: INSTALLED_APPS = (&amp;hellip;, &amp;lsquo;filebrowser&amp;rsquo;,) FILEBROWSER_DIRECTORY = &amp;lsquo;upload/&amp;rsquo;  Но! Настройка не шла. Оказывается по умолчанию django-filebrowser за основу путей берет MEDIA_ROOT и MEDIA_URL, что вполне логично! А так как я ими не пользовался, все у меня было по STATIC_ROOT и STATIC_URL, то у меня вылазили ошибки.
+Нужно указать:
+FILEBROWSER_MEDIA_ROOT = STATIC_ROOT FILEBROWSER_MEDIA_URL = STATIC_URL  После чего у меня все заработало как должно.</description>
+    </item>
+    
+    <item>
+      <title>Прикольная страница 404 у GitHub</title>
+      <link>https://ewok.github.io/prikolnaia-stranitsa-404-u-github/</link>
+      <pubDate>Wed, 14 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/prikolnaia-stranitsa-404-u-github/</guid>
+      <description>Это не те дроиды которые вам нужны</description>
+    </item>
+    
+    <item>
+      <title>Простой шаблон</title>
+      <link>https://ewok.github.io/prostoi-shablon/</link>
+      <pubDate>Mon, 12 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/prostoi-shablon/</guid>
+      <description>Смотрел я на дизайн своего блога и что-то мне не нравилось. Хотелось чего то простого и светлого. В итоге был взят шаблон по адресу http://cssr.ru/simpliste/ и натянут на движок. Чем в итоге я оказался доволен. Что из этого получилось смотрите по адресу основного блога.</description>
+    </item>
+    
+    <item>
+      <title>Sqlalchemy</title>
+      <link>https://ewok.github.io/sqlalchemy/</link>
+      <pubDate>Sat, 03 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/sqlalchemy/</guid>
+      <description>Познакомился с питоновской ORM(Object Relational Mapper) sqlalchemy. Похожа на джанговскую но имеет больше возможностей. Закопался в документацию, читать не перечитать.</description>
+    </item>
+    
+    <item>
+      <title>Flask</title>
+      <link>https://ewok.github.io/flask/</link>
+      <pubDate>Thu, 01 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/flask/</guid>
+      <description>Flask микро фреймворк написанный на python. Легковесный, на нем я решил написать для себя сайт портфолио. Совмещу изучение фреймворка с полезным делом.</description>
+    </item>
+    
+    <item>
+      <title>ssh прокси</title>
+      <link>https://ewok.github.io/ssh-proksi/</link>
+      <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/ssh-proksi/</guid>
+      <description>Интересный вариант использования ssh в виде socks5 сервера.
+Команда:
+$ ssh -D &amp;lt;num_port&amp;gt; &amp;lt;remote_hostname&amp;gt;  запустит на локальной машине socks5 сервер с портом num_port, подключенный к remote_hostname.
+Для авторизации лучше использовать ключи.</description>
+    </item>
+    
+    <item>
+      <title>zip zip</title>
+      <link>https://ewok.github.io/zip-zip/</link>
+      <pubDate>Sun, 14 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/zip-zip/</guid>
+      <description>Прикольный пример из книги Лутца(&amp;ldquo;Изучаем Python&amp;rdquo;).
+&amp;gt;&amp;gt;&amp;gt; X = (1, 2) &amp;gt;&amp;gt;&amp;gt; Y = (3, 4) &amp;gt;&amp;gt;&amp;gt; A, B = zip(*zip(X, Y)) &amp;gt;&amp;gt;&amp;gt; A (1, 2) &amp;gt;&amp;gt;&amp;gt; B (3, 4)  Распаковываем запакованные кортежи запаковыванием.</description>
+    </item>
+    
+    <item>
+      <title>Письмо</title>
+      <link>https://ewok.github.io/pismo/</link>
+      <pubDate>Sun, 14 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/pismo/</guid>
+      <description>Здравствуй!
+Ты давно не писал, наверное на почте задерживают твои письма. Ты же знаешь как работает наша почта. Мы все скучаем, особенно Джек. С тех пор как ты уехал, он каждый день выходит к калитке и смотрит на дорогу. Не ест совсем, уже ребра торчат.
+Мама делает вид что все хорошо. Смеётся, говорит что ты скоро приедешь, но видно что сдаёт потихоньку. Волнуется за тебя, наша старушка. Ты же её знаешь.</description>
+    </item>
+    
+    <item>
+      <title>ЮЮ</title>
+      <link>https://ewok.github.io/iuiu/</link>
+      <pubDate>Sun, 23 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/iuiu/</guid>
+      <description>репост отсюда
+Во избежание упреков, что родительская общественность зря поднимает шум с ювенальной юстицией, решил составить данный пост и разобрать некоторые моменты, законопроекта о социальном партронате. Он уже направлен в Госдуму РФ, а рассмотрение в первом чтении начнется 25 сентября 2012 года.</description>
+    </item>
+    
+    <item>
+      <title>Про куриво</title>
+      <link>https://ewok.github.io/pro-kurivo/</link>
+      <pubDate>Sat, 08 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/pro-kurivo/</guid>
+      <description>Смотришь старые фильмы и понимаешь насколько раньше было другое отношение к сигаретам, папиросам и вообще к курению. Пересматривал вчера &amp;ldquo;Место встречи изменить нельзя&amp;rdquo;. Курят практически все. Снято так что не заметить пропаганду папирос невозможно. Особенно порадовал слоган на рекламном плакате: &amp;ldquo;На папиросы в жизни я не сетую, сам курю и вам советую!&amp;rdquo;. Смешно и необычно на такое смотреть. Сейчас же увидеть сигарету в фильме, почти невозможно.</description>
+    </item>
+    
+    <item>
+      <title>По одному!</title>
+      <link>https://ewok.github.io/po-odnomu/</link>
+      <pubDate>Fri, 10 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/po-odnomu/</guid>
+      <description>В последнее время, заметил, что пишу по одному посту в месяц. Или от недостатка интернета, или от нехватки времени, но что есть то есть.
+Из последних новостей.
+Собрал велосипеды, теперь устраиваем велопрогулки. Тем более сейчас жара спала, можно с комфортом прокатится.
+Забрал документы на участок. Теперь осталось разметить границы и можно строиться. Завтра поставлю какую нибудь программу, буду чертить проект дома. Хочется конечно побольше да повыше, но вопрос в деньгах. На сколько осилим, как говориться.</description>
+    </item>
+    
+    <item>
+      <title>Путешествуем...</title>
+      <link>https://ewok.github.io/putieshiestvuiem/</link>
+      <pubDate>Sun, 08 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/putieshiestvuiem/</guid>
+      <description>Вкусное мороженое. Первое что приходит в голову, когда спрашивают: &amp;ldquo;Ну как тебе на новом месте?&amp;rdquo;. Мороженое действительно вкусное, и колбаса с сыром тоже.
+Ездим в последнее время мы много. По двести километров в день. Прописка, военкомат, контейнер, гражданство, страховки, жилье&amp;hellip;
+Скоро пора будем думать о машине и работе. Интернет с мобильного, за компьютером почти не сижу. Даже кино смотрю с мобильника. Прикупил себе Sony Xperia S. Доволен всем кроме батарейки. Пришлось купить внешний аккумулятор на 8000 мАч.</description>
+    </item>
+    
+    <item>
+      <title>Покинули родной Бишкек</title>
+      <link>https://ewok.github.io/pokinuli-rodnoi-bishkiek/</link>
+      <pubDate>Sun, 10 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/pokinuli-rodnoi-bishkiek/</guid>
+      <description>Шумно, со всеми попрощались. С кучей сумок и котом погрузились в самолет и полетели в Москву. В Москве погостим пару дней и поедем дальше.</description>
+    </item>
+    
+    <item>
+      <title>С днем победы!</title>
+      <link>https://ewok.github.io/s-dniem-pobiedy/</link>
+      <pubDate>Wed, 09 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/s-dniem-pobiedy/</guid>
+      <description>Поздравляю всех с днем победы на фашистской Германией. Всем кто участвовал в Великой Отечественной Войне большое СПАСИБО, за нас и наше будущее. Уважайте ветеранов их осталось очень мало!</description>
+    </item>
+    
+    <item>
+      <title>Samsung Galaxy Tab 7.7</title>
+      <link>https://ewok.github.io/samsung-galaxy-tab-7-7untitled/</link>
+      <pubDate>Tue, 03 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/samsung-galaxy-tab-7-7untitled/</guid>
+      <description>Приобрел себе, а вернее апгрейдился с Galaxy Tab 1, этого зверька. Пока доволен.
+Жаль что андроид 3.2, ждем четвертый. Экран яркий. Подтормаживание интерфейса заметил только при одновременной установки множества программ с маркета и загрузкой фильма на флешку.
+По основным параметрам имеем на борту:
+ 1.4 Гц двухядрённый проц, 1 Гб оперативной памяти, 16 флэш(доступна не вся), 5100 мАмперчасную батарею, которая вполне соответствует экрану экран самолёт+ 7.7 дюймов, 1280x800 (super amoled plus) видео НЕ tegra 2 (а то были вопросы про установку игрушек под tegra 2  </description>
+    </item>
+    
+    <item>
+      <title>Уфф жара.</title>
+      <link>https://ewok.github.io/uff-zhara/</link>
+      <pubDate>Wed, 28 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/uff-zhara/</guid>
+      <description>Пришел с улицы, на термометре 25 градусов. Ходил в кофте, ужасно захотелось ее снять. Народ уже в футболках ходит. Весна.</description>
+    </item>
+    
+    <item>
+      <title>РФ вышла из двустороннего соглашения с КР об упрощенном получении гражданства</title>
+      <link>https://ewok.github.io/rf-vyshla-iz-dvustoronniegho-soghlashieniia-s-kr-ob-uproshchiennom-poluchienii-ghrazhdanstva/</link>
+      <pubDate>Wed, 21 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/rf-vyshla-iz-dvustoronniegho-soghlashieniia-s-kr-ob-uproshchiennom-poluchienii-ghrazhdanstva/</guid>
+      <description>РФ вышла из двустороннего соглашения с КР об упрощенном получении гражданства. Осталось только четырех стороннее соглашение. В принципе, получение гражданства РФ все еще остается упрощенным. Но, с каждым днем процедура усложняется. Так что дерзайте. Кто не успел тот, как говориться, опоздал.</description>
+    </item>
+    
+    <item>
+      <title>Сделали коту паспорт</title>
+      <link>https://ewok.github.io/sdielali-kotu-pasport/</link>
+      <pubDate>Thu, 15 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/sdielali-kotu-pasport/</guid>
+      <description>Наш кот готовится к переезду. Готов паспорт и начали делать прививки. Купили переноску для кошек, днем уже опробовали. Кот ругается но не сильно. Сейчас даже в ней спит, постелили ему туда мягкую подстилку.</description>
+    </item>
+    
+    <item>
+      <title>Ну вот и весна пришла</title>
+      <link>https://ewok.github.io/nu-vot-i-viesna-prishla/</link>
+      <pubDate>Wed, 29 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/nu-vot-i-viesna-prishla/</guid>
+      <description>Ну вот и весна пришла
+У кого-то только по календарю, у кого-то и по погоде.
+Погодные условия на первое марта в местах в которых я был и в которых есть что вспомнить:
+Бишкек: -4...+3 снег идёт(хотя из окна я его почему то не наблюдаю) Иссык-куль: -6...-8 малооблачно, без осадков Балыкчы: -6...+1 малооблачно Талас: -5...+3 пасмурно Екатеринбург: -7...0 пасмурно, снег Самара: -4...-2 пасмурно, снег Красноярск: -20..-7 ясно(нифига себе разлет температур) Лесосибирск: -26.</description>
+    </item>
+    
+    <item>
+      <title>Подключил rss в блоге</title>
+      <link>https://ewok.github.io/podkliuchil-rss-v-bloghie/</link>
+      <pubDate>Wed, 29 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/podkliuchil-rss-v-bloghie/</guid>
+      <description>Подключил rss трансляцию. По джангокниге.
+Самый простой вариант:
+from django.contrib.syndication.views import Feed from mysite.blog.models import Blog, Post class LatestEntriesFeed(Feed): title = Blog.title link = blog.url description = blog.description def items(self): return Post.objects.filter(draft=False)[:10] def item_title(self, item): return item.title def item_description(self, item): # Здесь попытка подключить lj-cut, для кросспостинга в ЖЖ. Посмотрим, сработает или нет. return item.entry.replace(u&#39;&amp;lt;!-- pagebreak --&amp;gt;&#39;, u&#39;&amp;lt;lj-cut text=&amp;quot;Читать полностью&amp;quot;&amp;gt;&#39;) def item_pubdate(self, item): return item.date def item_categories(self, item): return item.tag.all()   Прописать в urls.</description>
+    </item>
+    
+    <item>
+      <title>Прошу прощения у всех, кого обидел!</title>
+      <link>https://ewok.github.io/proshu-proshchieniia-u-vsiekh-kogho-obidiel/</link>
+      <pubDate>Sun, 26 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/proshu-proshchieniia-u-vsiekh-kogho-obidiel/</guid>
+      <description>Сегодня прощенное воскресенье!
+В этот день принято просить прощения и прощать других. Что бы войти в Великий пост с доброй душой.</description>
+    </item>
+    
+    <item>
+      <title>hibernate через pm-utils</title>
+      <link>https://ewok.github.io/hibernate-chieriez-pm-utils/</link>
+      <pubDate>Wed, 22 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/hibernate-chieriez-pm-utils/</guid>
+      <description>В русской вики arch в статье о pm-utils там где описывается настройка hibernate, почему то не указано что нужно прописывать hook: resume для в mkinitcpio.
+Поэтому у меня в hibernate уходил комп нормально, но не возвращался из него. Рекомендую читать английский вариант статьи там все прописано.
+В итоге все выглядит так:
+В файл /boot/grub/menu.lst добавляется resume=/path/to/swap/drive
+# (0) Arch Linux title Arch Linux root (hd0,0) kernel /vmlinuz26 root=/dev/sda3 resume=/dev/sda2 ro vga=0 initrd /kernel26.</description>
+    </item>
+    
+    <item>
+      <title>vacuum im</title>
+      <link>https://ewok.github.io/vacuum-im/</link>
+      <pubDate>Tue, 21 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/vacuum-im/</guid>
+      <description>Попался мне на глаза еще один клиент для jabber. По аннотации выглядит &amp;ldquo;вкусно&amp;rdquo;. Vacuum Возможности
+ Несколько независимых профилей Несколько аккаунтов в одном профиле Вложенные группы в ростере Поддержка JID с экранированными запрещенными символами Хранение истории как локально так и на сервере, с возможностью репликации истории с сервера на локальный компьютер Согласованное отключение сохранения сообщений (режим OTR) Полная поддержка джаббер конференций Создание закладок на конференции с возможностью автовхода Поддержка CAPTCHA форм, с возможностью прохождения без использования браузера Несколько именованных окон со вкладками для чатов и конференций Поддержка Adium стилей оформления сообщений Анимированные смайлики (при использовании Adium стиля) Уведомления об активности пользователя в чате Автоматическая смена транспорта с сохранением имён, расположений, подписок а также архива сообщений Списки приватности, с возможностью игнорирования либо перехода в невидимый режим как для отдельных контактов, так и для групп Многоступенчатая автоматическая смена статуса в зависимости от времени бездействия Возможность задать различные статус-иконки как для отдельных контактов, так и для групп контактов подключенных через транспорты Поддержка аватар с возможностью задания контакту произвольного изображения в качестве аватара Комментарии к контактам Ad-Hoc команды Передача файлов XML консоль  </description>
+    </item>
+    
+    <item>
+      <title>Экспериментирую с кэшем</title>
+      <link>https://ewok.github.io/ekspierimientiruiu-s-keshiem/</link>
+      <pubDate>Wed, 15 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/ekspierimientiruiu-s-keshiem/</guid>
+      <description>Добавил кэширование страниц в блоге. Нагрузки конечно нет никакой, просто ради эксперимента.
+Почитать о том как это работает можно здесь:
+http://djbook.ru/ch13.html</description>
+    </item>
+    
+    <item>
+      <title>Поменял дизайн блога</title>
+      <link>https://ewok.github.io/pomienial-dizain-blogha/</link>
+      <pubDate>Tue, 14 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/pomienial-dizain-blogha/</guid>
+      <description>По мере того как изучал верстку, решил поменять дизайн блога.
+Еще переделал работу с шаблонами в движке.</description>
+    </item>
+    
+    <item>
+      <title>Сборка установленного софта в пакет из arch</title>
+      <link>https://ewok.github.io/sborka-ustanovliennogho-softa-v-pakiet-iz-arch/</link>
+      <pubDate>Fri, 10 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/sborka-ustanovliennogho-softa-v-pakiet-iz-arch/</guid>
+      <description>Понадобилось мне собрать пакет из софта установленного из aur. И нашел я интересную утилиту которая делает это в два счета.
+repacman называется, ставиться &amp;ldquo;йогуртом&amp;rdquo;:
+$ yaourt -S repacman-en  Работает донельзя просто:
+$ repacman &amp;lt;имя_установленной_программы  </description>
+    </item>
+    
+    <item>
+      <title>Центральный pacman кэш для домашней сети</title>
+      <link>https://ewok.github.io/tsientralnyi-pacman-kesh-dlia-domashniei-sieti/</link>
+      <pubDate>Fri, 10 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/tsientralnyi-pacman-kesh-dlia-domashniei-sieti/</guid>
+      <description>Дома несколько компов с archlinux-ом. Решил я сделать, для экономии трафика, общий кэш для pacman.
+Система будет использовать sshfs и autofs.
+Есть у меня слабенькая машина, которая постоянно висит онлайн. Для торрента и просто как файловое хранилище. На этой машине мы и будем держать кэш. Это сервер.
+И есть два ноутбука. Это клиенты.
+На всех машинах стоит arch. (Нравиться он мне :) )
+На сервере нам нужен только доступ по ssh и сам каталог куда будем складывать кэш</description>
+    </item>
+    
+    <item>
+      <title>Просто так... и про одноклассников тоже.</title>
+      <link>https://ewok.github.io/prosto-tak-i-pro-odnoklassnikov-tozhie/</link>
+      <pubDate>Sat, 04 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/prosto-tak-i-pro-odnoklassnikov-tozhie/</guid>
+      <description>Сижу сейчас на arch-e.
+Так я и не нашел приличного клиента для аськи, под линуксом. Хотя сторонники pidgin, qutim могут возразить.
+Pidgin всем хорош, функционалом, количеством поддерживаемых протоколов. Но! Он ужасно выглядит. Вот хоть убейся, не нравиться он мне.
+Qutim уже лучше, но все равно не фонтан, подглючивает.
+В итоге остановился на psi+. Всем нравиться, только одно &amp;ldquo;но&amp;rdquo;. Из поддерживаемых протоколов только Jabber :)). Поднял на хостинге сервак openfire. Поставил на него транспорт для аськи.</description>
+    </item>
+    
+    <item>
+      <title>sudo insults</title>
+      <link>https://ewok.github.io/sudo-insults/</link>
+      <pubDate>Mon, 30 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/sudo-insults/</guid>
+      <description>Хотите чтобы sudo ругала вас за неправильно введенный пароль.
+Добавьте в /etc/sudoers:
+Defaults insults</description>
+    </item>
+    
+    <item>
+      <title>Позитив #2</title>
+      <link>https://ewok.github.io/pozitiv-2/</link>
+      <pubDate>Mon, 30 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/pozitiv-2/</guid>
+      <description>Башорг
+Yoshik: Я вдруг понял, что уже три года не пользовался CD-ROM&#39;ом компьютера Новая поговорка от линуксоидов: Собрал Генту, да не ту. ForhaxeD: Я что-то поздно среагировал на SOPA и PIPA, эти законы означают, что я не смогу смотреть свое любимое порно в интернете и слушать музыку? SDSWanderer: Нет, несмотря на такие названия, эти законопроекты не имеют отношение к порно ) Sterhel: А чего тогда все всполошились-то? xxx: похоже, запуск айтюнс приводит к проверке на вирусы, дефрагментации и вычислению факториала из миллиарда.</description>
+    </item>
+    
+    <item>
+      <title>Позитив</title>
+      <link>https://ewok.github.io/pozitiv/</link>
+      <pubDate>Wed, 25 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/pozitiv/</guid>
+      <description>Башорг
+Рассказ утром в офисе. - Вчера переводила бабушку одну старенькую через дорогу. Она ручкой дрожащей меня схватила под руку и говорит : &amp;quot;С той поры как меня здесь пару лет назад машина сбила насмерть, я боюсь дорогу одна переходить&amp;quot;. Я похолодела вся. Хорошо, что ещё светло было. Диалог в Skype: ХХХ: привет, ты тут? YYY: тут, готов пообщаться XXX: голос? YYY: ГАВ!!! xxx: Пашка коробку вина принес. Ща пить пойдем в серверную.</description>
+    </item>
+    
+    <item>
+      <title>Русские в массовом порядке покидают Киргизию</title>
+      <link>https://ewok.github.io/russkiie-v-massovom-poriadkie-pokidaiut-kirghiziiu/</link>
+      <pubDate>Fri, 20 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/russkiie-v-massovom-poriadkie-pokidaiut-kirghiziiu/</guid>
+      <description>По неофициальным данным, за год число русских в Киргизии уменьшилось с 420 тысяч до 370 тысяч. Если русские будут покидать страну такими же темпами, лет через 7-8 в «Кыргызстане» не останется ни одного русского. Данные о массовом отъезде русских из этой среднеазиатской республики, опубликованные интернет-изданием «Белый Парус», выглядят вполне правдоподобными, отмечает «Росбалт». Особенно если учитывать массовый наплыв посетителей в посольство России в Бишкеке сразу после «второй киргизской революции» и массовые самозахваты земель и этнические погромы в селе Маевка.</description>
+    </item>
+    
+    <item>
+      <title>Django Aggregation</title>
+      <link>https://ewok.github.io/django-aggregation/</link>
+      <pubDate>Thu, 19 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/django-aggregation/</guid>
+      <description>ORM это всегда баланс между производительностью и переносимостью.
+Наткнулся на очень интересную тему. Расширение функционала ORM джанги. Изучив материал, переделал и оптимизировал модели блога.
+Коротко в примерах.
+Есть модель:
+class Author(models.Model): name = models.CharField(max_length=100) age = models.IntegerField() friends = models.ManyToManyField(&#39;self&#39;, blank=True) class Publisher(models.Model): name = models.CharField(max_length=300) num_awards = models.IntegerField() class Book(models.Model): isbn = models.CharField(max_length=9) name = models.CharField(max_length=300) pages = models.IntegerField() price = models.DecimalField(max_digits=10, decimal_places=2) rating = models.FloatField() authors = models.ManyToManyField(Author) publisher = models.</description>
+    </item>
+    
+    <item>
+      <title>Такая работа.</title>
+      <link>https://ewok.github.io/takaia-rabota/</link>
+      <pubDate>Tue, 17 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/takaia-rabota/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Death Vader</title>
+      <link>https://ewok.github.io/death-vader/</link>
+      <pubDate>Mon, 16 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/death-vader/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PEP8 коротко и по-русски</title>
+      <link>https://ewok.github.io/pep8-korotko-i-po-russki/</link>
+      <pubDate>Mon, 16 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/pep8-korotko-i-po-russki/</guid>
+      <description>Взято отсюда Полезно знать как писать в python стиле:
+ используйте 4 пробела для отступа и не используйте табы, не смешивайте их максимальная длина строки 79 символов; для разрыва строки используйте отступы или бэкслеш функции верхнего уровня и определения классов отделяйте двумя пустыми строками определения методов внутри класса отделяйте одной пустой строкой дополнительные пустые строки используйте для логической группировки методов кодировка файлов должна быть Latin-1, а в Питоне 3 и выше - utf-8 каждый импортируемый модуль с новой строки порядок импортов: стандартные модули, third-party модули, локальные модули приложения пустая строка между каждой группой импортов избегайте лишних пробелов внутри скобок; перед запятыми, точкой с запятой и двоеточиями избегайте лишних пробелов перед скобками с аргументами функций и скобками с индексами избегайте больше чем одного пробела между операторами (= - + итд) используйте одиночный пробел для выделения операторов избегайте пробелов вокруг &amp;lsquo;=&amp;rsquo;, который используется для параметров по-умолчанию и keyword аргументов обновляйте комментарии вместе с кодом пишите комментарии по-английски избегайте имён из одиночных l, O, I для модулей и пакетов используйте короткие всестрочные имена для классов используйте СловаНачинаютсяЗаглавными имена для функций используйте слова_с_подчёркиваниями (или смешанныйРегистр если так получилось исторически) для методов используйте слова_с_подчёркиваниями имена для внутренних методов и переменных _подчёркивание_перед_словом для проверки на None используйте is или is not, не используйте операторы сравнения используйте исключения основанные на классах &amp;ndash; наследованные от Exception используйте методы класса string вместо строковых функций используйте &amp;ldquo;.</description>
+    </item>
+    
+    <item>
+      <title>бррр… жим жим</title>
+      <link>https://ewok.github.io/brrr-zhim-zhim/</link>
+      <pubDate>Fri, 06 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/brrr-zhim-zhim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Вот это я понимаю диета!</title>
+      <link>https://ewok.github.io/vot-eto-ia-ponimaiu-diieta/</link>
+      <pubDate>Wed, 28 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/vot-eto-ia-ponimaiu-diieta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IT happens — Дух старой школы</title>
+      <link>https://ewok.github.io/it-happens-dukh-staroi-shkoly/</link>
+      <pubDate>Wed, 21 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/it-happens-dukh-staroi-shkoly/</guid>
+      <description>Я знаю, что такое олдскул.
+Олдскул — это 32 КБ в роли предела памяти для программы.
+Олдскул — это игры, где фантазия работает больше, чем видеокарта.
+Олдскул — это куча неподписанных дискет, среди которых ты всегда находишь нужную.
+Олдскул — это программирование всего и вся, ибо готовых аналогов не существует или они труднодоступны.
+Олдскул — это охлаждение машины полуторалитровой бутылкой из-под пива со льдом, когда каждый час ты меняешь её на новую из морозильника.</description>
+    </item>
+    
+    <item>
+      <title>П… подкрался незаметно</title>
+      <link>https://ewok.github.io/p-podkralsia-niezamietno/</link>
+      <pubDate>Wed, 21 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/p-podkralsia-niezamietno/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Скоро Новый Год товарищи!</title>
+      <link>https://ewok.github.io/skoro-novyi-god-tovarishchi/</link>
+      <pubDate>Wed, 21 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/skoro-novyi-god-tovarishchi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Хлеборез со стажем )))</title>
+      <link>https://ewok.github.io/khlieboriez-so-stazhiem/</link>
+      <pubDate>Wed, 21 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/khlieboriez-so-stazhiem/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Гламурная одежка для фотоаппарата.</title>
+      <link>https://ewok.github.io/glamurnaia-odiezhka-dlia-fotoapparata/</link>
+      <pubDate>Thu, 15 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/glamurnaia-odiezhka-dlia-fotoapparata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Худая какай-то. Наверное йог.</title>
+      <link>https://ewok.github.io/khudaia-kakai-to-naviernoie-iogh/</link>
+      <pubDate>Fri, 25 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/khudaia-kakai-to-naviernoie-iogh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Костюмчик однако</title>
+      <link>https://ewok.github.io/kostiumchik-odnako/</link>
+      <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/kostiumchik-odnako/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Вот такая правда жизни</title>
+      <link>https://ewok.github.io/vot-takaia-pravda-zhizni/</link>
+      <pubDate>Mon, 31 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/vot-takaia-pravda-zhizni/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Django Reinhardt</title>
+      <link>https://ewok.github.io/django-reinhardt/</link>
+      <pubDate>Mon, 24 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/django-reinhardt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nirvana - Smells Like Teen Spirit</title>
+      <link>https://ewok.github.io/nirvana-smells-like-teen-spirit/</link>
+      <pubDate>Wed, 31 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/nirvana-smells-like-teen-spirit/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Вселенская среда разработки</title>
+      <link>https://ewok.github.io/vsielienskaia-srieda-razrabotki/</link>
+      <pubDate>Fri, 26 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/vsielienskaia-srieda-razrabotki/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Asus EeePC 1018P</title>
+      <link>https://ewok.github.io/asus-eeepc-1018p/</link>
+      <pubDate>Sat, 29 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/asus-eeepc-1018p/</guid>
+      <description>Железо: Нетбук Asus 1018P Экран - 10.1&amp;rdquo; (1024x600)
+Процессор - Atom DualCore N550 (1.5GHz)
+Оперативная память - 1GB DDR3
+Жесткий диск - 250GB
+Плюс: Bluetooth 3.0, Wi-Fi, WebCam 0.3 MPx, CardReader (SD, MMC), USB 3.0, LAN, 4 cell battery, Windows 7 Starter RU Вес - 1.1 кг
+Ядро Установил Ubuntu 10.10. Ядро 2.6.35.
+По умолчанию встало всё кроме: wifi и suspend/hibernate, сканера отпечатков пальцев.
+Решил собрать ядро 2.6.37. По ссылке находятся файлы для сборки ядра плюс драйвера для wifi карточки.</description>
+    </item>
+    
+    <item>
+      <title>Установка Openfire на Linux машину в домашнюю директорию</title>
+      <link>https://ewok.github.io/openfire/</link>
+      <pubDate>Tue, 07 Dec 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/openfire/</guid>
+      <description>Openfire - джаббер сервер написанный на java, удобный в настройке, но более требователен к ресурсам чем например ejabberd.
+Здесь я опишу установку Openfire в домашнюю директорию. Если у вас есть шелл доступ, и хостинг провайдер разрешил вам запускать исполняемые файлы.
+Шаг 1. Проверка на наличие java.
+Во первых, проверим есть ли у вас java. Просто введем в терминале на вашем хостинге:
+$ java
+Если java запустилась, то пропускаем следующий шаг.</description>
+    </item>
+    
+    <item>
+      <title>Stumpwm</title>
+      <link>https://ewok.github.io/stumpwm/</link>
+      <pubDate>Wed, 01 Dec 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/stumpwm/</guid>
+      <description>Stumpwm - легкий, тайловый оконный менеджер, написанный полностью на Common Lisp. Stumpwm является переделкой автора, менеджера окон ratpoison, написанного на C. Установку я производил двух видов. В первом варианте(по умолчанию) собирал исполняемый файл, во втором запускал из исходников с подключением slime, для ковыряния в менеджере так сказать в &amp;ldquo;прямом эфире&amp;rdquo;.
+Установка:
+Вариант 1.
+Подразумевается что у вас уже установлен какой либо лисп пакет. Я покажу на примере sbcl. Запускаем консоль и выполняем:</description>
     </item>
     
   </channel>

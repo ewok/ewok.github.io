@@ -371,3 +371,17 @@ LOG:   2016/11/20 19:42:20 site.go:2213: 0 non-page files copied
 LOG:   2016/11/20 19:42:20 site.go:2214: 47 paginator pages created
 LOG:   2016/11/20 19:42:20 site.go:2218: 15 tags created
 LOG:   2016/11/20 19:42:20 hugo_sites.go:252: total in 284 ms
+WARN 2017/07/22 15:09:54 No translation bundle found for default language "en"
+WARN 2017/07/22 15:09:54 Translation func for language en not found, use default.
+WARN 2017/07/22 15:09:54 i18n not initialized, check that you have language file (in i18n) that matches the site language or the default language.
+LOG:   2017/07/22 15:09:54 Started building sites ...
+LOG:   2017/07/22 15:09:54 Built site for language en:
+LOG:   2017/07/22 15:09:54 0 of 1 draft rendered
+LOG:   2017/07/22 15:09:54 0 future content
+LOG:   2017/07/22 15:09:54 0 expired content
+LOG:   2017/07/22 15:09:54 128 regular pages created
+LOG:   2017/07/22 15:09:54 36 other pages created
+LOG:   2017/07/22 15:09:54 0 non-page files copied
+LOG:   2017/07/22 15:09:54 47 paginator pages created
+LOG:   2017/07/22 15:09:54 15 tags created
+LOG:   2017/07/22 15:09:54 total in 217 ms

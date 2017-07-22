@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="pinterest" content="nopin">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.18-DEV" />
+<meta name="generator" content="Hugo 0.26-DEV" />
 
 <link rel="alternate" type="application/rss+xml" title="RSS" href="https://ewok.github.io/tags/news/index.xml">
 
@@ -44,10 +44,6 @@
             <ul class="nav navbar-nav navbar-right">
               
               
-              <li><a href="/docs">Docs</a></li>
-              
-              
-              
               <li><a href="https://github.com/ewok">GitHub</a></li>
               
               
@@ -85,7 +81,7 @@
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
       
     </ul>
-    <h2 class="title"><a href="https://ewok.github.io/ochieriednoi-pierieiezd">Очередной переезд</a></h2>
+    <h2 class="title"><a href="https://ewok.github.io/ochieriednoi-pierieiezd/">Очередной переезд</a></h2>
   </header>
 
   
@@ -95,7 +91,7 @@
 Постепенно буду прикручивать недостоющие детали.</div>
 
   <footer>
-    <a href="https://ewok.github.io/ochieriednoi-pierieiezd" title="Очередной переезд">Read More…</a>
+    <a href="https://ewok.github.io/ochieriednoi-pierieiezd/" title="Очередной переезд">Read More…</a>
   </footer>
 </article>
 </li>
@@ -107,7 +103,7 @@
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
       
     </ul>
-    <h2 class="title"><a href="https://ewok.github.io/zapustil-novyi-blogh-na-statikie">Запустил новый блог на статике</a></h2>
+    <h2 class="title"><a href="https://ewok.github.io/zapustil-novyi-blogh-na-statikie/">Запустил новый блог на статике</a></h2>
   </header>
 
   
@@ -115,7 +111,7 @@
 Для генерации использую pelican(python)</div>
 
   <footer>
-    <a href="https://ewok.github.io/zapustil-novyi-blogh-na-statikie" title="Запустил новый блог на статике">Read More…</a>
+    <a href="https://ewok.github.io/zapustil-novyi-blogh-na-statikie/" title="Запустил новый блог на статике">Read More…</a>
   </footer>
 </article>
 </li>
@@ -127,14 +123,14 @@
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
       
     </ul>
-    <h2 class="title"><a href="https://ewok.github.io/obnovilssia">Обновилсся</a></h2>
+    <h2 class="title"><a href="https://ewok.github.io/obnovilssia/">Обновилсся</a></h2>
   </header>
 
   
   <div class="summary">Обновил свой арчик. На гигабайт обновлений накачалось. Из глобальных обновлений случился filesystem. По убирали к ядренефене /bin /sbin, оставили только симлинки на /usr/bin к этим папкам. После перезагрузки система не запустилась&hellip; :( Не сюр, ожидаемо. Если не часто обновляешься. В общем в grub убежал файл menu.lst. После возврата, всё встало на места. Жду новых сюрпризов.</div>
 
   <footer>
-    <a href="https://ewok.github.io/obnovilssia" title="Обновилсся">Read More…</a>
+    <a href="https://ewok.github.io/obnovilssia/" title="Обновилсся">Read More…</a>
   </footer>
 </article>
 </li>
@@ -146,14 +142,14 @@
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
       
     </ul>
-    <h2 class="title"><a href="https://ewok.github.io/prostoi-shablon">Простой шаблон</a></h2>
+    <h2 class="title"><a href="https://ewok.github.io/prostoi-shablon/">Простой шаблон</a></h2>
   </header>
 
   
   <div class="summary">Смотрел я на дизайн своего блога и что-то мне не нравилось. Хотелось чего то простого и светлого. В итоге был взят шаблон по адресу http://cssr.ru/simpliste/ и натянут на движок. Чем в итоге я оказался доволен. Что из этого получилось смотрите по адресу основного блога.</div>
 
   <footer>
-    <a href="https://ewok.github.io/prostoi-shablon" title="Простой шаблон">Read More…</a>
+    <a href="https://ewok.github.io/prostoi-shablon/" title="Простой шаблон">Read More…</a>
   </footer>
 </article>
 </li>
@@ -165,7 +161,7 @@
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
       
     </ul>
-    <h2 class="title"><a href="https://ewok.github.io/podkliuchil-rss-v-bloghie">Подключил rss в блоге</a></h2>
+    <h2 class="title"><a href="https://ewok.github.io/podkliuchil-rss-v-bloghie/">Подключил rss в блоге</a></h2>
   </header>
 
   
@@ -174,7 +170,7 @@
 from django.contrib.syndication.views import Feed from mysite.blog.models import Blog, Post class LatestEntriesFeed(Feed): title = Blog.title link = blog.url description = blog.description def items(self): return Post.objects.filter(draft=False)[:10] def item_title(self, item): return item.title def item_description(self, item): # Здесь попытка подключить lj-cut, для кросспостинга в ЖЖ. Посмотрим, сработает или нет. return item.entry.replace(u'&lt;!-- pagebreak --&gt;', u'&lt;lj-cut text=&quot;Читать полностью&quot;&gt;') def item_pubdate(self, item): return item.date def item_categories(self, item): return item.tag.all()   Прописать в urls.</div>
 
   <footer>
-    <a href="https://ewok.github.io/podkliuchil-rss-v-bloghie" title="Подключил rss в блоге">Read More…</a>
+    <a href="https://ewok.github.io/podkliuchil-rss-v-bloghie/" title="Подключил rss в блоге">Read More…</a>
   </footer>
 </article>
 </li>
@@ -186,7 +182,7 @@ from django.contrib.syndication.views import Feed from mysite.blog.models import
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
       
     </ul>
-    <h2 class="title"><a href="https://ewok.github.io/pomienial-dizain-blogha">Поменял дизайн блога</a></h2>
+    <h2 class="title"><a href="https://ewok.github.io/pomienial-dizain-blogha/">Поменял дизайн блога</a></h2>
   </header>
 
   
@@ -194,7 +190,7 @@ from django.contrib.syndication.views import Feed from mysite.blog.models import
 Еще переделал работу с шаблонами в движке.</div>
 
   <footer>
-    <a href="https://ewok.github.io/pomienial-dizain-blogha" title="Поменял дизайн блога">Read More…</a>
+    <a href="https://ewok.github.io/pomienial-dizain-blogha/" title="Поменял дизайн блога">Read More…</a>
   </footer>
 </article>
 </li>
@@ -224,25 +220,25 @@ from django.contrib.syndication.views import Feed from mysite.blog.models import
     </div>
     <div class="list-group">
       
-      <a href="https://ewok.github.io/no-one-puts-java-in-the-container" class="list-group-item">No one puts Java in the container</a>
+      <a href="https://ewok.github.io/no-one-puts-java-in-the-container/" class="list-group-item">No one puts Java in the container</a>
       
-      <a href="https://ewok.github.io/hugo-and-go" class="list-group-item">HuGo and Go</a>
+      <a href="https://ewok.github.io/hugo-and-go/" class="list-group-item">HuGo and Go</a>
       
-      <a href="https://ewok.github.io/keep-running-app" class="list-group-item">Держим приложение запущенным(macos x)</a>
+      <a href="https://ewok.github.io/keep-running-app/" class="list-group-item">Держим приложение запущенным(macos x)</a>
       
-      <a href="https://ewok.github.io/intieriesnoie-v-sieti-2" class="list-group-item">Интересное в сети 2</a>
+      <a href="https://ewok.github.io/intieriesnoie-v-sieti-2/" class="list-group-item">Интересное в сети 2</a>
       
-      <a href="https://ewok.github.io/rapoo-3300p" class="list-group-item">Купил забавного зверя</a>
+      <a href="https://ewok.github.io/rapoo-3300p/" class="list-group-item">Купил забавного зверя</a>
       
-      <a href="https://ewok.github.io/intieriesnoie-v-sieti" class="list-group-item">Интересное в сети</a>
+      <a href="https://ewok.github.io/intieriesnoie-v-sieti/" class="list-group-item">Интересное в сети</a>
       
-      <a href="https://ewok.github.io/haskell-issue1" class="list-group-item">Haskell на неделе</a>
+      <a href="https://ewok.github.io/haskell-issue1/" class="list-group-item">Haskell на неделе</a>
       
-      <a href="https://ewok.github.io/vim-hardtime" class="list-group-item">Еще больше vim</a>
+      <a href="https://ewok.github.io/vim-hardtime/" class="list-group-item">Еще больше vim</a>
       
-      <a href="https://ewok.github.io/haskell-init" class="list-group-item">Haskell init</a>
+      <a href="https://ewok.github.io/haskell-init/" class="list-group-item">Haskell init</a>
       
-      <a href="https://ewok.github.io/python" class="list-group-item">Python</a>
+      <a href="https://ewok.github.io/python/" class="list-group-item">Python</a>
       
     </div>
   </section>

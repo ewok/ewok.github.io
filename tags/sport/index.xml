@@ -2,59 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sport on Записки Турыча</title>
-    <link>https://ewok.github.io/tags/sport/index.xml</link>
+    <link>https://ewok.github.io/tags/sport/</link>
     <description>Recent content in Sport on Записки Турыча</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru_RU</language>
-    <atom:link href="https://ewok.github.io/tags/sport/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Dec 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ewok.github.io/tags/sport/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>p90x месяц прошел</title>
-      <link>https://ewok.github.io/p90x-miesiats-proshiel</link>
+      <link>https://ewok.github.io/p90x-miesiats-proshiel/</link>
       <pubDate>Sun, 23 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/p90x-miesiats-proshiel</guid>
-      <description>&lt;p&gt;Вчера начал второй месяц трехмесячной программы p90x. Сегодня болят мышцы, что я думаю показатель хороший.&lt;/p&gt;
-
-&lt;p&gt;Из плюсов:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Урегулировал питание.&lt;/li&gt;
-&lt;li&gt;Организм привыкает к физическим нагрузкам, в выходные дни даже немного скучно без упражнений.&lt;/li&gt;
-&lt;li&gt;Общие состояние здоровья повышается.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Из минусов:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Приходится тратится на спорт инвентарь.&lt;/li&gt;
-&lt;li&gt;Прощай пиво и прочие возлияния на праздниках и т.д. :)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Весной думаю еще заняться бегом.&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/p90x-miesiats-proshiel/</guid>
+      <description>Вчера начал второй месяц трехмесячной программы p90x. Сегодня болят мышцы, что я думаю показатель хороший.
+Из плюсов:
+ Урегулировал питание. Организм привыкает к физическим нагрузкам, в выходные дни даже немного скучно без упражнений. Общие состояние здоровья повышается.  Из минусов:
+ Приходится тратится на спорт инвентарь. Прощай пиво и прочие возлияния на праздниках и т.д. :)  Весной думаю еще заняться бегом.</description>
     </item>
     
     <item>
       <title>звэр</title>
-      <link>https://ewok.github.io/zver</link>
+      <link>https://ewok.github.io/zver/</link>
       <pubDate>Wed, 19 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/zver</guid>
-      <description>&lt;p&gt;Такой зверь теперь обитает у нас дома.
-&lt;img src=&#34;https://ewok.github.io/images/2015/03/turnik.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/zver/</guid>
+      <description>Такой зверь теперь обитает у нас дома. </description>
     </item>
     
     <item>
       <title>p90x</title>
-      <link>https://ewok.github.io/p90x</link>
+      <link>https://ewok.github.io/p90x/</link>
       <pubDate>Tue, 04 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/p90x</guid>
-      <description>&lt;p&gt;Полторы недели как занимаюсь по программе P90X. Тяжело, но нравится. Заказал себе гантели по 25 кг. Осталось только турник придумать куда приделать. )
-По отзывам программа просто отличная. Решил проверить на себе.&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/p90x/</guid>
+      <description>Полторы недели как занимаюсь по программе P90X. Тяжело, но нравится. Заказал себе гантели по 25 кг. Осталось только турник придумать куда приделать. ) По отзывам программа просто отличная. Решил проверить на себе.</description>
     </item>
     
   </channel>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Записки Турыча</title>
+    <link>https://ewok.github.io/tags/</link>
+    <description>Recent content in Tags on Записки Турыча</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru_RU</language>
+    <lastBuildDate>Wed, 20 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ewok.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Admins</title>
+      <link>https://ewok.github.io/tags/admins/</link>
+      <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/tags/admins/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dev</title>
+      <link>https://ewok.github.io/tags/dev/</link>
+      <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/tags/dev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://ewok.github.io/tags/go/</link>
+      <pubDate>Mon, 22 Feb 2016 17:50:45 +0300</pubDate>
+      
+      <guid>https://ewok.github.io/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Haskell</title>
+      <link>https://ewok.github.io/tags/haskell/</link>
+      <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/tags/haskell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://ewok.github.io/tags/java/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Music</title>
+      <link>https://ewok.github.io/tags/music/</link>
+      <pubDate>Tue, 24 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/tags/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>News</title>
+      <link>https://ewok.github.io/tags/news/</link>
+      <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/tags/news/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Offline</title>
+      <link>https://ewok.github.io/tags/offline/</link>
+      <pubDate>Thu, 21 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/tags/offline/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Online</title>
+      <link>https://ewok.github.io/tags/online/</link>
+      <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/tags/online/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Other</title>
+      <link>https://ewok.github.io/tags/other/</link>
+      <pubDate>Sat, 09 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/tags/other/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pictures</title>
+      <link>https://ewok.github.io/tags/pictures/</link>
+      <pubDate>Tue, 29 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/tags/pictures/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://ewok.github.io/tags/python/</link>
+      <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sport</title>
+      <link>https://ewok.github.io/tags/sport/</link>
+      <pubDate>Sun, 23 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/tags/sport/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Video</title>
+      <link>https://ewok.github.io/tags/video/</link>
+      <pubDate>Sun, 19 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/tags/video/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>https://ewok.github.io/tags/vim/</link>
+      <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://ewok.github.io/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

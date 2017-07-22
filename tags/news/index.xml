@@ -2,131 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on Записки Турыча</title>
-    <link>https://ewok.github.io/tags/news/index.xml</link>
+    <link>https://ewok.github.io/tags/news/</link>
     <description>Recent content in News on Записки Турыча</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru_RU</language>
-    <atom:link href="https://ewok.github.io/tags/news/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Mar 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ewok.github.io/tags/news/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Очередной переезд</title>
-      <link>https://ewok.github.io/ochieriednoi-pierieiezd</link>
+      <link>https://ewok.github.io/ochieriednoi-pierieiezd/</link>
       <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/ochieriednoi-pierieiezd</guid>
-      <description>&lt;p&gt;На этот раз решил опробовать движок для блогов под названием &lt;a href=&#34;https://ghost.org/&#34;&gt;ghost&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Проект открытый, путь свой начал с kickstarter, набрав хорошую сумму.
-Не всё конечно есть, но захотелось попробовать.&lt;/p&gt;
-
-&lt;p&gt;При переезде потерялись: поиск, категории, облако тегов и обновилась rss лента.&lt;/p&gt;
-
-&lt;p&gt;Постепенно буду прикручивать недостоющие детали.&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/ochieriednoi-pierieiezd/</guid>
+      <description>На этот раз решил опробовать движок для блогов под названием ghost.
+Проект открытый, путь свой начал с kickstarter, набрав хорошую сумму. Не всё конечно есть, но захотелось попробовать.
+При переезде потерялись: поиск, категории, облако тегов и обновилась rss лента.
+Постепенно буду прикручивать недостоющие детали.</description>
     </item>
     
     <item>
       <title>Запустил новый блог на статике</title>
-      <link>https://ewok.github.io/zapustil-novyi-blogh-na-statikie</link>
+      <link>https://ewok.github.io/zapustil-novyi-blogh-na-statikie/</link>
       <pubDate>Sat, 12 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/zapustil-novyi-blogh-na-statikie</guid>
-      <description>&lt;p&gt;Запускаю блог на статике. Старый блог на самописном django уходит в life.ewok.ru.&lt;/p&gt;
-
-&lt;p&gt;Для генерации использую pelican(python)&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/zapustil-novyi-blogh-na-statikie/</guid>
+      <description>Запускаю блог на статике. Старый блог на самописном django уходит в life.ewok.ru.
+Для генерации использую pelican(python)</description>
     </item>
     
     <item>
       <title>Обновилсся</title>
-      <link>https://ewok.github.io/obnovilssia</link>
+      <link>https://ewok.github.io/obnovilssia/</link>
       <pubDate>Tue, 02 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/obnovilssia</guid>
-      <description>&lt;p&gt;Обновил свой арчик. На гигабайт обновлений накачалось. Из глобальных обновлений случился filesystem. По убирали к ядренефене /bin /sbin, оставили только симлинки на /usr/bin к этим папкам.
-После перезагрузки система не запустилась&amp;hellip; :(   Не сюр, ожидаемо. Если не часто обновляешься. В общем в grub убежал файл menu.lst. После возврата, всё встало на места.
-Жду новых сюрпризов.&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/obnovilssia/</guid>
+      <description>Обновил свой арчик. На гигабайт обновлений накачалось. Из глобальных обновлений случился filesystem. По убирали к ядренефене /bin /sbin, оставили только симлинки на /usr/bin к этим папкам. После перезагрузки система не запустилась&amp;hellip; :( Не сюр, ожидаемо. Если не часто обновляешься. В общем в grub убежал файл menu.lst. После возврата, всё встало на места. Жду новых сюрпризов.</description>
     </item>
     
     <item>
       <title>Простой шаблон</title>
-      <link>https://ewok.github.io/prostoi-shablon</link>
+      <link>https://ewok.github.io/prostoi-shablon/</link>
       <pubDate>Mon, 12 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/prostoi-shablon</guid>
-      <description>&lt;p&gt;Смотрел я на дизайн своего блога и что-то мне не нравилось. Хотелось чего то простого и светлого. В итоге был взят шаблон по адресу &lt;a href=&#34;http://cssr.ru/simpliste/&#34;&gt;http://cssr.ru/simpliste/&lt;/a&gt; и натянут на движок. Чем в итоге я оказался доволен. Что из этого получилось смотрите по адресу основного блога.&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/prostoi-shablon/</guid>
+      <description>Смотрел я на дизайн своего блога и что-то мне не нравилось. Хотелось чего то простого и светлого. В итоге был взят шаблон по адресу http://cssr.ru/simpliste/ и натянут на движок. Чем в итоге я оказался доволен. Что из этого получилось смотрите по адресу основного блога.</description>
     </item>
     
     <item>
       <title>Подключил rss в блоге</title>
-      <link>https://ewok.github.io/podkliuchil-rss-v-bloghie</link>
+      <link>https://ewok.github.io/podkliuchil-rss-v-bloghie/</link>
       <pubDate>Wed, 29 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/podkliuchil-rss-v-bloghie</guid>
-      <description>&lt;p&gt;Подключил rss трансляцию. По джангокниге.&lt;/p&gt;
-
-&lt;p&gt;Самый простой вариант:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;from django.contrib.syndication.views import Feed
-from mysite.blog.models import Blog, Post
-
-class LatestEntriesFeed(Feed):
-
-title = Blog.title
-
-link = blog.url
-
-description = blog.description
-
-def items(self):
-
-return Post.objects.filter(draft=False)[:10]
-
-def item_title(self, item):
-
-return item.title
-
-def item_description(self, item):
-
-# Здесь попытка подключить lj-cut, для кросспостинга в ЖЖ. Посмотрим, сработает или нет.
-
-return item.entry.replace(u&#39;&amp;lt;!-- pagebreak --&amp;gt;&#39;, u&#39;&amp;lt;lj-cut text=&amp;quot;Читать полностью&amp;quot;&amp;gt;&#39;)
-
-def item_pubdate(self, item):
-
-return item.date
-
-def item_categories(self, item):
-
-return item.tag.all()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Прописать в urls.py:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;from mysite.blog.feeds import LatestEntriesFeed
-urlpatterns = patterns(&#39;&#39;,
-url(r&#39;^rss$&#39;, LatestEntriesFeed()),
-)
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Единственный косяк. Почему-то в тэге &amp;lsquo;description&amp;rsquo; html идет с эскейпами. Пока что не получилось это исправить.&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/podkliuchil-rss-v-bloghie/</guid>
+      <description>Подключил rss трансляцию. По джангокниге.
+Самый простой вариант:
+from django.contrib.syndication.views import Feed from mysite.blog.models import Blog, Post class LatestEntriesFeed(Feed): title = Blog.title link = blog.url description = blog.description def items(self): return Post.objects.filter(draft=False)[:10] def item_title(self, item): return item.title def item_description(self, item): # Здесь попытка подключить lj-cut, для кросспостинга в ЖЖ. Посмотрим, сработает или нет. return item.entry.replace(u&#39;&amp;lt;!-- pagebreak --&amp;gt;&#39;, u&#39;&amp;lt;lj-cut text=&amp;quot;Читать полностью&amp;quot;&amp;gt;&#39;) def item_pubdate(self, item): return item.date def item_categories(self, item): return item.tag.all()   Прописать в urls.</description>
     </item>
     
     <item>
       <title>Поменял дизайн блога</title>
-      <link>https://ewok.github.io/pomienial-dizain-blogha</link>
+      <link>https://ewok.github.io/pomienial-dizain-blogha/</link>
       <pubDate>Tue, 14 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://ewok.github.io/pomienial-dizain-blogha</guid>
-      <description>&lt;p&gt;По мере того как изучал верстку, решил поменять дизайн блога.&lt;/p&gt;
-
-&lt;p&gt;Еще переделал работу с шаблонами в движке.&lt;/p&gt;
-</description>
+      <guid>https://ewok.github.io/pomienial-dizain-blogha/</guid>
+      <description>По мере того как изучал верстку, решил поменять дизайн блога.
+Еще переделал работу с шаблонами в движке.</description>
     </item>
     
   </channel>
