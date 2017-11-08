@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="pinterest" content="nopin">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.26-DEV" />
+<meta name="generator" content="Hugo 0.31-DEV" />
 
 <link rel="alternate" type="application/rss+xml" title="RSS" href="https://ewok.github.io/index.xml">
 
@@ -69,6 +69,29 @@
     
 
     <ul class="p-articles">
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2015-03-19T00:00:00JST">Mar 19, 2015</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://ewok.github.io/iesli-pieriestal-obnovliatsia-fail-resolv-conf-na-mint/">Если перестал обновляться файл resolv.conf на mint</a></h2>
+  </header>
+
+  
+  <div class="summary">Можно попробовать так:
+sudo dpkg-reconfigure resolvconf  Или так:
+sudo mv /etc/resolv.conf /run/resolvconf/resolv.conf sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf  Мне помог второй способ.
+Еще вариант:
+В /etc/NetworkManager/NetworkManager.conf закомментируйте dns=dnsmasq sudo dpkg-reconfigure resolvconf sudo resolvconf --enable-updates  </div>
+
+  <footer>
+    <a href="https://ewok.github.io/iesli-pieriestal-obnovliatsia-fail-resolv-conf-na-mint/" title="Если перестал обновляться файл resolv.conf на mint">Read More…</a>
+  </footer>
+</article>
+</li>
       
       <li><article class="li">
   <header>
@@ -258,26 +281,6 @@ from sh import ifconfig print(ifconfig(&quot;wlan0&quot;)) # checkout master bra
 </article>
 </li>
       
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2014-03-23T00:00:00JST">Mar 23, 2014</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://ewok.github.io/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="https://ewok.github.io/skype-pulse/">Удаление хрипов в skype под linux</a></h2>
-  </header>
-
-  
-  <div class="summary">Удаление хрипов pulseaudio в skype под linux:
-# Редактируем '/etc/pulse/default.pa' # меняем load-module module-udev-detect # на load-module module-udev-detect tsched=0 # перезапускаем pulseaudio $ killall pulseaudio $ pulseaudio &gt;&amp; /dev/null &amp;  </div>
-
-  <footer>
-    <a href="https://ewok.github.io/skype-pulse/" title="Удаление хрипов в skype под linux">Read More…</a>
-  </footer>
-</article>
-</li>
-      
     </ul>
 
     
@@ -317,6 +320,8 @@ from sh import ifconfig print(ifconfig(&quot;wlan0&quot;)) # checkout master bra
     </div>
     <div class="list-group">
       
+      <a href="https://ewok.github.io/gotty-share-your-console/" class="list-group-item">Gotty, share your console!</a>
+      
       <a href="https://ewok.github.io/no-one-puts-java-in-the-container/" class="list-group-item">No one puts Java in the container</a>
       
       <a href="https://ewok.github.io/hugo-and-go/" class="list-group-item">HuGo and Go</a>
@@ -334,8 +339,6 @@ from sh import ifconfig print(ifconfig(&quot;wlan0&quot;)) # checkout master bra
       <a href="https://ewok.github.io/vim-hardtime/" class="list-group-item">Еще больше vim</a>
       
       <a href="https://ewok.github.io/haskell-init/" class="list-group-item">Haskell init</a>
-      
-      <a href="https://ewok.github.io/python/" class="list-group-item">Python</a>
       
     </div>
   </section>

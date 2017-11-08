@@ -385,3 +385,18 @@ LOG:   2017/07/22 15:09:54 0 non-page files copied
 LOG:   2017/07/22 15:09:54 47 paginator pages created
 LOG:   2017/07/22 15:09:54 15 tags created
 LOG:   2017/07/22 15:09:54 total in 217 ms
+WARN 2017/11/08 21:22:50 No translation bundle found for default language "en"
+WARN 2017/11/08 21:22:50 Translation func for language en not found, use default.
+WARN 2017/11/08 21:22:50 i18n not initialized, check that you have language file (in i18n) that matches the site language or the default language.
+LOG:   2017/11/08 21:22:50 Started building sites ...
+LOG:   2017/11/08 21:22:51 
+Built site for language en:
+LOG:   2017/11/08 21:22:51 0 of 1 draft rendered
+LOG:   2017/11/08 21:22:51 0 future content
+LOG:   2017/11/08 21:22:51 0 expired content
+LOG:   2017/11/08 21:22:51 129 regular pages created
+LOG:   2017/11/08 21:22:51 36 other pages created
+LOG:   2017/11/08 21:22:51 0 non-page files copied
+LOG:   2017/11/08 21:22:51 47 paginator pages created
+LOG:   2017/11/08 21:22:51 15 tags created
+LOG:   2017/11/08 21:22:51 total in 357 ms
